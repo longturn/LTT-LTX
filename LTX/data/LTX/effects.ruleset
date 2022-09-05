@@ -2369,6 +2369,16 @@ reqs    =
       "UnitClass", "Big Land", "Local", TRUE
     }
 
+[effect_barracks_siege_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+    }
+
+
 [effect_barracks_ii]
 type    = "Veteran_Build"
 value   = 1
@@ -2409,6 +2419,17 @@ reqs    =
       "UnitClass", "Big Land", "Local", TRUE
     }
 
+
+[effect_barracks_ii_siege_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+    }
+
+
 [effect_barracks_iii]
 type    = "Veteran_Build"
 value   = 1
@@ -2447,6 +2468,16 @@ reqs    =
     { "type", "name", "range"
       "Building", "Barracks III", "City"
       "UnitClass", "Big Land", "Local"
+    }
+
+	
+[effect_barracks_iii_siege_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks III", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
     }
 
 [effect_cathedral]
