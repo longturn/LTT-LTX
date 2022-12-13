@@ -10,8 +10,9 @@
 ; than minor changes.
 
 [datafile]
-description="Longturn Traditional based on Civ2Civ3 effects data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+description="LTT effects data for Freeciv"
+options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
+format_version=20
 
 ; /* <-- avoid gettext warnings
 ;
@@ -151,8 +152,6 @@ reqs    =
 [effect_unhappysize]
 type    = "City_Unhappy_Size"
 value   = 4
-
-
 
 ; Lone Leader might escape on coast (33% chance)
 ; Complement of the two effects should be 0.9 * 0.66 = 0.594
@@ -296,6 +295,25 @@ reqs    =
 
 
 
+[effect_fortified]
+type    = "Fortify_Defense_Bonus"
+value   = 50
+reqs    =
+    { "type", "name", "range"
+      "Activity", "Fortified", "Local"
+    }
+
+[effect_city_fortified]
+type    = "Fortify_Defense_Bonus"
+value   = 50
+reqs    =
+    { "type",          "name",         "range", "present"
+      "CityTile",      "Center",       "Local", TRUE
+      "Activity",      "Fortified",    "Local", FALSE
+      "UnitClassFlag", "CanFortify",   "Local", TRUE
+      "UnitFlag",      "Cant_Fortify", "Local", FALSE
+    }
+
 [effect_trade_routes]
 type    = "Max_Trade_Routes"
 value   = 0
@@ -434,7 +452,7 @@ reqs    =
 ; Base -1% food each 1 tile
 [effect_food_waste_distance]
 type    = "Output_Waste_By_Distance"
-value   = 1
+value   = 100
 reqs    =
     { "type", "name", "range"
       "OutputType", "Food", "Local"
@@ -452,7 +470,7 @@ reqs    =
 ; Base 0% food waste with Anarchy
 [effect_food_waste_distance_2]
 type    = "Output_Waste_By_Distance"
-value   = -1
+value   = -100
 reqs    =
     { "type", "name", "range"
       "Gov", "Anarchy", "Player"
@@ -462,7 +480,7 @@ reqs    =
 ; base -1% trade each tile
 [effect_corruption_distance]
 type    = "Output_Waste_By_Distance"
-value   = 1
+value   = 100
 reqs    =
     { "type", "name", "range"
       "OutputType", "Trade", "Local"
@@ -471,7 +489,7 @@ reqs    =
 ; 1 + 1 => -2% each tile without advanced tech / govs
 [effect_corruption_distance_ancient]
 type    = "Output_Waste_By_Distance"
-value   = 1
+value   = 100
 reqs    =
     { "type", "name", "range", "present"
       "OutputType", "Trade", "Local", TRUE
@@ -482,7 +500,7 @@ reqs    =
 ; Total = 0 for Communism
 [effect_corruption_distance_communism]
 type    = "Output_Waste_By_Distance"
-value   = -1
+value   = -100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Communism", "Player", TRUE
@@ -492,7 +510,7 @@ reqs    =
 ; Total = 0 for Federation with The Corporation, -1% for Federation alone
 [effect_corruption_distance_federation]
 type    = "Output_Waste_By_Distance"
-value   = -1
+value   = -100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Federation", "Player", TRUE
@@ -597,7 +615,7 @@ reqs    =
 ; base -1% shields each tile
 [effect_waste_distance]
 type    = "Output_Waste_By_Distance"
-value   = 1
+value   = 100
 reqs    =
     { "type", "name", "range"
       "OutputType", "Shield", "Local"
@@ -606,7 +624,7 @@ reqs    =
 ; 1 + 1 => -2% each tile without Trade or advanced govs
 [effect_waste_distance_ancient]
 type    = "Output_Waste_By_Distance"
-value   = 1
+value   = 100
 reqs    =
     { "type", "name", "range", "present"
       "OutputType", "Shield", "Local", TRUE
@@ -618,7 +636,7 @@ reqs    =
 ; 1 - 1 = 0% with Communism
 [effect_waste_distance_communism]
 type    = "Output_Waste_By_Distance"
-value   = -1
+value   = -100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Communism", "Player", TRUE
@@ -628,7 +646,7 @@ reqs    =
 ; 1 - 1 = 0% with Federation
 [effect_waste_distance_federation]
 type    = "Output_Waste_By_Distance"
-value   = -1
+value   = -100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Federation", "Player", TRUE
@@ -1628,6 +1646,9 @@ reqs    =
       "Gov", "Anarchy", "Player", TRUE, TRUE
       "Building", "Pyramids", "Player", FALSE, FALSE
       "Tech", "Railroad", "Player", FALSE, FALSE
+      "OutputType", "Gold", "Local", FALSE, TRUE
+      "OutputType", "Luxury", "Local", FALSE, TRUE
+      "OutputType", "Science", "Local", FALSE, TRUE
     }
 
 [effect_gov_tile_penalty_tribal]
@@ -1638,6 +1659,9 @@ reqs    =
       "Gov", "Tribal", "Player", TRUE, TRUE
       "Building", "Pyramids", "Player", FALSE, FALSE
       "Tech", "Railroad", "Player", FALSE, FALSE
+      "OutputType", "Gold", "Local", FALSE, TRUE
+      "OutputType", "Luxury", "Local", FALSE, TRUE
+      "OutputType", "Science", "Local", FALSE, TRUE
     }
 
 [effect_gov_tile_penalty_despotism]
@@ -1648,6 +1672,9 @@ reqs    =
       "Gov", "Despotism", "Player", TRUE, TRUE
       "Building", "Pyramids", "Player", FALSE, FALSE
       "Tech", "Railroad", "Player", FALSE, FALSE
+      "OutputType", "Gold", "Local", FALSE, TRUE
+      "OutputType", "Luxury", "Local", FALSE, TRUE
+      "OutputType", "Science", "Local", FALSE, TRUE
     }
 
 [effect_gov_tile_bonus_republic]
@@ -2264,6 +2291,14 @@ reqs	=
       "Building", "Courthouse", "City", TRUE
     }
 
+[effect_diplomat_defense_extra]
+type    = "Spy_Resistant"
+value	= 25
+reqs	=
+    { "type",      "name",            "range"
+      "ExtraFlag", "DiplomatDefense", "Local"
+    }
+
 [effect_incite_cost_empty]
 type = "Incite_Cost_Pct"
 value = -50
@@ -2572,9 +2607,18 @@ reqs    =
       "Building", "Palace", "City"
     }
 
+[effect_palace_2_sabotage]
+type    = "Building_Saboteur_Resistant"
+value   = 50
+reqs    =
+    { "type", "name", "range"
+      "Building", "Palace", "City"
+    }
+
+; Make it main capital -> value higher than that of Ecclesiastical Palace
 [effect_palace_3]
 type    = "Capital_City"
-value   = 1
+value   = 2
 reqs    =
     { "type", "name", "range"
       "Building", "Palace", "City"
@@ -2621,7 +2665,7 @@ type    = "Output_Waste_Pct"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Second Palace", "City", TRUE
+      "Building", "Ecclesiastical Palace", "City", TRUE
       "OutputType", "Trade", "Local", TRUE
       "Building", "Palace", "City", FALSE
     }
@@ -2631,7 +2675,7 @@ type    = "Output_Waste_Pct"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Second Palace", "City", TRUE
+      "Building", "Ecclesiastical Palace", "City", TRUE
       "OutputType", "Shield", "local", TRUE
       "Building", "Palace", "City", FALSE
     }
@@ -2641,28 +2685,35 @@ type    = "Spy_Resistant"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Second Palace", "City", TRUE
+      "Building", "Ecclesiastical Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
-[effect_2nd_palace_gov_center]
-type    = "Gov_Center"
+[effect_ecclesiastical_palace_2_sabotage]
+type    = "Building_Saboteur_Resistant"
+value   = 50
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Palace", "City", FALSE
+    }
+
+[effect_ecclesiastical_palace_secondary_capital]
+type    = "Capital_City"
 value	= 1
 reqs	=
     { "type", "name", "range", "present"
-      "Building", "Second Palace", "City", TRUE
+      "Building", "Ecclesiastical Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
-	
 
-
-[effect_2nd_palace_despotism]
+[effect_ecclesiastical_palace_despotism]
 type    = "Output_Bonus"
 value   = 75
 reqs    =
     { "type", "name", "range", "present", "quiet"
       "Gov", "Despotism", "Player", TRUE, TRUE
-      "Building", "Second Palace", "City", TRUE, FALSE
+      "Building", "Ecclesiastical Palace", "City", TRUE, FALSE
       "OutputType", "Gold", "Local", TRUE, FALSE
       "Building", "Palace", "City", FALSE, FALSE
     }
@@ -2673,7 +2724,7 @@ value   = 50
 reqs    =
     { "type", "name", "range", "present", "quiet"
       "Gov", "Monarchy", "Player", TRUE, TRUE
-      "Building", "Second Palace", "City", TRUE, FALSE
+      "Building", "Ecclesiastical Palace", "City", TRUE, FALSE
       "OutputType", "Gold", "Local", TRUE, FALSE
       "Building", "Palace", "City", FALSE, FALSE
     }
@@ -2683,7 +2734,7 @@ type    = "History"
 value	= 1
 reqs	=
     { "type", "name", "range", "present"
-      "Building", "Second Palace", "City", TRUE
+      "Building", "Ecclesiastical Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
@@ -2835,7 +2886,7 @@ value   = 30
 reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense I", "City", TRUE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
@@ -2879,7 +2930,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense II", "City", TRUE
 	  "Building", "Palace", "City", FALSE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
@@ -2902,7 +2953,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense III", "City", TRUE
       "Building", "Palace", "City", FALSE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
@@ -3709,6 +3760,14 @@ reqs    =
       "Building", "Manhattan Project", "World", TRUE
     }
 
+[effect_marco_polos_contact]
+type    = "Have_Contacts"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Building", "Marco Polo's Embassy", "Player"
+    }
+
 [effect_manhattan_project_culture]
 type    = "History"
 value	= 6
@@ -3996,6 +4055,20 @@ reqs    =
       "Tech", "Railroad", "Player"
     }
 
+[effect_enter_marketplace_bonus_reduction]
+type	= "Trade_Revenue_Bonus"
+value	= -1585
+reqs	=
+    { "type", "name", "range"
+      "Action", "Enter Marketplace", "Local"
+    }
+
+; Fudge factor to more closely approximate Civ2 behavior. (Civ2 is
+; really very different -- this just fakes it a little better)
+[effect_bonus_fudge_factor]
+type	= "Trade_Revenue_Bonus"
+value	= 1585
+
 [effect_calendar_base]
 type    = "Turn_Years"
 value   = 50
@@ -4187,7 +4260,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Terrain", "Desert", "Local", TRUE
       "Extra", "River", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
+      "Extra", "Oasis", "Local", FALSE
       "Extra", "Irrigation", "Local", TRUE
     }
 
@@ -4199,109 +4272,12 @@ reqs    =
     { "type", "name", "range", "present"
       "Terrain", "Desert", "Local", TRUE
       "Extra", "River", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
+      "Extra", "Oasis", "Local", FALSE
       "CityTile", "Center", "Local", TRUE
       "Extra", "Irrigation", "Local", FALSE
       "TerrainAlter", "CanIrrigate", "Local", TRUE
       "Extra", "Mine", "Local", FALSE
       ; Oil Well also prevents irrigation, but requires Mine so not needed here
-    }
-
-; "Sea" nreq is for Transports, which are only supposed to clean pollution
-[effect_irrigate_src_tech]
-type    = "Irrig_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "Tech", "Electricity", "Player", TRUE
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_irrigate_src_ocean]
-type    = "Irrig_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "TerrainClass", "Oceanic", "CAdjacent", TRUE
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_irrigate_src_river]
-type    = "Irrig_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "Extra", "River", "CAdjacent", TRUE
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_irrigate_src_irrigation]
-type    = "Irrig_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "Extra", "Irrigation", "CAdjacent", TRUE
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-; Prevent building farmland on bare deserts. It does not yield any bonus
-; over irrigation, and prevents any Super Highways trade bonus, so it
-; would be a waste of time.
-; (Note that it is still possible to end up with farmland on such terrain
-; -4 counterbalances all the above positive Irrig_Possible effects
-; through climate change.)
-; Deserts with food bonuses _are_ allowed farmland (hence exceptions).
-[effect_no_desert_farmland_1]
-type    = "Irrig_Possible"
-value   = -4
-reqs    =
-    { "type", "name", "range", "present"
-      "Terrain", "Desert", "Local", TRUE
-      "Extra", "Irrigation", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
-      "Extra", "River", "Local", FALSE
-    }
-
-[effect_mining]
-type    = "Mining_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "Terrain", "Deep Ocean", "Local", FALSE
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_mining_ocean]
-type    = "Mining_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "Terrain", "Deep Ocean", "Local", TRUE
-      "Tech", "Miniaturization", "Player", TRUE
-    }
-
-[effect_irrig_tf]
-type    = "Irrig_TF_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_mining_tf]
-type    = "Mining_TF_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range", "present"
-      "UnitClass", "Sea", "Local", FALSE
-    }
-
-[effect_transform]
-type    = "Transform_Possible"
-value   = 1
-reqs    =
-    { "type", "name", "range"
-      "UnitFlag", "Transform", "Local"
     }
 
 [effect_pollution]
@@ -4330,7 +4306,275 @@ reqs	=
       "Extra", "Fallout", "Local"
       "Extra", "Pollution", "Local"
     }
-	
+
+[effect_incident_caught_steal_tech]
+type	= "Casus_Belli_Caught"
+value	= 1
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech", "Local", TRUE
+      "DiplRel", "War",        "Local", FALSE
+    }
+
+[effect_incident_success_steal_tech]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech", "Local", TRUE
+      "DiplRel", "War",        "Local", FALSE
+    }
+
+[effect_incident_caught_steal_tech_esc]
+type	= "Casus_Belli_Caught"
+value	= 1
+reqs	=
+    { "type",    "name",                       "range", "present"
+      "Action",  "Steal Tech Escape Expected", "Local", TRUE
+      "DiplRel", "War",                        "Local", FALSE
+    }
+
+[effect_incident_success_steal_tech_esc]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type",    "name",                       "range", "present"
+      "Action",  "Steal Tech Escape Expected", "Local", TRUE
+      "DiplRel", "War",                        "Local", FALSE
+    }
+
+[effect_incident_caught_tgt_steal_tech]
+type	= "Casus_Belli_Caught"
+value	= 1
+reqs	=
+    { "type",    "name",                                "range", "present"
+      "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
+      "DiplRel", "War",                                 "Local", FALSE
+    }
+
+[effect_incident_success_tgt_steal_tech]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type",    "name",                                "range", "present"
+      "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
+      "DiplRel", "War",                                 "Local", FALSE
+    }
+
+[effect_incident_success_bribe_unit]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Bribe Unit", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_sabotage_unit]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Sabotage Unit Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_incite]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Incite City", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+; TODO 3.0 feature
+; Prevent building farmland on bare deserts. It does not yield any bonus
+; over irrigation, and prevents any Super Highways trade bonus, so it
+; would be a waste of time.
+; (Note that it is still possible to end up with farmland on such terrain
+; -4 counterbalances all the above positive Irrig_Possible effects
+; through climate change.)
+; Deserts with food bonuses _are_ allowed farmland (hence exceptions).
+;[effect_no_desert_farmland_1]
+;type    = "Irrig_Possible"
+;value   = -4
+;reqs    =
+    ;{ "type", "name", "range", "present"
+      ;"Action", "Incite City", "Local", TRUE
+      ;"DiplRel", "War", "Local", FALSE
+    ;}
+
+[effect_incident_success_incite_esc]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Incite City Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_poison]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Poison City Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_sabotage_city]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Sabotage City", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_sabotage_city_esc]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Sabotage City Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_incident_success_tgt_sabotage_city]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Targeted Sabotage City Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_tgt_sabotage_city_half_chance]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Targeted Sabotage City Escape", "Local", TRUE
+    }
+
+[effect_incident_success_sabotage_city_production]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Sabotage City Production Escape", "Local", TRUE
+      "DiplRel", "War", "Local", FALSE
+    }
+
+[effect_sabotage_city_production_city_half_chance]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Sabotage City Production Escape", "Local", TRUE
+    }
+
+[effect_incident_success_explode_nuke]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Explode Nuclear", "Local", TRUE
+    }
+
+[effect_incident_success_explode_nuke_city]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Nuke City", "Local", TRUE
+    }
+
+[effect_incident_success_explode_nuke_units]
+type	= "Casus_Belli_Success"
+value	= 1
+reqs	=
+    { "type", "name", "range", "present"
+      "Action", "Nuke Units", "Local", TRUE
+    }
+
+; Double (+100%) buy cost for Great Wonders
+[effect_great_wonder_buy_cost]
+type    = "Building_Buy_Cost_Pct"
+value   = 100
+reqs    =
+    { "type", "name", "range"
+      "BuildingGenus", "GreatWonder", "Local"
+    }
+
+[effect_action_success_move_cost_embassy]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Action", "Establish Embassy", "Local", TRUE
+    }
+
+[effect_action_success_move_cost_investigate]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Action", "Investigate City", "Local", TRUE
+    }
+
+[effect_action_success_move_cost_capture]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 6
+reqs    =
+    { "type", "name", "range", "present"
+      "Action", "Capture Units", "Local", TRUE
+    }
+
+[effect_action_success_move_cost_bombard]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 65535
+reqs    =
+    { "type", "name", "range", "present"
+      "Action", "Bombard", "Local", TRUE
+    }
+
+[effect_action_success_move_cost_from_non_native]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 65535
+reqs    =
+    { "type",      "name",                  "range", "present"
+      "Action",    "Transport Disembark 2", "Local", TRUE
+      "UnitState", "OnNativeTile",          "Local", TRUE
+    }
+
+[effect_action_success_conquer_cost_from_non_native]
+type    = "Action_Success_Actor_Move_Cost"
+value   = 65535
+reqs    =
+    { "type",      "name",           "range", "present"
+      "UnitState", "OnNativeTile",   "Local", TRUE
+      "Action",    "Conquer City 2", "Local", TRUE
+    }
+
+[effect_unit_shield_value_recycle]
+type    = "Unit_Shield_Value_Pct"
+value   = -50
+reqs    =
+    { "type",   "name",         "range", "present"
+      "Action", "Recycle Unit", "Local", TRUE
+    }
+
+[effect_unit_shield_value_in_upgrade_price_calc]
+type    = "Unit_Shield_Value_Pct"
+value   = -50
+reqs    =
+    { "type",   "name",         "range", "present"
+      "Action", "Upgrade Unit", "Local", TRUE
+    }
+
+
 
 [effect_hal_salflieni_hypogeum]
 type    = "Output_Add_Tile"
@@ -4342,9 +4586,6 @@ reqs    =
       "OutputType", "Luxury", "Local"
     }
 
-	
-	
-	
 [effect_marco_polos_embassy]
 type    = "Output_Bonus"
 value   = 30
@@ -4361,11 +4602,8 @@ reqs    =
     { "type", "name", "range"
       "Building", "Trade Company", "Player"
       "OutputType", "Trade", "Local"
+
     }
-
-	
-
-
 [effect_atlantic_telegraph_company]
 type    = "Have_Embassies"
 value   = 1
@@ -4383,8 +4621,6 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
-	
-
 ; City radius increased with Mass Transit
 [effect_mass_transit_2]
 type    = "City_Radius_Sq"
@@ -4393,7 +4629,6 @@ reqs    =
     { "type", "name", "range"
    "Building", "Mass Transit", "City"
    }
-
 
 [effect_units_in_a_city_1]
 type    = "Output_Bonus"
@@ -4404,7 +4639,6 @@ reqs    =
       "OutputType", "Trade", "Local", TRUE
     }
 
-
 [effect_ruins_trade]
 type    = "Output_Inc_Tile"
 value   = 1
@@ -4413,8 +4647,7 @@ reqs    =
       "Extra", "Ruins", "Local"
       "OutputType", "Trade", "Local"
     }
-	
-	
+
 [effect_espionage_upgrade]
 type    = "Upgrade_Unit"
 value   = 2
@@ -4422,7 +4655,7 @@ reqs    =
     { "type", "name", "range"
       "Tech", "Espionage", "World"
     }
-	
+
 [effect_radio_upgrade]
 type    = "Upgrade_Unit"
 value   = 2
@@ -4430,13 +4663,8 @@ reqs    =
     { "type", "name", "range"
       "Tech", "Radio", "World"
     }
-	
-	
+
 ; for future purposes not yet implemented
 ; [effect_conquest_tech]
 ; type    = "Conquest_Tech_Pct"
 ; value   = 0
-
-
-
-

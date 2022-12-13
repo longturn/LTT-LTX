@@ -11,8 +11,9 @@
 ; than minor changes.
 
 [datafile]
-description="Longturn Traditional based on Civ2Civ3 governments data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+description="LTT governments data for Freeciv"
+options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
+format_version=20
 
 [governments]
 during_revolution="Anarchy"
@@ -21,12 +22,12 @@ during_revolution="Anarchy"
 ;
 ; Below: The individual government types, one per section.
 ;
-; The actual tag used (the * in [government_*]) does not matter, except 
-; it must be unique within this file, and it may be used in debug 
+; The actual tag used (the * in [government_*]) does not matter, except
+; it must be unique within this file, and it may be used in debug
 ; output when reading this file.
 ;
 ; For the "official" rulesets, the order of these sections should not
-; be changed because that would break backward compatability with 
+; be changed because that would break backward compatability with
 ; savegames.  (In particular, if Fundamentalism is added to default
 ; ruleset, should be added at end.)
 ;
@@ -147,7 +148,7 @@ _("\
 * The number of free units will be doubled for cities with size of 9 or more.\n\
       \n\\n\
 Playing with Tribal? \n
-Tribal nations get more production and are able to maintain two units for free. \
+Tribal nations get more production and are able to maintain more units for free. \
 Tribal is a very good alternative for someone who is not planning to go Monarchy first. Instead \
 you may want to consider building Hal Saflieni Hypogeum on your capital city and also building \
 the pyramids as fast as possible to that you will get rid of the -1 tile penalty related to anarchy, despotism and tribalism. \
@@ -231,7 +232,7 @@ _("\
  Palace) get a +50% bonus to gold production.\n\
 * Celebrating cities produce one extra trade point for every tile which is\
  already producing trade. (Cities below size 3 will not celebrate.)\n\
-* Each city can support up to 3 units for free;\
+* Each city can support up to 3 units for free (the maximum possible);\
  further units each cost 1 gold per turn.\n\
 * Each city tolerates up to 3 aggressively deployed military units;\
  each further unit causes 1 unhappy citizen.\n\
@@ -485,8 +486,8 @@ _("\
  will not celebrate.)\n\
 * Each city can support one unit for free; further units each cost\
  2 gold per turn.\n\
-* None of the cities can tolerate even a single aggressively deployed military unit;\
- The first one cause one unhappy citizend and additional units each cause 2 unhappy citizens.\n\
+* Each city tolerates a single aggressively deployed military unit;\
+ each further unit causes 2 unhappy citizens.\n\
 * Base corruption is 5%. This increases with distance from the capital\
  (half as fast with knowledge of The Corporation).\n\
 * Base production waste is 25%. This increases with distance from the\
@@ -506,7 +507,7 @@ With Democracy you will get the best possible effect for compound interest and i
 celebrate this effect is even more powerful. Democracies are able to maintain a decent army and lots of workers. \
 One very powerful strategy for you to consider is to switch between max tax and max sci. If you are confident enough you may want to \
 delay scientific advance and focus on max taxing so that your economy will grow really fast. There is however a catch to this. \
-If you postpone researching too much your enemy may be able to surprise you and your outdated army. With a democatic nation it's
+If you postpone researching too much your enemy may be able to surprise yuu and your outdated army. With a democatic nation it's
 also extremely important to keep your citizens not only content but happy and celebrating. Celebraring gives you +1 extra trade for \
 each tile already producing trade if you manage to keep your cities celebrating. On some other setups using more than 20% lux \
 is usually considered bad but with LTT's trade building setup it may be worth celebrating even with +40% lux. It all depends \
@@ -532,11 +533,12 @@ they will do it for those cities that matter less to you.
 ; stop                    = maximum value (as presented in UI)
 ; step                    = minimum increase/decrease (as presented in UI)
 ; offset                  = offset/factor control how UI values are turned
-; factor                  =  into effect values for use in effects.ruleset.
-;                            effect_value = (ui_value + offset) * (factor/100)
-;                            Optional; by default offset=0, factor=100, so
-;                            that UI values are used as-is.
-; helptext                = optional help text string; should escape all raw 
+; factor                  = into effect values for use in effects.ruleset.
+;                           effect_value = (ui_value + offset) * (factor/100)
+;                           Optional; by default offset=0, factor=100, so
+;                           that UI values are used as-is.
+; reqs                    = requirements for adjusting this policy (see README.effects)
+; helptext                = optional help text string; should escape all raw
 ;                           newlines so that xgettext parsing works
 ;
 ; */ <-- avoid gettext warnings

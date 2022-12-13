@@ -11,16 +11,17 @@
 ; than minor changes.
 
 [datafile]
-description="Longturn Traditional based on Civ2Civ3 buildings data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+description="LTT buildings data for Freeciv"
+options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
+format_version=20
 
 ; /* <-- avoid gettext warnings
 ;
 ; Below: The individual buildings, one per section.
 ; (Buildings = City Improvements and Wonders)
 ;
-; The actual tag used (the * in [building_*]) does not matter, except 
-; it must be unique within this file, and it may be used in debug 
+; The actual tag used (the * in [building_*]) does not matter, except
+; it must be unique within this file, and it may be used in debug
 ; output when reading this file.
 ;
 ; Notes:
@@ -54,6 +55,9 @@ options="+Freeciv-2.6-ruleset"
 ; "Gold"             = Not a real building; production turned into gold
 ;                      indefinitely (capitalization/coinage).
 ;                      Genus should be "Special".
+; "DisasterProof"    = Disasters never destroy this building. Is meaningful
+;                      only for genus "Improvement" buildings as others are
+;                      automatically disaster proof.
 ;
 ; */ <-- avoid gettext warnings
 
@@ -387,13 +391,10 @@ sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
 City Walls make it easier to defend a city. They add a +100% bonus to the \
-intrinsic defense strength of units within the city against land units. \
-Some specific land units may ignore the city walls but if they do this is \
-mentioned on the help text for those units. \
-City walls do not defend the city against naval units or air units. \
-City walls defend against land units attacking the city from onboard another unit. \
-Example of this is a marine on a transport or a helicopter. City walls don't protect \
-against espionage. City Walls also prevent the loss of population which occurs \
+intrinsic defense strength of units within the city against land units \
+(that is a two-thirds increase for small cities, or a one-half increase \
+for cities larger than size 8), but are ineffective against airborne and \
+sea units. City Walls also prevent the loss of population which occurs \
 when a defending unit is defeated by a land unit.\
 ")
 
@@ -524,12 +525,6 @@ helptext	= _("\
 When any small city grows or shrinks, 50 % of food points are saved; this \
 helps cities to grow faster and more easily withstand famine. With a \
 Granary this is extended to cities of size 4 and above. \
-The automatic or default granary effect applies to cities with size less than \
-4 just before they grow. When a city grows from size 3 to size 4 it will always have \
-50% of the food stored in the granary after the size chanage. \
-If a city doesn't have a granary building and it grows from size 4 to \
-size 5 there will be no food stored in the granary. If a city has the granary \
-city improvement and it grows from size 4 to 5 it will have 50% food stored in the granary. \ 
 "), _("\
 A Granary also halves the food wasted in cities far from your capital. \
 Together with a Courthouse it eliminates food waste.\
@@ -825,7 +820,7 @@ gold bonus, and under Monarchy a +50% gold bonus.\
 ")
 
 [building_second_palace]
-name		= _("Second Palace")
+name		= _("Ecclesiastical Palace")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
@@ -1323,7 +1318,7 @@ Each tile around the city with roads and without farmland, that\
 ; /* xgettext:no-c-format */
 _("\
 Also doubles the effect of any Stock Exchange in the city (increasing\
- luxury and tax output by an additional 25%).\
+ luxury and tax output by an additional 50%).\
 "), _("\
 Super Highways also increase the pollution caused by the population\
  of the city.\
@@ -2038,11 +2033,11 @@ sabotage	= 0
 sound		= "w_oracle"
 sound_alt	= "w_generic"
 helptext	= _("\
-Reduces the unhappiness caused by aggressively deployed military \
-units owned by the city by 1 -- in other words, it neutralizes the \
-unhappiness caused by a single military unit (except under Democracy, \
-where a single unit makes two citizens unhappy). Each city also avoids \
-one shield of upkeep for units.\
+Reduces by 1 the unhappiness caused by one aggressively deployed \
+military unit per city -- in other words, in each city it neutralizes \
+the unhappiness caused by a single military unit (except under \
+Democracy, where it just halves the unhappiness from that unit). \
+Each city also avoids one shield of upkeep for units.\
 ")
 
 [building_temple_of_artemis]
