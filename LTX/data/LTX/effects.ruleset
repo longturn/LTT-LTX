@@ -806,7 +806,9 @@ reqs    =
       "Gov", "Federation", "Player", FALSE
 ;      "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+	  "Gov", "City States", "Player", FALSE
     }
+
 
 [effect_base_unit_upkeep_food]
 type    = "Upkeep_Factor"
@@ -830,6 +832,7 @@ reqs   =
 ;      "Gov", "Federation", "Player", FALSE
 ;      "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
 
 ; exclusive with above
@@ -840,6 +843,7 @@ reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Democracy", "Player", TRUE
     }
+
 
 
 ; Govs with 1 free unit
@@ -857,6 +861,7 @@ reqs   =
       "Gov", "Federation", "Player", FALSE
 ;      "Gov", "Republic", "Player", FALSE
 ;      "Gov", "Democracy", "Player", FALSE
+;      "Gov", "City States", "Player", FALSE
     }
 	
 	
@@ -876,6 +881,7 @@ reqs    =
       "Gov", "Federation", "Player", FALSE
 ;      "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
 	
 
@@ -895,6 +901,7 @@ reqs   =
 ;      "Gov", "Federation", "Player", FALSE
       "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
 	
 	
@@ -914,6 +921,7 @@ reqs    =
 ;      "Gov", "Federation", "Player", FALSE
       "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
 
 ; Govs with 3 free units (exclusive with previous)
@@ -931,9 +939,11 @@ reqs   =
       "Gov", "Federation", "Player", FALSE
       "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
 	
 	
+
 
 ; Doubled for city size >= 9
 [effect_upkeep_free_mil_city_3]
@@ -951,7 +961,9 @@ reqs    =
       "Gov", "Federation", "Player", FALSE
       "Gov", "Republic", "Player", FALSE
       "Gov", "Democracy", "Player", FALSE
+      "Gov", "City States", "Player", FALSE
     }
+
 
 
 
@@ -1718,6 +1730,7 @@ reqs    =
 ;      "Gov", "Federation", "Player", FALSE, FALSE
 ;      "Gov", "Republic", "Player", FALSE, FALSE
 ;      "Gov", "Democracy", "Player", FALSE, FALSE
+;      "Gov", "City States", "Player", FALSE, FALSE
     }
 
 
@@ -4722,4 +4735,133 @@ reqs    =
     }
 	
 
+
+[effect_corruption_city_states]
+type    = "Output_Waste"
+value   = 20
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "OutputType", "Trade", "Local", FALSE
+    }
+
+
+; 2% more with City States
+[effect_waste_distance_city_states]
+type    = "Output_Waste_By_Distance"
+value   = 2
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "OutputType", "Shield", "Local", FALSE
+    }
+
+
+[effect_waste_city_states]
+type    = "Output_Waste"
+value   = 10
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "OutputType", "Shield", "Local", FALSE
+    }
+
+
+
+effect_upkeep_free_units_city_states]
+type    = "Unit_Upkeep_Free_Per_City"
+value   = 3
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "OutputType", "Gold", "Local", FALSE
+    }
+
+
+[effect_upkeep_free_units_city_states_city]
+type    = "Unit_Upkeep_Free_Per_City"
+value   = 3
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "OutputType", "Gold", "Local", FALSE
+      "MinSize", "9", "City", FALSE
+    }
+
+
+[effect_civil_war_city_states]
+type    = "Civil_War_Chance"
+value   = 20
+reqs    =
+    { "type", "name", "range"
+      "Gov", "City States", "Player"
+    }
+
+
+[effect_empire_size_base_city_states]
+type    = "Empire_Size_Base"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+      "Gov", "City States", "Player"
+    }
+
+
+[effect_empire_size_step_city_states]
+type    = "Empire_Size_Step"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Gov", "City States", "Player"
+    }
+
+
+[effect_max_rates_city_states]
+type    = "Max_Rates"
+value   = 50
+reqs    =
+    { "type", "name", "range"
+      "Gov", "City States", "Player"
+    }
+
+
+[effect_gov_tile_bonus_city_states]
+type    = "Output_Inc_Tile"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present", "quiet"
+      "Gov", "City States", "Player", TRUE, TRUE
+      "OutputType", "Trade", "Local", TRUE, FALSE
+      "TerrainClass", "Oceanic", "Local", TRUE, FALSE
+    }
+
+
+[effect_gov_tile_bonus_city_states_2]
+type    = "Output_Inc_Tile"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present", "quiet"
+      "Gov", "City States", "Player", TRUE, TRUE
+      "OutputType", "Trade", "Local", TRUE, FALSE
+      "TerrainClass", "Oceanic", "Local", FALSE, FALSE
+    }
+
+
+[effect_palace_city_states]
+type    = "Make_Content"
+value   = 8
+reqs    =
+    { "type", "name", "range", "quiet"
+      "Gov", "City States", "Player", TRUE
+      "Building", "Palace", "City", TRUE
+    }
+
+
+[effect_enemy_unhappiness_city_states]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -100
+reqs	=
+    { "type", "name", "range"
+      "Gov", "City States", "Player"
+    }
 
