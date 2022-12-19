@@ -638,7 +638,7 @@ cost     = 104
 [advance_mysticism]
 name     = _("Mysticism")
 req1     = "Ceremonial Burial"
-req2     = "None"
+req2     = "Folklore"
 flags    = ""
 graphic     = "a.mysticism"
 graphic_alt = "-"
@@ -962,8 +962,20 @@ graphic_alt = "-"
 [advance_writing]
 name     = _("Writing")
 req1     = "Alphabet"
-req2     = "None"
+req2     = "Folklore"
 flags    = ""
 graphic     = "a.writing"
 graphic_alt = "-"
 cost     = 21
+
+[advance_folklore]
+name     = _("Folklore")
+req1     = "None"
+req2     = "None"
+flags    = ""
+graphic     = "a.folklore"
+graphic_alt = "a.alphabet"
+helptext = _("Folklore forms the foundation of the traditions for your people allowing your nation to have unique culture and ways.")
+cost     = 10
+
+
