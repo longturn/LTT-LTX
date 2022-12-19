@@ -38,7 +38,6 @@ set rapturedelay 3
 set restrictinfra enabled
 set revolen 2
 set revolentype   FIXED
-set spacerace enabled
 set spaceship_travel_time "100"
 set startunits cccccwwwwwwxx
 set techleak "100"
@@ -81,7 +80,7 @@ set techlevel 0
 set techlossforgiveness -1
 set techlossrestore 50
 set freecost 0 # for getting techs from philosphy etc
-set diplcost 95
+#set diplcost 95
 set conquercost 95 # for getting techs with tech stealing/trading units
 set persistentready "DISABLED"
 set civilwarsize "10"
@@ -140,7 +139,7 @@ set multiresearch "DISABLED"
 set nationset "all"
 set naturalcitynames "ENABLED"
 set citynames "PLAYER_UNIQUE"
-set nettimeout "10"
+#set nettimeout "10"
 set netwait "4"
 set notradesize "0"
 set nuclearwinter "ENABLED"
@@ -156,20 +155,20 @@ set homecaughtunits "ENABLED"
 
 
 # new longturn.net specific patches. this section added in September 2020. now mostly incorporated into Freeciv 21, available here for historic purposes
-set diplchance_steal 50
+#set diplchance_steal 50
 #set globalwarming_percent 300
 #set nuclear_winter_percent   100
-set contact_intel   disabled	# no info about the other nations if contatturns   1
-set default_diplstate_is_peace   disabled
-set nuke_infra   20		# chance of destroying the infra on tiles when nuked
-set nuke_infra_save_lowest   enabled   # if enabled nuking does not destroy basic roads under rails
+#set contact_intel   disabled	# no info about the other nations if contatturns   1
+#set default_diplstate_is_peace   disabled
+#set nuke_infra   20		# chance of destroying the infra on tiles when nuked
+#set nuke_infra_save_lowest   enabled   # if enabled nuking does not destroy basic roads under rails
 set demography   NnciwASLaPEgRMmuklOCqrbsz
-set nuke_improvements   20		# 20% chance for destroying city improvements. never destroyed if the sabotage chance is less than 100%
+#set nuke_improvements   20		# 20% chance for destroying city improvements. never destroyed if the sabotage chance is less than 100%
 # for testing purposes now, check for the actual game
-set unitwaittime_range   -1
-set unitwaittime_allied   enabled
+#set unitwaittime_range   -1
+#set unitwaittime_allied   enabled
 set unitwaittime_extended   enabled
-set playerwaittime   0
+#set playerwaittime   0
 
 
 metamessage "Longturn Traditional for multiplayer games | More info: http://longturn.net"
