@@ -4709,3 +4709,17 @@ reqs  =
       "NationalIntelligence", "Infra Points", "Player", FALSE
       "DiplRel",              "Has embassy",  "Local",  TRUE
     }
+
+
+[effect_school_of_baudhayana_sutras]
+type    = "Output_Add_Tile"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+      "Building", "School of Baudhayana sutras", "City"
+      "CityTile", "Center", "Local"
+      "OutputType", "Science", "Local"
+    }
+	
+
+
