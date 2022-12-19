@@ -8,8 +8,9 @@
 ; use your new customized file.
 
 [datafile]
-description="Longturn Traditional based on Civ2Civ3 technology data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+description="LTT technology data for Freeciv"
+options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
+format_version=20
 
 [control]
 ; Names for custom tech flags. There can be up to 8 of these.
@@ -23,11 +24,33 @@ options="+Freeciv-2.6-ruleset"
 
 ; /* <-- avoid gettext warnings
 ;
-; Below: The individual advances, one per section.
-; The number can be variable, up to 199.
+; Tech classes:
 ;
-; The actual tag used (the * in [advance_*]) does not matter, except 
-; it must be unique within this file, and it may be used in debug 
+; First one is the default one.
+; If there is none, tech classes feature is disabled
+;
+; name                    = translatable name as seen by user
+; rule_name               = (optional) internal name for savegames, rulesets
+;                           etc; if not present, "name" is used for this
+;                           purpose too. Since the name used in savegames must
+;                           not change, if you want to rename an item after a
+;                           ruleset has been released, you should set
+;                           "rule_name" to the original value of "name".
+; cost_pct                = how much techs of the class cost compared
+;                           to normal. Default is 100%.
+;
+; */ <-- avoid gettext warnings
+
+;[techclass_default]
+;name =
+
+; /* <-- avoid gettext warnings
+;
+; Below: The individual advances, one per section.
+; The number can be variable, up to 250.
+;
+; The actual tag used (the * in [advance_*]) does not matter, except
+; it must be unique within this file, and it may be used in debug
 ; output when reading this file.
 ;
 ; Notes:
@@ -38,6 +61,8 @@ options="+Freeciv-2.6-ruleset"
 ;                 the name used in savegames must not change, if you want
 ;                 to rename an item after a ruleset has been released, you
 ;                 should set "rule_name" to the original value of "name".
+; class         = tech class this tech belongs to, if they have been defined.
+;                 Default is first one defined above.
 ; req1, req2    = advances required before researching this one
 ; root_req      = tech required before acquiring this tech, by any means.
 ;                 All techs with any direct or indirect dependency on this
@@ -49,6 +74,15 @@ options="+Freeciv-2.6-ruleset"
 ;                 Specifying a tech's root_req as itself means that the tech
 ;                 can only be acquired by special means (nation's init_techs,
 ;                 scripting, etc).
+; research_reqs = requirements before researching this one. Can have non
+;                 tech requirements because it is a requirement vector.
+;                 See doc/README.effects to learn more about requirement
+;                 vectors.
+;                 Requireing a tech here in stead of in req1, req2 or
+;                 root_req is not supported yet.
+;                 Requirements that may become fulfilled during the game
+;                 when they weren't at the start of the game is not
+;                 supported yet.
 ; flags         = special flag strings
 ; graphic       = icon for technology
 ; graphic_alt   = alternate icon
@@ -60,17 +94,18 @@ options="+Freeciv-2.6-ruleset"
 ;                 this field is read for information on how much a tech
 ;                 costs.
 ;
-; Special values for req1 and req2 are "None" (first section below) 
-; and "Never" (never available).  If only one tech is required, 
+; Special values for req1 and req2 are "None" (first section below)
+; and "Never" (never available).  If only one tech is required,
 ; it should be listed as req1.
 ;
 ; As well as custom flags defined above, the following flag strings are
 ; possible:
 ;
-; "Bonus_Tech" = player gets extra tech if reached first
-; "Bridge"   = "Settler" unit types can build roads with "RequiresBridge" flag
-;              over roads with "PreventsOtherRoads" flag (rivers)
-; "Build_Airborne" = from now on can build air units (for use by AI)
+; "Bonus_Tech"          = player gets extra tech if reached first
+; "Bridge"              = "Settler" unit types can build roads with
+;                         "RequiresBridge" flag over roads with
+;                         "PreventsOtherRoads" flag (rivers)
+; "Build_Airborne"      = from now on can build air units (for use by AI)
 ; "Claim_Ocean"         = Player claims ocean tiles even if they are not
 ;                         adjacent to border source
 ; "Claim_Ocean_Limited" = Oceanic border sources claim ocean tiles even if
@@ -89,25 +124,12 @@ helptext = _("Enables movement of nuclear units.")
 cost     = 2350
 
 [advance_alphabet]
-name     = _("Pictography")
+name     = _("Alphabet")
 req1     = "None"
 req2     = "None"
 flags    = ""
 graphic     = "a.alphabet"
 graphic_alt = "-"
-helptext = _("The invention of pictograms or symbols allows the people to store information without the need of using spoken language. At a later time writing will be made possible by specialized pictography. Hieroglyphic writing, the alphabet and logographic writing systems are all derived from the invention of pictography.")
-cost     = 10
-
-
-[advance_folklore]
-name     = _("Folklore")
-req1     = "None"
-req2     = "None"
-flags    = ""
-graphic     = "a.folklore"
-graphic_alt = "a.alphabet"
-helptext = _("Folklore forms the foundation of the traditions for your people allowing your nation to have unique culture and ways.")
-cost     = 10
 
 [advance_amphibious_warfare]
 name     = _("Amphibious Warfare")
@@ -162,7 +184,6 @@ req2     = "Construction"
 flags    = "Bridge"
 graphic     = "a.bridge_building"
 graphic_alt = "-"
-cost     = 80
 helptext = _("Allows roads to be built on river tiles.")
 
 [advance_bronze_working]
@@ -172,7 +193,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.bronze_working"
 graphic_alt = "-"
-cost     = 10
 
 [advance_ceremonial_burial]
 name     = _("Ceremonial Burial")
@@ -181,7 +201,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.ceremonial_burial"
 graphic_alt = "-"
-cost     = 10
 
 [advance_chemistry]
 name     = _("Chemistry")
@@ -203,7 +222,7 @@ cost     = 120
 
 [advance_code_of_laws]
 name     = _("Code of Laws")
-req1     = "Pictography"
+req1     = "Alphabet"
 req2     = "None"
 flags    = ""
 graphic     = "a.code_of_laws"
@@ -267,7 +286,6 @@ helptext = _("\
 Allows Settlers, Migrants, Workers and Engineers to build forts and \
 fortresses.\
 ")
-cost     = 50
 
 [advance_currency]
 name     = _("Currency")
@@ -346,46 +364,6 @@ graphic_alt = "-"
 helptext = _("Upgrades 2 units every turn for all players if any player knows this tech.")
 cost     = 1450
 
-[advance_intergovernmental_organization]
-name     = _("Intergovernmental Organization")
-req1     = "Espionage"
-req2     = "The Corporation"
-flags    = ""
-graphic     = "a.igovorganization"
-graphic_alt = "a.espionage"
-helptext = _("International treaties has been a thing since ancient times but allowing the majority of the nations to make mutual agreements is a true breakthrough.")
-cost     = 2000
-
-[advance_international_labour_organization]
-name     = _("International Labour Organization")
-req1     = "Intergovernmental Organization"
-req2     = "None"
-flags    = ""
-graphic     = "a.ilaborganization"
-graphic_alt = "a.espionage"
-helptext = _("Allows creating wolrd wide deals regarding labour usage.")
-cost     = 2500
-
-[advance_global_health_regulations]
-name     = _("Global Health Regulations")
-req1     = "International Labour Organization"
-req2     = "None"
-flags    = ""
-graphic     = "a.ghregulations"
-graphic_alt = "a.espionage"
-helptext = _("Allows creating global deals regarding health issues.")
-cost     = 3000
-
-[advance_sustainable_energy_agreements]
-name     = _("Sustainable Energy Agreements")
-req1     = "Global Health Regulations"
-req2     = "None"
-flags    = ""
-graphic     = "a.ghregulations"
-graphic_alt = "a.espionage"
-helptext = _("Allows creating global deals regarding energy sources.")
-cost     = 4000
-
 [advance_explosives]
 name     = _("Explosives")
 req1     = "Gunpowder"
@@ -416,11 +394,11 @@ cost     = 775
 [advance_fusion_power]
 name     = _("Fusion Power")
 req1     = "Superconductors"
-req2     = "Stealth"
+req2     = "Labor Union"
 flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"
-helptext = _("Allows building several fusion based units. Not all fusion units are worth the cost. Sea class units will get +6 extra moves.")
+helptext = _("Allows building several fusion based units. Not all fusion units are worth the cost.")
 cost     = 17000
 
 
@@ -477,7 +455,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.horseback_riding"
 graphic_alt = "-"
-cost     = 10
 
 [advance_industrialization]
 name     = _("Industrialization")
@@ -522,7 +499,6 @@ req2     = "Nuclear Power"
 flags    = ""
 graphic     = "a.laser"
 graphic_alt = "-"
-cost     = 4000
 
 [advance_leadership]
 name     = _("Leadership")
@@ -562,7 +538,7 @@ cost     = 115
 
 [advance_map_making]
 name     = _("Map Making")
-req1     = "Pictography"
+req1     = "Alphabet"
 req2     = "None"
 flags    = ""
 graphic     = "a.map_making"
@@ -576,7 +552,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.masonry"
 graphic_alt = "-"
-cost     = 10
 
 [advance_mass_production]
 name     = _("Mass Production")
@@ -589,12 +564,11 @@ cost     = 1870
 
 [advance_mathematics]
 name     = _("Mathematics")
-req1     = "Pictography"
+req1     = "Alphabet"
 req2     = "Masonry"
 flags    = ""
 graphic     = "a.mathematics"
 graphic_alt = "-"
-cost     = 30
 
 [advance_medicine]
 name     = _("Medicine")
@@ -663,7 +637,7 @@ cost     = 104
 [advance_mysticism]
 name     = _("Mysticism")
 req1     = "Ceremonial Burial"
-req2     = "Folklore"
+req2     = "None"
 flags    = ""
 graphic     = "a.mysticism"
 graphic_alt = "-"
@@ -695,7 +669,7 @@ req2     = "Miniaturization"
 flags    = ""
 graphic     = "a.nuclear_power"
 graphic_alt = "-"
-helptext = _("Gives sea units 3 extra moves.")
+helptext = _("Gives sea units one extra move.")
 cost     = 1450
 
 [advance_philosophy]
@@ -743,7 +717,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.pottery"
 graphic_alt = "-"
-cost     = 10
 
 [advance_radio]
 name     = _("Radio")
@@ -866,16 +839,6 @@ graphic     = "a.stealth"
 graphic_alt = "-"
 cost     = 3600
 
-[advance_advanced_engineering]
-name     = _("Advanced Engineering")
-req1     = "Plastics"
-req2     = "Laser"
-flags    = ""
-graphic     = "a.aengineering"
-graphic_alt = "a.plastics"
-cost     = 7200
-
-
 [advance_steam_engine]
 name     = _("Steam Engine")
 req1     = "Chemistry"
@@ -994,12 +957,11 @@ req2     = "None"
 flags    = ""
 graphic     = "a.warrior_code"
 graphic_alt = "-"
-cost     = 10
 
 [advance_writing]
 name     = _("Writing")
-req1     = "Pictography"
-req2     = "Folklore"
+req1     = "Alphabet"
+req2     = "None"
 flags    = ""
 graphic     = "a.writing"
 graphic_alt = "-"
