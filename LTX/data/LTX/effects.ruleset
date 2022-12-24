@@ -3305,7 +3305,7 @@ value   = 50
 reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense I", "City", TRUE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
@@ -3349,7 +3349,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense II", "City", TRUE
 	  "Building", "Palace", "City", FALSE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
@@ -3372,7 +3372,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "SDI Defense III", "City", TRUE
       "Building", "Palace", "City", FALSE
-      "DiplRel", "Is foreign", "Local", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
 	
