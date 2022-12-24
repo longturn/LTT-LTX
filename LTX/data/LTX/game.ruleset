@@ -766,6 +766,57 @@ settings =
     "TeamIC",     200,   "Cancel",     "None"
   }
 
+; When are goods for the trade route chosen.
+; "Leaving" - Goods to carry are assigned to unit when it`s built, or it changes homecity
+; "Arrival" - Goods are chosen when trade route is established, when unit arrives to destination
+goods_selection = "Leaving"
+
+; /* <-- avoid gettext warnings
+;
+; Goods types:
+;
+; name                    = translatable name as seen by user
+; rule_name               = (optional) internal name for savegames, rulesets
+;                           etc; if not present, "name" is used for this
+;                           purpose too. Since the name used in savegames must
+;                           not change, if you want to rename an item after a
+;                           ruleset has been released, you should set
+;                           "rule_name" to the original value of "name".
+; reqs                    = requirements for a city to provide goods (see effects.ruleset
+;                           and README.effects for help on requirements)
+; from_pct                = Income for the sending end of the trade route. Default is 100%
+;                           This value is applied to both ends of bidirectional routes.
+; to_pct                  = Income for the receiving end of the trade route. Default is 100%
+;                           This value is not used at all in case of bidirectional routes.
+; onetime_pct             = Onetime bonuses when traderoute is established. Default is 100%
+; flags
+;   - "Bidirectional"     = Trade route carrying the goods does not have "from" and "to"
+;                           ends, but both ends are considered the same.
+;   - "Depletes"          = Trade route gets cancelled when the source city cannot provide
+;                           goods any more. Bidirectional routes gets cancelled if either
+;                           one of the involved cities cannot provide goods.
+; helptext                = Optional help text string; should escape all raw
+;                           newlines so that xgettext parsing works
+;
+; */ <-- avoid gettext warnings
+
+[goods_good]
+name           = _("Goods")
+
+; /* <-- avoid gettext warnings
+;
+; Clause types
+;
+; Clause types that are not listed here, are not enabled at all.
+;
+; type                   = Type of the clause, one of "Advance", "Gold", "Map", "Seamap",
+;                          "City", "Ceasefire", "Peace", "Alliance", "Vision", "Embassy"
+; giver_reqs             = requirements that the giving side of the clause needs to fulfill
+;                          (see effects.ruleset and README.effects for help on requirements)
+; receiver_reqs          = requirements that the receiving side of the clause needs to fulfill
+;
+; */ <-- avoid gettext warnings
+
 [playercolors]
 background.r = 86
 background.g = 86
