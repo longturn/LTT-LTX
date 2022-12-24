@@ -5104,7 +5104,7 @@ reqs	=
 	
 	
 [effect_academy]
-name  = "Veteran_Build"
+type  = "Veteran_Build"
 value = 1
 reqs  =
     { "type", "name", "range"
@@ -5117,7 +5117,7 @@ nreqs =
     }
 
 [effect_academy1]
-name  = "Spy_Resistant"
+type  = "Spy_Resistant"
 value = 10
 reqs  =
     { "type", "name", "range"
