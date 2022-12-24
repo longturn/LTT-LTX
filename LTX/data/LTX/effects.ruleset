@@ -5317,6 +5317,30 @@ reqs    =
       "Building", "Palace", "Local", FALSE
     }
 
+
+; Having contact with another player lets one see their score.
+[effect_ni_score_contact]
+type  = "Nation_Intelligence"
+value = 1
+reqs  =
+    { "type",                 "name",         "range",  "present"
+      "NationalIntelligence", "Score",        "Player", TRUE
+      "DiplRel",              "Has Contact",  "Local",  TRUE
+    }
+
+; Having an embassy lets one see almost everything. In fact, the things we
+; disable are not even shown in the client.
+[effect_ni_any_embassy]
+type  = "Nation_Intelligence"
+value = 1
+reqs  =
+    { "type",                 "name",         "range",  "present"
+      "NationalIntelligence", "Mood",         "Player", FALSE
+      "NationalIntelligence", "History",      "Player", FALSE
+      "NationalIntelligence", "Infra Points", "Player", FALSE
+      "DiplRel",              "Has embassy",  "Local",  TRUE
+    }
+
 ; for future purposes not yet implemented
 ; [effect_conquest_tech]
 ; type    = "Conquest_Tech_Pct"
