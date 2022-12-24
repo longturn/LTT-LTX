@@ -2025,12 +2025,10 @@ rmact_gfx_alt  = "-"
 ;                           base or city, or another base is built (tile only
 ;                           tracks one owner for all bases).
 ; vision_invis_sq         = Base will have invisible layer vision to this radius
+; vision_subs_sq          = Base will have subsurface layer vision to this radius
 ; flags
 ;   - "NoAggressive"      = Units inside are not considered aggressive if
 ;                           there`s friendly city within 3 tiles
-;   - "NoStackDeath"      = Units inside do not die all at once when attacked
-;   - "DiplomatDefense"   = Diplomats inside get bonus to diplomatic defense
-;   - "ParadropFrom"      = Paradrop can be initiated from base
 ;
 ; */ <-- avoid gettext warnings
 
@@ -2038,29 +2036,23 @@ rmact_gfx_alt  = "-"
 extra          = "Pre-Fortress"
 gui_type       = "Fortress"
 border_sq      = -1
-; flags          =
 
 [base_fortress]
 extra          = "Fortress"
 gui_type       = "Fortress"
 border_sq      = 5
-flags          = "NoAggressive", "DiplomatDefense", "NoStackDeath"
-
+flags          = "NoAggressive"
 
 [base_airbase]
 extra          = "Airbase"
 gui_type       = "Airbase"
 border_sq      = -1
-flags          = "NoAggressive", "ParadropFrom", "NoStackDeath"
+flags          = "NoAggressive"
 
 [base_buoy]
 extra          = "Buoy"
 gui_type       = "Fortress"
 vision_main_sq = 18
-
-[base_ruins]
-extra          = "Ruins"
-gui_type       = "Other"
 
 ; /* <-- avoid gettext warnings
 ;
