@@ -4740,7 +4740,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Terrain", "Desert", "Local", TRUE
       "Extra", "River", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
+      "Extra", "Oasis", "Local", FALSE
       "Extra", "Irrigation", "Local", TRUE
     }
 
@@ -4752,7 +4752,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Terrain", "Desert", "Local", TRUE
       "Extra", "River", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
+      "Extra", "Oasis", "Local", FALSE
       "CityTile", "Center", "Local", TRUE
       "Extra", "Irrigation", "Local", FALSE
       "TerrainAlter", "CanIrrigate", "Local", TRUE
@@ -4811,7 +4811,7 @@ reqs    =
     { "type", "name", "range", "present"
       "Terrain", "Desert", "Local", TRUE
       "Extra", "Irrigation", "Local", TRUE
-      "Resource", "Oasis", "Local", FALSE
+      "Extra", "Oasis", "Local", FALSE
       "Extra", "River", "Local", FALSE
     }
 
