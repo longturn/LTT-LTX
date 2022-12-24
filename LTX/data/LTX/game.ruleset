@@ -11,7 +11,8 @@
 
 [datafile]
 description="Longturn more experimenal based on LTT (Longturn Traditional from Dec. 17th 2020) also based on Civ2Civ3 game rules for Freeciv"
-options="+Freeciv-2.6-ruleset"
+options="+Freeciv-ruleset-Devel-2017.Jan.02"
+format_version=20
 
 ; This section contains meta information for freeciv-ruledit to recreate the ruleset
 ; file in a form wanted. These have no in-game effect whatsoever

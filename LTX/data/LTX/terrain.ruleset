@@ -12,7 +12,8 @@
 
 [datafile]
 description="Longturn Traditional based on Civ2Civ3 tile_type data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+options="+Freeciv-ruleset-Devel-2017.Jan.02"
+format_version=20
 
 [control]
 ; Names for custom terrain flags. There can be up to 8 of these.

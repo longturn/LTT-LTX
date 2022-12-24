@@ -16,7 +16,8 @@
 
 [datafile]
 description="Longturn Traditional based on Civ2Civ3 unit_type data for Freeciv"
-options="+Freeciv-2.6-ruleset"
+options="+Freeciv-ruleset-Devel-2017.Jan.02"
+format_version=20
 
 [control]
 ; Names for custom unit type flags. There can be up to 32 of these.
