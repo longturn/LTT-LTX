@@ -19,33 +19,27 @@ format_version=20
 [ruledit]
 
 ; Which file to read description in from.
-description_file = "civ2civ3/README.civ2civ3"
+description_file = "LTX/README.LTX"
 
 [about]
 ; Ruleset name
-name = _("Civ2Civ3 ruleset")
+name = _("LTX ruleset")
 
 ; There`s no separate versioning in rulesets part of main freeciv distribution
 ;version = ""
 
 ; Summary of the ruleset
 ; /* TRANS: In the client, this is displayed alongside the contents of
-;    README.civ2civ3, which are not localized. */
+;    README.LTX, which are not localized. */
 summary = _("\
-You are playing Freeciv with Longturn more experimental ruleset based on LTT / civ2civ3 rules:\
-\n\n\
-Gameplay more similar to civ3, keeping the combat system from civ2.\
-\n\n\
-Adapted for single player, with AI less aggressive at start,\
- but more challenging at the end.\
-\n\n\
+You are playing Freeciv with Longturn more experimental ruleset based on LTX rules:\
 The Longturn more experimental ruleset is designed to be played without AI players\
- and it's balanced to make the game interesting for both beginners and experienced players.\
+ and is balanced to make the game interesting for both beginners and experienced players.\
 ")
 
 ; Detailed description
 ; When updating this, update also desciption_file in [ruledit] section to match
-description = *civ2civ3/README.civ2civ3*
+description = *LTX/README.LTX*
 
 [options]
 global_init_techs=""
