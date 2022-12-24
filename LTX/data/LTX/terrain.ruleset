@@ -1578,10 +1578,10 @@ allow their owner to see the surrounding tiles.\
 [extra_ruins]
 name           = _("Ruins")
 category       = "Bonus"
-causes         = "Base"
+;causes         = ""
 rmcauses       = "Pillage"
-graphic        = "base.ruins"
-graphic_alt    = "-"
+graphic        = "extra.ruins"
+graphic_alt    = "base.ruins"
 activity_gfx   = "None"
 act_gfx_alt    = "-"
 act_gfx_alt2   = "-"
