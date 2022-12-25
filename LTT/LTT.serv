@@ -154,10 +154,6 @@ set traitdistribution "FIXED"
 set turnblock "ENABLED"
 set homecaughtunits "ENABLED"
 
-
-# new longturn.net specific patches. this section added in September 2020. now mostly incorporated into Freeciv 21, available here for historic purposes
-#set diplchance_steal 50
-
 metamessage "Longturn Traditional for multiplayer games | More info: https://longturn.net"
 metapatches longturn
 
