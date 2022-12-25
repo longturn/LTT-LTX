@@ -4546,10 +4546,10 @@ reqs    =
       "BuildingGenus", "GreatWonder", "Local"
     }
 
-; Double (+50%) buy cost for Small Wonders except Palace
+; Double (+100%) buy cost for Small Wonders except Palace
 [effect_small_wonder_buy_cost]
 type    = "Building_Buy_Cost_Pct"
-value   = 50
+value   = 100
 reqs    =
     { "type", "name", "range", "present"
       "BuildingGenus", "SmallWonder", "Local", TRUE
@@ -4715,17 +4715,6 @@ reqs    =
 [effect_conquest_tech]
 type    = "Conquest_Tech_Pct"
 value   = 0
-
-; Double (+100%) buy cost for Small Wonders except Palace
-[effect_small_wonder_buy_cost]
-type    = "Building_Buy_Cost_Pct"
-value   = 100
-reqs    =
-    { "type", "name", "range", "present"
-      "BuildingGenus", "SmallWonder", "Local", TRUE
-      "Building", "Palace", "Local", FALSE
-    }
-
 
 ; Having contact with another player lets one see their score.
 [effect_ni_score_contact]
