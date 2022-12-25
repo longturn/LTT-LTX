@@ -2886,6 +2886,10 @@ reqs    =
       "UnitClass", "Helicopter", "Local"
     }
 
+[effect_nuke_improvement_pct]
+type    = "Nuke_Improvement_Pct"
+value   = 20
+
 [effect_sdi_i_defense_1]
 type    = "Nuke_Proof"
 value   = 30
