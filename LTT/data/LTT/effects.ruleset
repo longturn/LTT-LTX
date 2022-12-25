@@ -4680,11 +4680,9 @@ reqs    =
       "Tech", "Radio", "World"
     }
 
-; for future purposes not yet implemented
-; [effect_conquest_tech]
-; type    = "Conquest_Tech_Pct"
-; value   = 0
-
+[effect_conquest_tech]
+type    = "Conquest_Tech_Pct"
+value   = 0
 
 ; Double (+100%) buy cost for Small Wonders except Palace
 [effect_small_wonder_buy_cost]
