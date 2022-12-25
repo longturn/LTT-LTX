@@ -1445,7 +1445,7 @@ radius_sq_city_permanent = -3
 ;                     base_tech_cost * reqs
 ;                     where reqs == number of requirement for tech, counted
 ;                     recursively.
-tech_cost_style = "Linear"
+tech_cost_style = "Classic+"
 
 ; Base research cost. Used in tech cost styles where tech cost is generated.
 ; In other words: used everywhere unless the cost of *all* techs are
