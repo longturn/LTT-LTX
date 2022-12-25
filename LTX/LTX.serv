@@ -63,6 +63,7 @@ set techlossforgiveness -1
 set techlossrestore 50
 set freecost 0 # for getting techs from philosphy etc
 set conquercost 80 # for getting techs with tech stealing/trading units
+set demography NnciwASLaPEgRMmuklOCqrb
 
 # technical
 set aifill 0
@@ -84,7 +85,6 @@ set fixedlength enabled
 set diplchance_steal 50
 set nuke_infra 20 # chance of destroying the infra on tiles when nuked
 set nuke_infra_save_lowest enabled # if enabled nuking does not destroy basic roads under rails
-set demography NnciwASLaPEgRMmuklOCqrb
 set nuke_improvements 20 # 20% chance for destroying city improvements. never destroyed if the sabotage chance is less than 100%
 
 metamessage "Longturn Traditional Extra for multiplayer games | More info: http://longturn.net"
