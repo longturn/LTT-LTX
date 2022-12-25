@@ -633,20 +633,6 @@ target_reqs  =
       "NationGroup", "Barbarian", "Player", FALSE
     }
 
-[actionenabler_establish_embassy_explorer]
-action       = "Establish Embassy"
-actor_reqs    =
-    { "type",         "name",             "range", "present"
-      "UnitType",     "Explorer",         "Local", TRUE
-      "MinMoveFrags", "1",                "Local", TRUE
-      "DiplRel",      "Foreign",          "Local", TRUE
-      "DiplRel",      "Has real embassy", "Local", FALSE
-    }
-target_reqs  =
-    { "type",        "name",      "range", "present"
-      "NationGroup", "Barbarian", "Player", FALSE
-    }
-
 [actionenabler_investigate_city]
 action       = "Investigate City"
 actor_reqs    =
