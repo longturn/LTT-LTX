@@ -2645,6 +2645,22 @@ reqs	=
       "Building", "Courthouse", "City", TRUE
     }
 
+[effect_diplomat_defense_extra]
+type    = "Spy_Resistant"
+value	= 25
+reqs	=
+    { "type",      "name",            "range"
+      "ExtraFlag", "DiplomatDefense", "Local"
+    }
+
+[effect_diplomat_defense_sabotage]
+type    = "Building_Saboteur_Resistant"
+value	= 25
+reqs	=
+    { "type",      "name",            "range"
+      "ExtraFlag", "DiplomatDefense", "Local"
+    }
+
 [effect_incite_cost_empty]
 type = "Incite_Cost_Pct"
 value = -50
@@ -3013,9 +3029,18 @@ reqs    =
       "Building", "Palace", "City"
     }
 
+[effect_palace_2_sabotage]
+type    = "Building_Saboteur_Resistant"
+value   = 50
+reqs    =
+    { "type", "name", "range"
+      "Building", "Palace", "City"
+    }
+
+; Make it main capital -> value higher than that of Ecclesiastical Palace
 [effect_palace_3]
 type    = "Capital_City"
-value   = 1
+value   = 2
 reqs    =
     { "type", "name", "range"
       "Building", "Palace", "City"
@@ -3090,6 +3115,15 @@ reqs    =
 
 [effect_2nd_palace_2]
 type    = "Spy_Resistant"
+value   = 50
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Second Palace", "City", TRUE
+      "Building", "Palace", "City", FALSE
+    }
+
+[effect_2nd_palace_2_sabotage]
+type    = "Building_Saboteur_Resistant"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
@@ -5300,8 +5334,15 @@ reqs  =
        "Building", "Academy", "City"
     }
 
+[effect_academy2]
+type  = "Building_Saboteur_Resistant"
+value = 10
+reqs  =
+    { "type", "name", "range"
+       "Building", "Academy", "City"
+    }
 
-	
+
 [effect_sizebonus1]
 type    = "Output_Bonus"
 value   = 10
