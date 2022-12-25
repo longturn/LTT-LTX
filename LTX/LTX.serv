@@ -81,9 +81,6 @@ set timeout 82800
 set unitwaittime 36000
 set fixedlength enabled
 
-# new longturn.net specific patches. this section added in September 2020. you may need to remove these if you play a local game with the standard 2.6 freeciv version
-set diplchance_steal 50
-
 metamessage "Longturn Experimental Extra for multiplayer games | More info: https://longturn.net"
 metapatches longturn
 

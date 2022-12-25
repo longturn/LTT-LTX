@@ -4897,6 +4897,14 @@ reqs	=
       "DiplRel", "War",        "Local", FALSE
     }
 
+[effect_chance_steal_tech]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech", "Local", TRUE
+    }
+
 [effect_incident_caught_steal_tech_esc]
 type	= "Casus_Belli_Caught"
 value	= 1
@@ -4915,6 +4923,14 @@ reqs	=
       "DiplRel", "War",                        "Local", FALSE
     }
 
+[effect_chance_steal_tech_esc]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech Escape Expected", "Local", TRUE
+    }
+
 [effect_incident_caught_tgt_steal_tech]
 type	= "Casus_Belli_Caught"
 value	= 1
@@ -4931,6 +4947,14 @@ reqs	=
     { "type",    "name",                                "range", "present"
       "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
       "DiplRel", "War",                                 "Local", FALSE
+    }
+
+[effect_chance_tgt_steal_tech]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
     }
 
 [effect_incident_success_bribe_unit]
