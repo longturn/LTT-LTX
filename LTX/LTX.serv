@@ -85,7 +85,6 @@ set fixedlength enabled
 set diplchance_steal 50
 set nuke_infra 20 # chance of destroying the infra on tiles when nuked
 set nuke_infra_save_lowest enabled # if enabled nuking does not destroy basic roads under rails
-set nuke_improvements 20 # 20% chance for destroying city improvements. never destroyed if the sabotage chance is less than 100%
 
 metamessage "Longturn Experimental Extra for multiplayer games | More info: https://longturn.net"
 metapatches longturn
