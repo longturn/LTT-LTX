@@ -83,7 +83,6 @@ set fixedlength enabled
 set diplchance_steal 50
 #set globalwarming_percent 300
 set nuclear_winter_percent 100
-set contact_intel disabled # no info about the other nations if contatturns 1
 set default_diplstate_is_peace enabled
 set nuke_infra 20 # chance of destroying the infra on tiles when nuked
 set nuke_infra_save_lowest enabled # if enabled nuking does not destroy basic roads under rails
