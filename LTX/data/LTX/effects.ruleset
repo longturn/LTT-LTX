@@ -3366,6 +3366,10 @@ reqs    =
 type    = "Nuke_Improvement_Pct"
 value   = 20
 
+[effect_nuke_infrastructure_pct]
+type    = "Nuke_Infrastructure_Pct"
+value   = 20
+
 [effect_sdi_i_defense_1]
 type    = "Nuke_Proof"
 value   = 50
