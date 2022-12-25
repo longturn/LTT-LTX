@@ -161,7 +161,7 @@ set homecaughtunits "ENABLED"
 #set nuke_infra_save_lowest   enabled   # if enabled nuking does not destroy basic roads under rails
 #set nuke_improvements   20		# 20% chance for destroying city improvements. never destroyed if the sabotage chance is less than 100%
 
-metamessage "Longturn Traditional for multiplayer games | More info: http://longturn.net"
+metamessage "Longturn Traditional for multiplayer games | More info: https://longturn.net"
 metapatches longturn
 
 # Players
