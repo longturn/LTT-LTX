@@ -1323,8 +1323,6 @@ as Paratroopers landing on a tile occupied by enemy units are easy \
 targets!)\
 ")
 paratroopers_range = 15
-paratroopers_mr_req = 1
-paratroopers_mr_sub = 0
 
 [unit_mech_inf]
 name          = _("Mech. Inf.")

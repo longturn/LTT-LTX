@@ -1026,7 +1026,7 @@ action = "Paradrop Unit"
 actor_reqs    =
     { "type",         "name",         "range", "present"
       "UnitFlag",     "Paratroopers", "Local", TRUE
-      "MinMoveFrags", "6",            "Local", TRUE
+      "MinMoveFrags", "1",            "Local", TRUE
       "UnitState",    "Transporting", "Local", FALSE
       "ExtraFlag",    "ParadropFrom", "Local", TRUE
       "DiplRel",      "Peace",        "Local", FALSE
@@ -1041,7 +1041,7 @@ action = "Paradrop Unit"
 actor_reqs    =
     { "type",         "name",         "range", "present"
       "UnitFlag",     "Paratroopers", "Local", TRUE
-      "MinMoveFrags", "6",            "Local", TRUE
+      "MinMoveFrags", "1",            "Local", TRUE
       "UnitState",    "Transporting", "Local", FALSE
       "ExtraFlag",    "ParadropFrom", "Local", TRUE
     }
@@ -1055,7 +1055,7 @@ action = "Paradrop Unit"
 actor_reqs    =
     { "type",         "name",         "range", "present"
       "UnitFlag",     "Paratroopers", "Local", TRUE
-      "MinMoveFrags", "6",            "Local", TRUE
+      "MinMoveFrags", "1",            "Local", TRUE
       "UnitState",    "Transporting", "Local", FALSE
       "CityTile",     "Center",       "Local", TRUE
       "DiplRel",      "Peace",        "Local", FALSE
@@ -1070,7 +1070,7 @@ action = "Paradrop Unit"
 actor_reqs    =
     { "type",         "name",         "range", "present"
       "UnitFlag",     "Paratroopers", "Local", TRUE
-      "MinMoveFrags", "6",            "Local", TRUE
+      "MinMoveFrags", "1",            "Local", TRUE
       "UnitState",    "Transporting", "Local", FALSE
       "CityTile",     "Center",       "Local", TRUE
     }
