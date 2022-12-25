@@ -153,8 +153,6 @@ reqs    =
 type    = "City_Unhappy_Size"
 value   = 4
 
-
-
 ; Lone Leader might escape on coast (33% chance)
 ; Complement of the two effects should be 0.9 * 0.66 = 0.594
 ; (100 - 59) - 10 = 31
@@ -3139,8 +3137,6 @@ reqs	=
       "Building", "Second Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
-	
-
 
 [effect_2nd_palace_despotism]
 type    = "Output_Bonus"
@@ -4158,7 +4154,6 @@ reqs    =
       "Building", "Leonardo's Workshop", "Player"
     }
 
-
 [effect_leonardos_workshop_culture]
 type    = "History"
 value	= 4
@@ -4875,7 +4870,6 @@ reqs	=
       "Extra", "Fallout", "Local"
       "Extra", "Pollution", "Local"
     }
-	
 
 [effect_incident_caught_steal_tech]
 type	= "Casus_Belli_Caught"
@@ -5191,8 +5185,7 @@ reqs	=
 	  "Gov", "Tribal", "Player", TRUE
       "Building", "Palace", "City", FALSE
     }
-	
-	
+
 [effect_marco_polos_embassy]
 type    = "Output_Bonus"
 value   = 30
@@ -5211,7 +5204,6 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
-
 [effect_international_labour_standards_1]
 type    = "Output_Bonus"
 value   = -10
@@ -5229,7 +5221,7 @@ reqs    =
       "Building", "International Labour Standards", "World"
       "OutputType", "Shield", "Local"
     }
-	
+
 [effect_international_labour_standards_3]
 type    = "Output_Bonus"
 value   = 10
@@ -5238,7 +5230,7 @@ reqs    =
       "Building", "International Labour Standards", "World"
       "OutputType", "Science", "Local"
     }
-	
+
 [effect_international_labour_standards_4]
 type    = "Output_Bonus"
 value   = 10
@@ -5247,8 +5239,6 @@ reqs    =
       "Building", "International Labour Standards", "Player"
       "OutputType", "Science", "Local"
     }
-	
-
 
 
 
@@ -5318,8 +5308,6 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
-	
-
 ; City radius increased with Mass Transit
 [effect_mass_transit_2]
 type    = "City_Radius_Sq"
@@ -5338,8 +5326,7 @@ reqs    =
       "Extra", "Ruins", "Local"
       "OutputType", "Trade", "Local"
     }
-	
-	
+
 [effect_espionage_upgrade]
 type    = "Upgrade_Unit"
 value   = 2
@@ -5347,7 +5334,7 @@ reqs    =
     { "type", "name", "range"
       "Tech", "Espionage", "World"
     }
-	
+
 [effect_radio_upgrade]
 type    = "Upgrade_Unit"
 value   = 2
@@ -5355,7 +5342,7 @@ reqs    =
     { "type", "name", "range"
       "Tech", "Radio", "World"
     }
-	
+
 [effect_base_enemy_unhappiness]
 type    = "Enemy_Citizen_Unhappy_Pct"
 value   = 100
