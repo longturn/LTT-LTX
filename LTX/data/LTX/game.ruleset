@@ -141,6 +141,12 @@ initial_diplomatic_state = "Armistice"
 ; Whether civil war is possible at all
 civil_war_enabled        = TRUE
 
+; How many percents each celebrating city affects chance of civil war
+civil_war_bonus_celebrating = -5
+
+; How many percents each unhappy city affects chance of civil war
+civil_war_bonus_unhappy     = 5
+
 ; Comma separated list of things to happen, in addition to death
 ; of owner, when gameloss unit dies
 ; "CivilWar"   - Part of the empire remains, controlled by a new player
@@ -174,6 +180,10 @@ paradrop_to_transport    = FALSE
 ;            upkeep are disbanded.
 gold_upkeep_style = "Mixed"
 
+; How many points of output one basic unit consists of. Typically you
+; want this to be some 10^n.
+output_granularity = 1
+
 [illness]
 ; Whether plagues (illness) are possible
 illness_on = TRUE
@@ -203,24 +213,12 @@ improvement_factor = 1
 unit_factor = 2
 total_factor = 100
 
-[global_unit_options]
-; Shore landing style
-;  FALSE - normal movement
-;  TRUE  - (default) slow invasions by removing all
-;          movement points from ground units moving
-;          from ocean tile to land
-slow_invasions = TRUE
-
 [combat_rules]
 
 
 incite_gold_loss_chance = 20
 incite_gold_capt_chance = 20
 timeoutmask = 30
-nuke_pop_loss_pct = 30    ; percentage of population loss after nuke, instead of hard-coded 50%
-nuke_defender_survival_chance_pct = 20     ; percentage chance of a unit inside the city to survive a nuke, does not affect units in open
-
-
 
 ; If tired_attack is set to TRUE, units that attack with less than a single
 ; move point (per move_fragments in terrain.ruleset) will have their attack
@@ -230,11 +228,135 @@ nuke_defender_survival_chance_pct = 20     ; percentage chance of a unit inside 
 ; have only fractional moves left.
 tired_attack = TRUE
 
+; With some rules it`s possible that neither side of a combat dies.
+; Set this to TRUE if unit should never gain veterancy from such a combat.
+only_killing_makes_veteran = FALSE
+
+; Percentage of population lost by a city after nuclear attak. If set to
+; 100 city is destroyed along with all the units. If set to 0 city does not
+; loose population. Any value below 100 means the city can never be
+; destroyed completely using nuclear
+nuke_pop_loss_pct = 30
+
+; Percentage chance of a city defender surviving nuclear attack. When set
+; to 50 roughly half of defenders will survive nuclear attack. When set to
+; 0 no defenders will survive. When set to 100 all defenders will survive.
+nuke_defender_survival_chance_pct = 20
+
+[auto_attack]
+; An auto attack may be triggered when another unit moves to an adjacent
+; tile and the autoattack server setting is enabled. The following details
+; are ruleset controlled.
+;   attack_actions - the actions to try during an auto attack in the order
+;                    they should be tried.
+;   if_attacker    - this requirement vector must be true before a unit even
+;                    considers to auto attack.
+
+attack_actions= "Capture Units", "Bombard", "Attack", "Suicide Attack"
+
+if_attacker =
+    { "type",         "name",    "range", "present"
+      "DiplRel",      "War",     "Local", TRUE
+      "MinMoveFrags", "1",       "Local", TRUE
+      ; Not a good idea to nuke our own area.
+      "UnitFlag",     "Nuclear", "Local", FALSE
+    }
+
 [actions]
 ; If force_trade_route is set to TRUE it is illegal for an actor unit to
 ; enter the marketplace of a city if it can establish a trade route to it
 ; in stead.
 force_trade_route = TRUE
+
+; If force_capture_units is set to TRUE it is illegal for an actor unit to
+; bombard, explode nuclear or perform a regular attack against a tile if
+; it can capture units on it in stead.
+force_capture_units = TRUE
+
+; If force_bombard is set to TRUE it is illegal for an actor unit to
+; explode nuclear or perform a regular attack against a tile if it can
+; bombard it in stead.
+force_bombard = TRUE
+
+; If force_explode_nuclear is set to TRUE it is illegal for an actor unit
+; to perform a regular attack against a tile if it can do explode nuclear
+; in stead.
+force_explode_nuclear = TRUE
+
+; If poison_empties_food_stock is set to TRUE a successful "Poison City"
+; or "Poison City Escape" will empty the food stock.
+poison_empties_food_stock = FALSE
+
+; If steal_maps_reveals_all_cities is set to TRUE a successful "Steal Maps"
+; or "Steal Maps Escape" will transfer the map for all tiles containing a
+; city.
+;steal_maps_reveals_all_cities = TRUE
+
+; The maximum distance from the actor unit to the target of the
+; "Help Wonder" action. The value 0 means that the target`s tile must be the
+; tile of the actor unit. The value 1 means that the city must be on a tile
+; adjacent to the actor unit. The special value "unlimited" lifts the
+; maximum distance restriction. The maximum distance can`t be smaller than
+; the minimum distance.
+help_wonder_max_range = 1
+
+; The maximum distance from the actor unit to the target of the
+; "Recycle Unit" action. The value 0 means that the target`s tile must be the
+; tile of the actor unit. The value 1 means that the city must be on a tile
+; adjacent to the actor unit. The special value "unlimited" lifts the
+; maximum distance restriction. The maximum distance can`t be smaller than
+; the minimum distance.
+recycle_unit_max_range = 1
+
+; The maximum distance from the actor unit to the target of the "Bombard"
+; action. The value 1 means that the targets must be on a tile adjacent to
+; the actor unit. The special value "unlimited" lifts the maximum distance
+; restriction. The maximum distance can`t be smaller than the minimum
+; distance.
+bombard_max_range = 1
+
+; The maximum distance from the actor unit to the target of the "Bombard 2"
+; action. The value 1 means that the targets must be on a tile adjacent to
+; the actor unit. The special value "unlimited" lifts the maximum distance
+; restriction. The maximum distance can`t be smaller than the minimum
+; distance.
+bombard_2_max_range = 1
+
+; The maximum distance from the actor unit to the target of the "Bombard 3"
+; action. The value 1 means that the targets must be on a tile adjacent to
+; the actor unit. The special value "unlimited" lifts the maximum distance
+; restriction. The maximum distance can`t be smaller than the minimum
+; distance.
+bombard_3_max_range = 1
+
+; The maximum distance from the actor unit to the target of the
+; "Explode Nuclear" action. The value 0 means that the target tile must be
+; the tile of the actor unit. The value 1 means that the tile must be a tile
+; adjacent to the actor unit. The special value "unlimited" lifts the
+; maximum distance restriction. The maximum distance can`t be smaller than
+; the minimum distance.
+explode_nuclear_max_range = 0
+
+; The maximum distance from the actor unit to the target of the
+; "Nuke City" action. The value 1 means that the tile must be a tile
+; adjacent to the actor unit. The special value "unlimited" lifts the
+; maximum distance restriction. The maximum distance can`t be smaller than
+; the minimum distance.
+nuke_city_max_range = 1
+
+; The maximum distance from the actor unit to the target of the
+; "Nuke Units" action. The value 1 means that the tile must be a tile
+; adjacent to the actor unit. The special value "unlimited" lifts the
+; maximum distance restriction. The maximum distance can`t be smaller than
+; the minimum distance.
+nuke_units_max_range = 1
+
+; The maximum distance from the actor unit to the target of the "Airlift Unit"
+; action. The value 1 means that the targets must be on a tile adjacent to
+; the actor unit. The special value "unlimited" lifts the maximum distance
+; restriction. The maximum distance can`t be smaller than the minimum
+; distance.
+airlift_max_range = "unlimited"
 
 ; What each action should be called when showing them to the player.
 ; The first %s should be before the mnemonic of the action. A Freeciv client
@@ -243,10 +365,10 @@ force_trade_route = TRUE
 ; The second %s marks where extra details should be inserted.
 
 ; /* TRANS: _Poison City (3% chance of success). */
-ui_name_poison_city = _("%sPoison City%s")
+ui_name_poison_city_escape = _("%sPoison City%s")
 
 ; /* TRANS: _Sabotage Enemy Unit (3% chance of success). */
-ui_name_sabotage_unit = _("%sSabotage Enemy Unit%s")
+ui_name_sabotage_unit_escape = _("%sSabotage Enemy Unit%s")
 
 ; /* TRANS: _Bribe Enemy Unit (3% chance of success). */
 ui_name_bribe_unit = _("%sBribe Enemy Unit%s")
@@ -254,23 +376,41 @@ ui_name_bribe_unit = _("%sBribe Enemy Unit%s")
 ; /* TRANS: _Sabotage City (3% chance of success). */
 ui_name_sabotage_city = _("%sSabotage City%s")
 
+; /* TRANS: _Sabotage City Escape (3% chance of success). */
+ui_name_sabotage_city_escape = _("%sSabotage City Escape%s")
+
 ; /* TRANS: Industrial _Sabotage (3% chance of success). */
-ui_name_targeted_sabotage_city = _("Industrial %sSabotage%s")
+ui_name_targeted_sabotage_city_escape = _("Industrial %sSabotage%s")
+
+; /* TRANS: Industrial _Sabotage Production (3% chance of success). */
+ui_name_sabotage_city_production_escape = _("Industrial %sSabotage Production%s")
 
 ; /* TRANS: Incite a _Revolt (3% chance of success). */
 ui_name_incite_city = _("Incite a %sRevolt%s")
 
+; /* TRANS: Incite a _Revolt and Escape (3% chance of success). */
+ui_name_incite_city_escape = _("Incite a Re%svolt and Escape%s")
+
 ; /* TRANS: Establish _Embassy (100% chance of success). */
 ui_name_establish_embassy = _("Establish %sEmbassy%s")
+
+; /* TRANS: Becom_e Ambassador (100% chance of success). */
+ui_name_establish_embassy_stay = _("Becom%se Ambassador%s")
 
 ; /* TRANS: Steal _Technology (3% chance of success). */
 ui_name_steal_tech = _("Steal %sTechnology%s")
 
+; /* TRANS: Steal _Technology and Escape (3% chance of success). */
+ui_name_steal_tech_escape = _("Steal %sTechnology and Escape%s")
+
 ; /* TRANS: Indus_trial Espionage (3% chance of success). */
-ui_name_targeted_steal_tech = _("Indus%strial Espionage%s")
+ui_name_targeted_steal_tech_escape = _("Indus%strial Espionage%s")
 
 ; /* TRANS: _Investigate City (100% chance of success). */
 ui_name_investigate_city = _("%sInvestigate City%s")
+
+; /* TRANS: _Investigate City (spends the unit) (100% chance of success). */
+ui_name_investigate_city_spend_unit = _("%sInvestigate City (spends the unit)%s")
 
 ; /* TRANS: Establish Trade _Route (100% chance of success). */
 ui_name_establish_trade_route = _("Establish Trade %sRoute%s")
@@ -281,11 +421,125 @@ ui_name_enter_marketplace = _("Enter %sMarketplace%s")
 ; /* TRANS: Help _build Wonder (100% chance of success). */
 ui_name_help_wonder = _("Help %sbuild Wonder%s")
 
+; /* TRANS: Rec_ycle Unit (100% chance of success). */
+ui_name_recycle_unit = _("Rec%sycle Unit%s")
+
+; /* TRANS: _You're Fired (100% chance of success). */
+ui_name_disband_unit = _("%sYou're Fired%s")
+
+; /* TRANS: _Capture Units (100% chance of success). */
+ui_name_capture_units = _("%sCapture Units%s")
+
+; /* TRANS: _Build City (100% chance of success). */
+ui_name_found_city = _("%sBuild City%s")
+
+; /* TRANS: _Add to City (100% chance of success). */
+ui_name_join_city = _("%sAdd to City%s")
+
+; /* TRANS: _Bombard (100% chance of success). */
+ui_name_bombard = _("%sBombard%s")
+
+; /* TRANS: Explode _Nuclear In Place (100% chance of success). */
+ui_name_explode_nuclear = _("Explode %sNuclear In Place%s")
+
+; /* TRANS: _Nuke City (100% chance of success). */
+ui_name_nuke_city = _("%sNuke City%s")
+
+; /* TRANS: _Nuke Units (100% chance of success). */
+ui_name_nuke_units = _("%sNuke Units%s")
+
+; /* TRANS: Set _Home City (100% chance of success). */
+ui_name_home_city = _("Set %sHome City%s")
+
+; /* TRANS: _Upgrade Unit (100% chance of success). */
+ui_name_upgrade_unit = _("%sUpgrade Unit%s")
+
+; /* TRANS: Drop _Paratrooper (100% chance of success). */
+ui_name_paradrop_unit = _("Drop %sParatrooper%s")
+
+; /* TRANS: _Airlift to City (100% chance of success). */
+ui_name_airlift_unit = _("%sAirlift to City%s")
+
+; /* TRANS: _Attack (100% chance of success). */
+ui_name_attack = _("%sAttack%s")
+
+; /* TRANS: _Explode Missile (100% chance of success). */
+ui_name_suicide_attack = _("%sExplode Missile%s")
+
+; /* TRANS: _Conquer City (100% chance of success). */
+ui_name_conquer_city = _("%sConquer City%s")
+
+; /* TRANS: _Conquer City from non native (100% chance of success). */
+ui_name_conquer_city_2 = _("%sConquer City from non native%s")
+
+; /* TRANS: _Transform Terrain (3% chance of success). */
+ui_name_transform_terrain = _("%sTransform Terrain%s")
+
+; /* TRANS: Transform by _Cultivating (3% chance of success). */
+ui_name_cultivate = _("Transform by %sCultivating%s")
+
+; /* TRANS: Transform by _Planting (3% chance of success). */
+ui_name_plant = _("Transform by %sPlanting%s")
+
+; /* TRANS: Pilla_ge (100% chance of success). */
+ui_name_pillage = _("Pilla%sge%s")
+
+; /* TRANS: Clean _Pollution (100% chance of success). */
+ui_name_clean_pollution = "Clean %sPollution%s"
+
+; /* TRANS: Clean _Fallout (100% chance of success). */
+ui_name_clean_fallout = "Clean %sFallout%s"
+
+; /* TRANS: _Fortify (100% chance of success). */
+ui_name_fortify = _("%sFortify%s")
+
+; /* TRANS: Build _Road (100% chance of success). */
+ui_name_road = _("Build %sRoad%s")
+
+; /* TRANS: _Build Base (100% chance of success). */
+ui_name_build_base = _("%sBuild Base%s")
+
+; /* TRANS: Build _Mine (100% chance of success). */
+ui_name_build_mine = _("Build %sMine%s")
+
+; /* TRANS: Build _Irrigation (100% chance of success). */
+ui_name_irrigate = _("Build %sIrrigation%s")
+
+; /* TRANS: _Alight (100% chance of success). */
+ui_name_transport_alight = _("%sAlight%s")
+
+; /* TRANS: _Board (100% chance of success). */
+ui_name_transport_board = _("%sBoard%s")
+
+; /* TRANS: _Unload (100% chance of success). */
+ui_name_transport_unload = _("%sUnload%s")
+
+; /* TRANS: _Disembark (100% chance of success). */
+ui_name_transport_disembark = _("%sDisembark%s")
+
+; /* TRANS: _Disembark from non native (100% chance of success). */
+ui_name_transport_disembark_2 = _("%sDisembark from non native%s")
+
+; /* TRANS: _Embark (100% chance of success). */
+ui_name_transport_embark = _("%sEmbark%s")
+
+; Blank ruleset defined user actions.
+; See the section "Ruleset defined actions" is doc/README.actions
+; Example: set up "User Action 1"
+;ui_name_user_action_1                = _("%sDisrupt Supply Lines%s")
+;user_action_1_target_kind            = "individual units"
+;user_action_1_min_range              = 1
+;user_action_1_max_range              = 3
+;user_action_1_actor_consuming_always = FALSE
+
 ; Suppress automatic help text generation about what enables and/or
 ; disables the following actions.
 ;
 ; Can make the help text less redundant when you document it your self.
-;quiet_actions = "Targeted Sabotage City", "Targeted Steal Tech"
+
+; "Transport Disembark 2" is "Transport Disembark" but from a non native
+; tile. "Conquer City 2" has the same relation to "Conquer City".
+quiet_actions = "Transport Disembark 2", "Conquer City 2"
 
 ; /* <-- avoid gettext warnings
 ;
