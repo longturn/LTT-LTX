@@ -213,7 +213,7 @@ reqs    =
     { "type", "name", "range"
       "Extra", "Airbase", "Local"
     }
-	
+
 
 [effect_bomb_limit_base]
 type    = "Bombard_Limit_Pct"
