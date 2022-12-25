@@ -46,7 +46,8 @@ set trading_tech disabled
 set airliftingstyle "FROM_ALLIES|TO_ALLIES|DEST_UNLIMITED"
 set razechance 10
 set globalwarming "ENABLED"
-set globalwarming_percent "100"
+set globalwarming_percent 300
+set nuclearwinter_percent 100
 set unreachableprotects "DISABLED"
 set happyborders "NATIONAL"
 set killcitizen "ENABLED"
@@ -155,8 +156,6 @@ set homecaughtunits "ENABLED"
 
 # new longturn.net specific patches. this section added in September 2020. now mostly incorporated into Freeciv 21, available here for historic purposes
 #set diplchance_steal 50
-#set globalwarming_percent 300
-#set nuclear_winter_percent   100
 #set nuke_infra   20		# chance of destroying the infra on tiles when nuked
 #set nuke_infra_save_lowest   enabled   # if enabled nuking does not destroy basic roads under rails
 set demography   NnciwASLaPEgRMmuklOCqrbsz
