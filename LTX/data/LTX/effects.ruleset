@@ -5343,6 +5343,10 @@ reqs    =
       "Tech", "Radio", "World"
     }
 
+[effect_conquest_tech]
+type    = "Conquest_Tech_Pct"
+value   = 0
+
 [effect_base_enemy_unhappiness]
 type    = "Enemy_Citizen_Unhappy_Pct"
 value   = 100
