@@ -42,7 +42,8 @@ set razechance 10
 set happyborders "NATIONAL"
 set occupychance 0
 set globalwarming enabled
-
+set globalwarming_percent 300
+set nuclearwinter_percent 100
 
 # diplomacy, technology
 set diplchance 40
@@ -81,8 +82,6 @@ set fixedlength enabled
 
 # new longturn.net specific patches. this section added in September 2020. you may need to remove these if you play a local game with the standard 2.6 freeciv version
 set diplchance_steal 50
-#set globalwarming_percent 300
-set nuclear_winter_percent 100
 set nuke_infra 20 # chance of destroying the infra on tiles when nuked
 set nuke_infra_save_lowest enabled # if enabled nuking does not destroy basic roads under rails
 set demography NnciwASLaPEgRMmuklOCqrb
