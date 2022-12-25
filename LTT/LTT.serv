@@ -157,8 +157,6 @@ set homecaughtunits "ENABLED"
 
 # new longturn.net specific patches. this section added in September 2020. now mostly incorporated into Freeciv 21, available here for historic purposes
 #set diplchance_steal 50
-#set nuke_infra   20		# chance of destroying the infra on tiles when nuked
-#set nuke_infra_save_lowest   enabled   # if enabled nuking does not destroy basic roads under rails
 
 metamessage "Longturn Traditional for multiplayer games | More info: https://longturn.net"
 metapatches longturn
