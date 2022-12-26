@@ -213,7 +213,7 @@ reqs    =
     { "type", "name", "range"
       "Extra", "Airbase", "Local"
     }
-	
+
 
 [effect_bomb_limit_base]
 type    = "Bombard_Limit_Pct"
@@ -2886,6 +2886,14 @@ reqs    =
       "UnitClass", "Helicopter", "Local"
     }
 
+[effect_nuke_improvement_pct]
+type    = "Nuke_Improvement_Pct"
+value   = 20
+
+[effect_nuke_infrastructure_pct]
+type    = "Nuke_Infrastructure_Pct"
+value   = 20
+
 [effect_sdi_i_defense_1]
 type    = "Nuke_Proof"
 value   = 30
@@ -4331,6 +4339,14 @@ reqs	=
       "DiplRel", "War",        "Local", FALSE
     }
 
+[effect_chance_steal_tech]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech", "Local", TRUE
+    }
+
 [effect_incident_caught_steal_tech_esc]
 type	= "Casus_Belli_Caught"
 value	= 1
@@ -4338,6 +4354,14 @@ reqs	=
     { "type",    "name",                       "range", "present"
       "Action",  "Steal Tech Escape Expected", "Local", TRUE
       "DiplRel", "War",                        "Local", FALSE
+    }
+
+[effect_chance_steal_tech_esc]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Steal Tech Escape Expected", "Local", TRUE
     }
 
 [effect_incident_success_steal_tech_esc]
@@ -4365,6 +4389,14 @@ reqs	=
     { "type",    "name",                                "range", "present"
       "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
       "DiplRel", "War",                                 "Local", FALSE
+    }
+
+[effect_chance_tgt_steal_tech]
+type	= "Action_Odds_Pct"
+value	= -50
+reqs	=
+    { "type",    "name",       "range", "present"
+      "Action",  "Targeted Steal Tech Escape Expected", "Local", TRUE
     }
 
 [effect_incident_success_bribe_unit]
@@ -4512,6 +4544,16 @@ value   = 100
 reqs    =
     { "type", "name", "range"
       "BuildingGenus", "GreatWonder", "Local"
+    }
+
+; Double (+100%) buy cost for Small Wonders except Palace
+[effect_small_wonder_buy_cost]
+type    = "Building_Buy_Cost_Pct"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present"
+      "BuildingGenus", "SmallWonder", "Local", TRUE
+      "Building", "Palace", "Local", FALSE
     }
 
 [effect_action_success_move_cost_embassy]
@@ -4670,22 +4712,9 @@ reqs    =
       "Tech", "Radio", "World"
     }
 
-; for future purposes not yet implemented
-; [effect_conquest_tech]
-; type    = "Conquest_Tech_Pct"
-; value   = 0
-
-
-; Double (+100%) buy cost for Small Wonders except Palace
-[effect_small_wonder_buy_cost]
-type    = "Building_Buy_Cost_Pct"
-value   = 100
-reqs    =
-    { "type", "name", "range", "present"
-      "BuildingGenus", "SmallWonder", "Local", TRUE
-      "Building", "Palace", "Local", FALSE
-    }
-
+[effect_conquest_tech]
+type    = "Conquest_Tech_Pct"
+value   = 0
 
 ; Having contact with another player lets one see their score.
 [effect_ni_score_contact]

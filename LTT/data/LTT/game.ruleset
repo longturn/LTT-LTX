@@ -567,7 +567,7 @@ quiet_actions = "Transport Disembark 2", "Conquer City 2"
 action = "Sabotage City"
 actor_reqs    =
     { "type",         "name",          "range", "present"
-      "UnitFlag",     "Diplomat",      "Local", TRUE
+      "UnitFlag",     "RealDiplomat",  "Local", TRUE
       "DiplRel",      "War",           "Local", TRUE
       "UnitState",    "OnLivableTile", "Local", TRUE
       "MinMoveFrags", "1",             "Local", TRUE
@@ -608,7 +608,7 @@ actor_reqs    =
 action       = "Establish Embassy"
 actor_reqs    =
     { "type",         "name",             "range", "present"
-      "UnitFlag",     "Diplomat",         "Local", TRUE
+      "UnitFlag",     "RealDiplomat",     "Local", TRUE
       "MinMoveFrags", "1",                "Local", TRUE
       "DiplRel",      "Foreign",          "Local", TRUE
       "DiplRel",      "Has real embassy", "Local", FALSE
@@ -633,25 +633,11 @@ target_reqs  =
       "NationGroup", "Barbarian", "Player", FALSE
     }
 
-[actionenabler_establish_embassy_explorer]
-action       = "Establish Embassy"
-actor_reqs    =
-    { "type",         "name",             "range", "present"
-      "UnitType",     "Explorer",         "Local", TRUE
-      "MinMoveFrags", "1",                "Local", TRUE
-      "DiplRel",      "Foreign",          "Local", TRUE
-      "DiplRel",      "Has real embassy", "Local", FALSE
-    }
-target_reqs  =
-    { "type",        "name",      "range", "present"
-      "NationGroup", "Barbarian", "Player", FALSE
-    }
-
 [actionenabler_investigate_city]
 action       = "Investigate City"
 actor_reqs    =
     { "type",   "name", "range", "present"
-      "UnitFlag", "Diplomat", "Local", TRUE
+      "UnitFlag", "RealDiplomat", "Local", TRUE
       "MinMoveFrags", "1", "Local", TRUE
       "DiplRel", "Foreign", "Local", TRUE
       "UnitFlag", "Spy", "Local", FALSE
@@ -712,7 +698,7 @@ target_reqs    =
 action = "Incite City"
 actor_reqs    =
     { "type",         "name",          "range", "present"
-      "UnitFlag",     "Diplomat",      "Local", TRUE
+      "UnitFlag",     "RealDiplomat",  "Local", TRUE
       "DiplRel",      "Alliance",      "Local", FALSE
       "DiplRel",      "Team",          "Local", FALSE
       "UnitState",    "OnLivableTile", "Local", TRUE
@@ -808,6 +794,22 @@ actor_reqs    =
 target_reqs    =
     { "type",   "name", "range"
       "BuildingGenus", "GreatWonder", "Local"
+    }
+
+[actionenabler_help_build_small_wonder]
+action = "Help Wonder"
+actor_reqs    =
+    { "type",   "name", "range", "present"
+      "UnitFlag", "HelpWonder", "Local", TRUE
+      "DiplRel", "Armistice", "Local", FALSE
+      "DiplRel", "War", "Local", FALSE
+      "DiplRel", "Cease-fire", "Local", FALSE
+      "DiplRel", "Peace", "Local", FALSE
+      "MinMoveFrags", "1", "Local", TRUE
+    }
+target_reqs    =
+    { "type",   "name", "range"
+      "BuildingGenus", "SmallWonder", "Local"
     }
 
 [actionenabler_recycle_unit]
@@ -1429,7 +1431,7 @@ radius_sq_city_permanent = -3
 ;                     base_tech_cost * reqs
 ;                     where reqs == number of requirement for tech, counted
 ;                     recursively.
-tech_cost_style = "Linear"
+tech_cost_style = "Classic+"
 
 ; Base research cost. Used in tech cost styles where tech cost is generated.
 ; In other words: used everywhere unless the cost of *all* techs are

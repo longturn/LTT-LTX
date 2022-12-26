@@ -11,8 +11,8 @@
 ; than minor changes.
 
 [datafile]
-description="LTT tile_type data for Freeciv"
-options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
+description="Longturn Traditional based on Civ2Civ3 tile_type data for Freeciv"
+options="+Freeciv-ruleset-Devel-2017.Jan.02"
 format_version=20
 
 [control]
@@ -49,7 +49,7 @@ extra_flags =
 
 ; Percentage of "land" tiles required to be adjacent to a water tile before
 ; it may be "reclaimed" into a land tile (0-101; 0=anywhere, default 101=nowhere)
-ocean_reclaim_requirement = 30
+ocean_reclaim_requirement = 0
 
 ; Percentage of "water" tiles required to be adjacent to a land tile before
 ; it may be "channeled" into a water tile (0-101; 0=anywhere, default 101=nowhere)
@@ -295,7 +295,7 @@ warmer_wetter_result = "no"
 warmer_drier_result  = "Swamp"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Tundra"
-native_to            = "Sea", "Air", "Missile", "Helicopter", "Trireme"
+native_to            = "Sea", "Air", "Missile", "Helicopter", "Trireme", "Patrol", "Amphibious", "Nuclear", "Small Sea"
 flags                = "NoCities", "NoBarbs", "NoPollution", "FreshWater", "NoZoc", "NoFortify"
 property_ocean_depth = 0
 color.r              = 46
@@ -331,7 +331,7 @@ mining_result        = "no"
 mining_shield_incr   = 0
 mining_time          = 0
 transform_result     = "Swamp"
-transform_time       = 36
+transform_time       = 72
 pillage_time         = 1
 clean_pollution_time = 3
 clean_fallout_time   = 3
@@ -340,8 +340,8 @@ warmer_wetter_result = "no"
 warmer_drier_result  = "Swamp"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Glacier"
-native_to            = "Sea", "Air", "Missile", "Helicopter", "Trireme"
-flags                = "NoCities", "UnsafeCoast", "NoZoc", "NoFortify", "Sea", "NoPollution"
+native_to            = "Sea", "Air", "Missile", "Helicopter", "Trireme", "Patrol", "Amphibious", "Nuclear", "Small Sea", "Deep Sea"
+flags                = "NoCities", "UnsafeCoast", "NoZoc", "NoFortify", "Sea"
 property_ocean_depth = 35
 color.r              = 0
 color.g              = 46
@@ -386,8 +386,8 @@ warmer_wetter_result = "no"
 warmer_drier_result  = "no"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
-native_to            = "Sea", "Air", "Missile", "Helicopter"
-flags                = "NoCities", "NoPollution", "UnsafeCoast", "NoZoc", "NoFortify", "Sea"
+native_to            = "Sea", "Air", "Missile", "Helicopter", "Patrol", "Nuclear", "Deep Sea", "Small Sea"
+flags                = "NoCities", "UnsafeCoast", "NoZoc", "NoFortify", "Sea"
 property_ocean_depth = 70
 color.r              = 0
 color.g              = 33
@@ -432,7 +432,7 @@ warmer_wetter_result = "Tundra"
 warmer_drier_result  = "Tundra"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "NoBarbs", "CanHaveRiver", "Oil", "Frozen"
 property_frozen      = 100
 color.r              = 232
@@ -479,7 +479,7 @@ warmer_wetter_result = "Plains"
 warmer_drier_result  = "no"
 cooler_wetter_result = "Tundra"
 cooler_drier_result  = "no"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Amphibious", "Nuclear", "Ancient Land"
 flags                = "CanHaveRiver", "Oil"
 property_dry         = 100
 property_tropical    = 50
@@ -490,10 +490,6 @@ color.b              = 106
 helptext             = _("\
 Deserts are regions of extreme dryness, making agriculture and\
  trade very difficult.\
-"), _("\
-Deserts can be irrigated for a small amount of extra food, but without\
- an oasis or river, bare desert cannot be further improved with\
- farmland.\
 "), _("\
 Rivers bring fertile soil to deserts; on a desert river not already\
  benefiting from an oasis, building irrigation will yield two extra food\
@@ -535,7 +531,7 @@ warmer_wetter_result = "Jungle"
 warmer_drier_result  = "Plains"
 cooler_wetter_result = "Swamp"
 cooler_drier_result  = "Tundra"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "Starter", "CanHaveRiver"
 property_cold        = 20
 property_wet         = 20
@@ -584,7 +580,7 @@ warmer_wetter_result = "Swamp"
 warmer_drier_result  = "Plains"
 cooler_wetter_result = "Tundra"
 cooler_drier_result  = "Tundra"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Amphibious", "Nuclear", "Ancient Land"
 flags                = "Starter", "CanHaveRiver"
 property_green       = 50
 property_temperate   = 50
@@ -630,7 +626,7 @@ warmer_wetter_result = "no"
 warmer_drier_result  = "no"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "Starter", "CanHaveRiver"
 property_green       = 50
 property_mountainous = 30
@@ -651,27 +647,27 @@ graphic              = "jungle"
 graphic_alt          = "-"
 identifier           = "j"
 class                = "Land"
-movement_cost        = 4
-defense_bonus        = 25
+movement_cost        = 6
+defense_bonus        = 40
 food                 = 1
-shield               = 1
-trade                = 0
+shield               = 2
+trade                = 2
 resources            = "Gems", "Fruit"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
-road_time            = 4
+road_time            = 8
 cultivate_time       = 10
 plant_time           = 0
-irrigation_result    = "Grassland"
+irrigation_result    = "Plains"
 irrigation_food_incr = 0
-irrigation_time      = 0
+irrigation_time      = 36
 mining_result        = "no"
 mining_shield_incr   = 0
 mining_time          = 0
 transform_result     = "Forest"
-transform_time       = 24
+transform_time       = 48
 pillage_time         = 1
 clean_pollution_time = 3
 clean_fallout_time   = 3
@@ -680,7 +676,7 @@ warmer_wetter_result = "Swamp"
 warmer_drier_result  = "Desert"
 cooler_wetter_result = "Forest"
 cooler_drier_result  = "Tundra"
-native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "CanHaveRiver"
 property_foliage     = 50
 property_tropical    = 50
@@ -729,7 +725,7 @@ warmer_wetter_result = "no"
 warmer_drier_result  = "no"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
-native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "NoCities", "CanHaveRiver"
 property_mountainous = 70
 color.r              = 129
@@ -780,7 +776,7 @@ warmer_wetter_result = "Grassland"
 warmer_drier_result  = "Desert"
 cooler_wetter_result = "Tundra"
 cooler_drier_result  = "Desert"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Amphibious", "Nuclear", "Ancient Land"
 flags                = "Starter", "CanHaveRiver"
 property_green       = 50
 property_temperate   = 50
@@ -812,8 +808,8 @@ road_time            = 4
 plant_time           = 0
 cultivate_time       = 5
 irrigation_result    = "Grassland"
-irrigation_food_incr = 0
-irrigation_time      = 0
+irrigation_food_incr = 1
+irrigation_time      = 5
 mining_result        = "Forest"
 mining_shield_incr   = 0
 mining_time          = 12
@@ -827,7 +823,7 @@ warmer_wetter_result = "Ocean"
 warmer_drier_result  = "Plains"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Tundra"
-native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Amphibious", "Nuclear", "Ancient Land"
 flags                = "CanHaveRiver"
 property_wet         = 100
 property_tropical    = 10
@@ -877,7 +873,7 @@ warmer_wetter_result = "Swamp"
 warmer_drier_result  = "Plains"
 cooler_wetter_result = "Glacier"
 cooler_drier_result  = "Desert"
-native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit", "Amphibious", "Nuclear", "Ancient Land"
 flags                = "NoBarbs", "CanHaveRiver"
 property_cold        = 50
 color.r              = 188
@@ -1374,7 +1370,7 @@ name           = _("Minor Tribe Village")
 rule_name      = "Hut"
 category       = "Bonus"
 causes         = "Hut"
-rmcauses       = "Enter"
+;rmcauses       = ""
 graphic        = "tx.village"
 graphic_alt    = "-"
 activity_gfx   = "None"
@@ -1413,7 +1409,7 @@ act_gfx_alt2   = "unit.irrigate"
 rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 ; Note, there are extra restrictions on where farmland can be built
-; through "Build Irrigation" action enablers
+; through Irrig_Possible effects
 reqs           =
     { "type", "name", "range"
       "Tech", "Refrigeration", "Player"
@@ -1426,9 +1422,7 @@ conflicts      = "Mine", "Oil Well"
 helptext       = _("\
 Once Refrigeration is known, irrigation systems can be upgraded to \
 farmland by irrigating them a second time; if the city working the tile \
-has a Supermarket, a farmland tile provides 50% more food. (Hence, \
-farmland is only useful on tiles which with irrigation yield 2 or more \
-food.)\
+has a Supermarket, a farmland tile provides 50% more food.\
 "), _("\
 Farmland on a tile prevents any trade bonus from Super Highways.\
 "), _("\
@@ -1524,9 +1518,9 @@ reqs           =
     }
 build_time     = 3
 removal_time   = 0
-native_to      = "Land", "Small Land", "Merchant", "Big Land", "Big Siege"
+native_to      = "Land", "Small Land", "Merchant", "Big Land", "Big Siege", "Small Unit", "Ancient Land"
 conflicts      = "Airbase"
-flags          = "NativeTile", "DiplomatDefense"
+flags          = "NativeTile"
 helptext       = _("\
 Fortresses are more permanent forts; construction on them can only begin \
 once the underlying fort is complete. Forts on River tiles cannot be \
@@ -1542,6 +1536,7 @@ moving recovers a quarter of its hit points.\
 With Astronomy, fortresses gain watchtowers from which units can see \
 further afield.\
 ")
+
 
 [extra_airbase]
 name           = _("Airbase")
@@ -1565,9 +1560,9 @@ reqs           =
     }
 build_time     = 3
 removal_time   = 0
-native_to      = "Air", "Helicopter", "Missile"
+native_to      = "Air", "Helicopter", "Missile", "Nuclear"
 conflicts      = "Pre-Fortress", "Fortress"
-flags          = "Refuel", "ParadropFrom"
+flags          = "Refuel"
 helptext       = _("\
 An Airbase provides permanent support for air units and missiles. Air units can land \
 and refuel on an Airbase and Paratroopers can be sent from Airbases. \ 
@@ -1654,7 +1649,7 @@ reqs           =
     }
 build_time     = 0
 removal_time   = 0
-native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege"
+native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Small Unit", "Amphibious", "Ancient Land"
 hidden_by      = "Railroad", "Maglev"
 bridged_over   = "River"
 flags          = "NativeTile", "AlwaysOnCityCenter"
@@ -1691,7 +1686,7 @@ reqs           =
     }
 build_time     = 3
 removal_time   = 0
-native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege"
+native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Small Unit", "Amphibious", "Ancient Land"
 flags          = "NativeTile", "AutoOnCityCenter"
 hidden_by      = "Maglev"
 bridged_over   = "River"
@@ -1730,7 +1725,7 @@ reqs           =
     }
 build_time     = 3
 removal_time   = 0
-native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege"
+native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Small Unit", "Amphibious", "Ancient Land"
 flags          = "NativeTile", "AutoOnCityCenter"
 bridged_over   = "River"
 helptext       = _("\
@@ -1760,7 +1755,7 @@ act_gfx_alt2   = "-"
 rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 buildable      = FALSE
-native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Trireme"
+native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Trireme", "Small Unit", "Patrol", "Amphibious", "Ancient Land"
 defense_bonus  = 25
 flags          = "NativeTile", "IrrigationSource", "AllowsFarmlandOnDesert"
 ; /* xgettext:no-c-format */
@@ -2089,7 +2084,7 @@ flags          = "NoAggressive"
 [base_buoy]
 extra          = "Buoy"
 gui_type       = "Fortress"
-vision_main_sq = 5
+vision_main_sq = 18
 
 ; /* <-- avoid gettext warnings
 ;
