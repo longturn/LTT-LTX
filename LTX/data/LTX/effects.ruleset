@@ -5305,12 +5305,11 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "The Paris Agreement", "World", TRUE
       "OutputType", "Shield", "Local", TRUE
-      "Building", "International Labour Standards", "World", FALSE
       "Gov", "Communism", "Player", FALSE
       "Gov", "Anarchy", "Player", FALSE
       "Gov", "Fundamentalism", "Player", FALSE
       "Gov", "City States", "Player", FALSE
-      "Building", "International Energy Union", "World", FALSE
+      "Building", "Global Emission Union", "World", FALSE
     }
 
 [effect_The_paris_agreement_2]
@@ -5323,7 +5322,7 @@ reqs    =
       "Gov", "Anarchy", "Player", FALSE
       "Gov", "Fundamentalism", "Player", FALSE
       "Gov", "City States", "Player", FALSE
-      "Building", "International Energy Union", "World", FALSE
+      "Building", "Global Emission Union", "World", FALSE
     }
 
 [effect_global_emission_union_1]
