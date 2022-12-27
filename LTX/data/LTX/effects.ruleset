@@ -5693,6 +5693,93 @@ reqs  =
       "NationalIntelligence", "Infra Points", "Player", FALSE
       "DiplRel",              "Has embassy",  "Local",  TRUE
     }
+	
+	
+[effect_barracks_ancient_land"]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+[effect_barracks_hp_ancient_land]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+    }
+	
+	
+[effect_barracks_ii_ancient_land]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+[effect_barracks_ii_hp_ancient_land]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+    }
+
+[effect_barracks_iii_ancient_land]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks III", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+[effect_barracks_iii_hp_ancient_land]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range"
+      "Building", "Barracks III", "City"
+      "UnitClass", "Ancient Land", "Local"
+    }
+
+[effect_sun_tzus_war_academy_ancient_land]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Sun Tzu's War Academy", "Player", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+	
+	
+[effect_terracotta_army_ancient_land]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Terracotta Army", "City", TRUE
+      "UnitClass", "Ancient Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+	
 
 ; for future purposes not yet implemented
 ; [effect_conquest_tech]
