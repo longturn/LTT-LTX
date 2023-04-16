@@ -916,7 +916,6 @@ If the capital is in a dangerous location, or a more central capital\
 _("\
 Under Despotism the city containing the palace gains a +75% \
 gold bonus, and under Monarchy a +50% gold bonus. \
-The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_second_palace]
@@ -954,7 +953,6 @@ stationed in the city, or sabotage your buildings.\
 _("\
 Under Despotism the city containing the palace gains a +75% \
 gold bonus, and under Monarchy a +50% gold bonus.\
-The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_police_station]
@@ -1030,7 +1028,6 @@ helptext	= _("\
 Allows a city to build veteran sea units.  Also, damaged sea units\
  which stay in town for one full turn without moving are completely\
  restored.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 ; Includes Triremes, but not worth mentioning explicitly as unlikely
 ; to happen
@@ -1613,7 +1610,6 @@ Each tile around the city where this wonder is built that is already\
  generating some trade produces one extra trade resource.\
  If the nation's government is Despotism or Tribal this small wonder will \
 also work as a government center as long as it's not obsoleted. \
-The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_copernicus_observatory]
@@ -1637,7 +1633,6 @@ sound_alt	= "w_generic"
 helptext	= _("\
 Each tile worked by the city where this wonder is built produces \
 one extra research point.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_cure_for_cancer]
@@ -1664,7 +1659,6 @@ happy in each of your cities (2 extra luxury per city). It further \
 reduces your risk of plague (by 10% of the base chance); with \
 knowledge of Medicine, any of your cities with an Aqueduct and a \
 Sewer System will be entirely free of plague.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_darwins_voyage]
@@ -1767,7 +1761,6 @@ Increases the defense of all your cities by adding a +40% bonus to \
 its units' intrinsic defense strength against land units (this is cumulative \
 with any City Walls), and preventing the loss of population which occurs \
 when a defending unit is defeated by a land unit.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_hanging_gardens]
@@ -1793,7 +1786,6 @@ Makes one unhappy citizen content in every city of the player that \
 owns it (not including citizens unhappy about aggression). This wonder \
 also makes two content citizens happy in the city where it is located \
 (4 extra luxury points).\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_hoover_dam]
@@ -1868,7 +1860,6 @@ sound_alt	= "w_generic"
 helptext	= _("\
 Makes one content citizen happy in every city of the player that owns \
 it (2 extra luxury points per city).\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_king_richards_crusade]
@@ -1896,7 +1887,6 @@ unhappiness caused by a single military unit (except under Democracy, \
 where a single unit makes two citizens unhappy). Under governments \
 where unit upkeep is paid in gold, it gives two free gold per city \
 towards upkeep every turn.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_leonardos_workshop]
@@ -1919,7 +1909,6 @@ sound		= "w_leonardos_workshop"
 sound_alt	= "w_generic"
 helptext	= _("\
 Upgrades two obsolete units per game turn.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 
@@ -1969,7 +1958,6 @@ helptext	= _("\
 Gives all your sea units 1 additional movement point (except Triremes \
 while moving on rivers). Makes all your new sea units veterans (for all \
 your cities).\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_magellans_expedition]
@@ -1995,7 +1983,6 @@ helptext	= _("\
 Gives all your sea units 1 additional movement point. The chance\
  of a sea unit getting the next veteran level after a battle\
  increases by half.\
-  The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 
@@ -2180,7 +2167,6 @@ helptext	= _("\
 Doubles the base effect of Cathedrals. This makes 3 additional unhappy \
 citizens content in each city with a Cathedral; however, it does \
 not affect citizens made unhappy by aggression.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_mausoleum_of_mausolos]
@@ -2205,7 +2191,6 @@ helptext	= _("\
 With this wonder, City Walls and Courthouses each make one unhappy \
 citizen content in their city, unless that citizen is unhappy about \
 aggression. Also, none of the owner's cities can be incited to revolt.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_statue_of_zeus]
@@ -2234,7 +2219,6 @@ where a single unit makes two citizens unhappy). Each city also avoids \
 one shield of upkeep for units.\
 If the nation's government is Despotism or Tribal this small wonder will \
 also work as a government center as long as it's not obsoleted.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_temple_of_artemis]
@@ -2259,7 +2243,6 @@ sound_alt	= "w_generic"
 helptext	= _("\
 Makes 2 additional unhappy citizens content in every city with \
 a Temple. Does not affect citizens made unhappy by aggression.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_pyramids]
@@ -2286,7 +2269,6 @@ generating some shield output produces one extra shield resource. \
 Under Despotism or Tribal governments, the Pyramids cancel the penalty \
 to worked tiles with output greater than 2 (for all kinds of output), \
 as if all your cities were always celebrating.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_internet]
@@ -2366,7 +2348,6 @@ helptext	= _("\
 All your new military land units start with an additional veteran level \
 (this is cumulative with any Barracks building in a city; with both, units \
 are created as veteran 2).\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 
@@ -2392,7 +2373,6 @@ helptext	= _("\
 All your new military land units built in the city with the Terracotta Army start with an additional veteran level \
 (this is cumulative with any Barracks building in a city; with both, units \
 are created as veteran 2 or as veteran 3 if the player also owns Sun Tzu's War Academy). This does not apply to siege units such as catapults.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_united_nations]
@@ -2450,7 +2430,6 @@ One of the most early studies containing mathematical results and theorems. \
 Gives 4 extra bulbs to the city it's in. This wonder expires very early. \
 If the nation's government is Despotism or Tribal this amazing building will \
 also work as a government center as long as it's not obsoleted.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 
@@ -2479,7 +2458,6 @@ With this wonder, the city having it will get +6 additional lux. The effect \
 of this very early wonder ends with the invention of bronze. \
 If the nation's government is Despotism or Tribal this amazing building will \
 also work as a government center as long as it's not obsoleted.\
- The build cost shown is half of the actual cost. One shield left will cost 4 units of gold.\
 ")
 
 [building_capitalization]
