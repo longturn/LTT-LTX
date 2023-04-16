@@ -242,7 +242,7 @@ name		= _("Occupation Government")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Leadership", "Player"
+      "Tech", "Economics", "Player"
     }
 graphic	= "b.occupationgov"
 graphic_alt	= "b.barracks_i"
