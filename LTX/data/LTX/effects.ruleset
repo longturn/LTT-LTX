@@ -718,7 +718,7 @@ reqs    =
 ; 3% more with Despotism
 [effect_waste_distance_despotism]
 type    = "Output_Waste_By_Distance"
-value   = 300
+value   = 100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Despotism", "Player", TRUE
@@ -728,7 +728,7 @@ reqs    =
 ; 3% more with Tribal
 [effect_waste_distance_tribal]
 type    = "Output_Waste_By_Distance"
-value   = 300
+value   = 100
 reqs    =
     { "type", "name", "range", "quiet"
       "Gov", "Tribal", "Player", TRUE
