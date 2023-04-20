@@ -2350,6 +2350,18 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+	
+[effect_barracks_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+	
 
 [effect_barracks_hp]
 type    = "HP_Regen"
@@ -2378,6 +2390,16 @@ reqs    =
       "UnitClass", "Big Siege", "Local", TRUE
     }
 
+[effect_barracks_small_unit_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+    }
+
+
 
 [effect_barracks_ii]
 type    = "Veteran_Build"
@@ -2400,6 +2422,19 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+
+
+[effect_barracks_ii_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
 
 [effect_barracks_ii_hp]
 type    = "HP_Regen"
@@ -2429,6 +2464,17 @@ reqs    =
       "UnitClass", "Big Siege", "Local", TRUE
     }
 
+[effect_barracks_ii_small_unit_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+    }
+
+
+
 
 [effect_barracks_iii]
 type    = "Veteran_Build"
@@ -2451,6 +2497,19 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+
+
+[effect_barracks_iii_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks III", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
 
 [effect_barracks_iii_hp]
 type    = "HP_Regen"
@@ -2479,7 +2538,17 @@ reqs    =
       "Building", "Barracks III", "City", TRUE
       "UnitClass", "Big Siege", "Local", TRUE
     }
-
+	
+[effect_barracks_iii_small_unit_hp]
+type    = "HP_Regen"
+value   = 60
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks III", "City", TRUE
+      "UnitClass", ""Small Unit", "Local", TRUE
+    }
+		
+	
 [effect_cathedral]
 type    = "Make_Content"
 value   = 3
@@ -4541,6 +4610,18 @@ reqs    =
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
 
+[effect_sun_tzus_war_academy_2]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Sun Tzu's War Academy", "Player", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+	
+
 [effect_sun_tzus_war_academy_culture]
 type    = "History"
 value	= 3
@@ -4572,6 +4653,19 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+
+[effect_terracotta_army_2]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Terracotta Army", "City", TRUE
+      "UnitClass", "Small Unit", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+
 
 [effect_terracotta_army_culture]
 type    = "History"
