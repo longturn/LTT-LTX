@@ -1608,8 +1608,6 @@ sound_alt	= "w_generic"
 helptext	= _("\
 Each tile around the city where this wonder is built that is already\
  generating some trade produces one extra trade resource.\
- If the nation's government is Despotism or Tribal this small wonder will \
-also work as a government center as long as it's not obsoleted. \
 ")
 
 [building_copernicus_observatory]
@@ -2217,8 +2215,6 @@ units owned by the city by 1 -- in other words, it neutralizes the \
 unhappiness caused by a single military unit (except under Democracy, \
 where a single unit makes two citizens unhappy). Each city also avoids \
 one shield of upkeep for units.\
-If the nation's government is Despotism or Tribal this small wonder will \
-also work as a government center as long as it's not obsoleted.\
 ")
 
 [building_temple_of_artemis]
@@ -2428,8 +2424,6 @@ sound_alt	= "w_generic"
 helptext	= _("\
 One of the most early studies containing mathematical results and theorems. \
 Gives 4 extra bulbs to the city it's in. This wonder expires very early. \
-If the nation's government is Despotism or Tribal this amazing building will \
-also work as a government center as long as it's not obsoleted.\
 ")
 
 
@@ -2456,8 +2450,6 @@ helptext	= _("\
 It pre-dates bronze age and was one of the first, if not the first, shrines built. \
 With this wonder, the city having it will get +6 additional lux. The effect \
 of this very early wonder ends with the invention of bronze. \
-If the nation's government is Despotism or Tribal this amazing building will \
-also work as a government center as long as it's not obsoleted.\
 ")
 
 [building_capitalization]

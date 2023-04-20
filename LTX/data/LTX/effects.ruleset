@@ -3847,27 +3847,6 @@ reqs	=
     }
 
 
-[effect_colossus_gov_center_despotism]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Colossus", "City", TRUE
-	  "Gov", "Despotism", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-	
-	
-[effect_colossus_gov_center_tribal]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Colossus", "City", TRUE
-	  "Gov", "Tribal", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-
 
 [effect_copernicus_observatory]
 type    = "Output_Add_Tile"
@@ -4406,27 +4385,6 @@ reqs    =
     }
 
 
-[effect_statue_of_zeus_gov_center_despotism]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Statue of Zeus", "City", TRUE
-	  "Gov", "Despotism", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-	
-
-[effect_statue_of_zeus_gov_center_tribal]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Statue of Zeus", "City", TRUE
-	  "Gov", "Tribal", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-	
 
 
 [effect_statue_of_zeus_culture]
@@ -5226,26 +5184,7 @@ reqs    =
     }
 
 
-[effect_hal_salflieni_hypogeum_gov_center_despotism]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Hal Saflieni Hypogeum", "City", TRUE
-	  "Gov", "Despotism", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-	
 
-[effect_hal_salflieni_hypogeum_gov_center_tribal]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "Hal Saflieni Hypogeum", "City", TRUE
-	  "Gov", "Tribal", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
 
 	
 [effect_school_of_baudhayana_sutras]
@@ -5259,26 +5198,7 @@ reqs    =
     }
 	
 
-[effect_school_of_baudhayana_sutras_gov_center_despotism]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "School of Baudhayana sutras", "City", TRUE
-	  "Gov", "Despotism", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
-	
 
-[effect_school_of_baudhayana_sutras_gov_center_tribal]
-type    = "Gov_Center"
-value	= 1
-reqs	=
-    { "type", "name", "range", "present"
-      "Building", "School of Baudhayana sutras", "City", TRUE
-	  "Gov", "Tribal", "Player", TRUE
-      "Building", "Palace", "City", FALSE
-    }
 
 [effect_marco_polos_embassy]
 type    = "Output_Bonus"
