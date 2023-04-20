@@ -1520,7 +1520,7 @@ build_time     = 3
 removal_time   = 0
 native_to      = "Land", "Small Land", "Merchant", "Big Land", "Big Siege", "Small Unit", "Ancient Land"
 conflicts      = "Airbase"
-flags          = "NativeTile"
+flags          = "NativeTile", "NoStackDeath"
 helptext       = _("\
 Fortresses are more permanent forts; construction on them can only begin \
 once the underlying fort is complete. Forts on River tiles cannot be \
@@ -1562,7 +1562,7 @@ build_time     = 3
 removal_time   = 0
 native_to      = "Air", "Helicopter", "Missile", "Nuclear"
 conflicts      = "Pre-Fortress", "Fortress"
-flags          = "Refuel"
+flags          = "Refuel", "NoStackDeath"
 helptext       = _("\
 An Airbase provides permanent support for air units and missiles. Air units can land \
 and refuel on an Airbase and Paratroopers can be sent from Airbases. \ 
