@@ -2078,13 +2078,13 @@ border_sq      = -1
 extra          = "Fortress"
 gui_type       = "Fortress"
 border_sq      = 5
-flags          = "NoAggressive"
+flags          = "NoAggressive", "DiplomatDefense", "NoStackDeath"
 
 [base_airbase]
 extra          = "Airbase"
 gui_type       = "Airbase"
 border_sq      = -1
-flags          = "NoAggressive"
+flags          = "NoAggressive", "ParadropFrom", "NoStackDeath"
 
 [base_buoy]
 extra          = "Buoy"
