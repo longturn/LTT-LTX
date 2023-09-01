@@ -4709,7 +4709,7 @@ type    = "Upgrade_Unit"
 value   = 2
 reqs    =
     { "type", "name", "range"
-      "Tech", "Radio", "World"
+      "Tech", "Amphibious Warfare", "World"
     }
 
 [effect_conquest_tech]
