@@ -1080,7 +1080,7 @@ Partisans are guerilla fighters who are experts\
 [unit_fanatics]
 name          = _("Fanatics")
 class         = "Land"
-tech_req      = "Guerilla Warfare"
+tech_req      = "Conscription"
 gov_req       = "Fundamentalism"
 obsolete_by   = "None"
 graphic       = "u.fanatics"
