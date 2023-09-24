@@ -4677,6 +4677,17 @@ reqs    =
     { "type", "name", "range"
    "Building", "Mass Transit", "City"
    }
+   
+; City radius increased with Theology
+[effect_theology_work_area]
+type    = "City_Radius_Sq"
+value   = 3
+reqs    =
+    { "type", "name", "range"
+   "Building", "Mass Transit", "City"
+   }
+
+
 
 [effect_units_in_a_city_1]
 type    = "Output_Bonus"
