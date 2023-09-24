@@ -2516,7 +2516,8 @@ targets       = "Air", "Missile", "Helicopter"
 flags         = "OneAttack", "AirAttacker", "HasNoZOC"
 roles         = ""
 helptext      = _("\
-The Missile is a missile unit able to shoot down enemy air units.\
+The Missile is a missile unit best suitable for defending agains enemy air units. It may cause considerable damage \
+but it's not that reliable as the enemy units are often hard to hit while in air. While this unit was designed against air units it can also be used against other targets \
 "), _("\
 TIP:  A handful of these may successfully keep the air around\
  your treasured homeland free of enemy air units.\
