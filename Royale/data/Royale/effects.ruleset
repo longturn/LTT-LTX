@@ -2511,7 +2511,7 @@ reqs    =
 
 [effect_nuclear_plant]
 type    = "Output_Bonus"
-value   = 50
+value   = 75
 reqs    =
     { "type", "name", "range", "present"
       "Building", "Factory", "City", TRUE
@@ -2524,7 +2524,7 @@ reqs    =
 
 [effect_nuclear_plant_1]
 type    = "Output_Bonus"
-value   = 50
+value   = 75
 reqs    =
     { "type", "name", "range", "present"
       "Building", "Mfg. Plant", "City", TRUE
