@@ -524,7 +524,7 @@ irrigation_food_incr = 0
 irrigation_time      = 10
 mining_result        = "Swamp"
 mining_shield_incr   = 0
-mining_time          = 15
+mining_time          = 24
 transform_result     = "Grassland"
 transform_time       = 24
 pillage_time         = 1
@@ -573,7 +573,7 @@ irrigation_food_incr = 1
 irrigation_time      = 5
 mining_result        = "Forest"
 mining_shield_incr   = 0
-mining_time          = 15
+mining_time          = 24
 transform_result     = "Plains"
 transform_time       = 24
 pillage_time         = 1
@@ -769,7 +769,7 @@ irrigation_food_incr = 1
 irrigation_time      = 5
 mining_result        = "Forest"
 mining_shield_incr   = 0
-mining_time          = 10
+mining_time          = 24
 transform_result     = "Hills"
 transform_time       = 48
 pillage_time         = 1
@@ -813,7 +813,7 @@ plant_time           = 0
 cultivate_time       = 5
 irrigation_result    = "Grassland"
 irrigation_food_incr = 0
-irrigation_time      = 0
+irrigation_time      = 24
 mining_result        = "Forest"
 mining_shield_incr   = 0
 mining_time          = 12
@@ -1526,7 +1526,7 @@ build_time     = 3
 removal_time   = 0
 native_to      = "Land", "Small Land", "Merchant", "Big Land", "Big Siege"
 conflicts      = "Airbase"
-flags          = "NativeTile", "DiplomatDefense", "NoStackDeath"
+flags          = "NativeTile", "NoStackDeath"
 helptext       = _("\
 Fortresses are more permanent forts; construction on them can only begin \
 once the underlying fort is complete. Forts on River tiles cannot be \
@@ -2078,13 +2078,13 @@ border_sq      = -1
 extra          = "Fortress"
 gui_type       = "Fortress"
 border_sq      = 5
-flags          = "NoAggressive", "DiplomatDefense", "NoStackDeath"
+flags          = "NoAggressive"
 
 [base_airbase]
 extra          = "Airbase"
 gui_type       = "Airbase"
 border_sq      = -1
-flags          = "NoAggressive", "ParadropFrom", "NoStackDeath"
+flags          = "NoAggressive"
 
 [base_buoy]
 extra          = "Buoy"
