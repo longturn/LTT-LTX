@@ -1526,7 +1526,7 @@ build_time     = 3
 removal_time   = 0
 native_to      = "Land", "Small Land", "Merchant", "Big Land", "Big Siege"
 conflicts      = "Airbase"
-flags          = "NativeTile", "DiplomatDefense", "NoStackDeath"
+flags          = "NativeTile", "NoStackDeath"
 helptext       = _("\
 Fortresses are more permanent forts; construction on them can only begin \
 once the underlying fort is complete. Forts on River tiles cannot be \
@@ -2078,13 +2078,13 @@ border_sq      = -1
 extra          = "Fortress"
 gui_type       = "Fortress"
 border_sq      = 5
-flags          = "NoAggressive", "DiplomatDefense", "NoStackDeath"
+flags          = "NoAggressive"
 
 [base_airbase]
 extra          = "Airbase"
 gui_type       = "Airbase"
 border_sq      = -1
-flags          = "NoAggressive", "ParadropFrom", "NoStackDeath"
+flags          = "NoAggressive"
 
 [base_buoy]
 extra          = "Buoy"
