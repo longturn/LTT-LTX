@@ -917,7 +917,7 @@ req2     = "Monotheism"
 flags    = ""
 graphic     = "a.theology"
 graphic_alt = "-"
-helptext = _("Improves the effect of Cathedrals.")
+helptext = _("Improves the effect of Cathedrals. Increases the city working radius.")
 cost     = 168
 
 [advance_theory_of_gravity]
