@@ -1481,7 +1481,7 @@ reqs    =
       "MinSize", "41", "City"
     }
 	
-	[effect_upkeep_free_units_food_42]
+[effect_upkeep_free_units_food_42]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1490,7 +1490,7 @@ reqs    =
       "MinSize", "42", "City"
     }
 	
-	[effect_upkeep_free_units_food_43]
+[effect_upkeep_free_units_food_43]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1498,7 +1498,8 @@ reqs    =
       "OutputType", "Food", "Local"
       "MinSize", "43", "City"
     }
-	[effect_upkeep_free_units_food_44]
+
+[effect_upkeep_free_units_food_44]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1507,7 +1508,7 @@ reqs    =
       "MinSize", "44", "City"
     }
 	
-	[effect_upkeep_free_units_food_45]
+[effect_upkeep_free_units_food_45]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1516,7 +1517,7 @@ reqs    =
       "MinSize", "45", "City"
     }
 	
-	[effect_upkeep_free_units_food_46]
+[effect_upkeep_free_units_food_46]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1525,7 +1526,7 @@ reqs    =
       "MinSize", "46", "City"
     }
 	
-	[effect_upkeep_free_units_food_47]
+[effect_upkeep_free_units_food_47]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1534,7 +1535,7 @@ reqs    =
       "MinSize", "47", "City"
     }
 	
-	[effect_upkeep_free_units_food_48]
+[effect_upkeep_free_units_food_48]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1543,7 +1544,7 @@ reqs    =
       "MinSize", "48", "City"
     }
 	
-	[effect_upkeep_free_units_food_49]
+[effect_upkeep_free_units_food_49]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1552,7 +1553,7 @@ reqs    =
       "MinSize", "49", "City"
     }
 	
-	[effect_upkeep_free_units_food_50]
+[effect_upkeep_free_units_food_50]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1561,7 +1562,7 @@ reqs    =
       "MinSize", "50", "City"
     }
 	
-	[effect_upkeep_free_units_food_51]
+[effect_upkeep_free_units_food_51]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1570,7 +1571,7 @@ reqs    =
       "MinSize", "51", "City"
     }
 	
-	[effect_upkeep_free_units_food_52]
+[effect_upkeep_free_units_food_52]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1579,7 +1580,7 @@ reqs    =
       "MinSize", "52", "City"
     }
 	
-	[effect_upkeep_free_units_food_53]
+[effect_upkeep_free_units_food_53]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1588,7 +1589,7 @@ reqs    =
       "MinSize", "53", "City"
     }
 	
-	[effect_upkeep_free_units_food_54]
+[effect_upkeep_free_units_food_54]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1597,7 +1598,7 @@ reqs    =
       "MinSize", "54", "City"
     }
 	
-	[effect_upkeep_free_units_food_55]
+[effect_upkeep_free_units_food_55]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1606,7 +1607,7 @@ reqs    =
       "MinSize", "55", "City"
     }
 	
-	[effect_upkeep_free_units_food_56]
+[effect_upkeep_free_units_food_56]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1615,7 +1616,7 @@ reqs    =
       "MinSize", "56", "City"
     }
 	
-	[effect_upkeep_free_units_food_57]
+[effect_upkeep_free_units_food_57]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1624,7 +1625,7 @@ reqs    =
       "MinSize", "57", "City"
     }
 	
-	[effect_upkeep_free_units_food_58]
+[effect_upkeep_free_units_food_58]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1633,7 +1634,7 @@ reqs    =
       "MinSize", "58", "City"
     }
 	
-	[effect_upkeep_free_units_food_59]
+[effect_upkeep_free_units_food_59]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1642,7 +1643,7 @@ reqs    =
       "MinSize", "59", "City"
     }
 	
-	[effect_upkeep_free_units_food_60]
+[effect_upkeep_free_units_food_60]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1650,9 +1651,8 @@ reqs    =
       "OutputType", "Food", "Local"
       "MinSize", "60", "City"
     }
-	
-	
-	[effect_upkeep_free_units_food_61]
+		
+[effect_upkeep_free_units_food_61]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1660,9 +1660,8 @@ reqs    =
       "OutputType", "Food", "Local"
       "MinSize", "61", "City"
     }
-	
-		
-	[effect_upkeep_free_units_food_62]
+			
+[effect_upkeep_free_units_food_62]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1670,9 +1669,8 @@ reqs    =
       "OutputType", "Food", "Local"
       "MinSize", "62", "City"
     }
-	
-		
-	[effect_upkeep_free_units_food_63]
+			
+[effect_upkeep_free_units_food_63]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
@@ -1680,9 +1678,8 @@ reqs    =
       "OutputType", "Food", "Local"
       "MinSize", "63", "City"
     }
-	
-		
-	[effect_upkeep_free_units_food_64]
+			
+[effect_upkeep_free_units_food_64]
 type    = "Unit_Upkeep_Free_Per_City"
 value   = 1
 reqs    =
