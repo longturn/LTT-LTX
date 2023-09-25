@@ -94,7 +94,7 @@ set trading_tech "DISABLED"
 set victories "SPACERACE|ALLIED"
 set incite_gold_capt_chance "0"
 set incite_gold_loss_chance "0"
-set demography   NnciwASLaPEgRMmuklOCqrbsz
+set demography   NnciwASLaMklOCqrbsz
 
 # technical
 set aifill 0
