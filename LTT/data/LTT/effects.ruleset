@@ -2621,7 +2621,7 @@ reqs    =
       "Building", "Palace", "City"
     }
 
-; Make it main capital -> value higher than that of Ecclesiastical Palace
+; Make it main capital -> value higher than that of Second Palace
 [effect_palace_3]
 type    = "Capital_City"
 value   = 2
@@ -2671,7 +2671,7 @@ type    = "Output_Waste_Pct"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "OutputType", "Trade", "Local", TRUE
       "Building", "Palace", "City", FALSE
     }
@@ -2681,7 +2681,7 @@ type    = "Output_Waste_Pct"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "OutputType", "Shield", "local", TRUE
       "Building", "Palace", "City", FALSE
     }
@@ -2691,7 +2691,7 @@ type    = "Spy_Resistant"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
@@ -2700,7 +2700,7 @@ type    = "Building_Saboteur_Resistant"
 value   = 50
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
@@ -2709,7 +2709,7 @@ type    = "Capital_City"
 value	= 1
 reqs	=
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
@@ -2719,7 +2719,7 @@ value   = 75
 reqs    =
     { "type", "name", "range", "present", "quiet"
       "Gov", "Despotism", "Player", TRUE, TRUE
-      "Building", "Ecclesiastical Palace", "City", TRUE, FALSE
+      "Building", "Second Palace", "City", TRUE, FALSE
       "OutputType", "Gold", "Local", TRUE, FALSE
       "Building", "Palace", "City", FALSE, FALSE
     }
@@ -2730,7 +2730,7 @@ value   = 50
 reqs    =
     { "type", "name", "range", "present", "quiet"
       "Gov", "Monarchy", "Player", TRUE, TRUE
-      "Building", "Ecclesiastical Palace", "City", TRUE, FALSE
+      "Building", "Second Palace", "City", TRUE, FALSE
       "OutputType", "Gold", "Local", TRUE, FALSE
       "Building", "Palace", "City", FALSE, FALSE
     }
@@ -2740,7 +2740,7 @@ type    = "History"
 value	= 1
 reqs	=
     { "type", "name", "range", "present"
-      "Building", "Ecclesiastical Palace", "City", TRUE
+      "Building", "Second Palace", "City", TRUE
       "Building", "Palace", "City", FALSE
     }
 
