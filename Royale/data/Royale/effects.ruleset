@@ -4178,14 +4178,6 @@ reqs    =
       "Building", "Manhattan Project", "World", TRUE
     }
 
-[effect_marco_polos_contact]
-type    = "Have_Contacts"
-value   = 1
-reqs    =
-    { "type", "name", "range"
-      "Building", "Marco Polo's Embassy", "Player"
-    }
-
 [effect_manhattan_project_culture]
 type    = "History"
 value	= 6
@@ -5058,6 +5050,15 @@ reqs    =
     }
 [effect_atlantic_telegraph_company]
 type    = "Have_Embassies"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Building", "Atlantic Telegraph Company", "World"
+    }
+	
+
+[effect_atlantic_telegraph_company_3]
+type    = "Have_Contacts"
 value   = 1
 reqs    =
     { "type", "name", "range"
