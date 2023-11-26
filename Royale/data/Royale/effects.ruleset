@@ -3032,6 +3032,15 @@ reqs	=
     { "type", "name", "range"
       "Building", "Palace", "City"
     }
+	
+[effect_palace_gov_center_2]
+type    = "Gov_Center"
+value	= 1
+reqs	=
+    { "type", "name", "range"
+      "Building", "Second Palace", "City"
+    }
+	
 
 [effect_palace_despotism]
 type    = "Output_Bonus"
