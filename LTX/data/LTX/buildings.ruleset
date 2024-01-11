@@ -619,7 +619,7 @@ helps cities to grow faster and more easily withstand famine. With a \
 Granary this is extended to cities of size 4 and above. \
 The automatic or default granary effect applies to cities with size less than \
 4 just before they grow. When a city grows from size 3 to size 4 it will always have \
-50% of the food stored in the granary after the size chanage. \
+50% of the food stored in the granary after the size change. \
 If a city doesn't have a granary building and it grows from size 4 to \
 size 5 there will be no food stored in the granary. If a city has the granary \
 city improvement and it grows from size 4 to 5 it will have 50% food stored in the granary. \ 
@@ -2035,7 +2035,7 @@ Increases trade output by 30% in all cities for all the\
  players. The player owning this wonder is the only one able to build the Trade Company. \
 "), _("\
 TIP: it may make sense to let someone else to build this wonder. Everyone gets the effect \
-and the Trade Conpany can't usually be instantly built after Marco Polo is finished.\
+and the Trade Company can't usually be instantly built after Marco Polo is finished.\
 ")
 
 
