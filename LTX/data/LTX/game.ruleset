@@ -10,7 +10,7 @@
 ; than minor changes.
 
 [datafile]
-description="Longturn more experimenal based on LTT (Longturn Traditional from Dec. 17th 2020) also based on Civ2Civ3 game rules for Freeciv"
+description="Longturn more experimental based on LTT (Longturn Traditional from Dec. 17th 2020) also based on Civ2Civ3 game rules for Freeciv"
 options="+Freeciv-ruleset-Devel-2017.Jan.02"
 format_version=20
 
