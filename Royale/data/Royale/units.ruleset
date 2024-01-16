@@ -992,9 +992,9 @@ helptext      = _("\
 Infantry are modern version of infantry, relatively good\
  at defending your cities.\n\n
  Why: This unit is the end of an upgrade patch all the way from the warriors. It's the best non armored unit for defending your cities.\
- This was added so that the riflemen could be upgraded into something else than marines. Upgading those and the previous units\
+ This was added so that the riflemen could be upgraded into something else than marines. Upgrading those and the previous units\
  into marines created issues to the gameplay. The players were taking huge risks by building lots of cheap early units.\
- The plan was to uprade the early units at a later time for offensive purposes. Upgrading the early units into marines created situations where the game\
+ The plan was to upgrade the early units at a later time for offensive purposes. Upgrading the early units into marines created situations where the game\
  ended (for some players) in a turn or two with no real warning. With this one as the final upgrade the problem is no more because of this upgrade path.\
  The infantry unit also allows an alternative research path because of the reasonably good defense value.\
 ")
@@ -1073,7 +1073,7 @@ Partisans are guerilla fighters who are experts\
  once again become part of the normal population when\
  the war is over. The partisans are almost invisible to\
  the enemy but this comes with a cost. The partisans are\
- not that fast when moving to a new loaction.\
+ not that fast when moving to a new location.\
 ")
 
 
@@ -2516,7 +2516,7 @@ targets       = "Air", "Missile", "Helicopter"
 flags         = "OneAttack", "AirAttacker", "HasNoZOC"
 roles         = ""
 helptext      = _("\
-The Missile is a missile unit best suitable for defending agains enemy air units. It may cause considerable damage \
+The Missile is a missile unit best suitable for defending against enemy air units. It may cause considerable damage \
 but it's not that reliable as the enemy units are often hard to hit while in air. While this unit was designed against air units it can also be used against other targets \
 "), _("\
 TIP:  A handful of these may successfully keep the air around\
@@ -2525,7 +2525,7 @@ TIP:  A handful of these may successfully keep the air around\
 GUIDE: The missile units have poor vision so you may want to use fighters or other air units for scouting the area \
 before attacking. Few missile units can be used as the backbone of your air defense strategy before you get better \
 fighters. The enemy fighters and bombers will lose all moves when attacking so they will remain at the same place \
-until the next turn. This is when you can use the missiles for shooting down the sirplanes attacking you. \
+until the next turn. This is when you can use the missiles for shooting down the airplanes attacking you. \
 The nuclear submarines and carriers can also move the missile units. Use this to your advantage and you may need \
 less missiles to cover your air defense needs with the short range missile units. \
 ")
@@ -2956,7 +2956,7 @@ roles         = "DiplomatStartUnit"
 helptext      = _("\
 An Operative is more skilled in the arts of espionage than her Diplomat predecessor or the Spy.\
 "), _("\
-Operatives will be able to use many means for trasportation and \
+Operatives will be able to use many means for transportation and \
 will ignore terrain when moving. \
 She can perform all the functions of the Spy; refer to the Diplomat\
  entry for more details. Unlike a Diplomat, an Operative may also survive an\
@@ -3518,6 +3518,6 @@ roles         = ""
 helptext      = _("\
 The Cargo Aircraft is an airplane with an exceptionally high range while carrying \
 a heavy cargo. It is able to transport a wide range of units able to surprise your enemy. \
-This exceptionally heavy airplane has no offecive capabilities but is able to defend.\
+This exceptionally heavy airplane has no offensive capabilities but is able to defend.\
 ")
 

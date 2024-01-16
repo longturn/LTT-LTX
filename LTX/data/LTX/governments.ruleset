@@ -115,7 +115,7 @@ Under a Tribal government, you are part ruler of your people. Your\
  The cities need to be close to the government center or there will\
  be issues with waste. With Tribalism it's possible to counter this\
  effect with some early wonders that will act like government centers.\
- However these wonders will expire realtively soon and Tribalism is not\
+ However these wonders will expire relatively soon and Tribalism is not\
  that well suited for an advanced empire.\
 "), _("\
 Compared to Despotism, a Tribal economy is more shield-oriented. Its\
@@ -161,7 +161,7 @@ Under Despotism, you are the absolute ruler of your people.  Your\
  The cities need to be close to the government center or there will\
  be issues with waste. With despotism it's possible to counter this\
  effect with some early wonders that will act like government centers.\
- However these wonders will expire realtively soon and Despotism is not\
+ However these wonders will expire relatively soon and Despotism is not\
  that well suited for an advanced empire.\
 "), _("\
 Compared to Tribalism, a Despotic economy is more trade-oriented.\
@@ -429,7 +429,7 @@ _("\
 * Each city can support one unit for free; further units each cost\
  2 gold per turn.\n\
 * None of the cities can tolerate even a single aggressively deployed military unit;\
- The first one cause one unhappy citizend and additional units each cause 2 unhappy citizens.\n\
+ The first one cause one unhappy citizen and additional units each cause 2 unhappy citizens.\n\
 * Base corruption is 5%. This increases with distance from the capital\
  (half as fast with knowledge of The Corporation).\n\
 * Base production waste is 25%. This increases with distance from the\
@@ -463,7 +463,7 @@ Under a City States government, the nation is formed by a coalition of city stat
  not get upset easily if the coalition only controls a few cities. Even the far away military units are tolerated.\ 
  However more territory and expansion leads to serious unhappiness issues since the system is unable to resolve internal conflicts in a vast empire.\
  A City States economy is very trade-oriented and this allows the capital city with the palace to have 8 extra content citizens.\
- The City State goventment is intended to be used by nations with very little land.\
+ The City State government is intended to be used by nations with very little land.\
 "),
 ; /* xgettext:no-c-format */
 _("\

@@ -1030,7 +1030,7 @@ flags         = "Capturer", "Unique", "Marines"
 roles         = "DefendGood", "DefendGoodStartUnit", "FirstBuild"
 helptext      = _("\
 Navy Troops are infantry equipped with early\
- firearms and able to attack land tiles directrly from a ship. From the sail ships only the flagship frigate may carry this unit. There is no loss of population if the defender in a city dies and the city has no walls. \
+ firearms and able to attack land tiles directly from a ship. From the sail ships only the flagship frigate may carry this unit. There is no loss of population if the defender in a city dies and the city has no walls. \
 ")
 
 [unit_riflemen]
@@ -1172,7 +1172,7 @@ Partisans are guerilla fighters who are experts\
  once again become part of the normal population when\
  the war is over. The partisans are almost invisible to\
  the enemy but this comes with a cost. The partisans are\
- not that fast when moving to a new loaction.\
+ not that fast when moving to a new location.\
 ")
 
 
@@ -2822,7 +2822,7 @@ flags         = "OneAttack", "HasNoZOC"
 roles         = ""
 helptext      = _("\
 The Advanced Torpedo is a unit able to target enemy deep sea units. It is expensive, has short range but it able to hit otherwise unreachable deep sea units. This is the first torpedo unit the players can move. \
-Pervious torpedo units are available only as a weaponry the ships can use, simulated simply as better attack values. Modern ships use regular torpedo units but since those are a concept like ammunition there is \
+Previous torpedo units are available only as a weaponry the ships can use, simulated simply as better attack values. Modern ships use regular torpedo units but since those are a concept like ammunition there is \
 no individual unit available. The Advanced Torpedo is available as a unit \
 of it's own since it's specifically intended for tasks where old conventional weapons no longer work.\
 "), _("\
@@ -2872,7 +2872,7 @@ TIP:  A handful of these may successfully keep the air around\
 GUIDE: The missile units have poor vision so you may want to use fighters or other air units for scouting the area \
 before attacking. Few missile units can be used as the backbone of your air defense strategy before you get better \
 fighters. The enemy fighters and bombers will lose all moves when attacking so they will remain at the same place \
-until the next turn. This is when you can use the missiles for shooting down the sirplanes attacking you. \
+until the next turn. This is when you can use the missiles for shooting down the airplanes attacking you. \
 The nuclear submarines and carriers can also move the missile units. Use this to your advantage and you may need \
 less missiles to cover your air defense needs with the short range missile units. \
 ")
@@ -3308,7 +3308,7 @@ roles         = "DiplomatStartUnit"
 helptext      = _("\
 An Operative is more skilled in the arts of espionage than her Diplomat predecessor or the Spy.\
 "), _("\
-Operatives will be able to use many means for trasportation and \
+Operatives will be able to use many means for transportation and \
 will ignore terrain when moving. \
 She can perform all the functions of the Spy; refer to the Diplomat\
  entry for more details. Unlike a Diplomat, an Operative may also survive an\
@@ -3786,7 +3786,7 @@ flags         = "AirAttacker"
 roles         = "DefendGood"
 helptext      = _("\
 An improved Stealth Fighter, with a higher movement\
- radius and it's able to stay on air for an extended perood of time.\
+ radius and it's able to stay on air for an extended period of time.\
  The fusion technology fitted in such small size is incredibly \
  expensive and makes this aircraft one of the most expensive units available.\
 ")
@@ -3929,6 +3929,6 @@ roles         = ""
 helptext      = _("\
 The Cargo Aircraft is an airplane with an exceptionally high range while carrying \
 a heavy cargo. It is able to transport a wide range of units able to surprise your enemy. \
-This exceptionally heavy airplane has no offecive capabilities but is able to defend.\
+This exceptionally heavy airplane has no offensive capabilities but is able to defend.\
 ")
 
