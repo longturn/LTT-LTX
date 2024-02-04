@@ -1843,7 +1843,7 @@ graphic	= "b.magellans_expedition"
 graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range", "survives"
-      "Tech", "Nuclear Power", "Player", FALSE
+      "Tech", "Engineering", "Player", FALSE
     }
 build_cost	= 200
 upkeep		= 0
