@@ -163,7 +163,7 @@ cost     = 1130
 
 [advance_automobile]
 name     = _("Automobile")
-req1     = "Combustion"
+req1     = "Refining"
 req2     = "Steel"
 flags    = ""
 graphic     = "a.automobile"
@@ -245,8 +245,8 @@ cost     = 2652
 
 [advance_combustion]
 name     = _("Combustion")
-req1     = "Refining"
-req2     = "Engineering"
+req1     = "Explosives"
+req2     = "Industrialization"
 flags    = ""
 graphic     = "a.combustion"
 graphic_alt = "-"
@@ -390,7 +390,7 @@ cost     = 92
 
 [advance_flight]
 name     = _("Flight")
-req1     = "Combustion"
+req1     = "Refining"
 req2     = "Tactics"
 flags    = "Build_Airborne"
 graphic     = "a.flight"
@@ -605,7 +605,7 @@ cost     = 416
 
 [advance_miniaturization]
 name     = _("Miniaturization")
-req1     = "Combustion"
+req1     = "Refining"
 req2     = "Electronics"
 flags    = ""
 graphic     = "a.miniaturization"
@@ -769,8 +769,8 @@ cost     = 2100
 
 [advance_refining]
 name     = _("Refining")
-req1     = "Explosives"
-req2     = "Industrialization"
+req1     = "Combustion"
+req2     = "Engineering"
 flags    = ""
 graphic     = "a.refining"
 graphic_alt = "-"
