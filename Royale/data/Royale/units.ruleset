@@ -1360,7 +1360,7 @@ Crusaders are highly disciplined mounted\
 
 [unit_knights]
 name          = _("Knights")
-class         = "Land"
+class         = "Big Land"
 tech_req      = "Chivalry"
 obsolete_by   = "Dragoons"
 graphic       = "u.knights"
@@ -1372,7 +1372,7 @@ sound_fight_alt = "f_generic"
 build_cost    = 32
 pop_cost      = 0
 attack        = 6
-defense       = 1
+defense       = 2
 hitpoints     = 10
 firepower     = 1
 move_rate     = 4
