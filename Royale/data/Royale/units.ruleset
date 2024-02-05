@@ -1372,7 +1372,7 @@ sound_fight_alt = "f_generic"
 build_cost    = 32
 pop_cost      = 0
 attack        = 6
-defense       = 3
+defense       = 1
 hitpoints     = 10
 firepower     = 1
 move_rate     = 4
@@ -1387,7 +1387,7 @@ flags         = "Capturer", "Horse"
 roles         = "DefendOk", "DefendOkStartUnit", "AttackFastStartUnit",
                 "BarbarianTech", "BarbarianBuildTech", "Hunter"
 helptext      = _("\
-Knights are mounted and heavily armored warriors.\
+Knights are mounted and strong offensive warriors.\
 ")
 
 [unit_dragoons]
