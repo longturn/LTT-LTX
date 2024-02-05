@@ -3825,7 +3825,6 @@ value   = 50
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Great Library", "World", TRUE
-      "Building", "Library", "City"
       "OutputType", "Science", "Local"
     }
 
