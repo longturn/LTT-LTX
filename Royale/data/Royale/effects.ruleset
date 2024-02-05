@@ -4295,7 +4295,7 @@ value   = 50
 reqs    =
     { "type", "name", "range", "survives"
       "Building", "Internet", "World", TRUE
-      "Building", "Research Lab", "City"
+      "Building", "University", "City"
       "OutputType", "Science", "Local"
     }
 

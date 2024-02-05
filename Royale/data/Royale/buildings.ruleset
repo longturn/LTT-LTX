@@ -984,8 +984,7 @@ sound		= "b_research_lab"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Increases the science output in a city by an additional 50%, or \
-by 100% once the Internet wonder has been built by any player.\
+Increases the science output in a city by an additional 50%.\
 "),
 ; /* xgettext:no-c-format */
 _("\
@@ -1393,7 +1392,8 @@ sound		= "b_university"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Increases the science output in a city by an additional 50%.\
+Increases the science output in a city by an additional 50%, or \
+by 100% once the Internet wonder has been built by any player\
 "),
 ; /* xgettext:no-c-format */
 _("\
@@ -2114,7 +2114,7 @@ and thereafter all cities on the map are continuously visible to its \
 owner despite fog-of-war.\
 "), _("\
 Completion of this wonder permanently adds 50% to the effect of \
-Research Labs for every player.\
+Universities for every player.\
 ")
 
 [building_shakespeares_theatre]
