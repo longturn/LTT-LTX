@@ -622,7 +622,8 @@ sound		= "b_library"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Increases the science output in a city by 50%.\
+Increases the science output in a city by 50%, or \
+by 100% once Isaac Newton's College has been built by any player.\
 ")
 
 [building_marketplace]
@@ -1392,8 +1393,7 @@ sound		= "b_university"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Increases the science output in a city by an additional 50%, or \
-by 100% once Isaac Newton's College has been built by any player.\
+Increases the science output in a city by an additional 50%.\
 "),
 ; /* xgettext:no-c-format */
 _("\
@@ -1708,7 +1708,7 @@ Gives an immediate technology advance to the player that builds it, \
 and thereafter 12 extra research points every turn to its city.\
 "), _("\
 Completion of this wonder permanently adds 50% to the effect of \
-Universities for every player.\
+Libraries for every player.\
 ")
 
 [building_js_bachs_cathedral]
