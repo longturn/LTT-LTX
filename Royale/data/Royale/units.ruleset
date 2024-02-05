@@ -2328,7 +2328,8 @@ The Battleship is the supreme naval unit with\
 [unit_submarine]
 name          = _("Submarine")
 class         = "Sea"
-tech_req      = "Combustion"
+tech_req      = "Electricity"
+impr_req	  = "Port Facility"
 obsolete_by   = "None"
 graphic       = "u.submarine"
 graphic_alt   = "-"
