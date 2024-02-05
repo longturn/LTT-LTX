@@ -2489,7 +2489,7 @@ tiles (for use by Offshore Platforms).\
 
 
 [unit_missile]
-name          = _("Missile")
+name          = _("Anti-Aircraft Missile")
 class         = "Missile"
 tech_req      = "Flight"
 obsolete_by   = "None"
@@ -2501,11 +2501,11 @@ sound_fight   = "f_cruise_missile"
 sound_fight_alt = "f_generic"
 build_cost    = 45
 pop_cost      = 0
-attack        = 15
+attack        = 20
 defense       = 0
-hitpoints     = 2
+hitpoints     = 5
 firepower     = 2
-move_rate     = 9
+move_rate     = 7
 vision_radius_sq = 1
 transport_cap = 0
 fuel          = 1
