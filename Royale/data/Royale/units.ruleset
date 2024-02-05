@@ -218,7 +218,7 @@ flags         = "ZOC", "DamageSlows", "AttFromNonNative"
 name          = _("?unitclass:Helicopter")
 min_speed     = 1
 hp_loss_pct   = 10
-flags         = "Unreachable", "DoesntOccupyTile", "CanOccupyCity", "CollectRansom", "Airliftable"
+flags         = "Unreachable", "DoesntOccupyTile", "CanOccupyCity", "CollectRansom"
 
 [unitclass_air]
 ; /* TRANS: Unit class: used adjectivally */
@@ -226,7 +226,7 @@ name          = _("?unitclass:Air")
 min_speed     = 1
 hp_loss_pct   = 0
 hut_behavior  = "Frighten"
-flags         = "Unreachable", "DoesntOccupyTile", "CanPillage", "Airliftable"
+flags         = "Unreachable", "DoesntOccupyTile", "CanPillage"
 
 ; /* <-- avoid gettext warnings
 ;
