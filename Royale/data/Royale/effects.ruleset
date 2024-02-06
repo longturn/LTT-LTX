@@ -4537,7 +4537,7 @@ reqs    =
     }
 
 ; 2 - 1 = 1 -> T130 = Y2000
-[effect_calendar_6]
+[effect_calendar_7]
 type    = "Turn_Years"
 value   = -1
 reqs    =
@@ -5267,6 +5267,5 @@ reqs    =
       "OutputType", "Science", "Local"
     }
 	
-
 
 
