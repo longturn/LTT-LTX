@@ -386,7 +386,7 @@ reqs    =
       "UnitClass", "Sea", "Local"
     }
 
-; Advanced Flight enables movement of nuclear weapons
+; Advanced Flight doubles movement of nuclear weapons
 [effect_nuclear_bomber1]
 type    = "Move_Bonus"
 value   = 9
@@ -396,7 +396,7 @@ reqs    =
       "UnitType", "Nuclear", "Local"
     }
 
-; Advanced Flight enables movement of nuclear weapons
+; Advanced Flight doubles movement of nuclear weapons
 [effect_nuclear_bomber2]
 type    = "Move_Bonus"
 value   = 9
@@ -406,27 +406,6 @@ reqs    =
       "UnitType", "Nuclear Bomb", "Local"
     }
 
-
-; Rocketry doubles movement of nuclear weapons
-[effect_nuclear_missile1]
-type    = "Move_Bonus"
-value   = 9
-reqs    =
-    { "type", "name", "range"
-      "Tech", "Rocketry", "Player"
-      "UnitType", "Nuclear", "Local"
-    }
-
-
-; Rocketry doubles movement of nuclear weapons
-[effect_nuclear_missile2]
-type    = "Move_Bonus"
-value   = 9
-reqs    =
-    { "type", "name", "range"
-      "Tech", "Rocketry", "Player"
-      "UnitType", "Nuclear Bomb", "Local"
-    }
 
 ; Invention makes unit upgrade prices 20% less expensive
 [effect_upgrade_price_halfed]
