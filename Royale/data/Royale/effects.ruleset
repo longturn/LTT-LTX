@@ -5266,7 +5266,7 @@ reqs    =
       "OutputType", "Science", "Local"
     }
 	
-	[effect_library_year_boost_3]
+[effect_library_year_boost_3]
 type    = "Output_Bonus"
 value   = 40
 reqs    =
@@ -5275,7 +5275,7 @@ reqs    =
       "OutputType", "Science", "Local"
     }
 	
-	[effect_library_year_boost_4]
+[effect_library_year_boost_4]
 type    = "Output_Bonus"
 value   = 50
 reqs    =
@@ -5284,7 +5284,7 @@ reqs    =
       "OutputType", "Science", "Local"
     }
 	
-	[effect_library_year_boost_5]
+[effect_library_year_boost_5]
 type    = "Output_Bonus"
 value   = 60
 reqs    =
