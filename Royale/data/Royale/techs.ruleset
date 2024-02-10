@@ -168,7 +168,7 @@ req2     = "Steel"
 flags    = ""
 graphic     = "a.automobile"
 graphic_alt = "-"
-cost     = 1630
+cost     = 2600
 
 [advance_banking]
 name     = _("Banking")
@@ -269,7 +269,7 @@ req2     = "Radio"
 flags    = ""
 graphic     = "a.computers"
 graphic_alt = "-"
-cost     = 2300
+cost     = 3600
 
 [advance_conscription]
 name     = _("Conscription")
@@ -358,7 +358,7 @@ req2     = "Space Flight"
 flags    = ""
 graphic     = "a.environmentalism"
 graphic_alt = "-"
-cost     = 3600
+cost     = 16000
 
 [advance_espionage]
 name     = _("Espionage")
@@ -405,7 +405,7 @@ flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"
 helptext = _("Allows building several fusion based units. Not all fusion units are worth the cost.")
-cost     = 17000
+cost     = 30000
 
 
 [advance_advanced_espionage]
@@ -416,7 +416,7 @@ flags    = ""
 graphic     = "a.advanced_espionage"
 graphic_alt = "a.flight"
 helptext = _("In the digital age espionage becomes even more powerful.")
-cost     = 18000
+cost     = 25000
 
 [advance_aviation_endurance]
 name     = _("Aviation Endurance")
@@ -426,7 +426,7 @@ flags    = ""
 graphic     = "a.flightendurance"
 graphic_alt = "a.flight"
 helptext = _("Allows the construction of unit cargo planes.")
-cost     = 20000
+cost     = 35000
 
 [advance_genetic_engineering]
 name     = _("Genetic Engineering")
@@ -497,7 +497,7 @@ req2     = "Mobile Warfare"
 flags    = ""
 graphic     = "a.labor_union"
 graphic_alt = "-"
-cost     = 2375
+cost     = 3000
 
 [advance_laser]
 name     = _("Laser")
@@ -506,7 +506,7 @@ req2     = "Nuclear Power"
 flags    = ""
 graphic     = "a.laser"
 graphic_alt = "-"
-cost     = 4000
+cost     = 8000
 
 [advance_leadership]
 name     = _("Leadership")
@@ -569,7 +569,7 @@ req2     = "The Corporation"
 flags    = ""
 graphic     = "a.mass_production"
 graphic_alt = "-"
-cost     = 1870
+cost     = 3000
 
 [advance_mathematics]
 name     = _("Mathematics")
@@ -615,7 +615,7 @@ Allows Settlers, Migrants, Workers, Engineers, and Transports to build \
 oil platforms on Deep Ocean, required to get the bonus from \
 Offshore Platforms.\
 ")
-cost     = 1725
+cost     = 3600
 
 [advance_mobile_warfare]
 name     = _("Mobile Warfare")
@@ -624,7 +624,7 @@ req2     = "Machine Tools"
 flags    = ""
 graphic     = "a.mobile_warfare"
 graphic_alt = "-"
-cost     = 2040
+cost     = 3000
 
 [advance_monarchy]
 name     = _("Monarchy")
@@ -680,7 +680,7 @@ flags    = ""
 graphic     = "a.nuclear_power"
 graphic_alt = "-"
 helptext = _("Gives sea units one extra move.")
-cost     = 1450
+cost     = 5000
 
 [advance_philosophy]
 name     = _("Philosophy")
@@ -709,7 +709,7 @@ req2     = "Robotics"
 flags    = ""
 graphic     = "a.plastics"
 graphic_alt = "-"
-cost     = 3000
+cost     = 6000
 
 [advance_polytheism]
 name     = _("Polytheism")
@@ -801,7 +801,7 @@ req2     = "Computers"
 flags    = ""
 graphic     = "a.robotics"
 graphic_alt = "-"
-cost     = 2700
+cost     = 5000
 
 [advance_rocketry]
 name     = _("Rocketry")
@@ -811,7 +811,7 @@ flags    = ""
 graphic     = "a.rocketry"
 graphic_alt = "-"
 helptext = _("Doubles movement of nuclear units.")
-cost     = 4400
+cost     = 5000
 
 [advance_sanitation]
 name     = _("Sanitation")
@@ -838,7 +838,7 @@ req2     = "Rocketry"
 flags    = ""
 graphic     = "a.space_flight"
 graphic_alt = "-"
-cost     = 6600
+cost     = 15000
 
 [advance_stealth]
 name     = _("Stealth")
@@ -847,7 +847,7 @@ req2     = "Space Flight"
 flags    = ""
 graphic     = "a.stealth"
 graphic_alt = "-"
-cost     = 3600
+cost     = 7000
 
 [advance_steam_engine]
 name     = _("Steam Engine")
@@ -878,7 +878,7 @@ helptext = _("\
 Allows Settlers, Migrants, Workers and Engineers to upgrade railroads \
 with maglev.\
 ")
-cost     = 3800
+cost     = 20000
 
 [advance_tactics]
 name     = _("Tactics")
