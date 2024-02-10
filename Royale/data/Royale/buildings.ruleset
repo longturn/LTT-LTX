@@ -1445,7 +1445,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 700
+build_cost	= 4000
 upkeep		= 0
 sabotage	= 0
 sound		= "w_asmiths_trading_co"
