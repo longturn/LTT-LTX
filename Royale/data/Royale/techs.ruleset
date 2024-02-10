@@ -439,12 +439,12 @@ cost     = 1485
 
 [advance_guerilla_warfare]
 name     = _("Guerilla Warfare")
-req1     = "Communism"
-req2     = "Tactics"
+req1     = "Conscription"
+req2     = "None"
 flags    = ""
 graphic     = "a.guerilla_warfare"
 graphic_alt = "-"
-cost     = 660
+cost     = 400
 
 [advance_gunpowder]
 name     = _("Gunpowder")
