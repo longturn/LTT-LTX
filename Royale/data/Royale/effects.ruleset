@@ -3870,18 +3870,19 @@ reqs	=
 
 [effect_hanging_gardens]
 type    = "Make_Content"
-value   = 1
+value   = 3
 reqs    =
     { "type", "name", "range"
-      "Building", "Hanging Gardens", "Player"
+      "Building", "Hanging Gardens", "City"
     }
 
 [effect_hanging_gardens_1]
 type    = "Output_Add_Tile"
 value   = 4
 reqs    =
-    { "type", "name", "range"
-      "Building", "Hanging Gardens", "City"
+    { "type", "name", "range", "present"
+      "Building", "Hanging Gardens", "City", TRUE
+	  "Building", "Palace", "City", FALSE
       "CityTile", "Center", "Local"
       "OutputType", "Luxury", "Local"
     }

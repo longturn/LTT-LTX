@@ -1647,15 +1647,15 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Explosives", "Player", FALSE
     }
-build_cost	= 90
+build_cost	= 60
 upkeep		= 0
 sabotage	= 0
 sound		= "w_hanging_gardens"
 sound_alt	= "w_generic"
 helptext	= _("\
-Makes one unhappy citizen content in every city of the player that \
-owns it (not including citizens unhappy about aggression). This wonder \
-also makes two content citizens happy in the city where it is located \
+Makes 3 unhappy citizen content in the city where it's located \
+(not including citizens unhappy about aggression). This wonder \
+also makes two content citizens happy if the wonder is not located in the capital city \
 (4 extra luxury points).\
 ")
 
