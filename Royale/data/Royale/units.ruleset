@@ -158,6 +158,16 @@ hp_loss_pct   = 0
 hut_behavior  = "Frighten"
 flags         = "Missile", "Unreachable", "DoesntOccupyTile"
 
+
+[unitclass_nuclear]
+; /* TRANS: Unit class: used adjectivally */
+name          = _("?unitclass:Nuclear")
+min_speed     = 0
+hp_loss_pct   = 0
+hut_behavior  = "Frighten"
+flags         = "Missile", "Unreachable", "DoesntOccupyTile"
+
+
 [unitclass_land]
 ; /* TRANS: Unit class: used adjectivally */
 name          = _("?unitclass:Land")
@@ -2615,7 +2625,7 @@ the enemy ships. This is why extra caution is needed if your enemy is able to bu
 
 [unit_nuclear_bomb]
 name          = _("Nuclear Bomb")
-class         = "Missile"
+class         = "Nuclear"
 tech_req      = "Steel"
 obsolete_by   = "None"
 graphic       = "u.nuclearbomb"
@@ -2677,7 +2687,7 @@ TIP:  You may be involved in a situation where you've invaded an\
 
 [unit_nuclear]
 name          = _("Nuclear")
-class         = "Missile"
+class         = "Nuclear"
 tech_req      = "Radio"
 obsolete_by   = "None"
 graphic       = "u.nuclear"
