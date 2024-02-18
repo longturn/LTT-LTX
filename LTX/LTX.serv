@@ -31,7 +31,6 @@ set rapturedelay 3
 set restrictinfra enabled
 set revolen 2
 set revolentype FIXED
-set spacerace enabled
 set startunits cccccwwwwwwxx
 set techlevel 0
 set unreachableprotects disabled
@@ -87,5 +86,4 @@ metamessage "Longturn Experimental Extra for multiplayer games | More info: http
 metapatches longturn
 
 
-syncturn
 start
