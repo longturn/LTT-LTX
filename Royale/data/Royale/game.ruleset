@@ -3,14 +3,14 @@
 ; for other "maintenance".  If you want to make custom changes,
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 
 ; Note that the freeciv AI may not cope well with anything more
 ; than minor changes.
 
 [datafile]
-description="Royale game rules for Freeciv"
+description="Royale game rules for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -19,11 +19,11 @@ format_version=20
 [ruledit]
 
 ; Which file to read description in from.
-description_file = "LTT/README.LTT"
+description_file = "Royale/README.ROYALE
 
 [about]
 ; Ruleset name
-name = _("LTT (Longturn Traditional) ruleset")
+name = _("Royale ruleset, based on LTT/Civ2Civ3")
 
 ; There`s no separate versioning in rulesets part of main freeciv distribution
 ;version = ""
@@ -38,20 +38,20 @@ name = _("LTT (Longturn Traditional) ruleset")
 ; /* TRANS: In the client, this is displayed alongside the contents of
 ;    README.LTT, which are not localized. */
 summary = _("\
-You are playing Freeciv with LTT ruleset based on civ2civ3 rules:\
+You are playing Freeciv21 with Royale ruleset based on civ2civ3 rules:\
 \n\n\
 Gameplay more similar to civ3, keeping the combat system from civ2.\
 \n\n\
 Also suitable for single player, with AI less aggressive at start,\
  but more challenging at the end.\
 \n\n\
-The LTT ruleset is designed to be played without AI players even while it's quite playable with AI opponents. For the best experience play it with human players.\
- LTT is balanced to make the game interesting for both beginners and experienced players.\
+The Royale ruleset is designed to be played without AI players even while it's quite playable with AI opponents. For the best experience play it with human players.\
+ Royale is balanced to make the game interesting for both beginners and experienced players.\
 ")
 
 ; Detailed description
 ; When updating this, update also desciption_file in [ruledit] section to match
-;description = *LTT/README.LTT*
+;description = *Royale/README.ROYALE*
 
 ; What capabilities ruleset provides for the scenarios.
 ; See doc/README.rulesets for definitions of official capabilities

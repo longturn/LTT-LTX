@@ -4,14 +4,14 @@
 ; for other "maintenance".  If you want to make custom changes
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 
-; Note that the freeciv AI may not cope well with anything more
+; Note that the freeciv21 AI may not cope well with anything more
 ; than minor changes.
 
 [datafile]
-description="Royale governments data for Freeciv"
+description="Royale governments data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -74,9 +74,7 @@ Anarchy is simply the absence of any recognizable government.\
  Citizens are disorganized and unproductive, and will spend all\
  income as quickly as possible, rather than paying taxes or\
  conducting research.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Buildings and technologies do not require any upkeep.\n\
 * Each worked tile that gives more than 2 Food, Shield, or Trade will\
  suffer a -1 penalty, unless the city working it is celebrating.\
@@ -124,9 +122,7 @@ Under a Tribal government, you are part ruler of your people. Your\
 "), _("\
 Compared to Despotism, a Tribal economy is more shield-oriented. Its\
  bonuses to veterancy can be an advantage in wartime.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Increases by half the chance of land units getting the next veteran level\
  after a battle.\n\
 * Each worked tile that gives more than 2 Food, Shield, or Trade will\
@@ -176,9 +172,7 @@ Under Despotism, you are the absolute ruler of your people.  Your\
  control over your citizens is maintained largely by martial law.\
 "), _("\
 Compared to Tribalism, a Despotic economy is more trade-oriented.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Your centers of government (cities with Palace and 2nd\
  Palace) get a +75% bonus to gold production.\n\
 * Each worked tile that gives more than 2 Food, Shield, or Trade will\
@@ -225,9 +219,7 @@ Under Monarchy, a king or queen serves as a hereditary figurehead\
  for your government.\
 "), _("\
 Monarchy gives low unit upkeep costs.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Your centers of government (cities with Palace and 2nd\
  Palace) get a +50% bonus to gold production.\n\
 * Celebrating cities produce one extra trade point for every tile which is\
@@ -274,9 +266,7 @@ A Communist government is based on the ideal that all people are\
 "), _("\
 Communism is a good government for maximizing shield production, and\
  for large empires.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * City improvements which would normally have an upkeep of 1 gold are\
  free of upkeep.\n\
 * Each city can support up to 3 units for free (the maximum possible);\
@@ -327,9 +317,7 @@ Improvements that normally convert unhappy citizens to content\
 Fundamentalism is a good government for maximizing gold, and its Fanatics\
  are useful in wartime, but it has a heavy penalty to technological\
  progress.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Base science production is 40% that of other governments. (A\
  Fundamentalist city with a Library produces roughly as much science as a\
  city under another government does alone.)\n\
@@ -370,9 +358,7 @@ Federalism is a system in which the power to govern is shared between\
  national and provincial governments. \
  This decentralization minimizes the corruption and waste caused by distance\
  to capital, and avoids separatist movements.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Each city gets 2 extra luxury points.\n\
 * Celebrating cities produce one extra trade point for every tile which is\
  already producing trade. (Cities below size 3 will not celebrate.)\n\
@@ -421,9 +407,7 @@ Under a Republican government, citizens hold an election to select a\
  degree of freedom.  Citizens under the Republic become unhappy\
  easily, but the self-sufficiency of your citizens allows high levels\
  of trade.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Cities produce an extra trade point for every worked land tile that is\
  already producing trade.\n\
 * Celebrating cities produce a further trade point for every worked tile\
@@ -476,9 +460,7 @@ Under Democracy, citizens govern directly by voting on issues.\
  Democracy offers the highest possible level of trade, but also\
  offers the most potential for unhappiness; citizens become very\
  upset during wars.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 * Cities produce an extra trade point for every worked land tile that is\
  already producing trade.\n\
 * Celebrating cities produce a further trade point for every worked tile\

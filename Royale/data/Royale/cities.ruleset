@@ -3,11 +3,11 @@
 ; for other "maintenance".  If you want to make custom changes
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 
 [datafile]
-description="Royale cities data for Freeciv"
+description="Royale cities data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -91,12 +91,12 @@ A.Smith's Trading Co.\
 ")
 
 [parameters]
-add_to_size_limit  = 8		; cities >= this cannot be added to.
+add_to_size_limit  = 8		    ; cities >= this cannot be added to.
 angry_citizens = TRUE           ; set to FALSE to disable angry citizens
 celebrate_size_limit = 3        ; cities >= can celebrate
 
 changeable_budget = TRUE        ; set to FALSE to disallow changing of tax rates
-;forced_science = 0		; set these fields when changeable_tax is turned off
+;forced_science = 0		        ; set these fields when changeable_tax is turned off
 ;forced_luxury = 100
 ;forced_gold = 0
 

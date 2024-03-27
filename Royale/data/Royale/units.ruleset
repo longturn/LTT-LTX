@@ -3,7 +3,7 @@
 ; for other "maintenance".  If you want to make custom changes,
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 ;
 ; You should sort role units from worst to better, as often the best
@@ -15,7 +15,7 @@
 ; then the first unit with this role will be chosen.
 
 [datafile]
-description="Longturn unit_type data for Freeciv"
+description="Royale unit_type data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -366,8 +366,8 @@ flags         = "Unreachable", "DoesntOccupyTile", "CanPillage"
 ; "IgZOC"       = ignore Zones of Control (ZOC) even if unit class has
 ;                 "ZOC" flag
 ; "HasNoZOC"	= unit has no Zone of Control (ZOC), thus any unit can move
-;		  around it freely
-; "NonMil"	= a non-military unit: no attacks; no martial law; can enter
+;		          around it freely
+; "NonMil"	    = a non-military unit: no attacks; no martial law; can enter
 ;                 peaceful borders; DoesntOccupyTile
 ; "IgTer"       = use constant move cost defined in igter_cost (terrain.ruleset)
 ;                 rather than terrain/road etc cost, unless terrain cost is
@@ -1001,7 +1001,7 @@ roles         = "DefendGood", "DefendGoodStartUnit", "FirstBuild"
 helptext      = _("\
 Infantry are modern version of infantry, relatively good\
  at defending your cities.\n\n
- Why: This unit is the end of an upgrade patch all the way from the warriors. It's the best non armored unit for defending your cities.\
+ Why: This unit is the end of an upgrade path all the way from the warriors. It's the best non armored unit for defending your cities.\
  This was added so that the riflemen could be upgraded into something else than marines. Upgrading those and the previous units\
  into marines created issues to the gameplay. The players were taking huge risks by building lots of cheap early units.\
  The plan was to upgrade the early units at a later time for offensive purposes. Upgrading the early units into marines created situations where the game\
@@ -1569,7 +1569,7 @@ Cannons are large firearms that can fire heavy projectiles over long \
 distances. As with the catapults they replace, they are very strong \
 attackers - and even more powerful against cities - but equally weak defenders and will need an escort to be \
 effective, and have limited mobility. Cannon and other siege units do not gain benefits from Barracks. \
- Unescorted cannons may be captured by the enemy. \
+Unescorted cannons may be captured by the enemy. \
 ")
 
 [unit_artillery]
@@ -1603,7 +1603,7 @@ helptext      = _("\
 The artillery is an upgraded cannon. As with its predecessors, it is a \
 very strong attacker - and even more powerful against cities - but equally weak defender and will need an escort \
 to be effective, and has limited mobility. Artillery and other siege units do not gain benefits from Barracks. \
- Unescorted artilleries may be captured by the enemy. \
+Unescorted artilleries may be captured by the enemy. \
 ")
 
 [unit_howitzer]
@@ -1670,9 +1670,7 @@ roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
 Fighters are your first airborne units. They can\
  move anywhere and attack any unit. The fighter will lose all moves when attacking another unit.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 Fighters are very good for securing access from nations with no air units. \
 ")
 
@@ -1710,10 +1708,8 @@ Bombers are specialized airborne units that may\
 "), _("\
 A Bomber's attack against units on land is a bombard attack; against\
  units on water it has a regular attack.\
-"),
-; /* xgettext:no-c-format */
-_("\
-Bombers are very good for securing access from nations with no air units.  \
+"), _("\
+Bombers are very good for securing access from nations with no air units.\
 ")
 bombard_rate = 3
 
@@ -2232,7 +2228,7 @@ helptext      = _("\
 An improved Ironclad, with better move rate and vision.\
  Anti-submarine weapons double its defense against Submarines.\
 "), _("\
-TIP:  A very fast unit, which is very useful for hunting down enemy\
+TIP: A very fast unit, which is very useful for hunting down enemy\
  Transports and Submarines.\
 ")
 
@@ -2448,7 +2444,7 @@ It can transport aircraft and military land units (not wheeled),\
  although land units cannot always be transferred to and from Helicopters\
  while onboard (see Helicopter help).\
 "), _("\
-TIP:  Guard Carriers with a handful of fast-moving ships and a\
+TIP: Guard Carriers with a handful of fast-moving ships and a\
  battleship, as losing a fully-equipped Carrier is VERY\
  painful and expensive.\
 ")
@@ -2494,8 +2490,6 @@ Transports can also clean pollution and fallout on water tiles, and \
 with knowledge of Miniaturization, may build oil platforms on deep ocean \
 tiles (for use by Offshore Platforms).\
 ")
-; FIXME: also cleans pollution/fallout in coastal cities (and faster
-; than Engineers)
 
 
 [unit_missile]
@@ -2574,7 +2568,7 @@ helptext      = _("\
 The Cruise Missile is a long-distance missile\
  that can strike deep into enemy territory.\
 "), _("\
-TIP:  A handful of these can successfully keep the waters around\
+TIP: A handful of these can successfully keep the waters around\
  your treasured homeland free of enemy ships.\
 ")
 
@@ -2740,7 +2734,7 @@ Similar to pollution and global warming, the risk of global nuclear\
  Migrants, Workers, and Engineers and (for fallout on water)\
  Transports can clean up nuclear fallout.\
 "), _("\
-TIP:  You may be involved in a situation where you've invaded an\
+TIP: You may be involved in a situation where you've invaded an\
  enemy country en masse, but the enemy cities are too strong.\
  Before using a Nuclear unit, assemble a gang of cleanup units\
  next to the city and have them ready to fix the fallout on the\
@@ -3154,7 +3148,7 @@ A Caravan sent to one of your own cities that is building a wonder\
  can add 50 shields towards its production. If your city is not\
  building a wonder, the Caravan can take no special action.\
 "), _("\
-TIP:  You can stockpile a stack of Caravans in advance and bring\
+TIP: You can stockpile a stack of Caravans in advance and bring\
  them all into a city where you have started to build a wonder,\
  and finish it in only one turn!\
 ")
