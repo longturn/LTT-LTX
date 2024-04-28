@@ -5022,7 +5022,7 @@ reqs    =
 
 [effect_marco_polos_embassy]
 type    = "Output_Bonus"
-value   = 30
+value   = 10
 reqs    =
     { "type", "name", "range"
       "Building", "Marco Polo's Embassy", "World"

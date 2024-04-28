@@ -1863,9 +1863,9 @@ sabotage	= 0
 sound		= "w_marco_polos_embassy"
 sound_alt	= "w_generic"
 helptext	= _("\
-Increases trade output by 30% in all cities for all the \
+Increases trade output by 10% in all cities for all the \
 players. The player owning this wonder is the only one able to build the Trade Company.\
-"), _("\
+ Marco Polo is also needed for enabling some of the special resource small wonders like Silk Road. Once Marco Polo is built the special resource small wonders are enabled for everyone"), _("\
 TIP: it may make sense to let someone else to build this wonder. Everyone gets the effect \
 and the Trade Company can't usually be instantly built after Marco Polo is finished.\
 ")
@@ -2246,7 +2246,7 @@ name		= _("Gold Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Trade", "World"
 	  "Extra", "Gold", "Local" 
     }
 graphic	= "b.goldroad"
@@ -2272,7 +2272,7 @@ name		= _("Iron Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Metallurgy", "World"
 	  "Extra", "Iron", "Local" 
     }
 graphic	= "b.ironroad"
@@ -2298,7 +2298,6 @@ name		= _("Game Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
 	  "Extra", "Game", "Local" 
     }
 graphic	= "b.gameroad"
@@ -2325,7 +2324,6 @@ name		= _("Furs Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
 	  "Extra", "Furs", "Local" 
     }
 graphic	= "b.fursroad"
@@ -2352,7 +2350,7 @@ name		= _("Coal Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Industrialization", "World"
 	  "Extra", "Coal", "Local" 
     }
 graphic	= "b.coalroad"
@@ -2378,7 +2376,7 @@ name		= _("Fruit Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Construction", "World"
 	  "Extra", "Fruit", "Local" 
     }
 graphic	= "b.fruitroad"
@@ -2406,7 +2404,6 @@ name		= _("Gems Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
 	  "Extra", "Gems", "Local" 
     }
 graphic	= "b.gemsroad"
@@ -2434,7 +2431,7 @@ name		= _("Peat Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Sanitation", "World"
 	  "Extra", "Peat", "Local" 
     }
 graphic	= "b.peatroad"
@@ -2462,7 +2459,7 @@ name		= _("Pheasant Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Gunpowder", "World"
 	  "Extra", "Pheasant", "Local" 
     }
 graphic	= "b.pheasantroad"
@@ -2489,7 +2486,7 @@ name		= _("Ivory Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Magnetism", "World"
 	  "Extra", "Ivory", "Local" 
     }
 graphic	= "b.ivoryroad"
@@ -2517,7 +2514,7 @@ name		= _("Silk Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Trade", "World"
 	  "Extra", "Silk", "Local" 
     }
 graphic	= "b.silkroad"
@@ -2543,7 +2540,7 @@ name		= _("Spice Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Trade", "World"
 	  "Extra", "Spice", "Local" 
     }
 graphic	= "b.silkroad"
@@ -2570,7 +2567,7 @@ name		= _("Wine Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Economics", "World"
 	  "Extra", "Wine", "Local" 
     }
 graphic	= "b.wineroad"
@@ -2596,7 +2593,7 @@ name		= _("Oil Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "Player"
+      "Tech", "Refining", "World"
 	  "Extra", "Oil", "Local" 
     }
 graphic	= "b.oilroad"
