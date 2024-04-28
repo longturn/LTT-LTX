@@ -5029,6 +5029,7 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
+
 [effect_trade_company]
 type    = "Output_Bonus"
 value   = 10
@@ -5293,3 +5294,1298 @@ reqs    =
       "OutputType", "Science", "Local"
     }
 	
+
+[effect_trade_resource_bonus_gold_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gold_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_gold_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gold_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "Extra", "Gold", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+	
+
+[effect_trade_resource_bonus_iron_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_iron_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_iron_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_iron_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_iron_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_iron_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_iron_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_iron_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Iron Road", "Player"
+      "Extra", "Iron", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+	
+
+[effect_trade_resource_bonus_game_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_game_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_game_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_game_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_game_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_game_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_game_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_game_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Game Road", "Player"
+      "Extra", "Game", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+	
+
+[effect_trade_resource_bonus_furs_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_furs_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_furs_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_furs_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_furs_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_furs_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_furs_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_furs_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Furs Road", "Player"
+      "Extra", "Furs", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+[effect_trade_resource_bonus_coal_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_coal_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_coal_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_coal_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_coal_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_coal_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_coal_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_coal_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Coal Road", "Player"
+      "Extra", "Coal", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+[effect_trade_resource_bonus_fruit_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_fruit_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_fruit_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_fruit_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_fruit_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_fruit_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_fruit_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_fruit_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Fruit Road", "Player"
+      "Extra", "Fruit", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+
+
+[effect_trade_resource_bonus_gems_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gems_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_gems_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gems_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "Extra", "Gems", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+
+
+[effect_trade_resource_bonus_peat_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_peat_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_peat_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_peat_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_peat_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_peat_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_peat_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_peat_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Peat Road", "Player"
+      "Extra", "Peat", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+[effect_trade_resource_bonus_pheasant_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_pheasant_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_pheasant_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_pheasant_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_pheasant_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_pheasant_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_pheasant_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_pheasant_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Pheasant Road", "Player"
+      "Extra", "Pheasant", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+	
+
+
+
+[effect_trade_resource_bonus_ivory_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_ivory_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_ivory_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_ivory_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "Extra", "Ivory", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+
+
+[effect_trade_resource_bonus_silk_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_silk_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "Extra", "Silk", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+
+
+[effect_trade_resource_bonus_spice_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_spice_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_spice_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_spice_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_spice_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_spice_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_spice_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_spice_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Spice Road", "Player"
+      "Extra", "Spice", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+
+
+[effect_trade_resource_bonus_wine_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_wine_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_wine_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_wine_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_wine_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_wine_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_wine_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_wine_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Wine Road", "Player"
+      "Extra", "Wine", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+
+[effect_trade_resource_bonus_oil_1]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_oil_2]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_oil_3]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_oil_4]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_oil_5]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_oil_6]
+type    = "Output_Bonus"
+value   = 4
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_oil_7]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_oil_8]
+type    = "Output_Bonus"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Oil Road", "Player"
+      "Extra", "Oil", "Local"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+	
+	
+	
+	
+
+
+
