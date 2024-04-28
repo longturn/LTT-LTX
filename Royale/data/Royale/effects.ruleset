@@ -3,14 +3,14 @@
 ; for other "maintenance".  If you want to make custom changes,
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 
-; Note that the freeciv AI may not cope well with anything more
+; Note that the freeciv21 AI may not cope well with anything more
 ; than minor changes.
 
 [datafile]
-description="Royale effects data for Freeciv"
+description="Royale effects data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 +Bombard_Limit_Pct +Nation_Intelligence"
 format_version=20
 

@@ -4,14 +4,14 @@
 ; for other "maintenance".  If you want to make custom changes,
 ; you should create a new datadir subdirectory and copy this file
 ; into that directory, and then modify that copy.  Then use the
-; command "rulesetdir <mysubdir>" in the server to have freeciv
+; command "rulesetdir <mysubdir>" in the server to have freeciv21
 ; use your new customized file.
 
-; Note that the freeciv AI may not cope well with anything more
+; Note that the freeciv21 AI may not cope well with anything more
 ; than minor changes.
 
 [datafile]
-description="Royale tile_type data for Freeciv"
+description="Royale tile_type data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -1422,7 +1422,6 @@ reqs           =
 build_time     = 0
 removal_time   = 0
 conflicts      = "Mine", "Oil Well"
-; /* xgettext:no-c-format */
 helptext       = _("\
 Once Refrigeration is known, irrigation systems can be upgraded to \
 farmland by irrigating them a second time; if the city working the tile \
@@ -1493,7 +1492,6 @@ removal_time   = 0
 conflicts      = "Airbase"
 hidden_by      = "Fortress"
 flags          = "NativeTile"
-; /* xgettext:no-c-format */
 helptext       = _("\
 A Pre-Fortress is the groundwork for a Fortress, and in itself does nothing but \
 allow further expansion to a Fortress.\
@@ -1531,9 +1529,7 @@ helptext       = _("\
 Fortresses are more permanent forts; construction on them can only begin \
 once the underlying fort is complete. Forts on River tiles cannot be \
 upgraded to Fortresses.\
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 Units in a fortress receive extra defense (+100%) \
 against land units and boats, and do not count as aggressive if near a friendly city. \
 Any kind of land unit remaining in a fortress for a whole turn without \
@@ -1571,15 +1567,14 @@ flags          = "Refuel", "ParadropFrom", "NoStackDeath"
 helptext       = _("\
 An Airbase provides permanent support for air units, nukes and missiles. Air units can land \
 and refuel on an Airbase and Paratroopers can be sent from Airbases. \ 
-"),
-; /* xgettext:no-c-format */
-_("\
+"), _("\
 Units in Airbases do not count as aggressive if near a friendly city, and can \
 see further afield. Also, air units recover more hit points (a third per \
 turn, the same as in a city without an Airport).\
-"),
-_("Airbases have efficient anti-air weapons: units in an Airbase receive extra defense (+100%) \
-against air units and missiles. ")
+"), _("\
+Airbases have efficient anti-air weapons: units in an Airbase receive extra defense (+100%) \
+against air units and missiles.\
+")
 
 [extra_buoy]
 name           = _("Buoy")
@@ -1763,7 +1758,6 @@ buildable      = FALSE
 native_to      = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Trireme"
 defense_bonus  = 25
 flags          = "NativeTile", "IrrigationSource", "AllowsFarmlandOnDesert"
-; /* xgettext:no-c-format */
 helptext       = _("\
 Any land terrain type may have a River on it. A River adds 1\
  trade to the resources produced by that tile. It also increases a\
