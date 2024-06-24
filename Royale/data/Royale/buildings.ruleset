@@ -2247,7 +2247,7 @@ genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
       "Tech", "Trade", "World"
-	  "Extra", "Gold", "Local" 
+	  "Extra", "Gold", "City"
     }
 graphic	= "b.goldroad"
 graphic_alt	= "b.university"
@@ -2274,7 +2274,7 @@ genus		= "SmallWonder"
 flags		= "VisibleByOthers"
 reqs	=
     { "type", "name", "range"
-	  "Extra", "Gems", "Local" 
+	  "Extra", "Gems", "City"
     }
 graphic	= "b.gemsroad"
 graphic_alt	= "b.university"
@@ -2302,7 +2302,7 @@ flags		= "VisibleByOthers"
 reqs	=
     { "type", "name", "range"
       "Tech", "Magnetism", "World"
-	  "Extra", "Ivory", "Local" 
+	  "Extra", "Ivory", "City"
     }
 graphic	= "b.ivoryroad"
 graphic_alt	= "b.university"
@@ -2330,7 +2330,7 @@ flags		= "VisibleByOthers"
 reqs	=
     { "type", "name", "range"
       "Tech", "Refining", "World"
-	  "Extra", "Oil", "Local" 
+	  "Extra", "Oil", "City"
     }
 graphic	= "b.oilroad"
 graphic_alt	= "b.university"
