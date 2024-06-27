@@ -2260,7 +2260,7 @@ sabotage	= 0
 sound		= "w_goldroad"
 sound_alt	= "w_generic"
 helptext	= _("\
-Increases the trade output of the nation. The increase is 10% for the nations \
+Increases the trade output of the nation. The effect affects all the cities controlled by the nation. The increase is 10% for the nations \
 with non trade based governments. Since the trade based goverments such as republic and democracy already \
 benefit from trade the bonus for this wonder is not as important as it is for \
 other types of governments. The bonus for trade based governments is 5%. \
@@ -2287,7 +2287,7 @@ sabotage	= 0
 sound		= "w_gemsroad"
 sound_alt	= "w_generic"
 helptext	= _("\
-Increases the trade output of the nation. The increase is 10% for the nations \
+Increases the trade output of the nation. The effect affects all the cities controlled by the nation. The increase is 10% for the nations \
 with non trade based governments. Since the trade based goverments such as republic and democracy already \
 benefit from trade the bonus for this wonder is not as important as it is for \
 other types of governments. The bonus for trade based governments is 5%. \
@@ -2315,7 +2315,7 @@ sabotage	= 0
 sound		= "w_ivoryroad"
 sound_alt	= "w_generic"
 helptext	= _("\
-Increases the trade output of the nation. The increase is 10% for the nations \
+Increases the trade output of the nation. The effect affects all the cities controlled by the nation. The increase is 10% for the nations \
 with non trade based governments. Since the trade based goverments such as republic and democracy already \
 benefit from trade the bonus for this wonder is not as important as it is for \
 other types of governments. The bonus for trade based governments is 5%. \
@@ -2343,7 +2343,7 @@ sabotage	= 0
 sound		= "w_oilroad"
 sound_alt	= "w_generic"
 helptext	= _("\
-Increases the trade output of the nation. The increase is 10% for the nations \
+Increases the trade output of the nation. The effect affects all the cities controlled by the nation. The increase is 10% for the nations \
 with non trade based governments. Since the trade based goverments such as republic and democracy already \
 benefit from trade the bonus for this wonder is not as important as it is for \
 other types of governments. The bonus for trade based governments is 5%. \
