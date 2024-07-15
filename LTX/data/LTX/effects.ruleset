@@ -5804,6 +5804,78 @@ reqs    =
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
 
+
+
+[effect_partisan_communism]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Communism", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+
+[effect_partisan_monarchy]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Monarchy", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+	
+[effect_partisan_fundamentalism]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Fundamentalism", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+	
+[effect_partisan_federation]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Federation", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+
+[effect_partisan_republic]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Republic", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+
+[effect_partisan_democracy]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Democracy", "Player", TRUE
+      "Tech", "Conscription", "Player", TRUE
+      "Tech", "Leadership", "World", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+
 	
 
 ; for future purposes not yet implemented

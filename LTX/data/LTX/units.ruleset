@@ -1173,6 +1173,13 @@ Partisans are guerilla fighters who are experts\
  the war is over. The partisans are almost invisible to\
  the enemy but this comes with a cost. The partisans are\
  not that fast when moving to a new location.\
+ A number of Partisans are granted free when an enemy conquers your\
+ city -- they automatically assume defensive positions in the\
+ surrounding countryside -- but only under these conditions:\n\n\
+ - Leadership must be known by at least one player.\n\
+ - At least three quarters of the citizens must have your nationality.\n\
+ - You must know about conscription.\n\
+ - You must have Democracy, Communism, Monarchy, Fundamentalism, Federation or Republic as the government.\
 ")
 
 
