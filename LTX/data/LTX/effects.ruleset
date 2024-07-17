@@ -5878,10 +5878,11 @@ reqs    =
 [effect_blah_to_wasting_food]
 type  = "Growth_Surplus_Pct"
 value = 100
-reqs  = 
-{
-
-}
+reqs    =
+    { "type", "name", "range"
+      "Building", "Granary", "City"
+      "MinSize", "1", "City"
+    }
 	
 
 ; for future purposes not yet implemented
