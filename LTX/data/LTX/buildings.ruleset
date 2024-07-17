@@ -2105,7 +2105,7 @@ graphic_alt	=  "b.university"
 obsolete_by	=
     { "type", "name", "range", "survives"
     }
-build_cost	= 2000
+build_cost	= 1500
 upkeep		= 0
 sabotage	= 0
 sound		= "w_marco_polos_embassy"
@@ -2130,7 +2130,7 @@ graphic_alt	=  "b.university"
 obsolete_by	=
     { "type", "name", "range", "survives"
     }
-build_cost	= 4000
+build_cost	= 3000
 upkeep		= 0
 sabotage	= 0
 sound		= "w_marco_polos_embassy"
