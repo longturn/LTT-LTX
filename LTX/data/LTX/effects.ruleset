@@ -5875,7 +5875,13 @@ reqs    =
       "NationGroup", "Barbarian", "Player", FALSE
     }
 
+[effect_blah_to_wasting_food]
+type  = "Growth_Surplus_Pct"
+value = 100
+reqs  = 
+{
 
+}
 	
 
 ; for future purposes not yet implemented
