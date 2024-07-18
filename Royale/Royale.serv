@@ -8,7 +8,7 @@ rulesetdir Royale
 # Uncomment the following for test games
 #set revealmap START                        # test game
 #set timeout 120                            # test game
-#set unitwaittime 0                         # test game
+#set unitwaittime 10                         # test game
 #set fogofwar "DISABLED"	               # test game
 
 # Set these for real games, add comment for test games
@@ -16,7 +16,7 @@ set timeout 82800                           # real game
 set unitwaittime 36000                      # real game
 set fogofwar "ENABLED"		                # real game
 
-
+set unitwaittime_style ACTIVITIES   
 # map
 set aifill 0                                # Fill with 0 AI players. Standard LT games have no AI players, only human.
 set alltemperate disabled
