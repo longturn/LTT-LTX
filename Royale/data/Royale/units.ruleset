@@ -2350,7 +2350,7 @@ sound_move    = "m_submarine"
 sound_move_alt = "m_generic"
 sound_fight   = "f_submarine"
 sound_fight_alt = "f_generic"
-build_cost    = 50
+build_cost    = 70
 pop_cost      = 0
 attack        = 12
 defense       = 4
@@ -2359,14 +2359,15 @@ firepower     = 1
 move_rate     = 12
 vision_radius_sq = 28
 transport_cap = 0
-fuel          = 8
+fuel          = 6
 uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
+cargo         = "Missile"
 vision_layer  = "Subsurface"
 flags         = "BadCityDefender", "Only_Native_Attack",
-                "Submarine", "Provoking"
+                "Submarine", "Provoking", "NoHome"
 roles         = "Hunter"
 helptext      = _("\
 Traveling under the surface of the ocean, Submarines have\
