@@ -2629,7 +2629,7 @@ the enemy ships. This is why extra caution is needed if your enemy is able to bu
 name          = _("Nuclear Bomb")
 class         = "Nuclear"
 tech_req      = "Steel"
-obsolete_by   = "None"
+obsolete_by   = "Nuclear"
 graphic       = "u.nuclearbomb"
 graphic_alt   = "u.nuclear"
 sound_move    = "m_nuclear"
