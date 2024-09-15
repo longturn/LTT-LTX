@@ -4749,3 +4749,79 @@ reqs  =
       "NationalIntelligence", "History",      "Player", FALSE
       "DiplRel",              "Has embassy",  "Local",  TRUE
     }
+
+[effect_base_enemy_unhappiness]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = 100
+
+[effect_enemy_unhappiness_anarchy]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -100
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Anarchy", "Player"
+    }
+
+[effect_enemy_unhappiness_communism]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -70
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Communism", "Player"
+    }
+
+[effect_enemy_unhappiness_despotism]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -70
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Despotism", "Player"
+    }
+
+[effect_enemy_unhappiness_federation]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -50
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Federation", "Player"
+    }
+
+[effect_enemy_unhappiness_monarchy]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -70
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Monarchy", "Player"
+    }	
+
+[effect_enemy_unhappiness_tribalism]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -70
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Tribal", "Player"
+    }
+
+[effect_enemy_unhappiness_fundamentalism]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -90
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Fundamentalism", "Player"
+    }
+
+[effect_enemy_unhappiness_republic]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -60
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Republic", "Player"
+    }
+
+[effect_enemy_unhappiness_democracy]
+type    = "Enemy_Citizen_Unhappy_Pct"
+value   = -40
+reqs	=
+    { "type", "name", "range"
+      "Gov", "Democracy", "Player"
+    }
