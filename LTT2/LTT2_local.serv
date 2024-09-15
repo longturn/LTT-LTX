@@ -1,7 +1,7 @@
 # Server commands to make Longturn Traditional Freeciv rules based on Civ2Civ3 ruleset
 #
 
-rulesetdir LTT
+rulesetdir LTT2
 
 # map
 set aifill 10            # Fill with 10 AI players. Standard LT games have no AI players, only human.
