@@ -1349,7 +1349,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-flags         = "Capturer", "Fanatic", "Horse"
+flags         = "Capturer", "Fanatic"
 roles         = "AttackFastStartUnit", "Hunter"
 helptext      = _("\
 Crusaders are highly disciplined mounted\
