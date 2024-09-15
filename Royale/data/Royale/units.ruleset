@@ -2564,12 +2564,12 @@ move_rate     = 18
 vision_radius_sq = 1
 transport_cap = 0
 fuel          = 1
-uk_happy      = 1
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 0
 uk_gold       = 1
 targets       = "Helicopter"
-flags         = "OneAttack", "AirAttacker", "CityBuster", "HasNoZOC"
+flags         = "OneAttack", "AirAttacker", "CityBuster", "HasNoZOC", "NoHome"
 roles         = ""
 helptext      = _("\
 The Cruise Missile is a long-distance missile\
