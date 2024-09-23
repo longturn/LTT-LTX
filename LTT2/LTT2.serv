@@ -1,5 +1,9 @@
 rulesetdir LTT2
 
+
+set unitwaittime_style ACTIVITIES   
+#set unitwaittime_extended enabled # unitwaittime also applies to newly-built and captured/bribed units
+
 # map
 set mapsize "PLAYER"
 set gameseed "0"
