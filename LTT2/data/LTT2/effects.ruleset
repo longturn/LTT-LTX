@@ -4870,7 +4870,7 @@ reqs    =
       "NationGroup", "Barbarian", "Player", FALSE
     }
 	
-	[effect_partisan_federation]
+[effect_partisan_federation]
 type    = "Inspire_Partisans"
 value   = 1
 reqs    =
