@@ -8,7 +8,7 @@
 ; use your new customized file.
 
 [datafile]
-description="Default nations data for Freeciv"
+description="Default nations data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 

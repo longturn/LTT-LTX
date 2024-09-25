@@ -10,7 +10,7 @@
 ; than minor changes.
 
 [datafile]
-description="LTT effects data for Freeciv"
+description="LTT effects data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 +Bombard_Limit_Pct +Nation_Intelligence"
 format_version=20
 

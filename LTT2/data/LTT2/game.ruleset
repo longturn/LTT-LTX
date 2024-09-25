@@ -10,7 +10,7 @@
 ; than minor changes.
 
 [datafile]
-description="LTT2 game rules for Freeciv"
+description="LTT2 game rules for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -38,15 +38,15 @@ name = _("LTT2 (Longturn Traditional V2.0) ruleset")
 ; /* TRANS: In the client, this is displayed alongside the contents of
 ;    README.LTT, which are not localized. */
 summary = _("\
-You are playing Freeciv with LTT ruleset based on civ2civ3 rules:\
+You are playing Freeciv21 with LTT v2 ruleset based on civ2civ3 rules:\
 \n\n\
 Gameplay more similar to civ3, keeping the combat system from civ2.\
 \n\n\
 Also suitable for single player, with AI less aggressive at start,\
  but more challenging at the end.\
 \n\n\
-The LTT ruleset is designed to be played without AI players even while it's quite playable with AI opponents. For the best experience play it with human players.\
- LTT is balanced to make the game interesting for both beginners and experienced players.\
+The LTT v2 ruleset is designed to be played without AI players even while it's quite playable with AI opponents. For the best experience play it with human players.\
+ LTT v2 is balanced to make the game interesting for both beginners and experienced players.\
 ")
 
 ; Detailed description
