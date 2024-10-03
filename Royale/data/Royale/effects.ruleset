@@ -1765,7 +1765,7 @@ reqs    =
 
 [effect_empire_size_base_communism]
 type    = "Empire_Size_Base"
-value   = 28
+value   = 20
 reqs    =
     { "type", "name", "range"
       "Gov", "Communism", "Player"
@@ -1781,7 +1781,7 @@ reqs    =
 
 [effect_empire_size_base_federation]
 type    = "Empire_Size_Base"
-value   = 24
+value   = 20
 reqs    =
     { "type", "name", "range"
       "Gov", "Federation", "Player"
@@ -1805,7 +1805,7 @@ reqs    =
 
 [effect_empire_size_step_tribal]
 type    = "Empire_Size_Step"
-value   = 7
+value   = 4
 reqs    =
     { "type", "name", "range"
       "Gov", "Tribal", "Player"
@@ -1813,7 +1813,7 @@ reqs    =
 
 [effect_empire_size_step_despotism]
 type    = "Empire_Size_Step"
-value   = 5
+value   = 3
 reqs    =
     { "type", "name", "range"
       "Gov", "Despotism", "Player"
@@ -1821,7 +1821,7 @@ reqs    =
 
 [effect_empire_size_step_monarchy]
 type    = "Empire_Size_Step"
-value   = 10
+value   = 5
 reqs    =
     { "type", "name", "range"
       "Gov", "Monarchy", "Player"
@@ -1829,7 +1829,7 @@ reqs    =
 
 [effect_empire_size_step_communism]
 type    = "Empire_Size_Step"
-value   = 14
+value   = 7
 reqs    =
     { "type", "name", "range"
       "Gov", "Communism", "Player"
@@ -1837,7 +1837,7 @@ reqs    =
 
 [effect_empire_size_step_fundamentalism]
 type    = "Empire_Size_Step"
-value   = 10
+value   = 6
 reqs    =
     { "type", "name", "range"
       "Gov", "Fundamentalism", "Player"
@@ -1845,7 +1845,7 @@ reqs    =
 
 [effect_empire_size_step_federation]
 type    = "Empire_Size_Step"
-value   = 12
+value   = 6
 reqs    =
     { "type", "name", "range"
       "Gov", "Federation", "Player"
@@ -1853,7 +1853,7 @@ reqs    =
 
 [effect_empire_size_step_republic]
 type    = "Empire_Size_Step"
-value   = 8
+value   = 5
 reqs    =
     { "type", "name", "range"
       "Gov", "Republic", "Player"
@@ -1861,7 +1861,7 @@ reqs    =
 
 [effect_empire_size_step_democracy]
 type    = "Empire_Size_Step"
-value   = 6
+value   = 3
 reqs    =
     { "type", "name", "range"
       "Gov", "Democracy", "Player"
