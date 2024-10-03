@@ -992,7 +992,7 @@ obsolete_by	=
     }
 build_cost	= 60
 upkeep		= 3
-sabotage	= 50
+sabotage	= 25
 sound		= "b_sdi_defense"
 sound_alt	= "b_generic"
 helptext	= _("\
@@ -1002,9 +1002,8 @@ teammate which attacks a city with SDI Defense, or attacks a unit (or is \
 deliberately exploded) within range, may be shot down and simply has no effect. \
 Also, adds 50% to the intrinsic defense strength of units in the city when \
 defending against conventional missiles. SDI I + capital protects against 100% \
-of the nuclear attacks while SDI I only stops 50% of the nuclear attacks \
-meaning that if there is no SDI II or III on average half of the nuclear \
-attacks will succeed. SDI I + Palace adds 100% to the defense bonus against \
+of the nuclear attacks while SDI I only stops 80% of the nuclear attacks. \
+SDI I + Palace adds 100% to the defense bonus against \
 conventional missiles.\
 "), _("\
 NOTE: If the capital city (the city with the palace) has SDI I it gets 100% defense \
@@ -1037,7 +1036,7 @@ by other nations' Nuclear units. A Nuclear unit not owned by you or a \
 teammate which attacks a city with SDI Defense, or attacks a unit (or is \
 deliberately exploded) within range, may be shot down and simply has no effect. \
 Also, adds 30% to the intrinsic defense strength of units in the city when \
-defending against conventional missiles. SDI II adds another 20% chance \
+defending against conventional missiles. SDI II adds another 5% chance \
 to defend against nuclear attacks.\
 "), _("\
 NOTE: The Palace City gets 100% SDI defense with the Palace and with SDI I. \
@@ -1070,7 +1069,7 @@ by other nations' Nuclear units. A Nuclear unit not owned by you or a \
 teammate which attacks a city with SDI Defense, or attacks a unit (or is \
 deliberately exploded) within range, may be shot down and simply has no effect. \
 Also, adds 20% to the intrinsic defense strength of units in the city when \
-defending against conventional missiles. SDI III adds another 20% chance to \
+defending against conventional missiles. SDI III adds another 5% chance to \
 defend against nuclear attacks.\
 "), _("\
 NOTE: The Palace City gets 100% SDI defense with the Palace and with SDI I. \
