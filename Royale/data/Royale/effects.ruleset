@@ -5335,7 +5335,7 @@ reqs    =
 	
 [effect_trade_resource_bonus_gold_6]
 type    = "Output_Bonus"
-value   = 10
+value   = 5
 reqs    =
     { "type", "name", "range"
 	  "Building", "Gold Road", "Player"
@@ -5418,7 +5418,7 @@ reqs    =
 	
 [effect_trade_resource_bonus_gems_6]
 type    = "Output_Bonus"
-value   = 10
+value   = 5
 reqs    =
     { "type", "name", "range"
 	  "Building", "Gems Road", "Player"
@@ -5501,7 +5501,7 @@ reqs    =
 	
 [effect_trade_resource_bonus_ivory_6]
 type    = "Output_Bonus"
-value   = 10
+value   = 5
 reqs    =
     { "type", "name", "range"
 	  "Building", "Ivory Road", "Player"
@@ -5585,7 +5585,7 @@ reqs    =
 	
 [effect_trade_resource_bonus_oil_6]
 type    = "Output_Bonus"
-value   = 10
+value   = 5
 reqs    =
     { "type", "name", "range"
 	  "Building", "Oil Road", "Player"
