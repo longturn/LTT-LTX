@@ -2381,6 +2381,7 @@ Traveling under the surface of the ocean, Submarines have\
 name          = _("Nuclear Submarine")
 class         = "Sea"
 tech_req      = "Nuclear Power"
+impr_req	  = "Port Facility"
 obsolete_by   = "None"
 graphic       = "u.nsubmarine"
 graphic_alt   = "u.submarine"
