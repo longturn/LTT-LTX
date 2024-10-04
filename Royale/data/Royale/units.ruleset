@@ -1649,7 +1649,8 @@ of their predecessors. Like earlier siege units, Howitzers do not gain benefits 
 [unit_fighter]
 name          = _("Fighter")
 class         = "Air"
-tech_req      = "Flight"
+tech_req      = "Combustion"
+impr_req	  = "Airport"
 obsolete_by   = "Stealth Fighter"
 graphic       = "u.fighter"
 graphic_alt   = "-"
@@ -1684,7 +1685,8 @@ Fighters are very good for securing access from nations with no air units. \
 [unit_bomber]
 name          = _("Bomber")
 class         = "Air"
-tech_req      = "Advanced Flight"
+tech_req      = "Flight"
+impr_req	  = "Airport"
 obsolete_by   = "Stealth Bomber"
 graphic       = "u.bomber"
 graphic_alt   = "-"

@@ -67,7 +67,8 @@ genus		= "Improvement"
 flags		= "VisibleByOthers"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Radio", "Player"
+	  "Tech", "Combustion", "Player"
+      "Tech", "Radio", "World"
     }
 graphic	= "b.airport"
 graphic_alt	= "-"
