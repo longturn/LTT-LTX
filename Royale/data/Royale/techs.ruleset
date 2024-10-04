@@ -329,7 +329,8 @@ graphic     = "a.electricity"
 graphic_alt = "-"
 helptext = _("\
 Allows irrigation without an adjacent water source, improves the \
-effect of Amphitheaters, and increases city vision radius.\
+effect of Amphitheaters, and increases city vision radius. \
+Upgrades 1 unit every turn for all players if any player knows this tech.)
 ")
 cost     = 750
 
@@ -478,7 +479,7 @@ req2     = "Literacy"
 flags    = ""
 graphic     = "a.invention"
 graphic_alt = "-"
-helptext = _("Makes the upgrade cost of your units 20% less expensive. Robotics makes the upgrade cost 30% less expensive.")
+helptext = _("Makes the upgrade cost of your units 20% less expensive. Robotics makes the upgrade cost 30% less expensive. Upgrades 2 units every turn.")
 cost     = 144
 
 [advance_iron_working]

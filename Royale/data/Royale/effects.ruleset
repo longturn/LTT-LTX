@@ -5103,6 +5103,25 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
+
+[effect_invention_upgrade]
+type    = "Upgrade_Unit"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "Tech", "Invention", "Player"
+    }
+
+	
+[effect_electricity_upgrade]
+type    = "Upgrade_Unit"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Tech", "Electricity", "World"
+    }
+
+
 [effect_espionage_upgrade]
 type    = "Upgrade_Unit"
 value   = 2
