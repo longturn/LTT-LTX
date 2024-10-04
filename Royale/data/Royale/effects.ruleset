@@ -5068,7 +5068,7 @@ reqs    =
 ; City radius increased with Mass Transit
 [effect_mass_transit_2]
 type    = "City_Radius_Sq"
-value   = 3
+value   = 6
 reqs    =
     { "type", "name", "range"
    "Building", "Mass Transit", "City"
