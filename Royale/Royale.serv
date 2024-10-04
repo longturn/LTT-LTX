@@ -24,14 +24,14 @@ set alltemperate disabled
 set barbarians disabled
 set generator "FRACTAL"
 set huts 0
-set landmass 40
+set landmass 50
 set mapsize "PLAYER"
 set separatepoles enabled
 set specials 600
 set startpos "ALL"
 set steepness 30
 set temperature 60
-set tilesperplayer 500
+set tilesperplayer 600
 set tinyisles disabled
 set topology "WRAPX|WRAPY|ISO"
 set wetness 60
@@ -41,7 +41,7 @@ set airliftingstyle "FROM_ALLIES|TO_ALLIES|DEST_UNLIMITED"
 set aqueductloss 0
 set autoattack disabled
 set caravan_bonus_style "CLASSIC"
-set citymindist 4
+set citymindist 5
 set contactturns 1
 set disasters 10
 set dispersion 6
@@ -50,7 +50,7 @@ set endturn 5000
 set flatpoles 0
 set foggedborders enabled
 set globalwarming enabled
-set globalwarming_percent 40
+set globalwarming_percent 60
 set happyborders "NATIONAL"
 set killcitizen enabled
 set killstack enabled
@@ -67,19 +67,17 @@ set revolentype FIXED
 set savepalace enabled
 set spaceship_travel_time 150
 set startunits cccccwwwwwwxx
-set techleak 100
+set techleak 200
 set trade_revenue_style "CLASSIC"
 set unreachableprotects disabled
 
 # diplomacy, technology
-set civilwarsize 10
+set civilwarsize 30
 set conquercost 95                          # for getting techs with tech stealing/trading units
-set demography NnciwASLaMklOCqrbszPE
+set demography NnciwASLaMklOCqrbszPER
 set diplbulbcost 20
-set diplbulbcost 95
 set diplchance 40
-set diplgoldcost 40
-set diplgoldcost 95
+set diplgoldcost 20
 set diplomacy HUMAN
 set freecost 0                              # for getting techs from philosphy etc
 set fulltradesize 1
