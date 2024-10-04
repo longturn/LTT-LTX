@@ -1733,13 +1733,13 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Combustion", "Player", FALSE
     }
-build_cost	= 200
+build_cost	= 80
 upkeep		= 0
 sabotage	= 0
 sound		= "w_leonardos_workshop"
 sound_alt	= "w_generic"
 helptext	= _("\
-Upgrades two obsolete units per game turn.\
+Upgrades one obsolete unit per game turn.\
 ")
 
 
