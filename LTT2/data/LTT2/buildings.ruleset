@@ -11,7 +11,7 @@
 ; than minor changes.
 
 [datafile]
-description="LTT buildings data for Freeciv"
+description="LTT buildings data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 

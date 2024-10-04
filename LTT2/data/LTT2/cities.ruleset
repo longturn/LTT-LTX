@@ -7,7 +7,7 @@
 ; use your new customized file.
 
 [datafile]
-description="LTT cities data for Freeciv"
+description="LTT cities data for Freeciv21"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
