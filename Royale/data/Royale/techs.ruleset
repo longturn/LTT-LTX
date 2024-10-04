@@ -358,7 +358,7 @@ req2     = "Space Flight"
 flags    = ""
 graphic     = "a.environmentalism"
 graphic_alt = "-"
-cost     = 16000
+cost     = 20000
 
 [advance_espionage]
 name     = _("Espionage")
@@ -405,7 +405,7 @@ flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"
 helptext = _("Allows building several fusion based units. Not all fusion units are worth the cost.")
-cost     = 30000
+cost     = 40000
 
 
 [advance_advanced_espionage]
@@ -416,7 +416,7 @@ flags    = ""
 graphic     = "a.advanced_espionage"
 graphic_alt = "a.flight"
 helptext = _("In the digital age espionage becomes even more powerful.")
-cost     = 25000
+cost     = 35000
 
 [advance_aviation_endurance]
 name     = _("Aviation Endurance")
@@ -426,7 +426,7 @@ flags    = ""
 graphic     = "a.flightendurance"
 graphic_alt = "a.flight"
 helptext = _("Allows the construction of unit cargo planes.")
-cost     = 35000
+cost     = 45000
 
 [advance_genetic_engineering]
 name     = _("Genetic Engineering")
@@ -847,7 +847,7 @@ req2     = "Space Flight"
 flags    = ""
 graphic     = "a.stealth"
 graphic_alt = "-"
-cost     = 7000
+cost     = 20000
 
 [advance_steam_engine]
 name     = _("Steam Engine")
@@ -878,7 +878,7 @@ helptext = _("\
 Allows Settlers, Migrants, Workers and Engineers to upgrade railroads \
 with maglev.\
 ")
-cost     = 20000
+cost     = 35000
 
 [advance_tactics]
 name     = _("Tactics")
