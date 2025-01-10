@@ -86,8 +86,7 @@ missiles). \
 Also, damaged air units (again, including helicopters) which stay in \
 town for one full turn without moving are completely restored.\
 "), _("\
-A city with Airport can airlift one unit per turn (including \
-aircraft). Airlifting instantly transports the unit from one city \
+A city with Airport can airlift one unit per turn. Not all units can be airlifted. Airlifting instantly transports the unit from one city \
 to another and will use all of the unit's movement points. A unit \
 must have some movement points left to be airlifted, and cannot \
 carry cargo. The current setting (unlimited to destination) means that \
