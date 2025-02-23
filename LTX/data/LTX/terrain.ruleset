@@ -49,7 +49,7 @@ extra_flags =
 
 ; Percentage of "land" tiles required to be adjacent to a water tile before
 ; it may be "reclaimed" into a land tile (0-101; 0=anywhere, default 101=nowhere)
-ocean_reclaim_requirement = 0
+ocean_reclaim_requirement = 30
 
 ; Percentage of "water" tiles required to be adjacent to a land tile before
 ; it may be "channeled" into a water tile (0-101; 0=anywhere, default 101=nowhere)
@@ -271,7 +271,7 @@ defense_bonus        = 10
 food                 = 2
 shield               = 0
 trade                = 2
-resources            = "Fish"
+resources            = "Fish", "Oil"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -316,7 +316,7 @@ defense_bonus        = 10
 food                 = 1
 shield               = 0
 trade                = 2
-resources            = "Fish", "Whales"
+resources            = "Fish", "Whales", "Oil", "Seamonster"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -408,7 +408,7 @@ defense_bonus        = 0
 food                 = 0
 shield               = 0
 trade                = 0
-resources            = "Ivory", "Oil"
+resources            = "Ivory", "Oil", "Seals", "Coal", "Gold", "Iron", "Gems"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -455,7 +455,7 @@ defense_bonus        = 0
 food                 = 0
 shield               = 1
 trade                = 0
-resources            = "Oasis", "Oil"
+resources            = "Oasis", "Oasis", "Oasis", "Oasis", "Oil", "Oil", "Oil", "Oil", "Uranium", "Camel", "Gems", "Copper", "Coal", "Horses", "Gold", "Iron"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -507,7 +507,7 @@ defense_bonus        = 25
 food                 = 1
 shield               = 2
 trade                = 0
-resources            = "Pheasant", "Silk"
+resources            = "Pheasant", "Silk", "Forest Game", "Forest Game", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -545,6 +545,52 @@ Forests are densely wooded, making agriculture somewhat\
  problematic.\
 ")
 
+[terrain_forest_hills]
+name                 = _("Forest Hills")
+graphic              = "forest_hills"
+graphic_alt          = "hills"
+identifier           = "l"
+class                = "Land"
+movement_cost        = 5
+defense_bonus        = 25
+food                 = 1
+shield               = 1
+trade                = 0
+resources            = "Pheasant", "Silk", "Forest Game", "Copper", "Coal", "Gold", "Uranium", "Iron", "Gems", "Peat"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 0
+base_time            = 1
+road_time            = 4
+irrigation_result    = "Hills"
+irrigation_food_incr = 0
+irrigation_time      = 10
+mining_result        = "yes"
+mining_shield_incr   = 2
+mining_time          = 20
+transform_result     = "Plains"
+transform_time       = 90
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Jungle"
+warmer_drier_result  = "Plains"
+cooler_wetter_result = "Swamp"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
+flags                = "Starter", "CanHaveRiver"
+property_cold        = 20
+property_wet         = 20
+property_foliage     = 50
+property_temperate   = 50
+color.r              = 43
+color.g              = 107
+color.b              = 19
+helptext             = _("\
+Forest hills are have combined properties of hills and forests.\
+")
+
 [terrain_grassland]
 name                 = _("Grassland")
 graphic              = "grassland"
@@ -556,7 +602,7 @@ defense_bonus        = 0
 food                 = 2
 shield               = 0
 trade                = 0
-resources            = "Resources"
+resources            = "Resources", "Oil", "Horses", "Lama", "Forest Game", "Pheasant", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -602,7 +648,7 @@ defense_bonus        = 50
 food                 = 1
 shield               = 1
 trade                = 0
-resources            = "Coal", "Wine"
+resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Wine", "Wine", "Wine", "Copper", "Lama", "Horses", "Gold", "Uranium", "Iron", "Gems", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -641,6 +687,56 @@ Cities built in hills are at risk of earthquakes, which can interrupt\
  a city's current project.\
 ")
 
+[terrain_snow_hills]
+name                 = _("Snow Hills")
+graphic              = "snow_hills"
+graphic_alt          = "hills"
+identifier           = "w"
+class                = "Land"
+movement_cost        = 4
+defense_bonus        = 50
+food                 = 1
+shield               = 1
+trade                = 0
+resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Iron", "Uranium", "Gold", "Copper", "Lama", "Game", "Furs", "Gold", "Gems"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 0
+base_time            = 1
+road_time            = 6
+irrigation_result    = "yes"
+irrigation_food_incr = 0
+irrigation_time      = 10
+mining_result        = "yes"
+mining_shield_incr   = 2
+mining_time          = 12
+transform_result     = "Plains"
+transform_time       = 90
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
+flags                = "Starter", "CanHaveRiver"
+property_cold        = 30
+property_wet         = 15
+property_foliage     = 15
+property_temperate   = 10
+color.r              = 24
+color.g              = 97
+color.b              = 5
+helptext             = _("\
+Snow Hills are like normal Hills but need more effort to build mines or roads, Hills are frequently\
+ rich in resources.\
+"), _("\
+Cities built in hills are at risk of earthquakes, which can interrupt\
+ a city's current project.\
+")
+
 [terrain_jungle]
 name                 = _("Jungle")
 graphic              = "jungle"
@@ -652,7 +748,7 @@ defense_bonus        = 40
 food                 = 1
 shield               = 2
 trade                = 2
-resources            = "Gems", "Fruit"
+resources            = "Gems", "Fruit", "Copper", "Coal", "Oil", "Gold", "Uranium", "Iron", "Peat", "Copra", "Elephant"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -676,7 +772,7 @@ warmer_wetter_result = "Swamp"
 warmer_drier_result  = "Desert"
 cooler_wetter_result = "Forest"
 cooler_drier_result  = "Tundra"
-native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit"
 flags                = "CanHaveRiver"
 property_foliage     = 50
 property_tropical    = 50
@@ -690,6 +786,52 @@ Jungles are densely overgrown, making agriculture somewhat\
  a road.\
 ")
 
+[terrain_jungle_hills]
+name                 = _("Jungle Hills")
+graphic              = "jungle_hills"
+graphic_alt          = "hills"
+identifier           = "#"
+class                = "Land"
+movement_cost        = 6
+defense_bonus        = 40
+food                 = 1
+shield               = 1
+trade                = 0
+resources            = "Copper", "Gems", "Fruit", "Gold", "Forest Game", "Coal", "Uranium", "Iron", "Peat", "Copra", "Elephant"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 0
+base_time            = 1
+road_time            = 6
+irrigation_result    = "Hills"
+irrigation_food_incr = 0
+irrigation_time      = 10
+mining_result        = "yes"
+mining_shield_incr   = 2
+mining_time          = 20
+transform_result     = "Plains"
+transform_time       = 90
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Jungle"
+warmer_drier_result  = "Plains"
+cooler_wetter_result = "Forest Hills"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
+flags                = "Starter", "CanHaveRiver"
+property_cold        = 20
+property_wet         = 20
+property_foliage     = 50
+property_temperate   = 50
+color.r              = 43
+color.g              = 107
+color.b              = 19
+helptext             = _("\
+Jungle hills are have combined properties of hills and jungle.\
+")
+
 [terrain_mountains]
 name                 = _("Mountains")
 graphic              = "mountains"
@@ -701,7 +843,7 @@ defense_bonus        = 100
 food                 = 0
 shield               = 1
 trade                = 0
-resources            = "Gold", "Iron"
+resources            = "Gold", "Gold","Gold", "Gold", "Iron", "Iron", "Iron", "Iron", "Copper", "Uranium", "Coal", "Iron", "Gems"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -723,7 +865,7 @@ clean_fallout_time   = 3
 animal               = "None"
 warmer_wetter_result = "no"
 warmer_drier_result  = "no"
-cooler_wetter_result = "no"
+cooler_wetter_result = "Snow Mountains"
 cooler_drier_result  = "no"
 native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "CanHaveRiver"
@@ -741,6 +883,57 @@ Land units that move into mountains can see an extra space, but a\
  move into mountains without a road.\
 ")
 
+[terrain_snow_mountains]
+name                 = _("Snow Mountains")
+graphic              = "snow_mountains"
+graphic_alt          = "mountains"
+identifier           = "o"
+class                = "Land"
+movement_cost        = 6
+defense_bonus        = 100
+food                 = 0
+shield               = 0
+trade                = 0
+resources            = "Gold", "Gold","Gold", "Gold", "Iron", "Iron", "Iron", "Iron", "Copper", "Uranium", "Coal", "Gems"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 0
+base_time            = 1
+road_time            = 8
+irrigation_result    = "no"
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_result        = "yes"
+mining_shield_incr   = 2
+mining_time          = 12
+transform_result     = "Mountains"
+transform_time       = 100
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Mountains"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit"
+flags                = "CanHaveRiver"
+property_mountainous = 15
+property_frozen      = 100
+property_cold	     = 70
+color.r              = 129
+color.g              = 127
+color.b              = 118
+helptext             = _("\
+Snow Mountains are regions of extreme altitude, making agriculture not possible and\
+ trade very difficult.\
+"), _("\
+Land units that move into snow mountains can see an extra space, but a\
+ fast land unit ending its turn in mountains without a road will start\
+ its next turn with one fewer movement point. Some land units may not\
+ move into mountains without a road.\
+")
+
 [terrain_plains]
 name                 = _("Plains")
 graphic              = "plains"
@@ -752,7 +945,7 @@ defense_bonus        = 0
 food                 = 1
 shield               = 1
 trade                = 0
-resources            = "Buffalo", "Wheat"
+resources            = "Buffalo", "Buffalo", "Buffalo", "Buffalo", "Wheat", "Wheat", "Wheat", "Wheat", "Horses", "Elephant", "Coal", "Oil", "Camel", "Lama", "Uranium", "Iron", "Gems", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -799,7 +992,7 @@ defense_bonus        = 25
 food                 = 1
 shield               = 0
 trade                = 0
-resources            = "Peat", "Spice"
+resources            = "Peat", "Spice", "Coal", "Uranium"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -849,7 +1042,7 @@ defense_bonus        = 0
 food                 = 1
 shield               = 0
 trade                = 0
-resources            = "Game", "Furs", "Gold"
+resources            = "Game", "Furs", "Gold", "Seals", "Coal", "Oil", "Uranium", "Iron", "Gems", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -884,10 +1077,105 @@ Tundra are broad, cold regions, fit for some agriculture and little\
  else.\
 ")
 
-; /* <-- avoid gettext warnings
-;
-; Resource types:
-;
+[terrain_taiga]
+name                 = _("Taiga")
+graphic              = "taiga"
+graphic_alt          = "forest"
+identifier           = "y"
+class                = "Land"
+movement_cost        = 4
+defense_bonus        = 25
+food                 = 1
+shield               = 2
+trade                = 0
+resources            = "Game", "Furs", "Forest Game", "Ivory", "Coal", "Oil", "Iron", "Gems", "Peat"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 1
+base_time            = 2
+road_time            = 6
+irrigation_result    = "Tundra"
+irrigation_food_incr = 0
+irrigation_time      = 10
+mining_result        = "Swamp"
+mining_shield_incr   = 0
+mining_time          = 25
+transform_result     = "Grassland"
+transform_time       = 24
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "Swamp"
+warmer_drier_result  = "Forest"
+cooler_wetter_result = "Tundra"
+cooler_drier_result  = "Tundra"
+native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
+flags                = "Starter", "CanHaveRiver"
+property_cold        = 30
+property_wet         = 15
+property_foliage     = 15
+property_temperate   = 10
+color.r              = 43
+color.g              = 107
+color.b              = 19
+helptext             = _("\
+Taiga forests are swampy coniferous forest of high northern latitudes, making agriculture \
+ problematic.\
+")
+
+[terrain_volcano]
+name                 = _("Volcano")
+graphic              = "volcano"
+graphic_alt          = "mountains"
+identifier           = "v"
+class                = "Land"
+movement_cost        = 6
+defense_bonus        = 100
+food                 = 0
+shield               = 0
+trade                = 0
+resources            = "Gold", "Gold","Gold", "Gold", "Iron", "Iron", "Iron", "Iron", "Copper", "Uranium", "Gems"
+road_food_incr_pct   = 0
+road_shield_incr_pct = 0
+road_trade_incr_pct  = 0
+base_time            = 1
+road_time            = 6
+irrigation_result    = "no"
+irrigation_food_incr = 0
+irrigation_time      = 0
+mining_result        = "yes"
+mining_shield_incr   = 2
+mining_time          = 10
+transform_result     = "Mountains"
+transform_time       = 250
+pillage_time         = 1
+clean_pollution_time = 3
+clean_fallout_time   = 3
+animal               = "None"
+warmer_wetter_result = "no"
+warmer_drier_result  = "no"
+cooler_wetter_result = "no"
+cooler_drier_result  = "no"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit"
+flags                = "CanHaveRiver", "Frozen"
+property_mountainous = 1
+color.r              = 129
+color.g              = 127
+color.b              = 118
+helptext             = _("\
+Volcanos are a rupture in the earth crust that allows hot lava, volcanic ash, and gases to escape from a magma chamber,\
+ making agriculture and\
+ trade not possible.\
+"), _("\
+Land units that move onto volcanos can see an extra space, but a\
+ fast land unit ending its turn on a volcano without a road will start\
+ its next turn with one fewer movement point. Some land units may not\
+ move into volcanos without a road.\
+")
+
+; The individual resource types, one per section.
+; Roughly sorted by identifier.
 ; The actual tag used (the * in [resource_*]) must be unique for each resource,
 ; and may be used in debug output when reading this file.
 ;
@@ -910,11 +1198,49 @@ identifier  = "$"
 trade       = 6
 # glacier, hills, mountains.
 
+[resource_lama]
+name        = _("Lama")
+graphic     = "ts.lama"
+graphic_alt = "-"
+identifier  = "%"
+food        = 1
+shield      = 1
+trade       = 1
+# hills-only.
+
+[resource_elephant]
+name        = _("Elephant")
+graphic     = "ts.elephant"
+graphic_alt = "-"
+identifier  = "&"
+food        = 2
+trade       = 1
+# plains (horses => buffalo => cattle).
+
 [resource_iron]
 extra       = "Iron"
 identifier  = "/"
 shield      = 4
 # mountains.
+
+[resource_camel]
+name        = _("Camel")
+graphic     = "ts.camel"
+graphic_alt = "-"
+identifier  = "="
+food        = 1
+shield      = 1
+trade       = 1
+# plains.
+
+[resource_uranium]
+name        = _("Uranium")
+graphic     = "ts.uranium"
+graphic_alt = "ts.iron"
+identifier  = "*"
+shield      = 5
+trade       = 2
+# mountains, desert.
 
 [resource_game]
 extra       = "Game"
@@ -951,13 +1277,29 @@ food        = 3
 trade       = 1
 # jungle.
 
+[resource_copra]
+name        = _("Copra")
+graphic     = "ts.copra"
+graphic_alt = "f"
+identifier  = "?"
+trade       = 1
+# jungle.
+
 [resource_gems]
 extra       = "Gems"
 identifier  = "g"
 trade       = 4
 # jungle.
 
-; "h" reserved for strategic horses
+[resource_horses]
+name        = _("Horses")
+graphic     = "ts.horses"
+graphic_alt = "-"
+identifier  = "h"
+food        = 1
+shield      = 1
+trade       = 1
+# plains. 
 
 [resource_buffalo]
 extra       = "Buffalo"
@@ -971,11 +1313,38 @@ identifier  = "j"
 food        = 2
 # plains.
 
+[resource_copper]
+name        = _("Copper")
+graphic     = "ts.copper"
+graphic_alt = "ts.iron"
+identifier  = "z"
+shield      = 4
+trade       = 1
+# mountains, hills.
+
+[resource_seamonster]
+name        = _("Seamonster")
+graphic     = "ts.seamonster"
+graphic_alt = "ts.buffalo"
+identifier  = "!"
+food        = 0
+shield      = 0
+trade       = 0
+# joke-only.
+
 ; "k" reserved for (cane) sugar
 
 ; "l" reserved for tobacco
 
 ; "m" reserved for marble
+
+[resource_forest_game]
+name        = _("?animals:Forest Game")
+graphic     = "ts.forest_game"
+graphic_alt = "-"
+identifier  = "d"
+food        = 2
+# forest, forested.
 
 [resource_oasis]
 extra       = "Oasis"
@@ -997,6 +1366,16 @@ food        = 2
 # forest, forested.
 
 ; "r" reserved for rubber
+
+[resource_seals]
+name        = _("Seals")
+graphic     = "ts.seals"
+graphic_alt = "-"
+identifier  = "q"
+food        = 2
+shield      = 2
+trade       = 2
+# glacier, tundra (seals => walrus).
 
 [resource_bonus]
 extra       = "Resources"
