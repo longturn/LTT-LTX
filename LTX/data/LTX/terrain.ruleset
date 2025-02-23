@@ -49,7 +49,7 @@ extra_flags =
 
 ; Percentage of "land" tiles required to be adjacent to a water tile before
 ; it may be "reclaimed" into a land tile (0-101; 0=anywhere, default 101=nowhere)
-ocean_reclaim_requirement = 30
+ocean_reclaim_requirement = 0
 
 ; Percentage of "water" tiles required to be adjacent to a land tile before
 ; it may be "channeled" into a water tile (0-101; 0=anywhere, default 101=nowhere)
@@ -722,10 +722,9 @@ cooler_wetter_result = "no"
 cooler_drier_result  = "no"
 native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
 flags                = "Starter", "CanHaveRiver"
-property_cold        = 30
+property_cold        = 50
 property_wet         = 15
 property_foliage     = 15
-property_temperate   = 10
 color.r              = 24
 color.g              = 97
 color.b              = 5
@@ -795,7 +794,7 @@ class                = "Land"
 movement_cost        = 6
 defense_bonus        = 40
 food                 = 1
-shield               = 1
+shield               = 2
 trade                = 0
 resources            = "Copper", "Gems", "Fruit", "Gold", "Forest Game", "Coal", "Uranium", "Iron", "Peat", "Copra", "Elephant"
 road_food_incr_pct   = 0
@@ -803,9 +802,10 @@ road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 6
+cultivate_time       = 10
 irrigation_result    = "Hills"
 irrigation_food_incr = 0
-irrigation_time      = 10
+irrigation_time      = 36
 mining_result        = "yes"
 mining_shield_incr   = 2
 mining_time          = 20
@@ -821,10 +821,9 @@ cooler_wetter_result = "Forest Hills"
 cooler_drier_result  = "Tundra"
 native_to            = "Land", "Small Land", "Merchant", "Big Land", "Air", "Missile", "Helicopter", "Big Siege", "Small Unit"
 flags                = "Starter", "CanHaveRiver"
-property_cold        = 20
-property_wet         = 20
 property_foliage     = 50
-property_temperate   = 50
+property_tropical    = 50
+property_wet         = 50
 color.r              = 43
 color.g              = 107
 color.b              = 19
@@ -918,9 +917,9 @@ cooler_wetter_result = "no"
 cooler_drier_result  = "no"
 native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit"
 flags                = "CanHaveRiver"
-property_mountainous = 15
+property_mountainous = 100
 property_frozen      = 100
-property_cold	     = 70
+property_cold        = 70
 color.r              = 129
 color.g              = 127
 color.b              = 118
@@ -1199,9 +1198,7 @@ trade       = 6
 # glacier, hills, mountains.
 
 [resource_lama]
-name        = _("Lama")
-graphic     = "ts.lama"
-graphic_alt = "-"
+extra       = "Lama"
 identifier  = "%"
 food        = 1
 shield      = 1
@@ -1209,9 +1206,7 @@ trade       = 1
 # hills-only.
 
 [resource_elephant]
-name        = _("Elephant")
-graphic     = "ts.elephant"
-graphic_alt = "-"
+extra       = "Elephant"
 identifier  = "&"
 food        = 2
 trade       = 1
@@ -1224,9 +1219,7 @@ shield      = 4
 # mountains.
 
 [resource_camel]
-name        = _("Camel")
-graphic     = "ts.camel"
-graphic_alt = "-"
+extra       = "Camel"
 identifier  = "="
 food        = 1
 shield      = 1
@@ -1234,9 +1227,7 @@ trade       = 1
 # plains.
 
 [resource_uranium]
-name        = _("Uranium")
-graphic     = "ts.uranium"
-graphic_alt = "ts.iron"
+extra       = "Uranium"
 identifier  = "*"
 shield      = 5
 trade       = 2
@@ -1278,9 +1269,7 @@ trade       = 1
 # jungle.
 
 [resource_copra]
-name        = _("Copra")
-graphic     = "ts.copra"
-graphic_alt = "f"
+extra       = "Copra"
 identifier  = "?"
 trade       = 1
 # jungle.
@@ -1292,14 +1281,12 @@ trade       = 4
 # jungle.
 
 [resource_horses]
-name        = _("Horses")
-graphic     = "ts.horses"
-graphic_alt = "-"
+extra       = "Horses"
 identifier  = "h"
 food        = 1
 shield      = 1
 trade       = 1
-# plains. 
+# plains.
 
 [resource_buffalo]
 extra       = "Buffalo"
@@ -1314,18 +1301,14 @@ food        = 2
 # plains.
 
 [resource_copper]
-name        = _("Copper")
-graphic     = "ts.copper"
-graphic_alt = "ts.iron"
+extra       = "Copper"
 identifier  = "z"
 shield      = 4
 trade       = 1
 # mountains, hills.
 
 [resource_seamonster]
-name        = _("Seamonster")
-graphic     = "ts.seamonster"
-graphic_alt = "ts.buffalo"
+extra       = "Seamonster"
 identifier  = "!"
 food        = 0
 shield      = 0
@@ -1339,9 +1322,7 @@ trade       = 0
 ; "m" reserved for marble
 
 [resource_forest_game]
-name        = _("?animals:Forest Game")
-graphic     = "ts.forest_game"
-graphic_alt = "-"
+extra       = "Forest Game"
 identifier  = "d"
 food        = 2
 # forest, forested.
@@ -1363,14 +1344,13 @@ shield      = 4
 extra       = "Pheasant"
 identifier  = "p"
 food        = 2
+trade       = 1
 # forest, forested.
 
 ; "r" reserved for rubber
 
 [resource_seals]
-name        = _("Seals")
-graphic     = "ts.seals"
-graphic_alt = "-"
+extra       = "Seals"
 identifier  = "q"
 food        = 2
 shield      = 2
