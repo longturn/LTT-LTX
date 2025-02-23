@@ -185,6 +185,14 @@ hp_loss_pct   = 0
 flags         = "TerrainSpeed", "DamageSlows", "BuildAnywhere", "CollectRansom",
                 "ZOC", "CanFortify", "TerrainDefense", "DoesntOccupyTile", "Airliftable"
 
+[unitclass_amphibious]
+; /* TRANS: Unit class: used adjectivally */
+name          = _("?unitclass:Amphibious")
+min_speed     = 1
+hp_loss_pct   = 0
+flags         = "TerrainSpeed", "DamageSlows", "BuildAnywhere", "CollectRansom",
+                "ZOC", "CanFortify", "TerrainDefense", "DoesntOccupyTile", "Airliftable"
+
 [unitclass_land_big]
 ; /* TRANS: Unit class: used adjectivally */
 name          = _("?unitclass:Big Land")
@@ -3515,7 +3523,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege"
+cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Amphibious", "Ancient Land"
 flags         = "BadCityDefender", "HasNoZOC"
 roles         = "Ferryboat", "BarbarianBoat"
 helptext      = _("\
@@ -4010,7 +4018,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege","Small Unit"
+cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Amphibious", "Small Unit", "Ancient Land"
 flags         = "BadCityDefender", "HasNoZOC", "Stuka"
 veteran_names = _("green (100%)"), _("veteran 1 (150%)"), _("veteran 2 (175%)"), _("veteran 3 (200%)"), _("hardened 1 (225%)"), _("hardened 2 (250%)"), _("hardened 3 (275%)"), _("elite 1 (300%)"), _("elite 2 (325%)"), _("elite 3 (350%)")
 veteran_base_raise_chance = 50, 45, 40, 35, 30, 25, 20, 15, 10, 0
@@ -5182,7 +5190,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 0
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant", "Small Unit"
+cargo         = "Land", "Small Land", "Merchant", "Small Unit", "Amphibious", "Big Land"
 flags         = "Unbribable"
 roles         = ""
 helptext      = _("\
