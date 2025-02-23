@@ -959,7 +959,7 @@ bombard_rate = 3
 name          = _("Mounted Archer")
 class         = "Land"
 tech_req      = "Code of Laws"
-obsolete_by   = "Musketeers"
+obsolete_by   = "Dragoons"
 graphic       = "u.mounted_archer"
 graphic_alt   = "u.horsemen"
 sound_move    = "m_horsemen"
@@ -1023,7 +1023,7 @@ Legions are heavily armed and well disciplined infantry\
 [unit_pikemen]
 name          = _("Pikemen")
 class         = "Land"
-tech_req      = "Feudalism"
+tech_req      = "Medicine"
 obsolete_by   = "Musketeers"
 graphic       = "u.pikemen"
 graphic_alt   = "-"
@@ -1152,6 +1152,38 @@ Musketeers are infantry equipped with early\
  city defender.\
 ")
 
+[unit_corsair]
+name          = _("Corsair")
+class         = "Small Unit"
+tech_req      = "Chemistry"
+obsolete_by   = "Navy Troops"
+graphic       = "u.corsair"
+graphic_alt   = "u.pikemen"
+sound_move    = "m_pikemen"
+sound_move_alt = "m_generic"
+sound_fight   = "f_pikemen"
+sound_fight_alt = "f_generic"
+build_cost    = 40
+pop_cost      = 0
+attack        = 3
+defense       = 2
+hitpoints     = 15
+firepower     = 1
+move_rate     = 3
+vision_radius_sq = 18
+transport_cap = 0
+fuel          = 0
+uk_happy      = 1
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+flags         = "Marines", "Capturer"
+roles         = "DefendOk", "DefendOkStartUnit"
+helptext      = _("\
+A faster and slightly more durable version of the Raider\ Corsairs are used for quick coastal raids\
+ before the advent of more organized Navy Troops.\
+")
+
 [unit_navy_troops]
 name          = _("Navy Troops")
 class         = "Small Unit"
@@ -1169,7 +1201,7 @@ attack        = 3
 defense       = 3
 hitpoints     = 20
 firepower     = 1
-move_rate     = 2
+move_rate     = 3
 vision_radius_sq = 18
 transport_cap = 0
 fuel          = 0
@@ -3176,7 +3208,7 @@ Belongs to the patrol class and allows you to travel on deep ocean and rivers as
 name          = _("Raider")
 class         = "Small Unit"
 tech_req      = "Astronomy"
-obsolete_by   = "Navy Troops"
+obsolete_by   = "Corsair"
 graphic       = "u.raider"
 graphic_alt   = "u.warriors"
 sound_move    = "m_pikemen"
@@ -3294,7 +3326,7 @@ firepower     = 1
 move_rate     = 6
 vision_radius_sq = 18
 transport_cap = 0
-fuel          = 0
+fuel          = 12
 uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
