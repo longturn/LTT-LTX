@@ -316,7 +316,7 @@ defense_bonus        = 10
 food                 = 1
 shield               = 0
 trade                = 2
-resources            = "Fish", "Whales", "Oil", "Seamonster"
+resources            = "Fish", "Whales", "Oil", "Sea Monster"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -562,6 +562,8 @@ road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 4
+cultivate_time       = 10
+plant_time           = 80
 irrigation_result    = "Hills"
 irrigation_food_incr = 0
 irrigation_time      = 10
@@ -602,7 +604,7 @@ defense_bonus        = 0
 food                 = 2
 shield               = 0
 trade                = 0
-resources            = "Resources", "Oil", "Horses", "Lama", "Forest Game", "Pheasant", "Peat"
+resources            = "Resources", "Oil", "Horses", "Llama", "Forest Game", "Pheasant", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -648,7 +650,7 @@ defense_bonus        = 50
 food                 = 1
 shield               = 1
 trade                = 0
-resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Wine", "Wine", "Wine", "Copper", "Lama", "Horses", "Gold", "Uranium", "Iron", "Gems", "Peat"
+resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Wine", "Wine", "Wine", "Copper", "Llama", "Horses", "Gold", "Uranium", "Iron", "Gems", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
@@ -698,12 +700,14 @@ defense_bonus        = 50
 food                 = 1
 shield               = 1
 trade                = 0
-resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Iron", "Uranium", "Gold", "Copper", "Lama", "Game", "Furs", "Gold", "Gems"
+resources            = "Coal", "Coal", "Coal", "Coal", "Wine", "Iron", "Uranium", "Gold", "Copper", "Llama", "Game", "Furs", "Gold", "Gems"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 6
+cultivate_time       = 10
+plant_time           = 80
 irrigation_result    = "yes"
 irrigation_food_incr = 0
 irrigation_time      = 10
@@ -771,7 +775,7 @@ warmer_wetter_result = "Swamp"
 warmer_drier_result  = "Desert"
 cooler_wetter_result = "Forest"
 cooler_drier_result  = "Tundra"
-native_to            = Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "CanHaveRiver"
 property_foliage     = 50
 property_tropical    = 50
@@ -803,6 +807,7 @@ road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 6
 cultivate_time       = 10
+plant_time           = 0
 irrigation_result    = "Hills"
 irrigation_food_incr = 0
 irrigation_time      = 36
@@ -819,7 +824,7 @@ warmer_wetter_result = "Jungle"
 warmer_drier_result  = "Plains"
 cooler_wetter_result = "Forest Hills"
 cooler_drier_result  = "Tundra"
-native_to            = Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
+native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter", "Small Unit", "Nuclear", "Ancient Land"
 flags                = "Starter", "CanHaveRiver"
 property_foliage     = 50
 property_tropical    = 50
@@ -899,6 +904,8 @@ road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 8
+cultivate_time       = 0
+plant_time           = 0
 irrigation_result    = "no"
 irrigation_food_incr = 0
 irrigation_time      = 0
@@ -944,7 +951,7 @@ defense_bonus        = 0
 food                 = 1
 shield               = 1
 trade                = 0
-resources            = "Buffalo", "Buffalo", "Buffalo", "Buffalo", "Wheat", "Wheat", "Wheat", "Wheat", "Horses", "Elephant", "Coal", "Oil", "Camel", "Lama", "Uranium", "Iron", "Gems", "Peat"
+resources            = "Buffalo", "Buffalo", "Buffalo", "Buffalo", "Wheat", "Wheat", "Wheat", "Wheat", "Horses", "Elephant", "Coal", "Oil", "Camel", "Llama", "Uranium", "Iron", "Gems", "Peat"
 road_food_incr_pct   = 0
 road_shield_incr_pct = 0
 road_trade_incr_pct  = 100
@@ -1093,6 +1100,8 @@ road_shield_incr_pct = 0
 road_trade_incr_pct  = 1
 base_time            = 2
 road_time            = 6
+cultivate_time       = 10
+plant_time           = 0
 irrigation_result    = "Tundra"
 irrigation_food_incr = 0
 irrigation_time      = 10
@@ -1140,6 +1149,8 @@ road_shield_incr_pct = 0
 road_trade_incr_pct  = 0
 base_time            = 1
 road_time            = 6
+cultivate_time       = 0
+plant_time           = 0
 irrigation_result    = "no"
 irrigation_food_incr = 0
 irrigation_time      = 0
@@ -1197,8 +1208,8 @@ identifier  = "$"
 trade       = 6
 # glacier, hills, mountains.
 
-[resource_lama]
-extra       = "Lama"
+[resource_llama]
+extra       = "Llama"
 identifier  = "%"
 food        = 1
 shield      = 1
@@ -1308,7 +1319,7 @@ trade       = 1
 # mountains, hills.
 
 [resource_seamonster]
-extra       = "Seamonster"
+extra       = "Sea Monster"
 identifier  = "!"
 food        = 0
 shield      = 0
@@ -2155,6 +2166,40 @@ Gold, when found on a Glacier, Hills, or Mountain tile, gives 6 more trade.\
  For more information, review the help for the individual tile types.\
 ")
 
+[extra_llama]
+name           = _("Llama")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.lama"
+graphic_alt    = "ts.tundra_game"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Llamas are domesticated pack animals living in the mountains. They are used\
+ for trade as well as their food.\
+")
+
+[extra_elephant]
+name           = _("Elephant")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.elephant"
+graphic_alt    = "ts.horses"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Elephants are the largest terrestial mamals. They are hunted for their food\
+ and their ivory.\
+")
+
 [extra_iron]
 name           = _("Iron")
 category       = "Resource"
@@ -2173,6 +2218,42 @@ Iron ore can be forged into a variety of metals that can be used to make\
 "), _("\
 Iron, when found on a Mountain tile, gives 4 more shields.\
  For more information, review the help for the individual tile type.\
+")
+
+[extra_camel]
+name           = _("Camel")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.camel"
+graphic_alt    = "ts.horses"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Camels are well-adapted to the desert. Used as pack animals, they help\
+ caravans cover long distances. They are also used for their meat.\
+")
+
+[extra_uranium]
+name           = _("Uranium")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.uranium"
+graphic_alt    = "ts.iron"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Uranium is a rare, extremely hard metal. Before the discovery of the\
+ dangers of radiactivity, it saw a variety of uses in pigments and was\
+ appreciated for its glaze under UV light. Since 1945, Uranium is most\
+ famous for its use in fission technology.\
 ")
 
 [extra_game]
@@ -2276,6 +2357,22 @@ Fruit, when found on a Jungle tile, gives 3 more food and 1 more trade.\
  For more information, review the help for the individual tile type.\
 ")
 
+[extra_copra]
+name           = _("Copra")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.copra"
+graphic_alt    = "ts.fruit"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Copra is an intermediate product in the production of coconut oil.\
+")
+
 [extra_gems]
 name           = _("Gems")
 category       = "Resource"
@@ -2295,6 +2392,24 @@ Freeciv21 combines all valuable stones used in jewelry and other important\
 "), _("\
 Gems, when found on a Jungle tile, gives 4 more trade.\
  For more information, review the help for the individual tile type.\
+")
+
+[extra_horses]
+name           = _("Horses")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.horses"
+graphic_alt    = "-"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Horses have been essential to farming, trade, and war for millenia. They\
+ have gradually been replaced by mechanical tools since the 19th century,\
+ but still played a key role in the two World Wars.\
 ")
 
 [extra_buffalo]
@@ -2317,6 +2432,43 @@ Buffalo, when found on a Plains tile, gives 2 more shields.\
  For more information, review the help for the individual tile type.\
 ")
 
+[extra_copper]
+name           = _("Copper")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.copper"
+graphic_alt    = "ts.iron"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Thanks to its malleability, copper was one of the first metals used by\
+ humans. Mixed with tin, it enabled the production of the tools and weapons\
+ of the bronze age, and has since found many more applications. In the modern\
+ era, copper is appreciated and used extensively for its thermal and\
+ electrical conductivity.\
+")
+
+[extra_seamonster]
+name           = _("Sea Monster")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.seamonster"
+graphic_alt    = "ts.horses"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Oceans have long been seen as hostile environments populated with monstruous\
+ creatures.\
+")
+
 [extra_wheat]
 name           = _("Wheat")
 category       = "Resource"
@@ -2335,6 +2487,22 @@ The cultivation and discovery of wheat greatly increased the ability of\
 "), _("\
 Wheat, when found on a Plains tile, gives 2 more food.\
  For more information, review the help for the individual tile type.\
+")
+
+[extra_forest_game]
+name           = _("Forest Game")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.forest_game"
+graphic_alt    = "ts.pheasant"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Animals hunted down for their food are collectively referred to as \"game\".\
 ")
 
 [extra_oasis]
@@ -2398,6 +2566,25 @@ The hunting of Pheasant and other game birds has been a source of food\
 "), _("\
 Pheasant, when found on a Forest tile, gives 2 more food.\
  For more information, review the help for the individual tile type.\
+")
+
+[extra_seals]
+name           = _("Seals")
+category       = "Resource"
+causes         = "Resource"
+;rmcauses       = ""
+graphic        = "ts.seal"
+graphic_alt    = "ts.whales"
+activity_gfx   = "None"
+act_gfx_alt    = "-"
+act_gfx_alt2   = "-"
+rmact_gfx      = "None"
+rmact_gfx_alt  = "-"
+helptext       = _("\
+Seals are aquatic mammals found in cold waters. They have long been hunted\
+ down for their meat, blubber, and fur. With the advent of firearms and\
+ increasing degradation of their habitat, many species have become
+ endangered and several are now extinct.\
 ")
 
 [extra_resources]
