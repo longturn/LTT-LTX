@@ -3364,18 +3364,61 @@ GUIDE: The knarr is very useful for exploring the oceans and since it is able to
 establishing early colonies far away from home.\
 ")
 
+
+
+
+[unit_war_longboat]
+name          = _("War Longboat")
+class         = "Sea"
+tech_req      = "Map Making"
+obsolete_by   = "Caravel"
+graphic       = "u.wlongboat"
+graphic_alt   = "u.trireme"
+sound_move    = "m_caravel"
+sound_move_alt = "m_generic"
+sound_fight   = "f_caravel"
+sound_fight_alt = "f_generic"
+build_cost    = 12
+pop_cost      = 0
+attack        = 1
+defense       = 1
+hitpoints     = 1
+firepower     = 1
+move_rate     = 7
+vision_radius_sq = 18
+transport_cap = 1
+fuel          = 0
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 1
+uk_gold       = 1
+cargo         = "Ancient Land"
+flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
+roles         = "Ferryboat"
+helptext      = _("\
+The War Longboat is one of your first deep ocean capable boat units\
+ that only can carry one Ancient Land unit. It can act\
+ as a transport ship and has extremely low defensive\
+ and offensive capabilities.\
+"), _("\
+GUIDE: The war longboat is very useful for sending a military presence to far away lands at a very early time.\
+")
+
+
+
+
 [unit_pirogue]
 name          = _("Pirogue")
 class         = "Sea"
 tech_req      = "Seafaring"
-obsolete_by   = "Junk"
+obsolete_by   = "Cog"
 graphic       = "u.pirogue"
 graphic_alt   = "u.trireme"
 sound_move    = "m_caravel"
 sound_move_alt = "m_generic"
 sound_fight   = "f_caravel"
 sound_fight_alt = "f_generic"
-build_cost    = 20
+build_cost    = 12
 pop_cost      = 0
 attack        = 0
 defense       = 1
@@ -3384,8 +3427,8 @@ firepower     = 1
 move_rate     = 6
 vision_radius_sq = 18
 transport_cap = 0
-fuel          = 12
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
@@ -3400,8 +3443,8 @@ The Pirogue is your first unit able to truly explore the oceans\
 GUIDE: Use few of these to scout the areas near to you and you may be able to see the enemy before they can land on your coast.\
 ")
 
-[unit_junk]
-name          = _("Junk")
+[unit_cog]
+name          = _("Cog")
 class         = "Patrol"
 tech_req      = "Physics"
 obsolete_by   = "Patrol Cutter"
@@ -3411,7 +3454,7 @@ sound_move    = "m_caravel"
 sound_move_alt = "m_generic"
 sound_fight   = "f_caravel"
 sound_fight_alt = "f_generic"
-build_cost    = 25
+build_cost    = 18
 pop_cost      = 0
 attack        = 0
 defense       = 2
@@ -3421,18 +3464,18 @@ move_rate     = 9
 vision_radius_sq = 18
 transport_cap = 0
 fuel          = 0
-uk_happy      = 1
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
 flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
 roles         = "Ferryboat"
 helptext      = _("\
-The Junk is your second unit able explore the oceans without the limitations from supplies.\
+The Cog is your second unit able explore the oceans without the limitations from supplies.\
  It can travel through deep ocean and also enter the rivers making it the perfect unit for investigating enemy territories if rivers are left unguarded.\
- The junk has quite poor defensive capabilities and it's not able to perform offensive operations.\
+ The cog has quite poor defensive capabilities and it's not able to perform offensive operations.\
 "), _("\
-GUIDE: In addition to scouting the junk is able to sneak in enemy territories through the rivers. This allows you to get a better idea of your enemy.\
+GUIDE: In addition to scouting the cog is able to sneak in enemy territories through the rivers. This allows you to get a better idea of your enemy.\
 ")
 
 
@@ -3457,7 +3500,7 @@ move_rate     = 12
 vision_radius_sq = 18
 transport_cap = 0
 fuel          = 0
-uk_happy      = 1
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
@@ -3483,21 +3526,21 @@ sound_move    = "m_caravel"
 sound_move_alt = "m_generic"
 sound_fight   = "f_caravel"
 sound_fight_alt = "f_generic"
-build_cost    = 60
+build_cost    = 45
 pop_cost      = 0
 attack        = 2
 defense       = 2
 hitpoints     = 12
 firepower     = 1
-move_rate     = 9
+move_rate     = 8
 vision_radius_sq = 40
 transport_cap = 1
-fuel          = 6
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Big Siege", "Merchant"
+cargo         = "Land", "Small Land", "Big Land", "Big Siege", "Merchant","Ancient Land"
 flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3509,7 +3552,7 @@ those land units the regular caravel can't. In the early ages of exploration it'
 keeping your coastals free of enemy ships.\
 "), _("\
 GUIDE: The Square-Rigged Caravel is able to carry only one unit but the unit can be one of the heavy ones. This allows \
-small and middle scale military operations that may surprise your enemy. A fleet of these ships is expensive to build but \
+small and middle scale military operations that may surprise your enemy. A fleet of these ships is expensive to build but  \
 the surprise attack may cripple an unprepared nation. This is why a single ship loaded with a puny warrior may devastate the enemy economy. \
 The enemy can't see what is loaded on the ship and this is why bluffing with a this ship loaded with a weak unit may \
 make your enemy afraid and wasting resources on building defenses. \
@@ -3535,14 +3578,14 @@ firepower     = 1
 move_rate     = 9
 vision_radius_sq = 28
 transport_cap = 3
-fuel          = 6
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant"
+cargo         = "Land", "Small Land", "Merchant", "Ancient Land"
 flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
-roles         = "Ferryboat", "BarbarianBoat"
+roles         = "Ferryboat", "FerryStartUnit", "BarbarianBoat"
 helptext      = _("\
 The Caravel is a sailing ship that can enter\
  any ocean tile.\
@@ -3568,14 +3611,14 @@ firepower     = 1
 move_rate     = 12
 vision_radius_sq = 40
 transport_cap = 4
-fuel          = 6
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
 cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Amphibious", "Ancient Land"
 flags         = "BadCityDefender", "HasNoZOC"
-roles         = "Ferryboat", "BarbarianBoat"
+roles         = "Ferryboat", "FerryStartUnit", "BarbarianBoat"
 helptext      = _("\
 The Galleon is a pure transport ship, the first which can\
  transport large wheeled units. It cannot attack other ships, though\
@@ -3602,8 +3645,8 @@ firepower     = 1
 move_rate     = 13
 vision_radius_sq = 40
 transport_cap = 0
-fuel          = 6
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
@@ -3635,8 +3678,8 @@ firepower     = 1
 move_rate     = 15
 vision_radius_sq = 40
 transport_cap = 1
-fuel          = 7
-uk_happy      = 1
+fuel          = 0
+uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
@@ -4087,6 +4130,49 @@ tiles (for use by Offshore Platforms).\
 ; FIXME: also cleans pollution/fallout in coastal cities (and faster
 ; than Engineers)
 
+
+[unit_advanced_torpedo]
+name          = _("Advanced Torpedo")
+class         = "Small Sea"
+tech_req      = "Robotics"
+obsolete_by   = "None"
+graphic       = "u.atorpedo"
+graphic_alt   = "u.cruise_missile"
+sound_move    = "m_cruise_missile"
+sound_move_alt = "m_generic"
+sound_fight   = "f_cruise_missile"
+sound_fight_alt = "f_generic"
+build_cost    = 80
+pop_cost      = 0
+attack        = 12
+defense       = 0
+hitpoints     = 2
+firepower     = 2
+move_rate     = 3
+vision_radius_sq = 1
+transport_cap = 0
+fuel          = 1
+uk_happy      = 0
+uk_shield     = 1
+uk_food       = 0
+uk_gold       = 1
+targets       = "Deep Sea"
+embarks       = "Deep Sea", "Air"
+disembarks    = "Deep Sea", "Air"
+flags         = "OneAttack", "HasNoZOC"
+roles         = ""
+helptext      = _("\
+The Advanced Torpedo is a unit able to target enemy deep sea units. It is expensive, has short range but it able to hit otherwise unreachable deep sea units. This is the first torpedo unit the players can move. \
+Previous torpedo units are available only as a weaponry the ships can use, simulated simply as better attack values. Modern ships use regular torpedo units but since those are a concept like ammunition there is \
+no individual unit available. The Advanced Torpedo is available as a unit \
+of it's own since it's specifically intended for tasks where old conventional weapons no longer work.\
+"), _("\
+TIP:  A handful of these may successfully keep the sea around\
+ your treasured homeland free of enemy deep sea units.\
+"), _("\
+GUIDE: The torpedo units have poor vision so you may want to use other units for scouting the area \
+before attacking. Keep few of these in stock so that you can defend against otherwise unreachable deep ocean units. \
+")
 
 [unit_missile]
 name          = _("Missile")
