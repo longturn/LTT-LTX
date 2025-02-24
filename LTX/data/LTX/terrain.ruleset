@@ -1135,7 +1135,7 @@ Taiga forests are swampy coniferous forest of high northern latitudes, making ag
 [terrain_volcano]
 name                 = _("Volcano")
 graphic              = "volcano"
-graphic_alt          = "mountains"
+graphic_alt          = "-"
 identifier           = "v"
 class                = "Land"
 movement_cost        = 6
@@ -2573,7 +2573,7 @@ name           = _("Seals")
 category       = "Resource"
 causes         = "Resource"
 ;rmcauses       = ""
-graphic        = "ts.seal"
+graphic        = "ts.seals"
 graphic_alt    = "ts.whales"
 activity_gfx   = "None"
 act_gfx_alt    = "-"
@@ -2583,7 +2583,7 @@ rmact_gfx_alt  = "-"
 helptext       = _("\
 Seals are aquatic mammals found in cold waters. They have long been hunted\
  down for their meat, blubber, and fur. With the advent of firearms and\
- increasing degradation of their habitat, many species have become
+ increasing degradation of their habitat, many species have become\
  endangered and several are now extinct.\
 ")
 
