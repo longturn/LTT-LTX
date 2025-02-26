@@ -1305,12 +1305,6 @@ identifier  = "b"
 shield      = 2
 # plains (horses => buffalo => cattle).
 
-[resource_wheat]
-extra       = "Wheat"
-identifier  = "j"
-food        = 2
-# plains.
-
 [resource_copper]
 extra       = "Copper"
 identifier  = "z"
@@ -1325,6 +1319,12 @@ food        = 0
 shield      = 0
 trade       = 0
 # joke-only.
+
+[resource_wheat]
+extra       = "Wheat"
+identifier  = "j"
+food        = 2
+# plains.
 
 ; "k" reserved for (cane) sugar
 
