@@ -40,25 +40,25 @@ tiles = { "row", "column", "tag"
  3,  2, "t.l1.mountains_n1e1s1w0"
  3,  3, "t.l1.mountains_n1e1s1w1"
 
-;mountainssnow as overlay
+;snow_mountains as overlay
 
- 4,  0, "t.l1.mountainssnow_n0e0s0w0"
- 4,  1, "t.l1.mountainssnow_n0e0s0w1"
- 4,  2, "t.l1.mountainssnow_n1e0s0w0"
- 4,  3, "t.l1.mountainssnow_n1e0s0w1"
+ 4,  0, "t.l1.snow_mountains_n0e0s0w0"
+ 4,  1, "t.l1.snow_mountains_n0e0s0w1"
+ 4,  2, "t.l1.snow_mountains_n1e0s0w0"
+ 4,  3, "t.l1.snow_mountains_n1e0s0w1"
 
- 5,  0, "t.l1.mountainssnow_n0e0s1w0"
- 5,  1, "t.l1.mountainssnow_n0e0s1w1"
- 5,  2, "t.l1.mountainssnow_n1e0s1w0"
- 5,  3, "t.l1.mountainssnow_n1e0s1w1"
+ 5,  0, "t.l1.snow_mountains_n0e0s1w0"
+ 5,  1, "t.l1.snow_mountains_n0e0s1w1"
+ 5,  2, "t.l1.snow_mountains_n1e0s1w0"
+ 5,  3, "t.l1.snow_mountains_n1e0s1w1"
 
- 6,  0, "t.l1.mountainssnow_n0e1s0w0"
- 6,  1, "t.l1.mountainssnow_n0e1s0w1"
- 6,  2, "t.l1.mountainssnow_n1e1s0w0"
- 6,  3, "t.l1.mountainssnow_n1e1s0w1"
+ 6,  0, "t.l1.snow_mountains_n0e1s0w0"
+ 6,  1, "t.l1.snow_mountains_n0e1s0w1"
+ 6,  2, "t.l1.snow_mountains_n1e1s0w0"
+ 6,  3, "t.l1.snow_mountains_n1e1s0w1"
 
- 7,  0, "t.l1.mountainssnow_n0e1s1w0"
- 7,  1, "t.l1.mountainssnow_n0e1s1w1"
- 7,  2, "t.l1.mountainssnow_n1e1s1w0"
- 7,  3, "t.l1.mountainssnow_n1e1s1w1"
+ 7,  0, "t.l1.snow_mountains_n0e1s1w0"
+ 7,  1, "t.l1.snow_mountains_n0e1s1w1"
+ 7,  2, "t.l1.snow_mountains_n1e1s1w0"
+ 7,  3, "t.l1.snow_mountains_n1e1s1w1"
 }

@@ -286,8 +286,8 @@ tag = "jungle_hills"
 blend_layer = 1
 num_layers = 2
 layer0_match_type = "land"
-layer1_match_type = "forest"
-layer1_match_with = "forest"
+layer1_match_type = "hills"
+layer1_match_with = "hills"
 
 [tile_mountains]
 tag = "mountains"
