@@ -141,7 +141,7 @@ tiles = { "row", "column", "tag"
   4, 10, "u.scout"		; GriffonSpade
   4, 11, "u.mounted_archer"	; GriffonSpade
   4, 12, "u.quinquireme"	; Ngunjaca
-  4, 12, "u.migrants"		; 
+;  4, 12, ""		;
   4, 13, "u.nuclearbomb"	;
   4, 14, "u.cargoair"		; Sketlux (XYZ)
   4, 15, "u.fusion_fighter"	; 
