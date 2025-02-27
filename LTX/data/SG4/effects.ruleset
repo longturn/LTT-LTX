@@ -5824,7 +5824,7 @@ reqs    =
       "Gov", "Communism", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 
 
@@ -5836,7 +5836,7 @@ reqs    =
       "Gov", "Monarchy", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 	
 [effect_partisan_fundamentalism]
@@ -5847,7 +5847,7 @@ reqs    =
       "Gov", "Fundamentalism", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 	
 [effect_partisan_federation]
@@ -5858,7 +5858,7 @@ reqs    =
       "Gov", "Federation", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 
 
@@ -5870,7 +5870,7 @@ reqs    =
       "Gov", "Republic", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 
 
@@ -5882,7 +5882,7 @@ reqs    =
       "Gov", "Democracy", "Player", TRUE
       "Tech", "Conscription", "Player", TRUE
       "Tech", "Leadership", "World", TRUE
-      "NationGroup", "Barbarian", "Player", FALSE
+;      "NationGroup", "Barbarian", "Player", FALSE
     }
 
 [effect_blah_to_wasting_food]
