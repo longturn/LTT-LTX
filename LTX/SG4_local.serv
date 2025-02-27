@@ -3,63 +3,95 @@
 
 rulesetdir SG4
 
+set mgr_distance "6"
+set mgr_foodneeded "ENABLED"
+set mgr_nationchance "50"
+set mgr_turninterval "1"
+set mgr_worldchance "30"
+set migration "ENABLED"
 # map
 set aifill 10            # Fill with 10 AI players. Standard LT games have no AI players, only human.
 set mapsize "PLAYER"
-set generator "FRACTAL"
-set barbarians NORMAL  # Standard LT games don't have Barbarians enabled, but good for local AI games
-set startpos "ALL"
+set generator "FRACTURE"
+set barbarians disabled
+set startpos "VARIABLE"
 set huts 0
 set landmass 40
 set separatepoles enabled
 set specials 300
-set steepness 40
-set temperature 70
-set tilesperplayer 500
+set steepness 45
+set temperature 60
+set tilesperplayer 400
 set topology "WRAPX|WRAPY|ISO"
-set wetness 40
+set wetness 60
 set alltemperate disabled
 set tinyisles disabled   # Don't allow 1x1 islands
 
 # general rules
 set nationset all
-set citymindist 4
+set citymindist 5
 set contactturns 1
-set dispersion 6
+set disasters "10"
+set dispersion "6"
 set foggedborders enabled
 set rapturedelay 3
 set restrictinfra enabled
 set revolen 2
-set revolentype FIXED
+set revolentype   FIXED
+set spaceship_travel_time "200"
 set startunits cccccwwwwwwxx
-set techlevel 0
-set unreachableprotects disabled
-set killunhomed 0
+set techleak "150"
+set techlevel "0"
 set trading_tech disabled
 set airliftingstyle "FROM_ALLIES|TO_ALLIES|DEST_UNLIMITED"
 set razechance 10
+set globalwarming "ENABLED"
+set globalwarming_percent 40
+set nuclearwinter_percent 100
+set unreachableprotects "DISABLED"
 set happyborders "NATIONAL"
-set occupychance 0
-set globalwarming enabled
+set killcitizen "ENABLED"
+set killstack "ENABLED"
+set killunhomed "0"
+set flatpoles "0"
+set occupychance "0"
+set aqueductloss "0"
+set autoattack "DISABLED"
+set caravan_bonus_style "CLASSIC"
+set trade_revenue_style "CLASSIC"
+set endspaceship "ENABLED"
+set endturn "5000"
+set savepalace "ENABLED"
 
-# diplomacy
+# diplomacy, technology
 set diplchance 40
-set diplgoldcost 20
+set diplgoldcost 40
 set diplbulbcost 20
 set diplomacy ALL
 
-# technology
 set sciencebox 100
 set techlost_donor 0
 set techlost_recv 0
 set techpenalty 10
 set trademindist 999     # LT games don't do trade routes
+set tradeworldrelpct "50"
 set trading_city disabled
 set team_pooled_research disabled
 set techlevel 0
 set techlossforgiveness -1
 set techlossrestore 50
-set freecost 50
-set diplbulbcost 50
-set diplgoldcost 50
-set conquercost 50
+set freecost 0 # for getting techs from philosphy etc
+
+set conquercost 30 # for getting techs with tech stealing/trading units
+set persistentready "DISABLED"
+set civilwarsize "10"
+set teamplacement "CLOSEST"
+set fulltradesize "1"
+set gold "50"
+set trading_city "DISABLED"
+set trading_gold "ENABLED"
+set trading_tech "DISABLED"
+set victories "SPACERACE|ALLIED"
+set incite_gold_capt_chance "0"
+set incite_gold_loss_chance "0"
+set demography   NnciwASLaMklOCqrbszPE
