@@ -64,4 +64,5 @@ builder_default = 50
 *include "default/nationlist.ruleset"
 ; Two barbarian nations, Land and Sea barbarians, needed
 *include "nation/barbarian.ruleset"
-*include "nation/pirate.ruleset"
+*include "nation_lt/fake_pirate.ruleset"
+*include "nation_lt/pirate.ruleset"
