@@ -2456,6 +2456,7 @@ Thanks to its malleability, copper was one of the first metals used by\
 name           = _("Sea Monster")
 category       = "Resource"
 causes         = "Resource"
+generated      = FALSE
 ;rmcauses       = ""
 graphic        = "ts.seamonster"
 graphic_alt    = "ts.horses"
