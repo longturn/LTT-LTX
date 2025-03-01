@@ -169,6 +169,7 @@ files =
   "misc/overlays.spec",
   "misc/citybar.spec",
   "misc/shields-large.spec",
+  "misc/icons.spec",  ; Compatibility with 3.0
   "misc/editor.spec"
 
 

@@ -162,7 +162,8 @@ files =
   "misc/editor.spec",
   "trident/fog.spec",
   "trident/cities.spec",
-  "trident/explosions.spec"
+  "trident/explosions.spec",
+  "misc/icons.spec"  ; Compatibility with 3.0
 
 
 ; Include color definitions
