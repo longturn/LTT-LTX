@@ -466,7 +466,6 @@ SG4 = {
     {
       utype = "Galleon",
       count = 4,
-      moves_left = 750,
       passengers = {
         { utype = "Immigrants" },
         { utype = "Immigrants" },
@@ -563,7 +562,7 @@ function SG4:turn_events(turn)
     self:debug("spawn_tiles = %s", LuaUtils.dump(self.spawn_tiles))
     self:spawn_migrant_wave(self.initial_wave)
     self:clean_up_excess_start_units()
-  elseif turn == 10 then
+  elseif turn == 5 then
     self:spawn_migrant_wave(self.migrant_wave)
   end
 end
