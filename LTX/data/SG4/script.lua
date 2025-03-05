@@ -466,6 +466,7 @@ SG4 = {
     {
       utype = "Galleon",
       count = 4,
+      moves_left = 750,
       passengers = {
         { utype = "Immigrants" },
         { utype = "Immigrants" },
