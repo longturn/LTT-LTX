@@ -5,8 +5,9 @@ ltpass*
 */core.*
 */freeciv-score.log
 
-*/*.sav*
+*.sav*
 */server.log
+*.zip
 
 *.orig
 *.rej

@@ -1741,7 +1741,7 @@ uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
 embarks       = "Helicopter"
-disembarks    = "Helicopter"
+disembarks    = "Helicopter", "Air"
 flags         = "Paratroopers", "Capturer"
 roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
@@ -3054,7 +3054,8 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Merchant"
 flags         = "OneAttack", "AirAttacker", "HasNoZOC"
 roles         = ""
 helptext      = _("\
@@ -3136,7 +3137,8 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "HasNoZOC"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3177,7 +3179,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "HasNoZOC", "Unique", "Unbribable"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3220,7 +3223,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant", "Small Unit"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "HasNoZOC", "Settlers", "NonMil"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3351,7 +3355,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant"
+cargo         = "Small Land", "Merchant"
 flags         = "Only_Native_Attack", "HasNoZOC"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3540,7 +3544,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Big Siege", "Merchant","Ancient Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -3583,7 +3588,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant", "Ancient Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Merchant"
 flags         = "BadCityDefender", "Only_Native_Attack", "HasNoZOC"
 roles         = "Ferryboat", "FerryStartUnit", "BarbarianBoat"
 helptext      = _("\
@@ -3616,7 +3622,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Amphibious", "Ancient Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "HasNoZOC"
 roles         = "Ferryboat", "FerryStartUnit", "BarbarianBoat"
 helptext      = _("\
@@ -3719,7 +3726,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo	      = "Land", "Small Land", "Big Land", "Big Siege", "Merchant", "Small Unit"
+cargo	      = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender"
 roles         = "Hunter"
 helptext      = _("\
@@ -3784,8 +3792,6 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-; FIXME transport or not?
-;cargo         = "Small Unit"
 flags         = "BadCityDefender", "Stuka"
 roles         = "Hunter"
 helptext      = _("\
@@ -4071,7 +4077,9 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Air", "Missile", "Helicopter"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant",
+                "Air", "Missile", "Helicopter"
 flags         = "BadCityDefender", "HasNoZOC", "Stuka"
 roles         = "DefendGood", "DefendGoodStartUnit"
 helptext      = _("\
@@ -4111,7 +4119,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Big Land", "Merchant", "Big Siege", "Amphibious", "Small Unit", "Ancient Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Amphibious", "Big Land", "Big Siege", "Merchant"
 flags         = "BadCityDefender", "HasNoZOC", "Stuka"
 veteran_names = _("green (100%)"), _("veteran 1 (150%)"), _("veteran 2 (175%)"), _("veteran 3 (200%)"), _("hardened 1 (225%)"), _("hardened 2 (250%)"), _("hardened 3 (275%)"), _("elite 1 (300%)"), _("elite 2 (325%)"), _("elite 3 (350%)")
 veteran_base_raise_chance = 50, 45, 40, 35, 30, 25, 20, 15, 10, 0
@@ -5305,7 +5314,8 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant", "Small Unit"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Merchant"
 flags         = "HasNoZOC", "BadCityDefender", "Unbribable"
 roles         = "Ferryboat"
 helptext      = _("\
@@ -5337,7 +5347,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 0
 uk_gold       = 1
-cargo         = "Land", "Small Land", "Merchant", "Small Unit", "Amphibious", "Big Land"
+cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
+                "Big Land", "Merchant"
 flags         = "Unbribable"
 roles         = ""
 helptext      = _("\
