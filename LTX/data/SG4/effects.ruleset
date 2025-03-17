@@ -236,6 +236,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -255,6 +256,7 @@ reqs    =
 ;      "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -277,6 +279,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
 ;      "UnitClass", "Helicopter", "Local", FALSE
 ;      "UnitClass", "Air", "Local", FALSE
+;      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -296,6 +299,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
 ;      "UnitClass", "Helicopter", "Local", FALSE
 ;      "UnitClass", "Air", "Local", FALSE
+;      "UnitClass", "Small Air", "Local", FALSE
 ;      "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -353,6 +357,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -371,6 +376,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
       "Extra", "Road", "Local", FALSE
 	  "UnitFlag", "IgTer", "Local", FALSE
@@ -2207,6 +2213,17 @@ reqs    =
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
 
+[effect_airport_veteran_small_air]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Airport", "City", TRUE
+      "UnitClass", "Small Air", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
 [effect_airport_1]
 type    = "HP_Regen"
 value   = 100
@@ -2223,6 +2240,15 @@ reqs    =
     { "type", "name", "range"
       "Building", "Airport", "City"
       "UnitClass", "Helicopter", "Local"
+    }
+
+[effect_airport_regen_small_air]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range"
+      "Building", "Airport", "City"
+      "UnitClass", "Small Air", "Local"
     }
 
 [effect_airport_2]
@@ -2590,6 +2616,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -2609,6 +2636,7 @@ reqs    =
 ;      "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -2627,6 +2655,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
@@ -3483,6 +3512,15 @@ reqs    =
       "UnitClass", "Helicopter", "Local"
     }
 
+[effect_sam_battery_small_air]
+type    = "Defend_Bonus"
+value   = 100
+reqs    =
+    { "type", "name", "range"
+      "Building", "SAM Battery", "City"
+      "UnitClass", "Small Air", "Local"
+    }
+
 [effect_nuke_improvement_pct]
 type    = "Nuke_Improvement_Pct"
 value   = 20
@@ -4066,6 +4104,7 @@ reqs    =
       "UnitClass", "Trireme", "Local", FALSE
       "UnitClass", "Helicopter", "Local", FALSE
       "UnitClass", "Air", "Local", FALSE
+      "UnitClass", "Small Air", "Local", FALSE
       "UnitClass", "Missile", "Local", FALSE
     }
 
