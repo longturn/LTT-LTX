@@ -292,6 +292,14 @@ hp_loss_pct   = 0
 hut_behavior  = "Frighten"
 flags         = "Unreachable", "DoesntOccupyTile", "CanPillage", "Airliftable"
 
+[unitclass_small_air]
+; /* TRANS: Unit class: used adjectivally */
+name          = _("?unitclass:Small Air")
+min_speed     = 1
+hp_loss_pct   = 0
+hut_behavior  = "Frighten"
+flags         = "Unreachable", "DoesntOccupyTile", "CanPillage", "Airliftable"
+
 ; /* <-- avoid gettext warnings
 ;
 ; Below: The individual unit types, one per section.
@@ -2505,7 +2513,7 @@ offensive capabilities. Like earlier siege units, Mobile Howitzers do not gain b
 
 [unit_early_fighter]
 name          = _("Early Fighter")
-class         = "Air"
+class         = "Small Air"
 tech_req      = "Flight"
 obsolete_by   = "Fighter"
 graphic       = "u.early_fighter"
@@ -2528,6 +2536,8 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
+;embarks       = ; Not possible to reattach to zeppelin during flight
+disembarks    = "Air" ; Launching from zeppelin
 targets       = "Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendOk", "DefendOkStartUnit"
@@ -3090,7 +3100,8 @@ hitpoints     = 30
 firepower     = 1
 move_rate     = 8
 vision_radius_sq = 72
-transport_cap = 0
+transport_cap = 1
+cargo         = "Small Air" ; for carrying biplanes
 fuel          = 2
 uk_happy      = 1
 uk_shield     = 1
