@@ -2538,7 +2538,7 @@ uk_food       = 1
 uk_gold       = 1
 ;embarks       = ; Not possible to reattach to zeppelin during flight
 disembarks    = "Air" ; Launching from zeppelin
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
@@ -2576,7 +2576,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
@@ -2613,7 +2613,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendGood", "DefendGoodStartUnit"
 helptext      = _("\
@@ -2646,7 +2646,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendGood", "DefendGoodStartUnit"
 helptext      = _("\
@@ -2679,7 +2679,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 vision_layer  = "Stealth"
 roles         = "DefendGood", "DefendGoodStartUnit"
@@ -2876,7 +2876,7 @@ bonuses       =
    { "flag", "type", "value"
      "Stuka", "DefenseDivider", 2
    }
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
@@ -2918,7 +2918,7 @@ bonuses       =
    { "flag", "type", "value"
      "Stuka", "DefenseDivider", 2
    }
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "AirAttacker", "HasNoZOC", "OneAttack"
 roles         = "DefendOk", "DefendOkStartUnit"
 helptext      = _("\
@@ -4090,7 +4090,7 @@ uk_food       = 1
 uk_gold       = 1
 cargo         = "Land", "Ancient Land", "Small Unit", "Small Land", 
                 "Amphibious", "Big Land", "Big Siege", "Merchant",
-                "Air", "Missile", "Helicopter"
+                "Air", "Small Air", "Missile", "Helicopter"
 flags         = "BadCityDefender", "HasNoZOC", "Stuka"
 roles         = "DefendGood", "DefendGoodStartUnit"
 helptext      = _("\
@@ -4219,7 +4219,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 0
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 flags         = "OneAttack", "AirAttacker", "HasNoZOC"
 roles         = ""
 helptext      = _("\
@@ -5184,7 +5184,7 @@ uk_happy      = 0
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-targets       = "Air", "Missile", "Helicopter"
+targets       = "Air", "Small Air", "Missile", "Helicopter"
 vision_layer  = "Stealth"
 flags         = "AirAttacker"
 roles         = "DefendGood"
