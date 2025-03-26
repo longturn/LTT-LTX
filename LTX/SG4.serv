@@ -1,7 +1,7 @@
 # Server commands to make Longturn Extended Experimental Freeciv rules based on Civ2Civ3 ruleset
 #
 
-rulesetdir LTX
+rulesetdir SG4
 
 # test game / real game settings
 
@@ -13,7 +13,7 @@ set unitwaittime 36000  # real game§
 set fogofwar "ENABLED"		# real game
 #set fogofwar "DISABLED"		# test game
 
-set mgr_distance "7"
+set mgr_distance "1"
 set mgr_foodneeded "ENABLED"
 set mgr_nationchance "50"
 set mgr_turninterval "1"
@@ -126,7 +126,6 @@ set saveturns 1
 set fixedlength enabled
 set savefrequency "15"
 set savename "freeciv"
-set infrapoints "0"
 set kicktime "1800"
 set first_timeout "-1"
 set fixedlength "DISABLED"
@@ -163,14 +162,11 @@ set turnblock "ENABLED"
 set homecaughtunits "ENABLED"
 
 metamessage "LongturnRoyale for multiplayer games - Suomipeli2023b edition | More info: https://longturn.net"
-metapatches longturn
 
 # Players
 set nationset all
 read players.serv
 
-syncturn # for longturn games
 start
 
 Easy
-metapatches 

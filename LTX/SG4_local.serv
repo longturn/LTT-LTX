@@ -1,0 +1,123 @@
+# Server commands to make Longturn Traditional Freeciv rules based on Civ2Civ3 ruleset
+#
+
+rulesetdir SG4
+
+set mgr_distance "1"
+set mgr_foodneeded "ENABLED"
+set mgr_nationchance "50"
+set mgr_turninterval "1"
+set mgr_worldchance "30"
+set migration "ENABLED"
+
+# players
+set nationset all
+set aifill 10
+hard AI*1
+hard AI*2
+hard AI*3
+hard AI*4
+hard AI*5
+hard AI*6
+hard AI*7
+hard AI*8
+hard AI*9
+hard AI*10
+playernation AI*1 "Newfoundland" 1 "Blauwal"
+playernation AI*2 "Welsh" 1 "houroftheowl"
+playernation AI*3 "Dutch" 1 "Sketlux"
+playernation AI*4 "Pirate" 1 "XHawk87"
+playernation AI*5 "Yugoslav" 1 "Corbeau"
+playernation AI*6 "Cornish" 1 "el_perdedor"
+playernation AI*7 "Mitanni" 1 "Shoilf"
+playernation AI*8 "Finnish" 1 "L1meE"
+playernation AI*9 "Swedish" 1 "blabber"
+playernation AI*10 "Slovenian" 1 "croupier"
+set minplayers 0
+
+# map
+set mapsize "XYSIZE"
+set generator "FRACTAL"
+set barbarians disabled
+set startpos "VARIABLE"
+set huts 0
+set landmass 40
+set separatepoles enabled
+set specials 300
+set steepness 45
+set temperature 60
+set xsize 160
+set ysize 130
+set topology ""
+set wetness 60
+set alltemperate disabled
+set tinyisles disabled   # Don't allow 1x1 islands
+
+# general rules
+set nationset all
+set citymindist 5
+set contactturns 1
+set disasters "10"
+set dispersion "0"
+set foggedborders enabled
+set rapturedelay 3
+set restrictinfra enabled
+set revolen 2
+set revolentype   FIXED
+set spaceship_travel_time "200"
+set startunits s   # Unfortunately we can't set it to spawn no units
+set techleak "150"
+set techlevel "0"
+set trading_tech disabled
+set airliftingstyle "FROM_ALLIES|TO_ALLIES|DEST_UNLIMITED"
+set razechance 10
+set globalwarming "ENABLED"
+set globalwarming_percent 40
+set nuclearwinter_percent 100
+set unreachableprotects "DISABLED"
+set happyborders "NATIONAL"
+set killcitizen "ENABLED"
+set killstack "ENABLED"
+set killunhomed "0"
+set flatpoles "0"
+set occupychance "0"
+set aqueductloss "0"
+set autoattack "DISABLED"
+set caravan_bonus_style "CLASSIC"
+set trade_revenue_style "CLASSIC"
+set endspaceship "ENABLED"
+set endturn "5000"
+set savepalace "ENABLED"
+
+# diplomacy, technology
+set diplchance 40
+set diplgoldcost 40
+set diplbulbcost 20
+set diplomacy ALL
+
+set sciencebox 100
+set techlost_donor 0
+set techlost_recv 0
+set techpenalty 10
+set trademindist 999     # LT games don't do trade routes
+set tradeworldrelpct "50"
+set trading_city disabled
+set team_pooled_research disabled
+set techlevel 42
+set techlossforgiveness -1
+set techlossrestore 50
+set freecost 0 # for getting techs from philosphy etc
+
+set conquercost 30 # for getting techs with tech stealing/trading units
+set persistentready "DISABLED"
+set civilwarsize "10"
+set teamplacement "CLOSEST"
+set fulltradesize "1"
+set gold "50"
+set trading_city "DISABLED"
+set trading_gold "ENABLED"
+set trading_tech "DISABLED"
+set victories "SPACERACE|ALLIED"
+set incite_gold_capt_chance "0"
+set incite_gold_loss_chance "0"
+set demography   NnciwASLaMklOCqrbszPE
