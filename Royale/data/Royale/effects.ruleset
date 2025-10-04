@@ -2378,6 +2378,17 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+	
+[effect_barracks_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
 
 [effect_barracks_hp]
 type    = "HP_Regen"
@@ -2395,6 +2406,15 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "Barracks", "City", TRUE
       "UnitClass", "Big Land", "Local", TRUE
+    }
+	
+[effect_barracks_c_hp]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
     }
 
 [effect_barracks_ii]
@@ -2418,6 +2438,18 @@ reqs    =
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
+	
+[effect_barracks_ii_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
 
 [effect_barracks_ii_hp]
 type    = "HP_Regen"
@@ -2435,6 +2467,15 @@ reqs    =
     { "type", "name", "range", "present"
       "Building", "Barracks II", "City", TRUE
       "UnitClass", "Big Land", "Local", TRUE
+    }
+
+[effect_barracks_ii_c_hp]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks II", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
     }
 
 [effect_barracks_iii]
@@ -2459,6 +2500,17 @@ reqs    =
       "UnitFlag", "NoVeteran", "Local", FALSE
     }
 
+[effect_barracks_iii_c]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks III", "City", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
 [effect_barracks_iii_hp]
 type    = "HP_Regen"
 value   = 100
@@ -2476,6 +2528,16 @@ reqs    =
       "Building", "Barracks III", "City"
       "UnitClass", "Big Land", "Local"
     }
+
+[effect_barracks_iii_c_hp]
+type    = "HP_Regen"
+value   = 100
+reqs    =
+    { "type", "name", "range"
+      "Building", "Barracks III", "City"
+      "UnitClass", "Big Siege", "Local"
+    }
+
 
 [effect_cathedral]
 type    = "Make_Content"
