@@ -1002,7 +1002,7 @@ teammate which attacks a city with SDI Defense, or attacks a unit (or is \
 deliberately exploded) within range, may be shot down and simply has no effect. \
 Also, adds 50% to the intrinsic defense strength of units in the city when \
 defending against conventional missiles. SDI I + capital protects against 100% \
-of the nuclear attacks while SDI I only stops 80% of the nuclear attacks. \
+of the nuclear attacks while SDI I only stops 70% of the nuclear attacks. \
 SDI I + Palace adds 100% to the defense bonus against \
 conventional missiles.\
 "), _("\
