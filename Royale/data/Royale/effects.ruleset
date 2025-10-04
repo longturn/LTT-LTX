@@ -5127,10 +5127,11 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
+
 ; City radius increased with Mass Transit
 [effect_mass_transit_2]
 type    = "City_Radius_Sq"
-value   = 6
+value   = 12
 reqs    =
     { "type", "name", "range"
    "Building", "Mass Transit", "City"
@@ -5145,6 +5146,14 @@ reqs    =
          "Tech", "Theology", "Player"
    }
 
+; City radius increased with Railroad
+[effect_railroad_work_area]
+type    = "City_Radius_Sq"
+value   = 8
+reqs    =
+    { "type", "name", "range"
+         "Tech", "Theology", "Player"
+   }
 
 
 [effect_units_in_a_city_1]
