@@ -1529,7 +1529,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-flags         = "CityBuster", "Capturable"
+flags         = "Capturable"
 roles         = "AttackStrongStartUnit"
 helptext      = _("\
 Catapults are large rock-throwing machines of war.\
@@ -1569,7 +1569,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-flags         = "CityBuster", "Capturable"
+flags         = "Capturable"
 roles         = "AttackStrongStartUnit", "BarbarianTech", "BarbarianBuildTech"
 helptext      = _("\
 Cannons are large firearms that can fire heavy projectiles over long \
@@ -1604,7 +1604,7 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-flags         = "CityBuster", "Capturable"
+flags         = "Capturable"
 roles         = "AttackStrongStartUnit"
 helptext      = _("\
 The artillery is an upgraded cannon. As with its predecessors, it is a \
@@ -1638,12 +1638,12 @@ uk_happy      = 1
 uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
-flags         = "CityBuster"
+flags         = "Capturable"
 roles         = "AttackStrongStartUnit"
 helptext      = _("\
 Howitzers are upgraded artillery with improved defensive as well as \
 offensive capabilities. However, they still have the limited mobility \
-of their predecessors. Like earlier siege units, Howitzers do gain benefits from Barracks. No additional veteran levels from small wonders adding veteran levels for land units. \
+of their predecessors. Like earlier siege units, Howitzers do gain benefits from Barracks. No additional veteran levels from small wonders adding veteran levels for land units. Notice that unescorted howitzers may be captured.\
 ")
 
 [unit_fighter]
