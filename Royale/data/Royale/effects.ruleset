@@ -5175,6 +5175,24 @@ reqs    =
     }
 
 
+[effect_literacy_upgrade]
+type    = "Upgrade_Unit"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Tech", "Literacy", "Player"
+    }
+
+	
+[effect_university_upgrade]
+type    = "Upgrade_Unit"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "Tech", "University", "Player"
+    }
+
+
 [effect_invention_upgrade]
 type    = "Upgrade_Unit"
 value   = 2

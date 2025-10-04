@@ -525,6 +525,7 @@ req2     = "Code of Laws"
 flags    = ""
 graphic     = "a.literacy"
 graphic_alt = "-"
+helptext = _("Upgrades one unit every turn.")
 cost     = 44
 
 [advance_machine_tools]
@@ -959,6 +960,7 @@ req2     = "Philosophy"
 flags    = ""
 graphic     = "a.university"
 graphic_alt = "-"
+helptext = _("Upgrades one unit every turn.")
 cost     = 120
 
 [advance_warrior_code]
