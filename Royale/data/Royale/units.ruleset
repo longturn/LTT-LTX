@@ -3538,36 +3538,40 @@ that attacks with triple firepower.\
 
 
 
-[unit_fusion_armor]
-name          = _("Fusion Armor")
+[unit_army_group]
+name          = _("Army Group")
 class         = "Big Land"
-tech_req      = "Fusion Power"
+tech_req      = "Combined Arms"
 obsolete_by   = "None"
-graphic       = "u.fusion_armor"
-graphic_alt   = "u.armor"
+graphic       = "u.armygroup"
+graphic_alt   = "u.fusion_armor"
 sound_move    = "m_armor"
 sound_move_alt = "m_generic"
 sound_fight   = "f_armor"
 sound_fight_alt = "f_generic"
-build_cost    = 160
-pop_cost      = 0
-attack        = 10
-defense       = 5
-hitpoints     = 30
+build_cost    = 450
+pop_cost      = 5
+attack        = 30
+defense       = 15
+hitpoints     = 99
 firepower     = 2
 move_rate     = 9
 vision_radius_sq = 25
 transport_cap = 0
 fuel          = 0
-uk_happy      = 1
-uk_shield     = 1
-uk_food       = 1
-uk_gold       = 1
+uk_happy      = 0
+uk_shield     = 0
+uk_food       = 0
+uk_gold       = 0
+bonuses       =
+   { "flag", "type", "value"
+     "AirAttacker", "DefenseMultiplier", 4
+   }
 flags         = ""
-roles         = "DefendOk", "Hunter"
+roles         = "DefendOk", "Hunter", "NoVeteran", "NoHome"
 helptext      = _("\
-A fusion powered Armor attacking \
-with double firepower.\
+An armty group with ultimate power and ultimate defense value. This unit costs population and a few of these may break almost any defense. The best way to act against an army group is another army group or using nuclear weapons. \
+with double firepower. This unit also has a very good defense against air units. This unit can never become a veteran and building it costs population.\
 ")
 
 
