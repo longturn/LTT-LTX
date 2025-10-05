@@ -1000,7 +1000,7 @@ flags         = "Capturable"
 roles         = "DefendGood", "DefendGoodStartUnit", "FirstBuild"
 helptext      = _("\
 Volunteer Corps are World War-era mercenaries, very good\
- at defending your cities but can't attack like riflemen. They cause no unhappiness if away from home but can be captured if not guarded. Since they expect to be paid for their service, the upkeep is much more expensive compared to riflemen.\
+ at defending your cities but can't attack as well as riflemen. They cause no unhappiness if away from home but can be captured if not guarded. Since they expect to be paid for their service, the upkeep is much more expensive compared to riflemen.\
 ")
 
 
@@ -1075,7 +1075,7 @@ helptext      = _("\
 Infantry Legion are modern version of Volunteer Corps, relatively good\
  at defending your cities but less powerful compared to Infantry.\n\n
 Infantry Legion are modern era mercenaries, quite good\
- at defending your cities but can't attack like infantry. They cause no unhappiness if away from home but can be captured if not guarded. Since they expect to be paid for their service, the upkeep is much more expensive compared to infantry.\
+ at defending your cities but can't fight as well as infantry. They cause no unhappiness if away from home but can be captured if not guarded. Since they expect to be paid for their service, the upkeep is much more expensive compared to infantry.\
 
 [unit_alpine_troops]
 name          = _("Alpine Troops")
