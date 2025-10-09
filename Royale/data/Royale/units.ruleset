@@ -1044,7 +1044,7 @@ Infantry are modern version of infantry, relatively good\
 ")
 
 
-[unit_infantry]
+[unit_infantry_legion]
 name          = _("Infantry Legion")
 class         = "Land"
 tech_req      = "Machine Tools"
@@ -1074,8 +1074,9 @@ roles         = "DefendGood", "DefendGoodStartUnit", "FirstBuild"
 helptext      = _("\
 Infantry Legion are modern version of Volunteer Corps, relatively good\
  at defending your cities but less powerful compared to Infantry.\n\n
-Infantry Legion are modern era mercenaries, quite good\
+ Infantry Legion are modern era mercenaries, quite good\
  at defending your cities but can't fight as well as infantry. They cause no unhappiness if away from home but can be captured if not guarded. Since they expect to be paid for their service, the upkeep is much more expensive compared to infantry.\
+")
 
 [unit_alpine_troops]
 name          = _("Alpine Troops")
@@ -3567,8 +3568,8 @@ bonuses       =
    { "flag", "type", "value"
      "AirAttacker", "DefenseMultiplier", 4
    }
-flags         = ""
-roles         = "DefendOk", "Hunter", "NoVeteran", "NoHome"
+flags         = "NoVeteran", "NoHome"
+roles         = "DefendOk", "Hunter"
 helptext      = _("\
 An armty group with ultimate power and ultimate defense value. This unit costs population and a few of these may break almost any defense. The best way to act against an army group is another army group or using nuclear weapons. \
 with double firepower. This unit also has a very good defense against air units. This unit can never become a veteran and building it costs population.\
