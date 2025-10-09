@@ -1,8 +1,0 @@
-#!/bin/sh
-
-GAMEID=LTT2
-GAMENAME=LTT2
-GAMEDIR=$HOME/server/LTT2
-PORT=5061
-
-. ../rc.subr.fc21

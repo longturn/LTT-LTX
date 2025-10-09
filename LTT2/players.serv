@@ -1,7 +1,21 @@
-set aifill 2
+set aifill 8
+
+# Make sure they are human
 aitoggle AI*1
 aitoggle AI*2
-playernation AI*1 Nationame 1 Playername
-playernation AI*2 Nationame2 1 Playername2
+aitoggle AI*3
+aitoggle AI*4
+aitoggle AI*5
+aitoggle AI*6
+aitoggle AI*7
+aitoggle AI*8
 
-
+# Set nations
+playernation AI*1 "Cornish" 1 "el_perdedor"
+playernation AI*2 "Ozite" 1 "mangofeet"
+playernation AI*3 "Welsh" 1 "houroftheowl"
+playernation AI*4 "Norman" 1 "Mikalor"
+playernation AI*5 "Russian" 1 "kivy0"
+playernation AI*6 "Veletian" 1 "Kocu"
+playernation AI*7 "Pelasgian" 1 "LeoAfricanus"
+playernation AI*8 "Hanseatic" 1 "louis94"
