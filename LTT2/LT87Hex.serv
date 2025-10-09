@@ -11,7 +11,7 @@ set generator "FRACTAL"
 set barbarians disabled
 set startpos "VARIABLE" # ALL
 set huts 0
-set landmass 60
+set landmass 35
 set specials 300
 set steepness 50
 set temperature 70
