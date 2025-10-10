@@ -5778,6 +5778,89 @@ reqs    =
 	  "Gov", "Democracy", "Player"
     }
 	
+
+	
+[effect_trade_resource_bonus_silk_1]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_2]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_3]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_silk_4]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_5]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_6]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_7]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_8]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+
 	
 [effect_partisan_communism]
 type    = "Inspire_Partisans"

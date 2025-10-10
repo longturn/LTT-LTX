@@ -2240,12 +2240,40 @@ government or by the United Nations.\
 
 
 
+[building_silk_road]
+name		= _("Silk Road")
+genus		= "SmallWonder"
+reqs	=
+    { "type", "name", "range"
+      "Tech", "Trade", "World"
+	  "Extra", "Silk", "City"
+    }
+graphic	= "b.silkroad"
+graphic_alt	= "b.university"
+obsolete_by	=
+    { "type", "name", "range"
+	  "Tech", "Navigation", "Player"
+    }
+build_cost	= 40
+upkeep		= 0
+sabotage	= 0
+sound		= "w_silkroad"
+sound_alt	= "w_generic"
+helptext	= _("\
+Increases the trade output of the nation. The effect affects all the cities controlled by the nation. The increase is 10% for the nations \
+with non trade based governments. Since the trade based goverments such as republic and democracy already \
+benefit from trade the bonus for this wonder is not as important as it is for \
+other types of governments. The bonus for trade based governments is 5%. \
+")
+
+
+
 [building_gold_road]
 name		= _("Gold Road")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Trade", "World"
+      "Tech", "Banking", "World"
 	  "Extra", "Gold", "City"
     }
 graphic	= "b.goldroad"
