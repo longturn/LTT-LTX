@@ -2443,6 +2443,10 @@ reqs    =
       "MinSize", "7", "City"
     }
 
+[effect_food_carry_over]
+type    = "Growth_Surplus_Pct"
+value   = 100
+
 [effect_harbour]
 type    = "Output_Add_Tile"
 value   = 1
