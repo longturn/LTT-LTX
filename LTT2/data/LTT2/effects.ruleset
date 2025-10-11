@@ -455,17 +455,47 @@ reqs    =
       "Tech", "Medicine", "Player"
     }
 
-; Base -1% food each 1 tile
-[effect_food_waste_distance]
+; From 0% (size 1) to -1% (size 5) food each 1 tile
+[effect_food_waste_distance_size2]
 type    = "Output_Waste_By_Distance"
-value   = 100
+value   = 25
 reqs    =
-    { "type", "name", "range"
+    { "type",       "name", "range"
       "OutputType", "Food", "Local"
+      "MinSize",    "2",    "City"
+    }
+
+[effect_food_waste_distance_size3]
+type    = "Output_Waste_By_Distance"
+value   = 25
+reqs    =
+    { "type",       "name", "range"
+      "OutputType", "Food", "Local"
+      "MinSize",    "3",    "City"
+    }
+
+; From 0% (size 1) to -1% (size 5) food each 1 tile
+[effect_food_waste_distance_size4]
+type    = "Output_Waste_By_Distance"
+value   = 25
+reqs    =
+    { "type",       "name", "range"
+      "OutputType", "Food", "Local"
+      "MinSize",    "4",    "City"
+    }
+
+; From 0% (size 1) to -1% (size 5) food each 1 tile
+[effect_food_waste_distance_size5]
+type    = "Output_Waste_By_Distance"
+value   = 25
+reqs    =
+    { "type",       "name", "range"
+      "OutputType", "Food", "Local"
+      "MinSize",    "5",    "City"
     }
 
 ; Total -1% food each 2 tiles
-[effect_food_waste_distance_1]
+[effect_food_waste_reduction]
 type    = "Output_Waste_Pct"
 value   = 50
 reqs    =
@@ -474,13 +504,44 @@ reqs    =
     }
 
 ; Base 0% food waste with Anarchy
-[effect_food_waste_distance_2]
+[effect_food_waste_distance_anarchy_size2]
 type    = "Output_Waste_By_Distance"
-value   = -100
+value   = -25
 reqs    =
-    { "type", "name", "range"
-      "Gov", "Anarchy", "Player"
-      "OutputType", "Food", "Local"
+    { "type",       "name",     "range"
+      "Gov",        "Anarchy",  "Player"
+      "OutputType", "Food",     "Local"
+      "MinSize",    "2",        "City"
+    }
+
+[effect_food_waste_distance_anarchy_size3]
+type    = "Output_Waste_By_Distance"
+value   = -25
+reqs    =
+    { "type",       "name",     "range"
+      "Gov",        "Anarchy",  "Player"
+      "OutputType", "Food",     "Local"
+      "MinSize",    "3",        "City"
+    }
+
+[effect_food_waste_distance_anarchy_size4]
+type    = "Output_Waste_By_Distance"
+value   = -25
+reqs    =
+    { "type",       "name",     "range"
+      "Gov",        "Anarchy",  "Player"
+      "OutputType", "Food",     "Local"
+      "MinSize",    "4",        "City"
+    }
+
+[effect_food_waste_distance_anarchy_size5]
+type    = "Output_Waste_By_Distance"
+value   = -25
+reqs    =
+    { "type",       "name",     "range"
+      "Gov",        "Anarchy",  "Player"
+      "OutputType", "Food",     "Local"
+      "MinSize",    "5",        "City"
     }
 
 ; base -1% trade each tile
