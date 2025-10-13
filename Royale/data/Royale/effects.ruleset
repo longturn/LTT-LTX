@@ -5444,7 +5444,7 @@ value   = -20
 reqs    =
     { "type", "name", "range"
       "OutputType", "Shield", "Local"
-	  "Extra", "Pollution", City"
+	  "Extra", "Pollution", "City"
     }
 
 
