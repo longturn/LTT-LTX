@@ -5952,5 +5952,16 @@ reqs   =
     { "type", "name", "range"
     "CityTile","Center","Local"
     }
+	
+; For making the game more easy to play. Also for making the early game more accelerated
+[effect_easy_growth]
+type    = "Output_Add_Tile"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "CityTile", "Center", "Local", TRUE
+      "OutputType", "Food", "Local", TRUE
+    }
+
 
 
