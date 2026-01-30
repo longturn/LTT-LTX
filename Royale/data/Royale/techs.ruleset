@@ -130,7 +130,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.alphabet"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_amphibious_warfare]
 name     = _("Amphibious Warfare")
@@ -205,7 +205,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.ceremonial_burial"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_chemistry]
 name     = _("Chemistry")
@@ -462,7 +462,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.horseback_riding"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_industrialization]
 name     = _("Industrialization")
@@ -562,7 +562,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.masonry"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_mass_production]
 name     = _("Mass Production")
@@ -729,7 +729,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.pottery"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_radio]
 name     = _("Radio")
@@ -970,7 +970,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.warrior_code"
 graphic_alt = "-"
-cost     = 10
+cost     = 7
 
 [advance_writing]
 name     = _("Writing")
