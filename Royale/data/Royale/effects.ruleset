@@ -5967,7 +5967,7 @@ value =1
 
 [effect_Bombard_Limit_Percent_city]
 type  = "Bombard_Limit_Pct"
-value = 30
+value = 20
 reqs   =
     { "type", "name", "range"
     "CityTile","Center","Local"
