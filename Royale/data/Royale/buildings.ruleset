@@ -442,7 +442,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 45
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_courthouse"
@@ -496,7 +496,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 40
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_granary"
@@ -529,7 +529,7 @@ obsolete_by	=
 	  "type", "name", "range", "present"
       "TerrainFlag", "Sea", "City", FALSE
     }
-build_cost	= 40
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_harbour"
@@ -592,7 +592,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 60
+build_cost	= 40
 upkeep		= 1
 sabotage	= 100
 sound		= "b_library"
@@ -614,7 +614,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 50
+build_cost	= 35
 upkeep		= 0
 sabotage	= 100
 sound		= "b_marketplace"
@@ -1325,7 +1325,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 30
+build_cost	= 20
 upkeep		= 1
 sabotage	= 100
 sound		= "b_temple"
