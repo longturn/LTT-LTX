@@ -1657,7 +1657,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 400
+build_cost	= 250
 upkeep		= 0
 sabotage	= 0
 sound		= "w_isaac_newtons_college"
