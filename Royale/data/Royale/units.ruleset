@@ -3221,7 +3221,7 @@ flags         = "HelpWonder", "NonMil", "HasNoZOC", "Capturable"
 roles         = ""
 helptext      = _("\
 A Caravan carries goods or material for trading with other nations,\
- or to help build wonders in your own cities.\
+ or to help build wonders in your own cities. The disband value is 80% meaning that you get 80% of the shields back when disbanded.\
 "), _("\
 Caravans cannot take advantage of maglevs, but may travel on\
  the railroads that accompany them.\
@@ -3266,7 +3266,7 @@ flags         = "HelpWonder", "NonMil", "HasNoZOC", "Capturable"
 roles         = ""
 helptext      = _("\
 The Freight unit replaces the Caravan, and moves at twice the speed.\
- It has the same behavior and movement restrictions.\
+ It has the same behavior and movement restrictions. The disband value is 80% meaning that you get 80% of the shields back when disbanded.\\
 ")
 
 [unit_explorer]
