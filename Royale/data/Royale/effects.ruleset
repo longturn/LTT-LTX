@@ -5169,7 +5169,7 @@ reqs    =
 ; City radius increased with Railroad
 [effect_railroad_work_area]
 type    = "City_Radius_Sq"
-value   = 8
+value   = 5
 reqs    =
     { "type", "name", "range"
          "Tech", "Theology", "Player"
