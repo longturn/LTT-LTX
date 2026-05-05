@@ -6,15 +6,15 @@ rulesetdir Royale
 # test game / real game settings
 
 # Uncomment the following for test games
-#set revealmap START                        # test game
-#set timeout 120                            # test game
-#set unitwaittime 10                         # test game
-#set fogofwar "DISABLED"	               # test game
+set revealmap START                        # test game
+set timeout 120                            # test game
+set unitwaittime 10                         # test game
+set fogofwar "DISABLED"	               # test game
 
 # Set these for real games, add comment for test games
-set timeout 82800                           # real game
-set unitwaittime 36000                      # real game
-set fogofwar "ENABLED"		                # real game
+#set timeout 82800                           # real game
+#set unitwaittime 36000                      # real game
+#set fogofwar "ENABLED"		                # real game
 
 set unitwaittime_style ACTIVITIES   
 #set unitwaittime_extended enabled # unitwaittime also applies to newly-built and captured/bribed units
@@ -24,10 +24,10 @@ set alltemperate disabled
 set barbarians disabled
 set generator "FRACTAL"
 set huts 0
-set landmass 50
+set landmass 30
 set mapsize "PLAYER"
 set separatepoles enabled
-set specials 600
+set specials 400
 set startpos "ALL"
 set steepness 30
 set temperature 60
@@ -49,8 +49,8 @@ set endspaceship enabled
 set endturn 5000
 set flatpoles 0
 set foggedborders enabled
-set globalwarming enabled
-set globalwarming_percent 60
+set globalwarming disabled
+set globalwarming_percent 20
 set happyborders "NATIONAL"
 set killcitizen enabled
 set killstack enabled
@@ -62,7 +62,7 @@ set occupychance 0
 set rapturedelay 3
 set razechance 10
 set restrictinfra enabled
-set revolen 2
+set revolen 1
 set revolentype FIXED
 set savepalace enabled
 set spaceship_travel_time 150
@@ -153,5 +153,7 @@ metapatches longturn
 # Players
 read players.serv
 start
+set aitoggle ""
+set maxconnectionsperhost 40
 
 Easy
