@@ -336,3 +336,239 @@ function place_map_labels()
 end
 
 signal.connect("map_generated", "place_map_labels")
+
+-- Utils
+
+LuaUtils = {}
+
+function LuaUtils:log(level, fmt, ...)
+  log.base(level, string.format("LuaUtils: " .. fmt, ...))
+end
+
+function LuaUtils:debug(fmt, ...)
+  self:log(log.level.DEBUG, "[DEBUG] " .. fmt, ...)
+end
+
+function LuaUtils:info(fmt, ...)
+  self:log(log.level.NORMAL, "[INFO] " .. fmt, ...)
+end
+
+function LuaUtils.dump(obj)
+  local result = "{ "
+  for key, value in pairs(obj) do
+    result = result .. "[" .. tostring(key) .. "] = " .. tostring(value) .. ", "
+  end
+  result = result .. "}"
+  return result
+end
+
+function LuaUtils.find_city(player, city_name)
+  if not player then return nil end
+  if not city_name then return nil end
+  for city in player:cities_iterate() do
+    if city.name == city_name then
+      return city
+    end
+  end
+  return nil
+end
+
+function LuaUtils.find_player_unit(player, unit_type)
+  if not player then return nil end
+  for unit in player:units_iterate() do
+    if unit.utype:rule_name() == unit_type then
+      return unit
+    end
+  end
+  return nil
+end
+
+function LuaUtils:populate_transport(transport, unit_list)
+  self:debug("Populating transport %s with %s", transport, unit_list)
+  local player = transport.owner
+  local tile = transport.tile
+  local full_hp = -1
+  local full_moves = -1
+  local green = 0
+  for i, unit_data in ipairs(unit_list) do
+    local unit_type = find.unit_type(unit_data.utype)
+    local count = unit_data.count or 1
+    local veteran = unit_data.veteran or green
+    local homecity = self.find_city(player, unit_data.homecity)
+    local moves_left = unit_data.moves_left or full_moves
+    local hp_left = unit_data.hp or full_hp
+    for j = 1, count do
+      local unit = edit.create_unit_full(player, tile, unit_type, veteran,
+        homecity, moves_left, hp_left, transport)
+      self:debug("Spawned passenger %s", unit)
+    end
+  end
+  self:debug("Transport populated")
+end
+
+function LuaUtils:spawn_units(owner, unit_list, tile)
+  self:debug("Spawning %s for %s at (%d, %d)",
+    unit_list, owner, tile.x, tile.y)
+  local full_hp = -1
+  local full_moves = -1
+  local green = 0
+  for i, unit_data in ipairs(unit_list) do
+    local unit_type = find.unit_type(unit_data.utype)
+    local count = unit_data.count or 1
+    local veteran = unit_data.veteran or green
+    local homecity = self.find_city(owner, unit_data.homecity)
+    local moves_left = unit_data.moves_left or full_moves
+    local hp_left = unit_data.hp or full_hp
+    local passengers = unit_data.passengers or {}
+    for j = 1, count do
+      local unit = edit.create_unit_full(owner, tile, unit_type, veteran,
+        homecity, moves_left, hp_left, nil)
+      self:debug("Spawned %s", unit)
+      if passengers then
+        self:populate_transport(unit, passengers)
+      else
+        self:debug("No passengers")
+      end
+    end
+  end
+  self:debug("Finished spawning units")
+end
+
+-- SG4-specific scripts
+
+SG4 = {
+  spawn_tiles = {
+    Blauwal = { 1, 106 },
+    Houroftheowl = { 3, 108 },
+    Sketlux = { 5, 110 },
+    XHawk87 = { 7, 112 },
+    Corbeau = { 9, 114 },
+    El_perdedor = { 11, 116 },
+    Shoilf = { 13, 118 },
+    L1meE = { 15, 120 },
+    Blabber = { 17, 122 },
+    Croupier = { 19, 124 }
+  },
+  initial_wave = {
+    {
+      utype = "Galleon",
+      count = 4,
+      moves_left = 650,
+      passengers = {
+        { utype = "Settlers" },
+        { utype = "Workers" },
+        { utype = "Migrants" },
+        { utype = "Musketeers" }
+      }
+    }
+  },
+  migrant_wave = {
+    {
+      utype = "Galleon",
+      count = 4,
+      passengers = {
+        { utype = "Immigrants" },
+        { utype = "Immigrants" },
+        { utype = "Workers",   veteran = 1 },
+        { utype = "Workers",   veteran = 1 }
+      }
+    }
+  }
+}
+
+function SG4:log(level, fmt, ...)
+  log.base(level, string.format("SG4: " .. fmt, ...))
+end
+
+function SG4:debug(fmt, ...)
+  self:log(log.level.DEBUG, "[DEBUG] " .. fmt, ...)
+end
+
+function SG4:info(fmt, ...)
+  self:log(log.level.NORMAL, "[INFO] " .. fmt, ...)
+end
+
+function SG4:make_room_for_migrant_ship(player, tile)
+  if tile:is_enemy(player) then
+    for unit in tile:units_iterate() do
+      self:info("%s was killed for blocking migrant spawn at (%d, %d)",
+        unit, tile.x, tile.y)
+      notify.event(unit.owner, unit.tile, E.UNIT_LOST_MISC,
+        _("Your unit accidentally collided with a migrant vessel and sunk."))
+      unit:kill("killed")
+    end
+  end
+  if tile.terrain.rule_name ~= "Deep Ocean" then
+    tile:change_terrain(find.terrain("Deep Ocean"))
+  end
+end
+
+function SG4:spawn_player_migrant_wave(player, wave, tile)
+  self:debug("Spawning migrant wave for %s", player)
+  self:make_room_for_migrant_ship(player, tile)
+  LuaUtils:spawn_units(player, wave, tile)
+  notify.event(player, tile, E.UNIT_RELOCATED,
+    _("A group of immigrants are arriving from home."))
+end
+
+function SG4:spawn_migrant_wave(wave)
+  self:info("Spawning migrant wave")
+  for player in players_iterate() do
+    local tile = self:get_spawn_tile(player)
+    if tile and player.is_alive then
+      self:spawn_player_migrant_wave(player, wave, tile)
+      self:info("Migrant wave spawned at (%d, %d)", tile.x, tile.y)
+    else
+      self:info("%s has no spawn tile. Skipping!", player)
+    end
+  end
+  self:info("Migrant wave spawn complete")
+end
+
+function SG4:set_spawn_tile(player, tile)
+  if not player then return end
+  if not tile then return end
+  _G[string.format("sg4_spawn_tile_%d", player.id)] = tile.id
+end
+
+function SG4:get_spawn_tile(player)
+  if not player then return nil end
+  self:debug("Get spawn tile for %s name=%s", player, player.name)
+  local spawn_tile = _G[string.format("sg4_spawn_tile_%d", player.id)] or
+      self.spawn_tiles[player.name]
+  if type(spawn_tile) == "number" then
+    self:debug("Found stored tile ID %d", spawn_tile)
+    return find.tile(spawn_tile)
+  elseif type(spawn_tile) == "table" then
+    self:debug("Found default tile %s", LuaUtils.dump(spawn_tile))
+    return find.tile(spawn_tile[1], spawn_tile[2])
+  end
+  self:debug("Didn't find a valid tile %s", spawn_tile)
+  return nil
+end
+
+function SG4:clean_up_excess_start_units()
+  for tile in whole_map_iterate() do
+    for unit in tile:units_iterate() do
+      if unit.utype:rule_name() == "Diplomat" then
+        unit:kill("editor")
+      end
+    end
+  end
+end
+
+function SG4:turn_events(turn)
+  if turn == 1 then
+    self:debug("spawn_tiles = %s", LuaUtils.dump(self.spawn_tiles))
+    self:spawn_migrant_wave(self.initial_wave)
+    self:clean_up_excess_start_units()
+  elseif turn == 5 then
+    self:spawn_migrant_wave(self.migrant_wave)
+  end
+end
+
+function SG4OnTurnBegin(turn, year)
+  SG4:turn_events(turn)
+end
+
+signal.connect("turn_begin", "SG4OnTurnBegin")
