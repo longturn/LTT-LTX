@@ -481,6 +481,7 @@ flags         = "Unreachable", "DoesntOccupyTile", "CanPillage", "Airliftable"
 name          = _("Settlers")
 class         = "Small Land"
 tech_req      = "None"
+impr_req      = "Colonial Office"
 obsolete_by   = "None"
 graphic       = "u.settlers"
 graphic_alt   = "-"
