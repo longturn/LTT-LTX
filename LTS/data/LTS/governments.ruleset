@@ -11,7 +11,7 @@
 ; than minor changes.
 
 [datafile]
-description="LTT governments data for Freeciv"
+description="LTS governments data for Freeciv"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -499,7 +499,7 @@ _("\
       \n\\n\
 Playing with Democracy? \n
 Playing with a Democracy is probably the most effective way of creating a super power but this comes with a price. \
-Unlike with some other setups LTT Democracies are quite vulnerable while the player is ramping up the economy. \
+Unlike with some other setups LTS Democracies are quite vulnerable while the player is ramping up the economy. \
 The most common reason to have Democracy as your form of government is to build extremely powerful economy that will \
 simply crush those nations daring to act against your happy Democracy as you as it's eternal leader. If you are not planning to \
 fight wars and you can afford to build markets and other trade related buildings, Democracy is probably the best choice you can make. \
@@ -510,7 +510,7 @@ delay scientific advance and focus on max taxing so that your economy will grow 
 If you postpone researching too much your enemy may be able to surprise you and your outdated army. With a democratic nation it's
 also extremely important to keep your citizens not only content but happy and celebrating. Celebrating gives you +1 extra trade for \
 each tile already producing trade if you manage to keep your cities celebrating. On some other setups using more than 20% lux \
-is usually considered bad but with LTT's trade building setup it may be worth celebrating even with +40% lux. It all depends \
+is usually considered bad but with LTS's trade building setup it may be worth celebrating even with +40% lux. It all depends \
 on the situation but it may be worth it if you manage to avoid building some happiness buildings on the new cities while \
 focusing the resources on the big and old cities producing most of your gold. Also, if you are attacked or need to fight wars \
 it may make sense to home some units on the low production cities. That way if those units cause unhappiness \

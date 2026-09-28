@@ -154,7 +154,7 @@ set traitdistribution "FIXED"
 set turnblock "ENABLED"
 set homecaughtunits "ENABLED"
 
-metamessage "Longturn Traditional for multiplayer games | More info: https://longturn.net"
+metamessage "Longturn Traditional Short for multiplayer games | More info: https://longturn.net"
 metapatches longturn
 
 # Players

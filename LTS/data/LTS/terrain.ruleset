@@ -11,7 +11,7 @@
 ; than minor changes.
 
 [datafile]
-description="LTT tile_type data for Freeciv"
+description="LTS tile_type data for Freeciv"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 

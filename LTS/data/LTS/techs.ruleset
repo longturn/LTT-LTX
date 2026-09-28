@@ -8,7 +8,7 @@
 ; use your new customized file.
 
 [datafile]
-description="LTT technology data for Freeciv"
+description="LTS technology data for Freeciv"
 options="+Freeciv-ruleset-Devel-2017.Jan.02 web-compatible"
 format_version=20
 
@@ -126,7 +126,7 @@ cost     = 1630
 [advance_banking]
 name     = _("Banking")
 req1     = "Trade"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.banking"
 graphic_alt = "-"
@@ -163,7 +163,7 @@ cost     = 2652
 [advance_combustion]
 name     = _("Combustion")
 req1     = "Industrialization"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.combustion"
 graphic_alt = "-"
@@ -172,7 +172,7 @@ cost     = 1450
 [advance_computers]
 name     = _("Computers")
 req1     = "Electronics"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.computers"
 graphic_alt = "-"
@@ -225,7 +225,7 @@ cost     = 750
 [advance_electronics]
 name     = _("Electronics")
 req1     = "Economics"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.electronics"
 graphic_alt = "-"
@@ -262,7 +262,7 @@ cost     = 775
 [advance_fusion_power]
 name     = _("Fusion Power")
 req1     = "Space Flight"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"
@@ -321,7 +321,7 @@ cost     = 385
 [advance_nuclear_fission]
 name     = _("Nuclear Fission")
 req1     = "Electronics"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.nuclear_fission"
 graphic_alt = "-"
@@ -379,7 +379,7 @@ cost     = 2700
 [advance_rocketry]
 name     = _("Rocketry")
 req1     = "Flight"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.rocketry"
 graphic_alt = "-"
@@ -390,7 +390,7 @@ cost     = 4400
 [advance_seafaring]
 name     = _("Seafaring")
 req1     = "Pottery"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.seafaring"
 graphic_alt = "-"
@@ -457,7 +457,7 @@ cost     = 21
 [advance_atomic_theory]
 name     = _("Atomic Theory")
 req1     = "Electronics"
-req2     = ""
+req2     = "None"
 flags    = ""
 graphic     = "a.atomic_theory"
 graphic_alt = "-"

@@ -1,24 +1,24 @@
 [info]
 options = "+Freeciv-2.6-modpack"
-baseURL = "https://raw.githubusercontent.com/longturn/games/master/LTT"
-name = "Longturn Traditional (LTT) Ruleset"
+baseURL = "https://raw.githubusercontent.com/longturn/games/master/LTS"
+name = "Longturn Traditional Short (LTS) Ruleset"
 type = "Ruleset"
 version = "1.0-d8b4bc6"
 
 [files]
 list =
 { "src", "dest"
-  "LTT_local.serv", "LTT.serv"
-  "data/LTT/buildings.ruleset", "LTT/buildings.ruleset"
-  "data/LTT/cities.ruleset", "LTT/cities.ruleset"
-  "data/LTT/effects.ruleset", "LTT/effects.ruleset"
-  "data/LTT/game.ruleset", "LTT/game.ruleset"
-  "data/LTT/governments.ruleset", "LTT/governments.ruleset"
-  "data/LTT/nations.ruleset", "LTT/nations.ruleset"
-  "data/LTT/script.lua", "LTT/script.lua"
-  "data/LTT/styles.ruleset", "LTT/styles.ruleset"
-  "data/LTT/techs.ruleset", "LTT/techs.ruleset"
-  "data/LTT/terrain.ruleset", "LTT/terrain.ruleset"
-  "data/LTT/units.ruleset", "LTT/units.ruleset"
+  "LTS_local.serv", "LTS.serv"
+  "data/LTS/buildings.ruleset", "LTS/buildings.ruleset"
+  "data/LTS/cities.ruleset", "LTS/cities.ruleset"
+  "data/LTS/effects.ruleset", "LTS/effects.ruleset"
+  "data/LTS/game.ruleset", "LTS/game.ruleset"
+  "data/LTS/governments.ruleset", "LTS/governments.ruleset"
+  "data/LTS/nations.ruleset", "LTS/nations.ruleset"
+  "data/LTS/script.lua", "LTS/script.lua"
+  "data/LTS/styles.ruleset", "LTS/styles.ruleset"
+  "data/LTS/techs.ruleset", "LTS/techs.ruleset"
+  "data/LTS/terrain.ruleset", "LTS/terrain.ruleset"
+  "data/LTS/units.ruleset", "LTS/units.ruleset"
 }
 
