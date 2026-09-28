@@ -1268,7 +1268,7 @@ rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 reqs           =
     { "type", "name", "range", "present", "quiet"
-      "Tech", "Refining", "Player", TRUE, FALSE
+      "Tech", "Combustion", "Player", TRUE, FALSE
       "TerrainFlag", "Oil", "Local", TRUE, TRUE
       "Extra", "Mine", "Local", TRUE, FALSE
       "UnitClass", "Sea", "Local", FALSE, TRUE
@@ -1295,7 +1295,7 @@ rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 reqs           =
     { "type", "name", "range", "present"
-      "Tech", "Miniaturization", "Player", TRUE
+      "Tech", "Electronics", "Player", TRUE
       "Terrain", "Deep Ocean", "Local", TRUE
     }
 build_time     = 0
@@ -1416,7 +1416,7 @@ rmact_gfx_alt  = "-"
 ; through "Build Irrigation" action enablers
 reqs           =
     { "type", "name", "range"
-      "Tech", "Refrigeration", "Player"
+      "Tech", "Electronics", "Player"
       "Extra", "Irrigation", "Local"
     }
 build_time     = 0
@@ -1722,7 +1722,7 @@ rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 reqs           =
     { "type", "name", "range", "present", "quiet"
-      "Tech", "Superconductors", "Player", TRUE, FALSE
+      "Tech", "Robotics", "Player", TRUE, FALSE
       "Extra", "Railroad", "Local", TRUE, FALSE
       "UnitFlag", "Settlers", "Local", TRUE, FALSE
       "UnitClass", "Sea", "Local", FALSE, TRUE

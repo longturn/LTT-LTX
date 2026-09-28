@@ -212,7 +212,7 @@ together with pyramids is also great.
 
 name        = _("Monarchy")
 reqs = { "type", "name", "range"
-         "tech", "Monarchy", "Player"
+         "tech", "Ceremonial Burial", "Player"
        }
 graphic     = "gov.monarchy"
 graphic_alt = "-"
@@ -258,7 +258,7 @@ However even the farmers may want to stick with monarchy for some time because o
 
 name        = _("Communism")
 reqs = { "type", "name", "range"
-         "tech", "Communism", "Player"
+         "tech", "Industrialization", "Player"
        }
 graphic     = "gov.communism"
 graphic_alt = "-"
@@ -406,7 +406,7 @@ something else or maybe switch to another government.
 
 name        = _("Republic")
 reqs = { "type", "name", "range"
-         "tech", "The Republic", "Player"
+         "tech", "Trade", "Player"
        }
 graphic     = "gov.republic"
 graphic_alt = "-"

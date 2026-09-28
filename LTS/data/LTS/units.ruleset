@@ -525,7 +525,7 @@ size 4, or cities with a Granary of at most size 6.\
 name          = _("Migrants")
 class         = "Small Land"
 tech_req      = "Pottery"
-obsolete_by   = "Immigrants"
+obsolete_by   = "None"
 graphic       = "u.migrants"
 graphic_alt   = "u.worker"
 sound_move    = "m_worker"
@@ -695,7 +695,7 @@ for more details.\
 name          = _("Warriors")
 class         = "Land"
 tech_req      = "None"
-obsolete_by   = "Pikemen"
+obsolete_by   = "Phalanx"
 graphic       = "u.warriors"
 graphic_alt   = "-"
 sound_move    = "m_warriors"
@@ -727,7 +727,7 @@ This unit may be built from the start of the game.  It is the\
 name          = _("Phalanx")
 class         = "Land"
 tech_req      = "Bronze Working"
-obsolete_by   = "Pikemen"
+obsolete_by   = "Musketeers"
 graphic       = "u.phalanx"
 graphic_alt   = "-"
 sound_move    = "m_phalanx"
@@ -757,7 +757,7 @@ The Phalanx is armored infantry, suitable for defending your cities.\
 [unit_archers]
 name          = _("Archers")
 class         = "Land"
-tech_req      = "Bronze working"
+tech_req      = "Bronze Working"
 obsolete_by   = "Musketeers"
 graphic       = "u.archers"
 graphic_alt   = "-"
@@ -780,7 +780,7 @@ uk_shield     = 1
 uk_food       = 1
 uk_gold       = 1
 flags         = "Capturer"
-roles         = "DefendOk", "DefendOkStartUnit", "Hut"
+roles         = "DefendOk", "DefendOkStartUnit", "Hut", "BarbarianBuild", "BarbarianSea"
 helptext      = _("\
 Archers fight with bows and arrows and have a good offensive\
  value.\
@@ -792,7 +792,7 @@ Archers fight with bows and arrows and have a good offensive\
 name          = _("Musketeers")
 class         = "Land"
 tech_req      = "Gunpowder"
-obsolete_by   = "Riflemen"
+obsolete_by   = "Infantry"
 graphic       = "u.musketeers"
 graphic_alt   = "-"
 sound_move    = "m_musketeers"
@@ -1056,7 +1056,7 @@ paratroopers_range = 15
 name          = _("Horsemen")
 class         = "Land"
 tech_req      = "Warrior Code"
-obsolete_by   = "Chariot"
+obsolete_by   = "Knights"
 graphic       = "u.horsemen"
 graphic_alt   = "-"
 sound_move    = "m_horsemen"
@@ -1094,7 +1094,7 @@ Horsemen are mounted warriors and an early\
 name          = _("Knights")
 class         = "Land"
 tech_req      = "Feudalism"
-obsolete_by   = "Dragoons"
+obsolete_by   = "Cavalry"
 graphic       = "u.knights"
 graphic_alt   = "-"
 sound_move    = "m_knights"
@@ -1454,7 +1454,7 @@ bombard_rate = 4
 [unit_longboat]
 name          = _("Longboat")
 class         = "Sea"
-tech_req      = "Map Making"
+tech_req      = "Pottery"
 obsolete_by   = "Caravel"
 graphic       = "u.longboat"
 graphic_alt   = "u.trireme"
@@ -1503,7 +1503,7 @@ building a defensive unit or maybe a worker for the new colony city.\
 name          = _("Caravel")
 class         = "Sea"
 tech_req      = "Seafaring"
-obsolete_by   = "Galleon"
+obsolete_by   = "Frigate"
 graphic       = "u.caravel"
 graphic_alt   = "-"
 sound_move    = "m_caravel"
@@ -2282,7 +2282,7 @@ The Freight unit replaces the Caravan, and moves at twice the speed.\
 name          = _("Explorer")
 class         = "Small Land"
 tech_req      = "Seafaring"
-obsolete_by   = "Operative"
+obsolete_by   = "Partisan"
 graphic       = "u.explorer"
 graphic_alt   = "-"
 sound_move    = "m_explorer"

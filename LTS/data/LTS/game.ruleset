@@ -712,8 +712,7 @@ target_reqs  =
       "Gov",      "Federation",            "Player", FALSE
       "Gov",      "Democracy",             "Player", FALSE
       "Building", "Palace",                "City",   FALSE
-      "Building", "Ecclesiastical Palace", "City",   FALSE
-      "Building", "Mausoleum of Mausolos", "Player", FALSE
+      "Building", "2nd Palace",            "City",   FALSE
     }
 
 [actionenabler_incite_city_spy]
@@ -732,8 +731,7 @@ target_reqs  =
       "Gov",      "Federation",            "Player", FALSE
       "Gov",      "Democracy",             "Player", FALSE
       "Building", "Palace",                "City",   FALSE
-      "Building", "Ecclesiastical Palace", "City",   FALSE
-      "Building", "Mausoleum of Mausolos", "Player", FALSE
+      "Building", "2nd Palace",            "City",   FALSE
     }
 
 [actionenabler_bribe_unit]
@@ -1182,7 +1180,7 @@ action        = "Build Mine"
 actor_reqs    =
     { "type",      "name",            "range"
       "UnitFlag",  "Settlers",        "Local"
-      "Tech",      "Miniaturization", "Player"
+      "Tech",      "Electronics", "Player"
     }
 target_reqs    =
     { "type",    "name",            "range",  "present"
@@ -1554,24 +1552,6 @@ reqs           =
     }
 frequency      = 100
 effects        = "DestroyBuilding"
-
-[disaster_industrial_accident]
-name           = _("Industrial Accident")
-reqs           =
-    { "type", "name", "range"
-      "Building", "Mfg. Plant", "City"
-    }
-frequency      = 100
-effects        = "ReducePopulation", "Pollution"
-
-[disaster_nuclear_accident]
-name           = _("Nuclear Accident")
-reqs           =
-    { "type", "name", "range"
-      "Building", "Nuclear Plant", "City"
-    }
-frequency      = 100
-effects        = "ReducePopulation", "Fallout"
 
 ; /* <-- avoid gettext warnings
 ;

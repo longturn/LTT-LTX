@@ -482,7 +482,7 @@ name		= _("Marketplace")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Currency", "Player"
+      "Tech", "Bronze Working", "Player"
     }
 graphic	= "b.marketplace"
 graphic_alt	= "-"
@@ -508,7 +508,7 @@ name		= _("Offshore Platform")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Miniaturization", "Player"
+      "Tech", "Electronics", "Player"
       "TerrainClass", "Oceanic", "Adjacent"
     }
 graphic	= "b.offshore_platform"
@@ -578,7 +578,7 @@ name		= _("2nd Palace")
 genus		= "SmallWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Feudalism, "Player"
+      "Tech", "Feudalism", "Player"
     }
 graphic	= "b.ecclesiastical_palace"
 graphic_alt	= "b.palace"
@@ -728,7 +728,7 @@ name		= _("SDI Defense II")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Laser", "Player"
+      "Tech", "Nuclear Fission", "Player"
 	  "Building", "SDI Defense I", "City"
     }
 graphic	= "b.sdi_defense_2"
@@ -817,7 +817,6 @@ reqs	=
       "Building", "Factory", "City"
       "Building", "Library", "City"
       "Building", "University", "City"
-      "Building", "Research Lab", "City"
     }
 graphic	= "b.space_component"
 graphic_alt	= "-"
@@ -847,7 +846,6 @@ reqs	=
       "Building", "Factory", "City"
       "Building", "Library", "City"
       "Building", "University", "City"
-      "Building", "Research Lab", "City"
     }
 graphic	= "b.space_modules"
 graphic_alt	= "-"
@@ -886,7 +884,6 @@ reqs	=
       "Building", "Factory", "City"
       "Building", "Library", "City"
       "Building", "University", "City"
-      "Building", "Research Lab", "City"
     }
 graphic	= "b.space_structural"
 graphic_alt	= "-"
@@ -913,7 +910,7 @@ genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
       "Tech", "Economics", "Player"
-      "Building", "Mercantile Exchange", "City"
+      "Building", "Bank", "City"
     }
 graphic	= "b.stock_exchange"
 graphic_alt	= "-"
@@ -1103,7 +1100,7 @@ name		= _("Great Library")
 genus		= "GreatWonder"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Literacy", "Player"
+      "Tech", "University", "Player"
       "Building", "Library", "City"
     }
 graphic	= "b.great_library"
@@ -1161,7 +1158,7 @@ graphic	= "b.hanging_gardens"
 graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range", "survives"
-      "Tech", "Explosives", "Player", FALSE
+      "Tech", "Railroad", "Player", FALSE
     }
 build_cost	= 30
 upkeep		= 0
@@ -1396,7 +1393,7 @@ graphic         = "b.temple_of_artemis"
 graphic_alt     = "b.oracle"
 obsolete_by	=
     { "type", "name", "range", "survives"
-      "Tech", "Theology", "Player", FALSE
+      "Tech", "University", "Player", FALSE
     }
 build_cost	= 30
 upkeep		= 0
@@ -1474,7 +1471,7 @@ graphic	= "b.sun_tzus_war_academy"
 graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range", "survives"
-      "Tech", "Metallurgy", "Player", FALSE
+      "Tech", "Gunpowder", "Player", FALSE
     }
 build_cost	= 80
 upkeep		= 0

@@ -116,7 +116,7 @@ format_version=20
 
 [advance_automobile]
 name     = _("Automobile")
-req1     = "Mass production"
+req1     = "Mass Production"
 req2     = "Combustion"
 flags    = ""
 graphic     = "a.automobile"
@@ -211,8 +211,8 @@ cost     = 296
 
 [advance_electricity]
 name     = _("Electricity")
-req1     = "Metallurgy"
-req2     = "Theory of Gravity"
+req1     = "Gunpowder"
+req2     = "University"
 flags    = ""
 graphic     = "a.electricity"
 graphic_alt = "-"
@@ -234,7 +234,7 @@ cost     = 1430
 [advance_engineering]
 name     = _("Engineering")
 req1     = "Electricity"
-req2     = "Steam Engine"
+req2     = "Invention"
 flags    = ""
 graphic     = "a.engineering"
 graphic_alt = "-"
@@ -290,8 +290,8 @@ cost     = 1060
 
 [advance_invention]
 name     = _("Invention")
-req1     = "Bridge Building"
-req2     = "Literacy"
+req1     = "Construction"
+req2     = "University"
 flags    = ""
 graphic     = "a.invention"
 graphic_alt = "-"
@@ -311,7 +311,7 @@ cost     = 1870
 
 [advance_navigation]
 name     = _("Navigation")
-req1     = "Vonstruction"
+req1     = "Construction"
 req2     = "Seafaring"
 flags    = ""
 graphic     = "a.navigation"
@@ -369,7 +369,7 @@ cost     = 850
 
 [advance_robotics]
 name     = _("Robotics")
-req1     = "Mobile Warfare"
+req1     = "Automobile"
 req2     = "Computers"
 flags    = ""
 graphic     = "a.robotics"
@@ -419,7 +419,7 @@ cost     = 800
 [advance_trade]
 name     = _("Trade")
 req1     = "Ceremonial Burial"
-req2     = "Bronze"
+req2     = "Bronze Working"
 flags    = ""
 graphic     = "a.trade"
 graphic_alt = "-"
@@ -430,8 +430,8 @@ cost     = 44
 
 [advance_university]
 name     = _("University")
-req1     = "Mathematics"
-req2     = "Philosophy"
+req1     = "Writing"
+req2     = "Construction"
 flags    = ""
 graphic     = "a.university"
 graphic_alt = "-"
