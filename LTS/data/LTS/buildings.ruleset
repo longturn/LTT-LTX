@@ -982,7 +982,7 @@ name		= _("University")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Democracy", "Player"
+      "Tech", "University", "Player"
       "Building", "Library", "City"
     }
 graphic	= "b.university"
