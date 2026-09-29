@@ -71,8 +71,7 @@ reqs		=
     }
 helptext        = _("\
 Each scientist adds two points to your empire's research output \
-per turn, increasing to three once any player has built Darwin's \
-Voyage.\
+per turn.\
 ")
 
 [specialist_taxman]

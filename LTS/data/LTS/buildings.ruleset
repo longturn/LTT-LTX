@@ -694,17 +694,10 @@ sound		= "b_power_plant"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Any kind of electrical plant increases the shield production \
-effects of any Factory or Mfg. Plant in its city by 50% each. \
-Thus, an electrical plant in combination with either a Factory \
-or Mfg. Plant gives a 100% production bonus over \
-the level without any of these improvements; an electrical plant, \
-Factory, and Mfg. Plant together give a 200% production bonus. \
-The extra production may lead to the city generating more \
-pollution.\
-"), _("\
-In each city, only one Power Plant, Hydro Plant, Nuclear Plant, or \
-Solar Plant can take effect at any one time.\
+A Power Plant increases the shield production of a city with a \
+Factory by an additional 50%. Thus a Factory and a Power Plant together \
+give a 100% production bonus over the level without these improvements. \
+The extra production may lead to the city generating more pollution.\
 ")
 
 
@@ -901,10 +894,9 @@ sound		= "b_stock_exchange"
 sound_alt	= "b_generic"
 ; /* xgettext:no-c-format */
 helptext	= _("\
-Increases the luxury and tax output in a city by an additional 40%, \
-or 65% if Super Highways are also in the city. A Marketplace, Bank, \
-Mercantile Exchange and Stock Exchange together in a city yield a total bonus of 150%; \
-adding Super Highways yields a total of 175%.\
+Increases the luxury and tax output in a city by an additional 40%. \
+A Marketplace (50%), Bank (30%) and Stock Exchange (40%) together in a \
+city yield a total bonus of 120%.\
 ")
 
 
@@ -951,10 +943,11 @@ sabotage	= 100
 sound		= "b_temple"
 sound_alt	= "b_generic"
 helptext	= _("\
-Makes one unhappy citizen content. The Mysticism advance doubles \
-this effect (except under a Communist government). With both Mysticism \
-and the Temple of Artemis, 4 citizens are made content (3 under \
-Communism). Does not affect citizens made unhappy by aggression.\
+Makes one unhappy citizen content. The University advance doubles \
+this effect (except under a Communist government). The Temple of \
+Artemis makes 2 more citizens content in all your cities with a Temple \
+until you learn University. Does not affect citizens made unhappy by \
+aggression.\
 ")
 
 [building_university]
@@ -1010,11 +1003,6 @@ The entire map becomes permanently visible to the player who owns it \
 cities (but not units) despite fog-of-war.  It allows all players to \
 start building spaceship parts (assuming they have researched the \
 necessary technologies).\
-"), _("\
-Completion of the Apollo Program also allows nuclear-armed powers to \
-declare war without provocation, regardless of the existence of the \
-United Nations, and AI players will no longer be friendly towards the \
-owner of the United Nations or the Eiffel Tower.\
 ")
 
 [building_asmiths_trading_co]
@@ -1243,9 +1231,8 @@ sabotage	= 0
 sound		= "w_lighthouse"
 sound_alt	= "w_generic"
 helptext	= _("\
-Gives all your sea units 1 additional movement point (except Triremes \
-while moving on rivers). Makes all your new sea units veterans (for all \
-your cities).\
+Gives all your sea units 1 additional movement point. Makes all your \
+new sea units veterans (for all your cities).\
 ")
 
 
@@ -1487,7 +1474,7 @@ helptext	= _("\
 Allows you to choose any government, including those that have not yet \
 been researched by your civilization. It also allows unprovoked declaration of war \
 regardless of any senate instituted by a Democracy or Federation \
-government or by the United Nations.\
+government.\
 ")
 
 ; LTS: Roads small wonders from Royale (Ivory Road tied to Navigation)
