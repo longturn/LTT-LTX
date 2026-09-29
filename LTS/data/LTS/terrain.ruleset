@@ -1222,6 +1222,11 @@ this does not make cities count as a water source for further \
 irrigation. Irrigation can be built on the city tile simply to allow \
 building further irrigation elsewhere, but will not give the tile any \
 further bonus.\
+"), _("\
+Once any player in the world knows Railroad, all tiles that could be \
+irrigated and have no mine or oil well get the irrigation bonus \
+automatically, whether or not they are near water. After that, \
+irrigation is only needed as a base for Farmland.\
 ")
 
 [extra_mine]

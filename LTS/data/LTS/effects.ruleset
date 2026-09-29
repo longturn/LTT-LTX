@@ -3531,6 +3531,37 @@ reqs    =
       ; Oil Well also prevents irrigation, but requires Mine so not needed here
     }
 
+; LTS: once anyone in the world knows Railroad, every irrigable tile without
+; a mine gets its irrigation bonus automatically, so building irrigation by
+; hand gives nothing extra. City centers are already handled above.
+[effect_irrigation_railroad]
+type    = "Irrigation_Pct"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present", "survives"
+      "Tech", "Railroad", "World", TRUE, TRUE
+      "CityTile", "Center", "Local", FALSE, FALSE
+      "Extra", "Irrigation", "Local", FALSE, FALSE
+      "TerrainAlter", "CanIrrigate", "Local", TRUE, FALSE
+      "Extra", "Mine", "Local", FALSE, FALSE
+    }
+
+; ...plus the desert river ("Nile floods") extra bonus, as with real irrigation
+[effect_irrigation_railroad_desert_river]
+type    = "Irrigation_Pct"
+value   = 100
+reqs    =
+    { "type", "name", "range", "present", "survives"
+      "Tech", "Railroad", "World", TRUE, TRUE
+      "Terrain", "Desert", "Local", TRUE, FALSE
+      "Extra", "River", "Local", TRUE, FALSE
+      "Extra", "Oasis", "Local", FALSE, FALSE
+      "CityTile", "Center", "Local", FALSE, FALSE
+      "Extra", "Irrigation", "Local", FALSE, FALSE
+      "TerrainAlter", "CanIrrigate", "Local", TRUE, FALSE
+      "Extra", "Mine", "Local", FALSE, FALSE
+    }
+
 [effect_pollution]
 type	= "Output_Tile_Punish_Pct"
 value	= 50

@@ -368,6 +368,11 @@ railroads.\
 For Despotism or Tribal governments, cancels the penalty to worked \
 tiles with output greater than 2 (as if all your cities were always \
 celebrating).\
+"), _("\
+Once any player in the world knows Railroad, every tile that could be \
+irrigated (and has no mine) gets the irrigation bonus automatically for \
+all players. Building irrigation by hand no longer adds food, but is \
+still needed as a base for Farmland.\
 ")
 cost     = 850
 
