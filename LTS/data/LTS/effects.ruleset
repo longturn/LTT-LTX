@@ -3565,8 +3565,8 @@ reqs    =
 ; LTS: once anyone in the world knows Democracy, tiles that would get the
 ; road trade bonus (+1 trade on Desert, Grassland, Plains, Tundra; see
 ; road_trade_incr_pct in terrain.ruleset) get it without a road. Tiles that
-; already have a road get it from the road. River tiles are excluded because
-; no tech has the "Bridge" flag, so roads cannot be built on them.
+; already have a road get it from the road. River tiles are included too
+; (Construction has the "Bridge" flag that allows roads on rivers).
 [effect_road_trade_democracy_desert]
 type    = "Output_Add_Tile"
 value   = 1
@@ -3575,7 +3575,6 @@ reqs    =
       "Tech", "Democracy", "World", TRUE, TRUE
       "Terrain", "Desert", "Local", TRUE, FALSE
       "Extra", "Road", "Local", FALSE, FALSE
-      "Extra", "River", "Local", FALSE, FALSE
       "OutputType", "Trade", "Local", TRUE, FALSE
     }
 
@@ -3587,7 +3586,6 @@ reqs    =
       "Tech", "Democracy", "World", TRUE, TRUE
       "Terrain", "Grassland", "Local", TRUE, FALSE
       "Extra", "Road", "Local", FALSE, FALSE
-      "Extra", "River", "Local", FALSE, FALSE
       "OutputType", "Trade", "Local", TRUE, FALSE
     }
 
@@ -3599,7 +3597,6 @@ reqs    =
       "Tech", "Democracy", "World", TRUE, TRUE
       "Terrain", "Plains", "Local", TRUE, FALSE
       "Extra", "Road", "Local", FALSE, FALSE
-      "Extra", "River", "Local", FALSE, FALSE
       "OutputType", "Trade", "Local", TRUE, FALSE
     }
 
@@ -3611,7 +3608,6 @@ reqs    =
       "Tech", "Democracy", "World", TRUE, TRUE
       "Terrain", "Tundra", "Local", TRUE, FALSE
       "Extra", "Road", "Local", FALSE, FALSE
-      "Extra", "River", "Local", FALSE, FALSE
       "OutputType", "Trade", "Local", TRUE, FALSE
     }
 

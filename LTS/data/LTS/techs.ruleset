@@ -183,12 +183,14 @@ cost     = 2300
 name     = _("Construction")
 req1     = "Warrior Code"
 req2     = "Pottery"
-flags    = ""
+flags    = "Bridge"
 graphic     = "a.construction"
 graphic_alt = "-"
 helptext = _("\
 Allows Settlers, Migrants, Workers and Engineers to build forts and \
 fortresses.\
+"), _("\
+Allows building roads on river tiles (bridges).\
 ")
 
 [advance_democracy]

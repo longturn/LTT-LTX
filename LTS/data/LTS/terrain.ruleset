@@ -1673,7 +1673,7 @@ On some terrains, roads also provide a trade bonus.\
 Once any player in the world knows Democracy, tiles on those terrains \
 get the road trade bonus automatically even without a road.\
 "), _("\
-Building roads on river tiles requires knowledge of Bridge Building.\
+Building roads on river tiles requires knowledge of Construction.\
  City center tiles automatically get roads (even on a river tile).\
 ")
 
