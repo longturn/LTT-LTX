@@ -451,6 +451,11 @@ graphic     = "a.university"
 graphic_alt = "-"
 helptext = _("\
 Increases shield production in all your cities by 30%.\
+"), _("\
+Works as a Barracks in all your cities (there is no Barracks building): \
+new military land units (including siege units like Cannon and Howitzer) \
+are built as veterans, and damaged land units which stay in a city for \
+one full turn without moving are completely restored.\
 ")
 cost     = 70
 

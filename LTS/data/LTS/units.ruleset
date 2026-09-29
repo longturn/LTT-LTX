@@ -1231,7 +1231,7 @@ helptext      = _("\
 Cannons are large firearms that can fire heavy projectiles over long \
 distances. As with the catapults they replace, they are very strong \
 attackers - and even more powerful against cities - but equally weak defenders and will need an escort to be \
-effective, and have limited mobility. Cannon and other siege units do not gain benefits from Barracks. \
+effective, and have limited mobility. Cannon and other siege units also get the veteran bonus from University. \
  Unescorted cannons may be captured by the enemy. \
 ")
 
@@ -1267,7 +1267,7 @@ roles         = "AttackStrongStartUnit"
 helptext      = _("\
 Howitzers are upgraded artillery with improved defensive as well as \
 offensive capabilities. However, they still have the limited mobility \
-of their predecessors. Like earlier siege units, Howitzers do not gain benefits from Barracks. \
+of their predecessors. Like earlier siege units, Howitzers also get the veteran bonus from University. \
 ")
 
 [unit_fighter]

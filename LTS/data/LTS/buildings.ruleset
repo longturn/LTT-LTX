@@ -235,33 +235,6 @@ With both a Bank and a Marketplace in a city, the total bonus is 80%.\
 
 
 
-[building_barracks]
-name		= _("Barracks")
-genus		= "Improvement"
-reqs	=
-    { "type", "name", "range"
-
-    }
-graphic	= "b.barracks_i"
-graphic_alt	= "-"
-obsolete_by	=
-    { "type", "name", "range"
-    }
-build_cost	= 30
-upkeep		= 1
-sabotage	= 100
-sound		= "b_barracks_i"
-sound_alt	= "b_generic"
-; /* xgettext:no-c-format */
-helptext	= _("\
-With a Barracks, each new land (except siege units like Catapults) unit built in a city will\
- automatically have Veteran status, which means that its attack and\
- defense strengths are increased by 50%.\
-"), _("\
-Also, damaged land units which stay in town for one full turn\
- without moving are completely restored.\
-")
-
 
 [building_city_walls]
 name		= _("City Walls")
@@ -1453,31 +1426,6 @@ Upon completion of this wonder, entertainer specialists' luxury \
 output increases to 3 permanently for every nation.\
 ")
 
-
-
-[building_sun_tzus_war_academy]
-name		= _("Sun Tzu's War Academy")
-genus		= "SmallWonder"
-reqs	=
-    { "type", "name", "range"
-      "Tech", "Feudalism", "Player"
-    }
-graphic	= "b.sun_tzus_war_academy"
-graphic_alt	= "-"
-obsolete_by	=
-    { "type", "name", "range", "survives"
-      "Tech", "Gunpowder", "Player", FALSE
-    }
-build_cost	= 100
-upkeep		= 0
-sabotage	= 0
-sound		= "w_sun_tzus_war_academy"
-sound_alt	= "w_generic"
-helptext	= _("\
-All your new military land units start with an additional veteran level \
-(this is cumulative with any Barracks building in a city; with both, units \
-are created as veteran 2).\
-")
 
 
 [building_capitalization]
