@@ -1867,6 +1867,9 @@ set =
       "occupychance", 100
       "razechance", 10
       "techlossforgiveness", 0
+      "globalwarming", "DISABLED"
+      "spaceship_travel_time", 100
+      "techleak", 150
       "techlossrestore", 50
       "revolentype", "FIXED"
     }

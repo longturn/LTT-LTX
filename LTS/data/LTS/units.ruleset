@@ -1958,8 +1958,7 @@ On impact, the blast will destroy any unit in an area 3 tiles wide\
  has a 20% chance of destroying city improvements. \
 (Improvements which have less than 100% sabotage chance aren't destroyed)\
 "), _("\
-Similar to pollution and global warming, the risk of global nuclear\
- winter increases with fallout. If nuclear winter occurs, terrain\
+The risk of global nuclear winter increases with fallout. If nuclear winter occurs, terrain\
  across the globe changes into desert, tundra, and ice. Settlers,\
  Migrants, Workers, and Engineers and (for fallout on water)\
  Transports can clean up nuclear fallout.\

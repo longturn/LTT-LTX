@@ -1331,11 +1331,11 @@ reqs           =
       "TerrainFlag", "NoPollution", "Local", FALSE, TRUE
     }
 removal_time   = 0
-flags          = "GlobalWarming"
+; LTS: no "GlobalWarming" flag, so pollution never causes global warming
 helptext       = _("\
 Pollution appears on tiles around cities with high production or \
-population. It halves all output from its tile, and contributes to \
-the risk of global warming.\
+population. It halves all output from its tile. There is no global \
+warming in LTS.\
 "), _("\
 The pollution can only be cleared by dispatching Workers, Migrants, \
 Settlers, Engineers, or a Transport with the \"clean pollution\" order.\
@@ -1354,20 +1354,6 @@ more to pollution. A Recycling Center also reduces this by 75%.\
 The contribution of these factors can be seen in the city dialog; once \
 it exceeds a threshold, the excess is the percent chance of pollution \
 appearing each turn.\
-"), _("\
-When an unused tile becomes polluted, there is the temptation to avoid \
-the effort of cleaning it; but the spread of pollution has far more \
-terrible results than the immediate economic impact -- every polluted \
-tile increases the chance of global warming. Each time global warming \
-advances, the entire world loses coastal land to the sea and to jungles \
-and swamps, and inland tiles are lost to desert. This tends to \
-devastate cities and leads to global impoverishment.\
-"), _("\
-The risk of global warming is cumulative; the longer polluted tiles \
-are left uncleaned, the higher the risk becomes, and the risk can \
-linger for some time even after all pollution has been cleaned. If a \
-long time passes with an elevated risk of warming, its effects will be \
-all the more severe when it does occur.\
 ")
 
 [extra_hut]
