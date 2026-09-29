@@ -2699,30 +2699,6 @@ reqs    =
       "Building", "Space Structural", "City"
     }
 
-[effect_plastics_slowdown]
-type    = "Slow_Down_Timeline"
-value   = 1
-reqs    =
-    { "type", "name", "range", "survives"
-      "Tech", "Fusion Power", "World", TRUE
-    }
-
-[effect_superconductor_slowdown]
-type    = "Slow_Down_Timeline"
-value   = 1
-reqs    =
-    { "type", "name", "range", "survives"
-      "Tech", "Robotics", "World", TRUE
-    }
-
-[effect_spaceflight_slowdown]
-type    = "Slow_Down_Timeline"
-value   = 1
-reqs    =
-    { "type", "name", "range", "survives"
-      "Tech", "Space Flight", "World", TRUE
-    }
-
 [effect_stock_exchange]
 type    = "Output_Bonus"
 value   = 40
@@ -3293,62 +3269,81 @@ reqs	=
 type	= "Trade_Revenue_Bonus"
 value	= 1585
 
+; LTS calendar (start_year = -4500 in game.ruleset, year 0 is skipped):
+;   T1 4500 BC, +500/turn  -> T10 1 AD
+;   +250/turn (0..999)     -> T14 1000 AD
+;   +300/turn (1000..1599) -> T16 1600 AD
+;   +40/turn               -> T21 1800 AD
+;   +30/turn               -> T26 1950 AD
+;   +10/turn               -> T31 2000 AD
+;   +5/turn                -> T36 2025 AD
+;   +1/turn after that
+; LTS has no Slow_Down_Timeline effects, so space race does not alter this.
 [effect_calendar_base]
 type    = "Turn_Years"
-value   = 50
+value   = 500
 
-; 50 - 25 = 25
+; 500 - 250 = 250
 [effect_calendar_1]
 type    = "Turn_Years"
-value   = -25
-reqs    =
-    { "type", "name", "range"
-      "MinYear", "-1000", "World"
-    }
-
-; 25 - 5 = 20
-[effect_calendar_2]
-type    = "Turn_Years"
-value   = -5
+value   = -250
 reqs    =
     { "type", "name", "range"
       "MinYear", "0", "World"
     }
 
-; 20 - 10 = 10
-[effect_calendar_3]
+; 250 + 50 = 300
+[effect_calendar_2]
 type    = "Turn_Years"
-value   = -10
+value   = 50
 reqs    =
     { "type", "name", "range"
       "MinYear", "1000", "World"
     }
 
-; 10 - 5 = 5
+; 300 - 260 = 40
+[effect_calendar_3]
+type    = "Turn_Years"
+value   = -260
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "1600", "World"
+    }
+
+; 40 - 10 = 30
 [effect_calendar_4]
+type    = "Turn_Years"
+value   = -10
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "1800", "World"
+    }
+
+; 30 - 20 = 10
+[effect_calendar_5]
+type    = "Turn_Years"
+value   = -20
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "1950", "World"
+    }
+
+; 10 - 5 = 5
+[effect_calendar_6]
 type    = "Turn_Years"
 value   = -5
 reqs    =
     { "type", "name", "range"
-      "MinYear", "1500", "World"
+      "MinYear", "2000", "World"
     }
 
-; 5 - 3 = 2
-[effect_calendar_5]
+; 5 - 4 = 1
+[effect_calendar_7]
 type    = "Turn_Years"
-value   = -3
+value   = -4
 reqs    =
     { "type", "name", "range"
-      "MinYear", "1750", "World"
-    }
-
-; 2 - 1 = 1
-[effect_calendar_6]
-type    = "Turn_Years"
-value   = -1
-reqs    =
-    { "type", "name", "range"
-      "MinYear", "1900", "World"
+      "MinYear", "2025", "World"
     }
 
 ; No base pop pollution; buildings will increase it
@@ -3920,6 +3915,49 @@ value   = 2
 reqs    =
     { "type", "name", "range"
       "Tech", "Radio", "World"
+    }
+
+; LTS: free upgrades of obsolete units that grow with game turn.
+; Turn -> year from the LTS calendar above: T4 -3000, T8 -1000, T12 500,
+; T16 1600, T20 1760. Totals: T4 1, T8 2, T12 4, T16 6, T20 8.
+[effect_turn_upgrade_t4]
+type    = "Upgrade_Unit"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "-3000", "World"
+    }
+
+[effect_turn_upgrade_t8]
+type    = "Upgrade_Unit"
+value   = 1
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "-1000", "World"
+    }
+
+[effect_turn_upgrade_t12]
+type    = "Upgrade_Unit"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "500", "World"
+    }
+
+[effect_turn_upgrade_t16]
+type    = "Upgrade_Unit"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "1600", "World"
+    }
+
+[effect_turn_upgrade_t20]
+type    = "Upgrade_Unit"
+value   = 2
+reqs    =
+    { "type", "name", "range"
+      "MinYear", "1760", "World"
     }
 
 [effect_conquest_tech]
