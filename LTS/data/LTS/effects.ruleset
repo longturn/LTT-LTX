@@ -320,9 +320,15 @@ reqs    =
       "UnitFlag",      "Cant_Fortify", "Local", FALSE
     }
 
+; LTS: only capitals (cities with the Palace) can have trade routes,
+; 4 slots each. Other cities have 0 slots and cannot trade at all.
 [effect_trade_routes]
 type    = "Max_Trade_Routes"
-value   = 0
+value   = 4
+reqs    =
+    { "type", "name", "range"
+      "Building", "Palace", "City"
+    }
 
 ; Base vision range - radius of vision is sqrt(5) = 2.24 - this is intentionally smaller than the city working area
 [effect_city_vision]

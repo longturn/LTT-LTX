@@ -770,6 +770,8 @@ target_reqs    =
       "MaxUnitsOnTile", "1", "Local", TRUE
     }
 
+; LTS: trade routes only between capitals. The home city side is limited
+; by Max_Trade_Routes (only Palace cities have slots).
 [actionenabler_traderoute]
 action = "Establish Trade Route"
 actor_reqs    =
@@ -777,6 +779,10 @@ actor_reqs    =
       "UnitFlag", "TradeRoute", "Local", TRUE
       "MinMoveFrags", "1", "Local", TRUE
       "UnitState", "HasHomeCity", "Local", TRUE
+    }
+target_reqs    =
+    { "type",     "name",   "range"
+      "Building", "Palace", "City"
     }
 
 [actionenabler_help_build_wonder]
@@ -1725,6 +1731,8 @@ goods_selection = "Leaving"
 
 [goods_good]
 name           = _("Goods")
+; LTS: no one-time bonus when a trade route is established
+onetime_pct    = 0
 
 ; /* <-- avoid gettext warnings
 ;
