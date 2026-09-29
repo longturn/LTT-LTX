@@ -346,6 +346,7 @@ graphic_alt = "-"
 helptext = _("\
 Allows Workers and Engineers to build airstrips, airbases and buoys.\
  Upgrades 2 units every turn for all players once any player knows this tech.\
+ Doubles movement of nuclear units.\
 ")
 cost     = 2060
 
@@ -383,7 +384,6 @@ req2     = "None"
 flags    = ""
 graphic     = "a.rocketry"
 graphic_alt = "-"
-helptext = _("Doubles movement of nuclear units.")
 cost     = 4400
 
 
