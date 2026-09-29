@@ -4381,3 +4381,66 @@ reqs    =
       "OutputType", "Trade", "Local"
 	  "Gov", "Democracy", "Player"
     }
+
+; LTS: partisans from Royale. When an enemy conquers your city, partisans
+; appear if you know Tactics (Royale: own Conscription + Leadership in world)
+; and at least partisans_pct (cities.ruleset) of the citizens are yours.
+[effect_partisan_monarchy]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Monarchy", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+[effect_partisan_communism]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Communism", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+[effect_partisan_fundamentalism]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Fundamentalism", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+[effect_partisan_federation]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Federation", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+[effect_partisan_republic]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Republic", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }
+
+[effect_partisan_democracy]
+type    = "Inspire_Partisans"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Gov", "Democracy", "Player", TRUE
+      "Tech", "Tactics", "Player", TRUE
+      "NationGroup", "Barbarian", "Player", FALSE
+    }

@@ -901,7 +901,7 @@ Alpine Troops are highly mobile units as well as\
 [unit_partisan]
 name          = _("Partisan")
 class         = "Land"
-tech_req      = "Industrialization"
+tech_req      = "Tactics"
 obsolete_by   = "None"
 graphic       = "u.partisan"
 graphic_alt   = "-"
@@ -926,18 +926,26 @@ uk_gold       = 1
 embarks       = "Helicopter"
 disembarks    = "Helicopter"
 vision_layer  = "Stealth"
-flags         = "IgTer", "IgZOC", "Capturer", "NoHome", "AddToCity"
-roles         = "DefendGood", "DefendGoodStartUnit", "Partisan", "BarbarianTech"
+flags         = "IgTer", "IgZOC", "Capturer", "NoHome", "AddToCity", "NoBuild"
+roles         = "DefendGood", "Partisan"
 helptext      = _("\
 Partisans are guerilla fighters who are experts\
  at using the terrain to their advantage. Partisans\
- have no home city and units outside cities won't be\
- killed if the city building them is lost. Since partisans\
+ have no home city. Since partisans\
  are citizens trained to fight the oppressor they can\
  once again become part of the normal population when\
  the war is over. The partisans are almost invisible to\
  the enemy but this comes with a cost. The partisans are\
  not that fast when moving to a new location.\
+"), _("\
+Partisans cannot be built. A number of Partisans are granted free\
+ when an enemy conquers your city -- they automatically assume\
+ defensive positions in the surrounding countryside -- but only under\
+ these conditions:\n\n\
+ - You must know Tactics.\n\
+ - Your government must be Monarchy, Communism, Fundamentalism,\
+ Federation, Republic or Democracy.\n\
+ - At least three quarters of the citizens must have your nationality.\
 ")
 
 
@@ -2296,7 +2304,7 @@ The Freight unit replaces the Caravan, and moves at twice the speed.\
 name          = _("Explorer")
 class         = "Small Land"
 tech_req      = "Seafaring"
-obsolete_by   = "Partisan"
+obsolete_by   = "None"
 graphic       = "u.explorer"
 graphic_alt   = "-"
 sound_move    = "m_explorer"
