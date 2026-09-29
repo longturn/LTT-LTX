@@ -643,7 +643,8 @@ name		= _("Port Facility")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Navigation", "Player"
+      "Tech", "Electricity", "Player"
+      "Tech", "Combustion", "World"
       "TerrainClass", "Oceanic", "Adjacent"
     }
 graphic	= "b.port_facility"
@@ -660,6 +661,11 @@ helptext	= _("\
 Allows a city to build veteran sea units.  Also, damaged sea units\
  which stay in town for one full turn without moving are completely\
  restored.\
+"), _("\
+Submarines can only be built in a city with a Port Facility.\
+"), _("\
+A Port Facility can be built once you know Electricity and any player\
+ in the world knows Combustion.\
 ")
 ; Includes Triremes, but not worth mentioning explicitly as unlikely
 ; to happen
