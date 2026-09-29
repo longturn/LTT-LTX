@@ -508,7 +508,7 @@ name		= _("Offshore Platform")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Electronics", "Player"
+      "Tech", "Computers", "Player"
       "TerrainClass", "Oceanic", "Adjacent"
     }
 graphic	= "b.offshore_platform"
