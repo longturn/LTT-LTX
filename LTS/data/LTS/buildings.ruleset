@@ -74,7 +74,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 40
+build_cost	= 120
 upkeep		= 3
 sabotage	= 100
 sound		= "b_airport"
@@ -108,7 +108,7 @@ obsolete_by	=
       "Extra", "River", "Adjacent", TRUE
       "Terrain", "Lake", "Adjacent", TRUE
     }
-build_cost	= 15
+build_cost	= 40
 upkeep		= 1
 sabotage	= 100
 sound		= "b_aqueduct"
@@ -146,7 +146,7 @@ obsolete_by	=
 	  "type", "name", "range", "present"
       "Terrain", "Lake", "Adjacent", FALSE
     }
-build_cost	= 10
+build_cost	= 20
 upkeep		= 0
 sabotage	= 100
 sound		= "b_aqueduct"
@@ -185,7 +185,7 @@ obsolete_by	=
       "Extra", "River", "Adjacent", FALSE
       "Terrain", "Lake", "Adjacent", TRUE
     }
-build_cost	= 10
+build_cost	= 20
 upkeep		= 0
 sabotage	= 100
 sound		= "b_aqueduct"
@@ -222,7 +222,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 1
 sabotage	= 100
 sound		= "b_bank"
@@ -247,7 +247,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_barracks_i"
@@ -276,7 +276,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 30
 upkeep		= 1
 sabotage	= 50
 sound		= "b_city_walls"
@@ -305,7 +305,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_coastal_defense"
@@ -331,7 +331,7 @@ graphic_alt = "b.colosseum"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 25
+build_cost	= 50
 upkeep		= 2
 sabotage	= 100
 sound		= "b_colosseum"
@@ -354,7 +354,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_courthouse"
@@ -382,7 +382,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 35
+build_cost	= 100
 upkeep		= 3
 sabotage	= 100
 sound		= "b_factory"
@@ -409,7 +409,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 15
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_granary"
@@ -442,7 +442,7 @@ obsolete_by	=
 	  "type", "name", "range", "present"
       "TerrainFlag", "Sea", "City", FALSE
     }
-build_cost	= 20
+build_cost	= 30
 upkeep		= 1
 sabotage	= 100
 sound		= "b_harbour"
@@ -466,7 +466,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 40
 upkeep		= 1
 sabotage	= 100
 sound		= "b_library"
@@ -489,7 +489,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 35
 upkeep		= 0
 sabotage	= 100
 sound		= "b_marketplace"
@@ -516,7 +516,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 45
+build_cost	= 120
 upkeep		= 3
 sabotage	= 100
 sound		= "b_offshore_platform"
@@ -539,7 +539,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 70
 upkeep		= 0
 sabotage	= 0
 sound		= "b_palace"
@@ -652,7 +652,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 2
 sabotage	= 100
 sound		= "b_port_facility"
@@ -683,7 +683,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 40
+build_cost	= 130
 upkeep		= 4
 sabotage	= 100
 sound		= "b_power_plant"
@@ -717,7 +717,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 70
 upkeep		= 2
 sabotage	= 100
 sound		= "b_sam_battery"
@@ -739,7 +739,7 @@ graphic_alt	= "b.sdi_defense"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 3
 sabotage	= 50
 sound		= "b_sdi_defense"
@@ -769,7 +769,7 @@ graphic_alt	= "b.sdi_defense"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 3
 sabotage	= 50
 sound		= "b_sdi_defense"
@@ -799,7 +799,7 @@ graphic_alt	= "b.sdi_defense"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 3
 sabotage	= 50
 sound		= "b_sdi_defense"
@@ -828,7 +828,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 80
 upkeep		= 2
 sabotage	= 100
 sound		= "b_sewer_system"
@@ -856,7 +856,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 40
+build_cost	= 190
 upkeep		= 0
 sabotage	= 100
 sound		= "b_space_component"
@@ -885,7 +885,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 60
+build_cost	= 385
 upkeep		= 0
 sabotage	= 100
 sound		= "b_space_module"
@@ -923,7 +923,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 20
+build_cost	= 95
 upkeep		= 0
 sabotage	= 100
 sound		= "b_space_structural"
@@ -950,7 +950,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 60
+build_cost	= 120
 upkeep		= 2
 sabotage	= 100
 sound		= "b_stock_exchange"
@@ -977,7 +977,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 30
+build_cost	= 80
 upkeep		= 3
 sabotage	= 100
 sound		= "b_supermarket"
@@ -1001,7 +1001,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 15
+build_cost	= 20
 upkeep		= 1
 sabotage	= 100
 sound		= "b_temple"
@@ -1026,7 +1026,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 40
+build_cost	= 100
 upkeep		= 2
 sabotage	= 100
 sound		= "b_university"
@@ -1055,7 +1055,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 1500
 upkeep		= 0
 sabotage	= 0
 sound		= "w_apollo_program"
@@ -1086,7 +1086,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 500
 upkeep		= 0
 sabotage	= 0
 sound		= "w_asmiths_trading_co"
@@ -1115,7 +1115,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "University", "Player", FALSE
     }
-build_cost	= 20
+build_cost	= 60
 upkeep		= 0
 sabotage	= 0
 sound		= "w_copernicus_observatory"
@@ -1141,7 +1141,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 200
 upkeep		= 0
 sabotage	= 0
 sound		= "w_great_library"
@@ -1167,7 +1167,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Gunpowder", "Player", FALSE
     }
-build_cost	= 50
+build_cost	= 150
 upkeep		= 0
 sabotage	= 0
 sound		= "w_great_wall"
@@ -1193,7 +1193,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Railroad", "Player", FALSE
     }
-build_cost	= 30
+build_cost	= 60
 upkeep		= 0
 sabotage	= 0
 sound		= "w_hanging_gardens"
@@ -1218,7 +1218,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 250
 upkeep		= 0
 sabotage	= 0
 sound		= "w_isaac_newtons_college"
@@ -1246,7 +1246,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Combustion", "Player", FALSE
     }
-build_cost	= 50
+build_cost	= 80
 upkeep		= 0
 sabotage	= 0
 sound		= "w_leonardos_workshop"
@@ -1269,7 +1269,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Industrialization", "Player", FALSE
     }
-build_cost	= 20
+build_cost	= 70
 upkeep		= 0
 sabotage	= 0
 sound		= "w_leonardos_workshop"
@@ -1293,7 +1293,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Engineering", "Player", FALSE
     }
-build_cost	= 40
+build_cost	= 100
 upkeep		= 0
 sabotage	= 0
 sound		= "w_lighthouse"
@@ -1344,7 +1344,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range", "survives"
     }
-build_cost	= 150
+build_cost	= 200
 upkeep		= 0
 sabotage	= 0
 sound		= "w_marco_polos_embassy"
@@ -1371,7 +1371,7 @@ graphic_alt	= "b.marco_polos_embassy"
 obsolete_by	=
     { "type", "name", "range", "survives"
     }
-build_cost	= 50
+build_cost	= 120
 upkeep		= 0
 sabotage	= 0
 sound		= "w_marco_polos_embassy"
@@ -1397,7 +1397,7 @@ graphic_alt	= "b.university"
 obsolete_by	=
     { "type", "name", "range", "survives"
     }
-build_cost	= 80
+build_cost	= 250
 upkeep		= 0
 sabotage	= 0
 sound		= "w_marco_polos_embassy"
@@ -1426,7 +1426,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "University", "Player", FALSE
     }
-build_cost	= 30
+build_cost	= 90
 upkeep		= 0
 sabotage	= 0
 sound		= "w_oracle"
@@ -1449,7 +1449,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Railroad", "Player", FALSE
     }
-build_cost	= 30
+build_cost	= 70
 upkeep		= 0
 sabotage	= 0
 sound		= "w_pyramids"
@@ -1476,7 +1476,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 300
 upkeep		= 0
 sabotage	= 0
 sound		= "w_shakespeares_theatre"
@@ -1504,7 +1504,7 @@ obsolete_by	=
     { "type", "name", "range", "survives"
       "Tech", "Gunpowder", "Player", FALSE
     }
-build_cost	= 80
+build_cost	= 100
 upkeep		= 0
 sabotage	= 0
 sound		= "w_sun_tzus_war_academy"
@@ -1559,7 +1559,7 @@ graphic_alt	= "-"
 obsolete_by	=
     { "type", "name", "range"
     }
-build_cost	= 100
+build_cost	= 300
 upkeep		= 0
 sabotage	= 0
 sound		= "w_statue_of_liberty"
