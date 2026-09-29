@@ -411,13 +411,13 @@ reqs    =
       "Tech", "Invention", "Player"
     }
 
-; Robotics makes unit upgrade prices 30% less expensive
+; Computers makes unit upgrade prices 30% less expensive
 [effect_upgrade_price_halfed_2]
 type    = "Upgrade_Price_Pct"
 value   = -30
 reqs    =
     { "type", "name", "range"
-      "Tech", "Robotics", "Player"
+      "Tech", "Computers", "Player"
     }
 
 ; Medicine increases city health

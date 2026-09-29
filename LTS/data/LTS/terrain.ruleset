@@ -1730,7 +1730,7 @@ rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 reqs           =
     { "type", "name", "range", "present", "quiet"
-      "Tech", "Robotics", "Player", TRUE, FALSE
+      "Tech", "Computers", "Player", TRUE, FALSE
       "Extra", "Railroad", "Local", TRUE, FALSE
       "UnitFlag", "Settlers", "Local", TRUE, FALSE
       "UnitClass", "Sea", "Local", FALSE, TRUE

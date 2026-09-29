@@ -311,7 +311,7 @@ req2     = "University"
 flags    = ""
 graphic     = "a.invention"
 graphic_alt = "-"
-helptext = _("Makes the upgrade cost of your units 20% less expensive. Robotics makes the upgrade cost 30% less expensive.")
+helptext = _("Makes the upgrade cost of your units 20% less expensive. Computers makes the upgrade cost 30% less expensive.")
 cost     = 90
 
 
@@ -388,15 +388,6 @@ still needed as a base for Farmland.\
 ")
 cost     = 240
 
-
-[advance_robotics]
-name     = _("Robotics")
-req1     = "Automobile"
-req2     = "Computers"
-flags    = ""
-graphic     = "a.robotics"
-graphic_alt = "-"
-cost     = 840
 
 [advance_rocketry]
 name     = _("Rocketry")
