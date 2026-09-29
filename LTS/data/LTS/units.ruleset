@@ -1273,7 +1273,8 @@ of their predecessors. Like earlier siege units, Howitzers also get the veteran 
 [unit_fighter]
 name          = _("Fighter")
 class         = "Air"
-tech_req      = "Flight"
+tech_req      = "Combustion"
+impr_req      = "Airport"
 obsolete_by   = "Stealth Fighter"
 graphic       = "u.fighter"
 graphic_alt   = "-"
@@ -1305,12 +1306,16 @@ Fighters are your first airborne units. They can\
 ; /* xgettext:no-c-format */
 _("\
 Fighters are very good for securing access from nations with no air units. \
+"), _("\
+Fighters can only be built in a city with an Airport. An Airport requires\
+ that you know Combustion and that any player in the world knows Flight.\
 ")
 
 [unit_bomber]
 name          = _("Bomber")
 class         = "Air"
 tech_req      = "Flight"
+impr_req      = "Airport"
 obsolete_by   = "Stealth Bomber"
 graphic       = "u.bomber"
 graphic_alt   = "-"
@@ -1345,6 +1350,8 @@ A Bomber's attack against units on land is a bombard attack; against\
 ; /* xgettext:no-c-format */
 _("\
 Bombers are very good for securing access from nations with no air units.  \
+"), _("\
+Bombers can only be built in a city with an Airport.\
 ")
 bombard_rate = 3
 
@@ -1394,6 +1401,7 @@ bombard_rate = 2
 name          = _("Stealth Fighter")
 class         = "Air"
 tech_req      = "Rocketry"
+impr_req      = "Airport"
 obsolete_by   = "None"
 graphic       = "u.stealth_fighter"
 graphic_alt   = "-"
@@ -1428,6 +1436,7 @@ An improved Fighter, with improved attack and a higher movement\
 name          = _("Stealth Bomber")
 class         = "Air"
 tech_req      = "Rocketry"
+impr_req      = "Airport"
 obsolete_by   = "None"
 graphic       = "u.stealth_bomber"
 graphic_alt   = "-"
@@ -2468,6 +2477,7 @@ When a Barbarian Leader is killed on a tile without any defending units,\
 name          = _("AWACS")
 class         = "Air"
 tech_req      = "Radio"
+impr_req      = "Airport"
 obsolete_by   = "None"
 graphic       = "u.awacs"
 graphic_alt   = "u.bomber"  ; backwards compatibility

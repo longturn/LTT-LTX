@@ -67,7 +67,8 @@ genus		= "Improvement"
 flags		= "VisibleByOthers"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Electronics", "Player"
+      "Tech", "Combustion", "Player"
+      "Tech", "Flight", "World"
     }
 graphic	= "b.airport"
 graphic_alt	= "-"
@@ -91,6 +92,12 @@ A city with Airport can airlift one unit per turn (including\
  must have some movement points left to be airlifted, and cannot\
  carry cargo. The current setting (unlimited to destination) means that\
  the destination city doesn't need to have an airport.\
+"), _("\
+Fighters, Bombers, Stealth Fighters, Stealth Bombers and AWACS can\
+ only be built in a city with an Airport.\
+"), _("\
+An Airport can be built once you know Combustion and any player in\
+ the world knows Flight.\
 ")
 
 [building_aqueduct]
