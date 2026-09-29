@@ -1698,7 +1698,9 @@ settings =
 ; When are goods for the trade route chosen.
 ; "Leaving" - Goods to carry are assigned to unit when it`s built, or it changes homecity
 ; "Arrival" - Goods are chosen when trade route is established, when unit arrives to destination
-goods_selection = "Leaving"
+; LTS: "Arrival" so that goods depend on the home city (capital) when the
+; route is established, not on where the unit was built.
+goods_selection = "Arrival"
 
 ; /* <-- avoid gettext warnings
 ;
@@ -1731,6 +1733,14 @@ goods_selection = "Leaving"
 
 [goods_good]
 name           = _("Goods")
+; LTS: only capitals provide goods. With "Depletes" + "Bidirectional" a route
+; is cancelled at turn change if either end is no longer a capital, so moving
+; the Palace cannot be used to collect more than 4 routes.
+reqs           =
+    { "type",     "name",   "range"
+      "Building", "Palace", "City"
+    }
+flags          = "Bidirectional", "Depletes"
 ; LTS: no one-time bonus when a trade route is established
 onetime_pct    = 0
 

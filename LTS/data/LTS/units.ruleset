@@ -2248,6 +2248,9 @@ Trade routes can only be established between capitals (cities with\
  most 4 trade routes. There is no one-time bonus when a trade route\
  is established; the route only gives ongoing trade.\
 "), _("\
+If either city stops being a capital (the Palace is moved or the city\
+ is lost), the trade route is cancelled at the next turn change.\
+"), _("\
 A Caravan sent to one of your own cities that is building a wonder\
  can add 50 shields towards its production. If your city is not\
  building a wonder, the Caravan can take no special action.\
