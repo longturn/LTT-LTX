@@ -1670,6 +1670,9 @@ Roads allow your land units to move more quickly, and allow wheeled\
 "), _("\
 On some terrains, roads also provide a trade bonus.\
 "), _("\
+Once any player in the world knows Democracy, tiles on those terrains \
+get the road trade bonus automatically even without a road.\
+"), _("\
 Building roads on river tiles requires knowledge of Bridge Building.\
  City center tiles automatically get roads (even on a river tile).\
 ")

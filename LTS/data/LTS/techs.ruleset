@@ -198,6 +198,11 @@ req2     = "Writing"
 flags    = ""
 graphic     = "a.democracy"
 graphic_alt = "-"
+helptext = _("\
+Once any player in the world knows Democracy, all players get the road \
+trade bonus (+1 trade on Desert, Grassland, Plains and Tundra) on those \
+tiles even without a road.\
+")
 cost     = 296
 
 [advance_economics]
