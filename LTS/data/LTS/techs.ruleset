@@ -121,7 +121,7 @@ req2     = "Combustion"
 flags    = ""
 graphic     = "a.automobile"
 graphic_alt = "-"
-cost     = 1630
+cost     = 600
 
 [advance_banking]
 name     = _("Banking")
@@ -130,7 +130,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.banking"
 graphic_alt = "-"
-cost     = 120
+cost     = 60
 
 
 [advance_bronze_working]
@@ -158,7 +158,7 @@ req2     = "Flight"
 flags    = ""
 graphic     = "a.combined_arms"
 graphic_alt = "-"
-cost     = 2652
+cost     = 780
 
 [advance_combustion]
 name     = _("Combustion")
@@ -167,7 +167,7 @@ req2     = "Engineering"
 flags    = ""
 graphic     = "a.combustion"
 graphic_alt = "-"
-cost     = 1450
+cost     = 380
 
 [advance_computers]
 name     = _("Computers")
@@ -176,7 +176,7 @@ req2     = "Engineering"
 flags    = ""
 graphic     = "a.computers"
 graphic_alt = "-"
-cost     = 2300
+cost     = 620
 
 
 [advance_construction]
@@ -205,7 +205,7 @@ Once any player in the world knows Democracy, all players get the road \
 trade bonus (+1 trade on Desert, Grassland, Plains and Tundra) on those \
 tiles even without a road.\
 ")
-cost     = 296
+cost     = 110
 
 [advance_economics]
 name     = _("Economics")
@@ -214,7 +214,7 @@ req2     = "Banking"
 flags    = ""
 graphic     = "a.economics"
 graphic_alt = "-"
-cost     = 296
+cost     = 110
 
 [advance_electricity]
 name     = _("Electricity")
@@ -227,7 +227,7 @@ helptext = _("\
 Allows irrigation without an adjacent water source, improves the \
 effect of Amphitheaters, and increases city vision radius.\
 ")
-cost     = 750
+cost     = 280
 
 [advance_electronics]
 name     = _("Electronics")
@@ -236,7 +236,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.electronics"
 graphic_alt = "-"
-cost     = 1430
+cost     = 300
 
 [advance_engineering]
 name     = _("Engineering")
@@ -249,7 +249,7 @@ helptext = _("\
 Allows building Nuclear units. They can be moved, but not detonated \
 until someone has built the Manhattan Project.\
 ")
-cost     = 1040
+cost     = 320
 
 
 [advance_feudalism]
@@ -259,7 +259,7 @@ req2     = "Trade"
 flags    = ""
 graphic     = "a.feudalism"
 graphic_alt = "-"
-cost     = 92
+cost     = 60
 
 [advance_flight]
 name     = _("Flight")
@@ -268,7 +268,7 @@ req2     = "Tactics"
 flags    = "Build_Airborne"
 graphic     = "a.flight"
 graphic_alt = "-"
-cost     = 775
+cost     = 540
 
 [advance_fusion_power]
 name     = _("Fusion Power")
@@ -278,7 +278,7 @@ flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"
 helptext = _("Allows building several fusion based units. Not all fusion units are worth the cost.")
-cost     = 17000
+cost     = 2500
 
 
 
@@ -288,7 +288,7 @@ req1     = "Construction"
 req2     = "Writing"
 graphic     = "a.gunpowder"
 graphic_alt = "-"
-cost     = 455
+cost     = 90
 
 
 [advance_industrialization]
@@ -297,7 +297,7 @@ req1     = "Railroad"
 req2     = "Banking"
 graphic     = "a.industrialization"
 graphic_alt = "-"
-cost     = 1060
+cost     = 350
 
 [advance_invention]
 name     = _("Invention")
@@ -307,7 +307,7 @@ flags    = ""
 graphic     = "a.invention"
 graphic_alt = "-"
 helptext = _("Makes the upgrade cost of your units 20% less expensive. Robotics makes the upgrade cost 30% less expensive.")
-cost     = 144
+cost     = 90
 
 
 [advance_mass_production]
@@ -317,7 +317,7 @@ req2     = "Economics"
 flags    = ""
 graphic     = "a.mass_production"
 graphic_alt = "-"
-cost     = 1870
+cost     = 450
 
 
 [advance_navigation]
@@ -327,7 +327,7 @@ req2     = "Seafaring"
 flags    = ""
 graphic     = "a.navigation"
 graphic_alt = "-"
-cost     = 385
+cost     = 220
 
 [advance_nuclear_fission]
 name     = _("Nuclear Fission")
@@ -336,7 +336,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.nuclear_fission"
 graphic_alt = "-"
-cost     = 3000
+cost     = 720
 
 
 [advance_pottery]
@@ -359,7 +359,7 @@ Allows Workers and Engineers to build airstrips, airbases and buoys.\
  Upgrades 2 units every turn for all players once any player knows this tech.\
  Doubles movement of nuclear units.\
 ")
-cost     = 2060
+cost     = 660
 
 [advance_railroad]
 name     = _("?tech:Railroad")
@@ -381,7 +381,7 @@ irrigated (and has no mine) gets the irrigation bonus automatically for \
 all players. Building irrigation by hand no longer adds food, but is \
 still needed as a base for Farmland.\
 ")
-cost     = 850
+cost     = 240
 
 
 [advance_robotics]
@@ -391,7 +391,7 @@ req2     = "Computers"
 flags    = ""
 graphic     = "a.robotics"
 graphic_alt = "-"
-cost     = 2700
+cost     = 840
 
 [advance_rocketry]
 name     = _("Rocketry")
@@ -400,7 +400,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.rocketry"
 graphic_alt = "-"
-cost     = 4400
+cost     = 780
 
 
 [advance_seafaring]
@@ -410,7 +410,7 @@ req2     = "None"
 flags    = ""
 graphic     = "a.seafaring"
 graphic_alt = "-"
-cost     = 44
+cost     = 40
 
 [advance_space_flight]
 name     = _("Space Flight")
@@ -419,7 +419,7 @@ req2     = "Rocketry"
 flags    = ""
 graphic     = "a.space_flight"
 graphic_alt = "-"
-cost     = 6600
+cost     = 1080
 
 
 [advance_tactics]
@@ -429,7 +429,7 @@ req2     = "Feudalism"
 flags    = ""
 graphic     = "a.tactics"
 graphic_alt = "-"
-cost     = 800
+cost     = 260
 
 
 [advance_trade]
@@ -444,7 +444,7 @@ Halves the waste of production related to distance from the capital.\
 "), _("\
 Increases shield production in all your cities by 30%.\
 ")
-cost     = 44
+cost     = 30
 
 [advance_university]
 name     = _("University")
@@ -456,7 +456,7 @@ graphic_alt = "-"
 helptext = _("\
 Increases shield production in all your cities by 30%.\
 ")
-cost     = 120
+cost     = 70
 
 [advance_warrior_code]
 name     = _("Warrior Code")
@@ -473,4 +473,4 @@ req2     = "None"
 flags    = ""
 graphic     = "a.writing"
 graphic_alt = "-"
-cost     = 21
+cost     = 25
