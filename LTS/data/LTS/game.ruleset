@@ -897,29 +897,34 @@ actor_reqs    =
       "MinMoveFrags", "1", "Local", TRUE
     }
 
+; LTS: Nuclear units can be built and moved without the Manhattan Project,
+; but anyone can detonate them only after someone has built it.
 [actionenabler_nuke]
 action = "Explode Nuclear"
 actor_reqs    =
-    { "type",   "name", "range", "present"
-      "UnitFlag", "Nuclear", "Local", TRUE
+    { "type",     "name",              "range", "present", "survives"
+      "UnitFlag", "Nuclear",           "Local", TRUE,      FALSE
+      "Building", "Manhattan Project", "World", TRUE,      TRUE
     }
 
 [actionenabler_nuke_city]
 action="Nuke City"
 actor_reqs=
-    { "type",         "name",    "range"
-      "UnitFlag",     "Nuclear", "Local"
-      "MinMoveFrags", "1",       "Local"
-      "DiplRel",      "War",     "Local"
+    { "type",         "name",              "range", "survives"
+      "UnitFlag",     "Nuclear",           "Local", FALSE
+      "MinMoveFrags", "1",                 "Local", FALSE
+      "DiplRel",      "War",               "Local", FALSE
+      "Building",     "Manhattan Project", "World", TRUE
     }
 
 [actionenabler_nuke_units]
 action="Nuke Units"
 actor_reqs=
-    { "type",         "name",    "range"
-      "UnitFlag",     "Nuclear", "Local"
-      "MinMoveFrags", "1",       "Local"
-      "DiplRel",      "War",     "Local"
+    { "type",         "name",              "range", "survives"
+      "UnitFlag",     "Nuclear",           "Local", FALSE
+      "MinMoveFrags", "1",                 "Local", FALSE
+      "DiplRel",      "War",               "Local", FALSE
+      "Building",     "Manhattan Project", "World", TRUE
     }
 target_reqs=
     { "type",     "name",   "range", "present"

@@ -163,7 +163,7 @@ cost     = 2652
 [advance_combustion]
 name     = _("Combustion")
 req1     = "Industrialization"
-req2     = "None"
+req2     = "Engineering"
 flags    = ""
 graphic     = "a.combustion"
 graphic_alt = "-"
@@ -172,7 +172,7 @@ cost     = 1450
 [advance_computers]
 name     = _("Computers")
 req1     = "Electronics"
-req2     = "None"
+req2     = "Engineering"
 flags    = ""
 graphic     = "a.computers"
 graphic_alt = "-"
@@ -238,6 +238,10 @@ req2     = "Invention"
 flags    = ""
 graphic     = "a.engineering"
 graphic_alt = "-"
+helptext = _("\
+Allows building Nuclear units. They can be moved, but not detonated \
+until someone has built the Manhattan Project.\
+")
 cost     = 1040
 
 
@@ -453,12 +457,3 @@ flags    = ""
 graphic     = "a.writing"
 graphic_alt = "-"
 cost     = 21
-
-[advance_atomic_theory]
-name     = _("Atomic Theory")
-req1     = "Electronics"
-req2     = "None"
-flags    = ""
-graphic     = "a.atomic_theory"
-graphic_alt = "-"
-cost     = 1130

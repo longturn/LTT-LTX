@@ -1849,7 +1849,7 @@ TIP:  A handful of these can successfully keep the waters around\
 [unit_nuclear]
 name          = _("Nuclear")
 class         = "Missile"
-tech_req      = "Atomic Theory"
+tech_req      = "Engineering"
 obsolete_by   = "None"
 graphic       = "u.nuclear"
 graphic_alt   = "-"
@@ -1880,13 +1880,13 @@ veteran_power_fact = 100
 veteran_move_bonus = 0
 roles         = ""
 helptext      = _("\
-You can build Nuclear units when you have the required advance, and\
- the Manhattan Project wonder has been built by any player.\
- However, without further technology they cannot move on their own.\
+You can build Nuclear units as soon as you know Engineering. They can\
+ be moved freely, but no one can detonate them until the Manhattan\
+ Project wonder has been built by any player. After that, every player\
+ can detonate their Nuclear units.\
 "), _("\
-With Advanced Flight, all Nuclear units (including those already\
- built) gain a range of 9 movement points, and Rocketry increases\
- this to 18.\
+Nuclear units have 9 movement points. With Radio, all Nuclear units\
+ (including those already built) gain another 9, for a range of 18.\
 "), _("\
 On impact, the blast will destroy any unit in an area 3 tiles wide\
  (3x3 squares for rectangular grids), including friendly units.\

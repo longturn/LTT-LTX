@@ -3080,12 +3080,14 @@ reqs	=
       "Building", "Lighthouse", "City"
     }
 
-[effect_manhattan_project]
+; LTS: Nuclear units can be built with Engineering. Detonating them requires
+; the Manhattan Project (see the nuke action enablers in game.ruleset).
+[effect_enable_nuke]
 type    = "Enable_Nuke"
 value   = 1
 reqs    =
-    { "type", "name", "range", "survives"
-      "Building", "Manhattan Project", "World", TRUE
+    { "type", "name", "range"
+      "Tech", "Engineering", "Player"
     }
 
 [effect_marco_polos_contact]
