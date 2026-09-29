@@ -306,13 +306,13 @@ cost     = 350
 
 [advance_invention]
 name     = _("Invention")
-req1     = "Construction"
+req1     = "Navigation"
 req2     = "University"
 flags    = ""
 graphic     = "a.invention"
 graphic_alt = "-"
 helptext = _("Makes the upgrade cost of your units 20% less expensive. Computers makes the upgrade cost 30% less expensive.")
-cost     = 90
+cost     = 240
 
 
 [advance_mass_production]
