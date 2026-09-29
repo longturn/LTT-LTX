@@ -90,7 +90,7 @@ _("\
  simply lost to your economy (less if you have luxury-promoting buildings),\
  and the remainder all goes to luxuries.\
  Conventional corruption increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 30%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
@@ -140,23 +140,19 @@ _("\
  will each force 1 unhappy citizen to become content.\n\
 * Base corruption is 30% (the highest under any government). This\
  increases with distance from the capital (half as fast with knowledge\
- of The Corporation).\n\
+ of Mass Production).\n\
 * There is no base level of production waste, but an increasing amount\
  with distance from the capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
 * The number of free units will be doubled for cities with size of 9 or more.\n\
-* The number of free units will be doubled for cities with size of 9 or more.\n\
       \n\\n\
 Playing with Tribal? \n
 Tribal nations get more production and are able to maintain more units for free. \
-Tribal is a very good alternative for someone who is not planning to go Monarchy first. Instead \
-you may want to consider building Hal Saflieni Hypogeum on your capital city and also building \
-the pyramids as fast as possible to that you will get rid of the -1 tile penalty related to anarchy, despotism and tribalism. \
-It will also make sense to revolt during the first turn. This way you may lose less production because of anarchy. \
-If you play well you will get the pyramids around T15 - T20 and this will keep your empire competitive even \
-until the mid game. The catch however is that you may be too comfortable with the tribalism and switch to another gov \
-too late. This is why you may want to consider switching around T40 - T60. In short tribalism helps fast expansion more compared \
-to despotism. 
+In LTS the game is short and Monarchy is available very early (Ceremonial Burial), so Tribal is mostly \
+a short opening government. It can make sense if you want to pump out units in the first turns and build \
+the Pyramids early to get rid of the -1 tile penalty related to anarchy, despotism and tribalism. \
+Revolting during the first turns loses the least production to anarchy. Don't stay too long: \
+the better governments arrive within the first 10 - 15 turns.
 ")
 
 ;------------------------------------------------------------------------
@@ -191,20 +187,17 @@ _("\
 * Military units impose martial law. Up to 20 military units inside a city\
  will each force 1 unhappy citizen to become content.\n\
 * Base corruption is 20%. This increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 10%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
 * The number of free units will be doubled for cities with size of 9 or more.\n\
       \n\\n\
 Playing with Despotism? \n
-With despotism you get slightly better science and if you plan to go for monarchy this may be your choice. \
-Despotism is a very good alternative for someone who is planning to go Monarchy first.\
-While you may want to consider building Hal Saflieni Hypogeum on your capital city and also building \
-the pyramids as fast as possible you may want to focus instead on maxing science and using scientists for getting monarchy really fast. \
-In this case you may want to build the pyramids after revolting and switching to monarchy or maybe even fundamentalism. Then again \
-despotism may be great if you need to defend. It allows a crazy number of units to be used for keeping the people content. This \
-together with pyramids is also great.
+With despotism you get slightly better science than with Tribal. In LTS Monarchy only needs \
+Ceremonial Burial, so most players will leave Despotism within the first few turns. \
+Despotism may still be useful if you need to defend early: it allows a crazy number of units \
+to be used for keeping the people content, which together with the Pyramids is also great.
 ")
 
 ;------------------------------------------------------------------------
@@ -239,7 +232,7 @@ _("\
 * Military units impose martial law. Up to 3 military units inside a city\
  will each force 1 unhappy citizen to become content.\n\
 * Base corruption is 10%. This increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 10%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
@@ -249,7 +242,7 @@ _("\
 Playing with Monarchy? \n
 Monarchy is great for those players who want to play war. You don't get that much gold of production with monarchy but instead it's reasonably good for those players who want to attack attack and attack. In the late early game and early mid game it's a good
 alternative also for those who wish to build and not fight wars. Switching to monarchy will remove the -1 penalty you get from anarchy, despotism and tribalism and this will allow you to ramp up your economy for the better governments to come.
-If you go for monarchy in the early game try to do it fast. Maybe using the scientists for few turns and then getting the tech by T15 - T20. \
+In LTS Monarchy only needs Ceremonial Burial, so you can switch to it during the first turns. \
 However even the farmers may want to stick with monarchy for some time because of the great unit upkeep for workers and less waste.
 ")
 
@@ -338,7 +331,7 @@ _("\
 * Each city tolerates up to 2 aggressively deployed military units;\
  each further unit causes 1 unhappy citizen.\n\
 * Base corruption is 15%. This increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 15%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
@@ -346,7 +339,7 @@ _("\
   The number of units avoiding the military unhappiness will also double at this size.\n\
   \n\\n\
 Playing with fundamentalism? \n
-Fundamentalism is for a player who needs to build lots funda specific units (crusaders, fanatics) fast. \
+Fundamentalism is for a player who needs to build lots of the funda specific Fanatics fast. \
 This may be useful if you are defending your nation or buying some time to your ally while that other nation needs to focus on something else. \
 Funda can also be used as an alternative early gov if you need to get lots of gold fast. With the happiness buildings funda is like a money printing machine. \
 Choosing this government also makes sense if you plan to steal your techs while focusing on building infra.
@@ -382,7 +375,7 @@ _("\
  each further unit causes 1 unhappy citizen.\n\
 * There is no base level of corruption, but an increasing amount\
  with distance from the capital (half as much as with most other\
- governments). Knowledge of The Corporation eliminates this corruption.\n\
+ governments). Knowledge of Mass Production eliminates this corruption.\n\
 * Base production waste is 30%, but is not affected by distance to the\
  capital.\n\
 * Has a senate that may prevent declaration of war.\n\
@@ -396,8 +389,8 @@ fast and there is less need for gold, it may make sense to switch to Federation 
 With Federation you get a nice boost for your science while you are still able to fight wars. \
 However there is a catch to this. You may want to carefully compare your advance to the nations with the other form of government. \
 While Federation receives a generous boost to science, in addition to other bonuses, in the long term it will not be able \
-to compete against democracies. This of course depends on the game you are playing but typically 20 - 30 turns with 
-Federation should be more than enough in the mid game. After that you may want to quit fighting wars and focus on \
+to compete against democracies. This of course depends on the game you are playing but in a short LTS game \
+typically 5 - 10 turns with Federation should be more than enough in the mid game. After that you may want to quit fighting wars and focus on \
 something else or maybe switch to another government.
 ")
 
@@ -406,7 +399,7 @@ something else or maybe switch to another government.
 
 name        = _("Republic")
 reqs = { "type", "name", "range"
-         "tech", "Trade", "Player"
+         "tech", "University", "Player"
        }
 graphic     = "gov.republic"
 graphic_alt = "-"
@@ -429,12 +422,12 @@ _("\
 * Celebrating cities produce a further trade point for every worked tile\
  (land or water) which is already producing trade. (Cities below size 3\
  will not celebrate.)\n\
-* Each city can support one unit for free; further units each cost\
+* Each city can support up to 2 units for free; further units each cost\
  1 shield per turn.\n\
 * Each city tolerates a single aggressively deployed military unit;\
  each further unit causes 1 unhappy citizen.\n\
 * Base corruption is 25%. This increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 20%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Big cities with size of 9 or more will get an extra 50 % defense against military attacks. \n\
@@ -445,7 +438,7 @@ Playing with Republic? \n
 Republic is the fast lane to Democracy and it's quite bad if you plan to fight wars. \
 Unlike with some other governments you can declare wars while in Republic. This however comes with a hefty price unless you manage to \
 keep the wars extremely short or you crush a very weak enemy. Republics can succeed if you have a very low number of units and you afford \
-to focus on building markets, mercantile exchanges and banks instead of military units and huge numbers of workers. \
+to focus on building marketplaces, banks and stock exchanges instead of military units and huge numbers of workers. \
 One of the best ways to succeed with a Republic is to make peace or alliance with everyone around you and then focus on \
 ramping up your economy. Republic may also work better if your cities have overlapping tiles. If you have little 
 space for your empire it may make sense to micromanage the worked tiles as Republic as your government. This will allow you to \
@@ -489,7 +482,7 @@ _("\
 * Each city almost tolerates a single aggressively deployed military unit;\
  the first unit results with one unhappy citizen and each further unit causes 2 unhappy citizens.\n\
 * Base corruption is 5%. This increases with distance from the capital\
- (half as fast with knowledge of The Corporation).\n\
+ (half as fast with knowledge of Mass Production).\n\
 * Base production waste is 25%. This increases with distance from the\
  capital (half as fast with knowledge of Trade).\n\
 * Has a senate that may prevent declaration of war.\n\
