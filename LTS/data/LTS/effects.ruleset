@@ -2542,94 +2542,48 @@ value   = 20
 type    = "Nuke_Infrastructure_Pct"
 value   = 20
 
-[effect_sdi_i_defense_1]
+; LTS: single SDI Defense, 75% chance to shoot down foreign nukes
+[effect_sdi_defense]
 type    = "Nuke_Proof"
-value   = 30
+value   = 75
 reqs    =
     { "type", "name", "range", "present"
-      "Building", "SDI Defense I", "City", TRUE
+      "Building", "SDI Defense", "City", TRUE
       "DiplRel", "Foreign", "Local", TRUE
       "DiplRel", "Team", "Local", FALSE
     }
-	
-	
-[effect_sdi_i_defense_2]
+
+; 75 + 25 = 100% in the city with the Palace
+[effect_sdi_defense_palace]
 type    = "Nuke_Proof"
+value   = 25
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "SDI Defense", "City", TRUE
+      "Building", "Palace", "City", TRUE
+      "DiplRel", "Foreign", "Local", TRUE
+      "DiplRel", "Team", "Local", FALSE
+    }
+
+[effect_sdi_defense_missile]
+type    = "Defend_Bonus"
+value   = 30
+reqs    =
+    { "type", "name", "range"
+      "Building", "SDI Defense", "City"
+      "UnitClass", "Missile", "Local"
+    }
+
+[effect_sdi_defense_missile_palace]
+type    = "Defend_Bonus"
 value   = 70
 reqs    =
     { "type", "name", "range"
-      "Building", "SDI Defense I", "City"
-	  "Building", "Palace", "City"
-    }
-
-
-[effect_sdi_i_defense_3]
-type    = "Defend_Bonus"
-value   = 30
-reqs    =
-    { "type", "name", "range"
-      "Building", "SDI Defense I", "City"
+      "Building", "SDI Defense", "City"
+      "Building", "Palace", "City"
       "UnitClass", "Missile", "Local"
     }
-	
-	
-[effect_sdi_i_defense_4]
-type    = "Defend_Bonus"
-value   = 70
-reqs    =
-    { "type", "name", "range"
-      "Building", "SDI Defense I", "City"
-	  "Building", "Palace", "City"
-      "UnitClass", "Missile", "Local"
-    }
-	
 
-	
-[effect_sdi_ii_defense_1]
-type    = "Nuke_Proof"
-value   = 30
-reqs    =
-    { "type", "name", "range", "present"
-      "Building", "SDI Defense II", "City", TRUE
-	  "Building", "Palace", "City", FALSE
-      "DiplRel", "Foreign", "Local", TRUE
-      "DiplRel", "Team", "Local", FALSE
-    }
-	
-
-[effect_sdi_ii_defense_2]
-type    = "Defend_Bonus"
-value   = 30
-reqs    =
-    { "type", "name", "range", "present"
-      "Building", "SDI Defense II", "City", TRUE
-      "Building", "Palace", "City", FALSE
-      "UnitClass", "Missile", "Local", TRUE
-    }
-	
-	
-[effect_sdi_iii_defense_1]
-type    = "Nuke_Proof"
-value   = 30
-reqs    =
-    { "type", "name", "range", "present"
-      "Building", "SDI Defense III", "City", TRUE
-      "Building", "Palace", "City", FALSE
-      "DiplRel", "Foreign", "Local", TRUE
-      "DiplRel", "Team", "Local", FALSE
-    }
-	
-
-[effect_sdi_iii_defense_2]
-type    = "Defend_Bonus"
-value   = 40
-reqs    =
-    { "type", "name", "range", "present"
-      "Building", "SDI Defense III", "City", TRUE
-      "Building", "Palace", "City", FALSE
-      "UnitClass", "Missile", "Local", TRUE
-    }
-	
 
 
 [effect_sewer_system]

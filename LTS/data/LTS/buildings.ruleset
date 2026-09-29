@@ -727,15 +727,15 @@ Doubles the intrinsic defense strength of units within a city \
 when defending against aircraft (including helicopters).\
 ")
 
-[building_sdi_defense_1]
-name		= _("SDI Defense I")
+[building_sdi_defense]
+name		= _("SDI Defense")
 genus		= "Improvement"
 reqs	=
     { "type", "name", "range"
-      "Tech", "Radio", "Player"
+      "Tech", "Electricity", "Player"
     }
-graphic	= "b.sdi_defense_1"
-graphic_alt	= "b.sdi_defense"
+graphic	= "b.sdi_defense"
+graphic_alt	= "b.sdi_defense_1"
 obsolete_by	=
     { "type", "name", "range"
     }
@@ -748,71 +748,11 @@ helptext	= _("\
 Protects a city and its environs (up to 2 tiles away) from attacks \
 by other nations' Nuclear units. A Nuclear unit not owned by you or a \
 teammate which attacks a city with SDI Defense, or attacks a unit (or is \
-deliberately exploded) within range, may be shot down and simply has no effect. \
+deliberately exploded) within range, has a 75% chance to be shot down \
+and simply has no effect. In the city with the Palace the chance is 100%.\
+"), _("\
 Also, adds 30% to the intrinsic defense strength of units in the city when \
-defending against conventional missiles. SDI I + capital protects against 100% of the nuclear attacks while \
-SDI I only defends against 30% of the attacks. SDI I + Palace adds 100% to the defense against missiles.\
- NOTE: The Palace City gets 100% SDI defense with the Palace and with SDI I. SDI II and SDI III are not needed.\
-")
-
-
-[building_sdi_defense_2]
-name		= _("SDI Defense II")
-genus		= "Improvement"
-reqs	=
-    { "type", "name", "range"
-      "Tech", "Nuclear Fission", "Player"
-	  "Building", "SDI Defense I", "City"
-    }
-graphic	= "b.sdi_defense_2"
-graphic_alt	= "b.sdi_defense"
-obsolete_by	=
-    { "type", "name", "range"
-    }
-build_cost	= 60
-upkeep		= 3
-sabotage	= 50
-sound		= "b_sdi_defense"
-sound_alt	= "b_generic"
-helptext	= _("\
-Protects a city and its environs (up to 2 tiles away) from attacks \
-by other nations' Nuclear units. A Nuclear unit not owned by you or a \
-teammate which attacks a city with SDI Defense, or attacks a unit (or is \
-deliberately exploded) within range, may be shot down and simply has no effect. \
-Also, adds 30% to the intrinsic defense strength of units in the city when \
-defending against conventional missiles. SDI II adds another 30% against the nuclear attacks.\
- NOTE: The Palace City gets 100% SDI defense with the Palace and with SDI I. SDI II and SDI III are not needed.\
- The Palace with SDI II but without SDI I doesn't give 100% defense against nukes.
-")
-
-
-[building_sdi_defense_3]
-name		= _("SDI Defense III")
-genus		= "Improvement"
-reqs	=
-    { "type", "name", "range"
-      "Tech", "Space Flight", "Player"
-	  "Building", "SDI Defense II", "City"
-    }
-graphic	= "b.sdi_defense_3"
-graphic_alt	= "b.sdi_defense"
-obsolete_by	=
-    { "type", "name", "range"
-    }
-build_cost	= 60
-upkeep		= 3
-sabotage	= 50
-sound		= "b_sdi_defense"
-sound_alt	= "b_generic"
-helptext	= _("\
-Protects a city and its environs (up to 2 tiles away) from attacks \
-by other nations' Nuclear units. A Nuclear unit not owned by you or a \
-teammate which attacks a city with SDI Defense, or attacks a unit (or is \
-deliberately exploded) within range, may be shot down and simply has no effect. \
-Also, adds 40% to the intrinsic defense strength of units in the city when \
-defending against conventional missiles. SDI III adds another 30% against the nuclear attacks.\
- NOTE: The Palace City gets 100% SDI defense with the Palace and with SDI I. SDI II and SDI III are not needed.\
- The Palace with SDI III but without SDI I doesn't give 100% defense against nukes.
+defending against conventional missiles (100% in the city with the Palace).\
 ")
 
 [building_sewer_system]
