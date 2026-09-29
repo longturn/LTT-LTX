@@ -3999,3 +3999,331 @@ reqs  =
       "NationalIntelligence", "History",      "Player", FALSE
       "DiplRel",              "Has embassy",  "Local",  TRUE
     }
+
+; LTS: Roads small wonders from Royale. +10% trade in all cities,
+; +5% for trade based governments (Federation, Republic, Democracy).
+[effect_trade_resource_bonus_gold_1]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gold_2]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_3]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_gold_4]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gold_5]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_6]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_7]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_gold_8]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gold Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+	
+
+
+[effect_trade_resource_bonus_gems_1]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gems_2]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_3]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_gems_4]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_gems_5]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_6]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_7]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_gems_8]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Gems Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+	
+
+
+
+[effect_trade_resource_bonus_ivory_1]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_ivory_2]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_3]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_ivory_4]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_ivory_5]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_6]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_7]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_ivory_8]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Ivory Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
+
+[effect_trade_resource_bonus_silk_1]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Tribal", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_2]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Despotism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_3]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Monarchy", "Player"
+    }
+	 
+[effect_trade_resource_bonus_silk_4]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Communism", "Player"
+    }
+	  
+[effect_trade_resource_bonus_silk_5]
+type    = "Output_Bonus"
+value   = 10
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Fundamentalism", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_6]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Federation", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_7]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Republic", "Player"
+    }
+	
+[effect_trade_resource_bonus_silk_8]
+type    = "Output_Bonus"
+value   = 5
+reqs    =
+    { "type", "name", "range"
+	  "Building", "Silk Road", "Player"
+      "OutputType", "Trade", "Local"
+	  "Gov", "Democracy", "Player"
+    }
