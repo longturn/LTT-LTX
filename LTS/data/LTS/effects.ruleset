@@ -3299,6 +3299,34 @@ reqs    =
 type    = "Pollu_Pop_Pct"
 value   = -100
 
+; LTS: all pollution is halved. Pollu_Prod_Pct values add up, so a
+; Recycling Center (-38) brings the total to 12% of the original
+; (-75% of the remaining 50%). Pollu_Pop_Pct_2 is a separate multiplier
+; on top of the Pollu_Pop_Pct effects and works the same way.
+[effect_pollu_prod_lts]
+type    = "Pollu_Prod_Pct"
+value   = -50
+
+[effect_pollu_pop_lts]
+type    = "Pollu_Pop_Pct_2"
+value   = -50
+
+[effect_recycling_center]
+type    = "Pollu_Prod_Pct"
+value   = -38
+reqs    =
+    { "type", "name", "range"
+      "Building", "Recycling Center", "City"
+    }
+
+[effect_recycling_center_pop]
+type    = "Pollu_Pop_Pct_2"
+value   = -38
+reqs    =
+    { "type", "name", "range"
+      "Building", "Recycling Center", "City"
+    }
+
 ; tech_upkeep_divider = 6000, Max tech upkeep = 13
 [effect_upkeep_tech_base]
 type    = "Tech_Upkeep_Free"

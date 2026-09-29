@@ -670,6 +670,30 @@ A Port Facility can be built once you know Electricity and any player\
 ; Includes Triremes, but not worth mentioning explicitly as unlikely
 ; to happen
 
+[building_recycling_center]
+name		= _("Recycling Center")
+genus		= "Improvement"
+reqs	=
+    { "type", "name", "range"
+      "Tech", "Engineering", "Player"
+    }
+graphic	= "b.recycling_center"
+graphic_alt	= "-"
+obsolete_by	=
+    { "type", "name", "range"
+    }
+build_cost	= 60
+upkeep		= 2
+sabotage	= 100
+sound		= "b_recycling_center"
+sound_alt	= "b_generic"
+; /* xgettext:no-c-format */
+helptext	= _("\
+Building a Recycling Center removes 75% of the pollution the city \
+would otherwise produce, both from shield production and from its \
+population.\
+")
+
 [building_power_plant]
 name		= _("Power Plant")
 genus		= "Improvement"

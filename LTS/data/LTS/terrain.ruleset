@@ -1334,26 +1334,22 @@ removal_time   = 0
 flags          = "GlobalWarming"
 helptext       = _("\
 Pollution appears on tiles around cities with high production or \
-population, or when a Mfg. Plant suffers an industrial accident. \
-It halves all output from its tile, and contributes to the risk of \
-global warming.\
+population. It halves all output from its tile, and contributes to \
+the risk of global warming.\
 "), _("\
 The pollution can only be cleared by dispatching Workers, Migrants, \
 Settlers, Engineers, or a Transport with the \"clean pollution\" order.\
 "), _("\
-Pollution from production is likely to start becoming important as \
-your civilization becomes more industrialized, giving you buildings \
-such as Factory and Power Plant which boost production. Replacing a \
-Power Plant with cleaner forms of energy -- a Hydro Plant / Hoover \
-Dam, Nuclear Plant, or Solar Plant -- will reduce pollution from \
-production, as will a Recycling Center.\
+In LTS all pollution is halved compared to standard rules. Pollution \
+from production is likely to start becoming important as your \
+civilization becomes more industrialized, giving you buildings such as \
+Factory and Power Plant which boost production. A Recycling Center \
+(Engineering) removes 75% of the pollution its city would otherwise \
+produce.\
 "), _("\
-The city's population starts adding to pollution with the Factory, \
-Super Highways, Offshore Platform, and Mfg. Plant buildings; each \
-building causes the population to add more to pollution. A Mass \
-Transit will counteract the pollution from two buildings in a city, \
-and the Eiffel Tower wonder will counteract the pollution from one \
-building in all the owner's cities.\
+The city's population starts adding to pollution with the Factory and \
+Offshore Platform buildings; each building causes the population to add \
+more to pollution. A Recycling Center also reduces this by 75%.\
 "), _("\
 The contribution of these factors can be seen in the city dialog; once \
 it exceeds a threshold, the excess is the percent chance of pollution \
