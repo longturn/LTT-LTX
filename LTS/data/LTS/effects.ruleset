@@ -3437,6 +3437,26 @@ reqs    =
       "OutputType", "Trade", "Local"
     }
 
+; LTS: knowing Trade gives +30% shields in every city of the player
+[effect_trade_tech_shield]
+type    = "Output_Bonus"
+value   = 30
+reqs    =
+    { "type", "name", "range"
+      "Tech", "Trade", "Player"
+      "OutputType", "Shield", "Local"
+    }
+
+; LTS: knowing University gives +30% shields in every city of the player
+[effect_university_tech_shield]
+type    = "Output_Bonus"
+value   = 30
+reqs    =
+    { "type", "name", "range"
+      "Tech", "University", "Player"
+      "OutputType", "Shield", "Local"
+    }
+
 ; Make Mine extra do something
 [effect_mine]
 type    = "Mining_Pct"

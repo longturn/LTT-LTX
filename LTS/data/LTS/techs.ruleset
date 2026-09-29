@@ -429,6 +429,8 @@ graphic     = "a.trade"
 graphic_alt = "-"
 helptext = _("\
 Halves the waste of production related to distance from the capital.\
+"), _("\
+Increases shield production in all your cities by 30%.\
 ")
 cost     = 44
 
@@ -439,6 +441,9 @@ req2     = "Construction"
 flags    = ""
 graphic     = "a.university"
 graphic_alt = "-"
+helptext = _("\
+Increases shield production in all your cities by 30%.\
+")
 cost     = 120
 
 [advance_warrior_code]
