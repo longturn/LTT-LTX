@@ -1191,7 +1191,7 @@ action        = "Build Mine"
 actor_reqs    =
     { "type",      "name",            "range"
       "UnitFlag",  "Settlers",        "Local"
-      "Tech",      "Electronics", "Player"
+      "Tech",      "Computers", "Player"
     }
 target_reqs    =
     { "type",    "name",            "range",  "present"

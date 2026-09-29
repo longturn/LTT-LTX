@@ -1300,7 +1300,7 @@ rmact_gfx      = "None"
 rmact_gfx_alt  = "-"
 reqs           =
     { "type", "name", "range", "present"
-      "Tech", "Electronics", "Player", TRUE
+      "Tech", "Computers", "Player", TRUE
       "Terrain", "Deep Ocean", "Local", TRUE
     }
 build_time     = 0
