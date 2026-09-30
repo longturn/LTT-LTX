@@ -157,6 +157,8 @@ Special tech effects:
 
 - Construction: forts and fortresses; roads and railroads on river tiles
   (bridges).
+- Feudalism: larger city work area in all your cities (radius squared
+  15 -> 18, from Royale where it comes with Theology).
 - Trade: +30% shields in all your cities; halves production waste by
   distance.
 - University: +30% shields in all your cities; works as Barracks in all

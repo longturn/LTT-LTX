@@ -265,6 +265,10 @@ req2     = "Trade"
 flags    = ""
 graphic     = "a.feudalism"
 graphic_alt = "-"
+helptext = _("\
+Increases the work area of all your cities (city radius squared from \
+15 to 18), so each city can work more tiles.\
+")
 cost     = 60
 
 [advance_flight]

@@ -330,6 +330,16 @@ reqs    =
       "Building", "Palace", "City"
     }
 
+; LTS: city work area increased with Feudalism (Royale: Theology)
+; init_city_radius_sq 15 -> 18
+[effect_feudalism_work_area]
+type    = "City_Radius_Sq"
+value   = 3
+reqs    =
+    { "type", "name", "range"
+      "Tech", "Feudalism", "Player"
+    }
+
 ; Base vision range - radius of vision is sqrt(5) = 2.24 - this is intentionally smaller than the city working area
 [effect_city_vision]
 type    = "City_Vision_Radius_Sq"
