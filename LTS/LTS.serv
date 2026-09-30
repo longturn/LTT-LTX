@@ -29,7 +29,7 @@ set startcity "DISABLED"
 
 # general rules
 set nationset all
-set citymindist 4
+set citymindist 5
 set contactturns 1
 set disasters "10"
 set dispersion "6"

@@ -23,7 +23,7 @@ set tinyisles disabled   # Don't allow 1x1 islands
 
 # general rules
 set nationset all
-set citymindist 4
+set citymindist 5
 set contactturns 1
 set dispersion 6
 set foggedborders enabled

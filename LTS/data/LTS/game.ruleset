@@ -1857,7 +1857,7 @@ set =
       "temperature", 60
       "flatpoles", 0
       "startunits", "cwsx"
-      "citymindist", 3
+      "citymindist", 5
       "techlevel", 1
       "borders", "ENABLED"
       "foggedborders", "ENABLED"

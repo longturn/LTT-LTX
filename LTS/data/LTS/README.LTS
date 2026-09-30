@@ -437,6 +437,7 @@ SERVER SETTINGS (LTS.serv):
 ---------------------------
 
 - techleak 150
+- citymindist 5 (at least 4 tiles between cities)
 - revolen 1, revolentype FIXED (a government change takes 1 turn of
   anarchy)
 - spaceship_travel_time 100
