@@ -1939,8 +1939,8 @@ reqs    =
       "OutputType", "Luxury", "Local"
     }
 	
-; LTS: no Barracks building. Knowing University gives the old Barracks
-; effects in all of the player's cities.
+; LTS: knowing University gives the old Barracks effects in all of the
+; player's cities.
 [effect_barracks]
 type    = "Veteran_Build"
 value   = 1
@@ -1969,6 +1969,41 @@ value   = 1
 reqs    =
     { "type", "name", "range", "present"
       "Tech", "University", "Player", TRUE
+      "UnitClass", "Big Siege", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+; LTS: the Barracks building (Democracy) gives one more veteran level on
+; top of the University one.
+[effect_barracks_building]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+[effect_barracks_building_b]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
+      "UnitClass", "Big Land", "Local", TRUE
+      "UnitFlag", "NonMil", "Local", FALSE
+      "UnitFlag", "NoVeteran", "Local", FALSE
+    }
+
+[effect_barracks_building_siege]
+type    = "Veteran_Build"
+value   = 1
+reqs    =
+    { "type", "name", "range", "present"
+      "Building", "Barracks", "City", TRUE
       "UnitClass", "Big Siege", "Local", TRUE
       "UnitFlag", "NonMil", "Local", FALSE
       "UnitFlag", "NoVeteran", "Local", FALSE

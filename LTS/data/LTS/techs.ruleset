@@ -207,6 +207,9 @@ helptext = _("\
 Once any player in the world knows Democracy, all players get the road \
 trade bonus (+1 trade on Desert, Grassland, Plains and Tundra) on those \
 tiles even without a road.\
+"), _("\
+Allows building Barracks, which give new military land units one more \
+veteran level on top of the one from University.\
 ")
 cost     = 110
 
@@ -452,7 +455,8 @@ graphic_alt = "-"
 helptext = _("\
 Increases shield production in all your cities by 30%.\
 "), _("\
-Works as a Barracks in all your cities (there is no Barracks building): \
+Works as a Barracks in all your cities (the Barracks building, \
+available with Democracy, adds one more veteran level on top of this): \
 new military land units (including siege units like Cannon and Howitzer) \
 are built as veterans, and damaged land units which stay in a city for \
 one full turn without moving are completely restored.\
