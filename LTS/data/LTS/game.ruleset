@@ -1872,4 +1872,5 @@ set =
       "techleak", 150
       "techlossrestore", 50
       "revolentype", "FIXED"
+      "revolen", 1
     }

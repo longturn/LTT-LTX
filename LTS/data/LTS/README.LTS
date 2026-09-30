@@ -437,6 +437,8 @@ SERVER SETTINGS (LTS.serv):
 ---------------------------
 
 - techleak 150
+- revolen 1, revolentype FIXED (a government change takes 1 turn of
+  anarchy)
 - spaceship_travel_time 100
 - globalwarming disabled
 - sciencebox 100, foodbox 100, shieldbox 100
