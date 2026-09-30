@@ -622,8 +622,11 @@ reqs	=
     }
 graphic	= "b.coffice"
 graphic_alt	= "b.university"
+; LTS: obsolete from 1920 AD (turn 25). The turn change at the end of
+; turn 24 (1890 AD) is the last one where Settlers can be completed.
 obsolete_by	=
     { "type", "name", "range"
+      "MinYear", "1920", "World"
     }
 build_cost	= 20
 upkeep		= 0
@@ -638,6 +641,11 @@ turn.\
 Your first city gets the Colonial Office for free. You can move it \
 by rebuilding it in another city. If the city with the Colonial Office \
 is lost, a new one is placed in another of your cities.\
+"), _("\
+The Colonial Office becomes obsolete in 1920 AD (turn 25). Settlers \
+can still be built on turn 24 (they are completed at the end of the \
+turn); from turn 25 on no more \
+Settlers can be built, but existing Settlers can still be used.\
 ")
 
 

@@ -46,6 +46,11 @@ CORE RULES AT A GLANCE:
   Because Settlers cost population, at most one Settlers can be built per
   turn and the city must be at least size 2.
 
+- The Colonial Office becomes obsolete in 1920 AD (turn 25). Settlers
+  can still be built on turn 24 (completed at the end of that turn).
+  From turn 25 on they can no longer be put into production, but
+  existing Settlers can still be used.
+
 - Trade routes can only be established between the capitals (Palace
   cities) of different nations. Each capital has 4 trade route slots.
   Routes are bidirectional and give only ongoing trade: there is no

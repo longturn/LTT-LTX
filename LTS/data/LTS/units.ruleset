@@ -524,6 +524,10 @@ rebuilding it in another city. Since Settlers cost 1 population, at \
 most one Settlers can be built per turn, and the city must be at least \
 size 2.\
 "), _("\
+Settlers can be built until the end of turn 24. On turn 25 the \
+Colonial Office becomes obsolete (1920 AD) and Settlers can no longer \
+be put into production. Existing Settlers can still be used.\
+"), _("\
 Settlers ignore terrain movement costs (like Alpine Troops): every \
 move costs at most 1/3 movement point, so they can travel 6 tiles per \
 turn over any terrain, with or without roads.\
