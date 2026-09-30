@@ -730,7 +730,7 @@ warmer_drier_result  = "no"
 cooler_wetter_result = "no"
 cooler_drier_result  = "no"
 native_to            = "Land", "Small Land", "Merchant", "Air", "Missile", "Helicopter"
-flags                = "NoCities", "CanHaveRiver"
+flags                = "CanHaveRiver"
 property_mountainous = 70
 color.r              = 129
 color.g              = 127
@@ -743,6 +743,9 @@ Land units that move into mountains can see an extra space, but a\
  fast land unit ending its turn in mountains without a road will start\
  its next turn with one fewer movement point. Some land units may not\
  move into mountains without a road.\
+"), _("\
+In LTS cities can be built on mountains. A mountain city gets the\
+ terrain's +100% defense bonus.\
 ")
 
 [terrain_plains]

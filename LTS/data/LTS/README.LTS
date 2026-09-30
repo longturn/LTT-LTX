@@ -429,6 +429,7 @@ TERRAIN AND TILES:
 - Farmland needs Electronics and an irrigated tile; Supermarket gives
   +50% food on Farmland.
 - Maglev needs Computers.
+- Cities can be built on mountains (+100% terrain defense).
 - Other terrain values are as in LTT.
 
 
