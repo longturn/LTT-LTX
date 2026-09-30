@@ -279,7 +279,7 @@ cost     = 540
 [advance_fusion_power]
 name     = _("Fusion Power")
 req1     = "Space Flight"
-req2     = "None"
+req2     = "Nuclear Fission"
 flags    = ""
 graphic     = "a.fusion_power"
 graphic_alt = "-"

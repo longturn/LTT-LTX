@@ -151,7 +151,7 @@ Nuclear Fission    Electronics                       720    2160
 Rocketry           Flight                            780    2340
 Combined Arms      Tactics, Flight                   780    2340
 Space Flight       Computers, Rocketry               1080   3240
-Fusion Power       Space Flight                      2500   7500
+Fusion Power       Space Flight, Nuclear Fission     2500   7500
 
 Special tech effects:
 
