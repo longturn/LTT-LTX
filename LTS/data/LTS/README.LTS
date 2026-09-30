@@ -25,8 +25,8 @@ OBJECTIVES:
 CORE RULES AT A GLANCE:
 -----------------------
 
-- City center tile: every city center gets +20 Food, +20 Shields and
-  +20 Trade (plus the usual +1 Shield). Note that the Despotism/Tribal/
+- City center tile: every city center gets +20 Food, +8 Shields and
+  +8 Trade (plus the usual +1 Shield). Note that the Despotism/Tribal/
   Anarchy -1 penalty for tiles producing more than 2 also applies to the
   city center, Supermarket multiplies the extra food, and pollution on the
   center tile reduces the bonus.
@@ -34,7 +34,7 @@ CORE RULES AT A GLANCE:
 - Granary size is 20 food for city sizes 1-4, then 24, 28, 34 and 40 for
   sizes 5, 6, 7 and 8+.
 
-- Settlers cost 20 shields and 1 population, move 2 and ignore terrain
+- Settlers cost 10 shields and 1 population, move 2 and ignore terrain
   (IgTer, like Alpine Troops): every step costs at most 1/3 move, so they
   travel 6 tiles per turn over any terrain. Railroads and maglevs are
   still faster.
@@ -322,7 +322,7 @@ UNITS:
 Move is in whole movement points. Cost in shields.
 
 UNIT             TECH               NEEDS            COST  A/D     HP  FP  MOVE
-Settlers         -                  Colonial Office  20    0/1     20  1   2
+Settlers         -                  Colonial Office  10    0/1     20  1   2
 Migrants         Pottery                             10    0/1     20  1   3
 Workers          -                                   10    0/1     10  1   3
 Engineers        Railroad                            20    0/2     20  1   6

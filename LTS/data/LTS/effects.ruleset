@@ -3421,7 +3421,7 @@ reqs    =
 ; LTS: big flat bonus on every city center tile
 [effect_city_center_bonus_shield]
 type    = "Output_Add_Tile"
-value   = 20
+value   = 8
 reqs    =
     { "type", "name", "range"
       "CityTile", "Center", "Local"
@@ -3439,7 +3439,7 @@ reqs    =
 
 [effect_city_center_bonus_trade]
 type    = "Output_Add_Tile"
-value   = 20
+value   = 8
 reqs    =
     { "type", "name", "range"
       "CityTile", "Center", "Local"
